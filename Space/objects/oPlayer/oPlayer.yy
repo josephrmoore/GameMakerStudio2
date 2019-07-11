@@ -477,6 +477,20 @@
             "value": "True",
             "varName": "can_slash",
             "varType": 3
+        },
+        {
+            "id": "41db6ff4-ce11-4f2a-ae5e-f8e331966790",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "has_missiles",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -12,9 +12,14 @@ var key_right =oPlayer.key_right;
 var key_up = oPlayer.key_up;
 var key_down = oPlayer.key_down;
 var shoot = oPlayer.key_shoot;
+var missile = oPlayer.key_missile;
+var bomb = oPlayer.key_bomb;
 
 var has_spread = oPlayer.has_spread;
 var has_wave = oPlayer.has_wave;
+
+
+
 
 //show_debug_message(shoot);
 
@@ -49,6 +54,23 @@ if(key_up){
 }
 
 --firing_delay;
+--missile_delay;
+--bomb_delay;
+
+if(bomb && bomb_delay<0){
+	bomb_delay = 60;
+	instance_create_layer(x,y,"Bullets",oBomb);
+}
+
+
+if(missile && missile_delay<0){
+	missile_delay = 40;
+	with(instance_create_layer(x,y,"Bullets",oMissile)){
+		speed = other.bullet_speed/1.5;
+		direction = other.image_angle + random_range(-1,1);
+		image_angle = other.image_angle;
+	}
+}
 
 if(shoot && firing_delay<0){
 	firing_delay = 5;
@@ -107,3 +129,4 @@ if(shoot && firing_delay<0){
 		}
 	}
 }
+

@@ -61,7 +61,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "d78a5277-9ef5-4998-9b50-41e5ffe56c9a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "wavey",
+            "varType": 3
+        }
+    ],
     "solid": false,
     "spriteId": "0e547a8f-3e91-45d1-a6da-43e183658841",
     "visible": true

@@ -73,6 +73,34 @@
             "value": "0",
             "varName": "firing_delay",
             "varType": 0
+        },
+        {
+            "id": "4f53e34a-b530-40ab-a7a7-8cadf9cbcd59",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "missile_delay",
+            "varType": 0
+        },
+        {
+            "id": "01dd28b7-bc8f-4633-8763-936a025c1122",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "bomb_delay",
+            "varType": 0
         }
     ],
     "solid": false,
