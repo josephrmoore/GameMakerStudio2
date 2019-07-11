@@ -1,0 +1,385 @@
+Converting GML script: ${project_dir}/scripts/scrFireEngine/scrFireEngine.gml
+Converted string - line 92: '0' -> "0"
+Converted string - line 97: '0' -> "0"
+Converted string - line 98: '1' -> "1"
+Converted string - line 99: '2' -> "2"
+Converted string - line 100: '3' -> "3"
+Converted string - line 101: '4' -> "4"
+Converted string - line 102: '5' -> "5"
+Converted string - line 103: '6' -> "6"
+Converted string - line 104: '7' -> "7"
+Converted string - line 105: '8' -> "8"
+Converted string - line 106: '9' -> "9"
+Converted string - line 107: '10' -> "10"
+Converted string - line 108: '11' -> "11"
+Converted string - line 109: '12' -> "12"
+Converted string - line 110: '13' -> "13"
+Converted string - line 111: '14' -> "14"
+Converted string - line 112: '15' -> "15"
+Converted string - line 113: '16' -> "16"
+Converted string - line 114: '17' -> "17"
+Converted string - line 115: '18' -> "18"
+
+Converting GML script: ${project_dir}/scripts/scrVariables/scrVariables.gml
+Converted string - line 212: 'Sharpstick' -> "Sharpstick"
+Converted string - line 213: 'Stickup' -> "Stickup"
+Converted string - line 214: 'Shadownazi' -> "Shadownazi"
+Converted string - line 215: 'Awayknife' -> "Awayknife"
+Converted string - line 216: 'Heartbandit' -> "Heartbandit"
+Converted string - line 243: 'Throwhorn' -> "Throwhorn"
+Converted string - line 244: 'Copycat' -> "Copycat"
+Converted string - line 245: 'Lost Dino' -> "Lost Dino"
+Converted string - line 246: 'Demonspawn' -> "Demonspawn"
+Converted string - line 247: 'Botspawn' -> "Botspawn"
+Converted string - line 274: 'Flithyhand' -> "Flithyhand"
+Converted string - line 275: 'Painme' -> "Painme"
+Converted string - line 276: 'Turtlefrend' -> "Turtlefrend"
+Converted string - line 277: 'Handlust' -> "Handlust"
+Converted string - line 278: 'Hornyhand' -> "Hornyhand"
+Converted string - line 305: 'Eyebow' -> "Eyebow"
+Converted string - line 306: 'Bowspeed' -> "Bowspeed"
+Converted string - line 307: 'Firearrow' -> "Firearrow"
+Converted string - line 308: 'Poisonedbow' -> "Poisonedbow"
+Converted string - line 309: 'Contained' -> "Contained"
+Converted string - line 336: 'Bluebeam' -> "Bluebeam"
+Converted string - line 337: 'Lightbeam' -> "Lightbeam"
+Converted string - line 338: 'DeathGuardian' -> "DeathGuardian"
+Converted string - line 339: 'Heartup' -> "Heartup"
+Converted string - line 340: 'DeathWing' -> "DeathWing"
+Converted string - line 367: 'Highpunch' -> "Highpunch"
+Converted string - line 368: 'Stabstab' -> "Stabstab"
+Converted string - line 369: 'Backdrag' -> "Backdrag"
+Converted string - line 370: 'Knifetrigger' -> "Knifetrigger"
+Converted string - line 371: 'Billies' -> "Billies"
+
+Converting GML script: ${project_dir}/scripts/scrHealthbar/scrHealthbar.gml
+Converted description /// @description scrHealthbar(center x, center y, radius, start angle, percent health, sprite)/// @param center x
+/// @param  center y
+/// @param  radius
+/// @param  start angle
+/// @param  percent health
+/// @param  sprite
+
+Converting GML script: ${project_dir}/scripts/scrDoEffect/scrDoEffect.gml
+Converted builtin - line 53: view_xview+=(other.cardHit[other.Hero, other.spellUse]*choose(-1, 1))/3.5 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + ((other.cardHit[other.Hero, other.spellUse]*choose(-1, 1))/3.5) )
+Converted builtin - line 54: view_yview+=(other.cardHit[other.Hero, other.spellUse]*choose(-1, 1))/3.5 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + ((other.cardHit[other.Hero, other.spellUse]*choose(-1, 1))/3.5) )
+
+Converting GML script: ${project_dir}/scripts/scrSave/scrSave.gml
+Converted description /// @description Save
+Converted string - line 4: '' -> ""
+Converted string - line 8: 'instance_create(' -> "instance_create("
+Converted string - line 10: ', ' -> ", "
+Converted string - line 12: ', ' -> ", "
+Converted string - line 14: ');' -> ");"
+Converted string - line 21: '.txt' -> ".txt"
+Converted string - line 22: '' -> ""
+
+Converting GML script: ${project_dir}/scripts/scrShield/scrShield.gml
+Converted description /// @description scrShield(sprite, type)/// @param sprite
+/// @param  type
+
+Converting GML script: ${project_dir}/scripts/scrShieldMulti/scrShieldMulti.gml
+Converted description /// @description scrShield(sprite, type)/// @param sprite
+/// @param  type
+
+Converting GML script: ${project_dir}/scripts/scrPlayerCreate/scrPlayerCreate.gml
+Converted description /// @description Start
+
+Converting GML script: ${project_dir}/scripts/scrPlayerStep/scrPlayerStep.gml
+Converted string - line 81: 'A' -> "A"
+Converted string - line 82: 'D' -> "D"
+Converted string - line 83: 'W' -> "W"
+Converted string - line 84: 'S' -> "S"
+Converted string - line 86: 'A' -> "A"
+Converted string - line 87: 'D' -> "D"
+Converted string - line 88: 'W' -> "W"
+Converted string - line 89: 'S' -> "S"
+Converted string - line 91: 'A' -> "A"
+Converted string - line 92: 'D' -> "D"
+Converted string - line 93: 'W' -> "W"
+Converted string - line 94: 'S' -> "S"
+
+Converting GML script: ${project_dir}/scripts/scrDamage/scrDamage.gml
+Converted description /// @description scrDamage(type, alpha, sprite, color, xscale, x, y, yscale)/// @param type
+/// @param  alpha
+/// @param  sprite
+/// @param  color
+/// @param  xscale
+/// @param  x
+/// @param  y
+/// @param  yscale
+
+Converting GML script: ${project_dir}/scripts/scrDamageMulti/scrDamageMulti.gml
+Converted description /// @description scrDamageMulti(type, alpha, sprite, color, xscale, x, y, yscale)/// @param type
+/// @param  alpha
+/// @param  sprite
+/// @param  color
+/// @param  xscale
+/// @param  x
+/// @param  y
+/// @param  yscale
+
+Converting GML script: ${project_dir}/scripts/scrSaveData/scrSaveData.gml
+Converted description /// @description scrSaveData(name, value)/// @param name
+/// @param  value
+
+Converting GML script: ${project_dir}/scripts/scrSaveDataString/scrSaveDataString.gml
+Converted description /// @description scrSaveData(name, string)/// @param name
+/// @param  string
+
+Converting GML script: ${project_dir}/scripts/scrLoadData/scrLoadData.gml
+Converted description /// @description scrLoadData(name, value)/// @param name
+/// @param  value
+
+Converting GML script: ${project_dir}/scripts/scrLoadDataString/scrLoadDataString.gml
+Converted description /// @description scrLoadDataString(name, value)/// @param name
+/// @param  value
+
+!!! Font foTimer uses a font (Bahnschrift) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foTimer/foTimer.gms1.png
+Font foLogo has been converted to font family Segoe Script (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foLogo/foLogo.gms1.png
+!!! Font foCustom uses a font (Bahnschrift) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foCustom/foCustom.gms1.png
+Font foMessage has been converted to font family Segoe Print (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foMessage/foMessage.gms1.png
+Font foShowText has been converted to font family Segoe Script (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foShowText/foShowText.gms1.png
+Font foHealth has been converted to font family Segoe Print (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foHealth/foHealth.gms1.png
+Font foVictory has been converted to font family Segoe Print (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foVictory/foVictory.gms1.png
+!!! Font foBattle font family Andalus is installed but couldn't match style - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foBattle/foBattle.gms1.png
+Font foWelcome has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foWelcome/foWelcome.gms1.png
+Font foQuest has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foQuest/foQuest.gms1.png
+Font foMenu has been converted to font family Segoe UI (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foMenu/foMenu.gms1.png
+Font foCardNumber has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/foCardNumber/foCardNumber.gms1.png
+Converting GML script: ${project_dir}/objects/obControl/Alarm_1.gml
+Converted description /// @description Cookie
+
+Converting GML script: ${project_dir}/objects/obPlayer/Step_2.gml
+Converted builtin - line 80: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 80: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 84: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 84: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 88: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 88: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 96: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 96: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 104: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 104: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 81: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 81: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 85: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 85: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 89: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 89: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 97: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 97: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 105: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 105: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 80: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 80: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 84: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 84: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 88: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 88: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 96: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 96: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 104: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 104: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 112: view_wview[0] += 22 -> __view_set( e__VW.WView, 0, __view_get( e__VW.WView, 0 ) + (22) )
+Converted builtin - line 81: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 81: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 85: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 85: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 89: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 89: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 97: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 97: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 105: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 105: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 113: view_hview[0] += 22 * ratio -> __view_set( e__VW.HView, 0, __view_get( e__VW.HView, 0 ) + (22 * ratio) )
+Converted builtin - line 111: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 111: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 80: view_xview[0] = clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) )
+Converted builtin - line 84: view_xview[0] = clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) )
+Converted builtin - line 88: view_xview[0] = clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) )
+Converted builtin - line 96: view_xview[0] = clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) )
+Converted builtin - line 104: view_xview[0] = clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ) + ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.1, 0, room_width - __view_get( e__VW.WView, 0 )) )
+Converted builtin - line 81: view_yview[0] = clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) )
+Converted builtin - line 85: view_yview[0] = clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) )
+Converted builtin - line 89: view_yview[0] = clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) )
+Converted builtin - line 97: view_yview[0] = clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) )
+Converted builtin - line 105: view_yview[0] = clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ) + ((y-(__view_get( e__VW.HView, 0 )/1.5)) - __view_get( e__VW.YView, 0 )) * 0.1, 0, room_height - __view_get( e__VW.HView, 0 )) )
+
+Converting GML script: ${project_dir}/objects/obPlayer/Step_0.gml
+Converted description /// @description Step
+
+Converting GML script: ${project_dir}/objects/obPlayer/Collision_50363aa3-d863-41ce-aa9b-ff6792e201e3.gml
+Converted description /// @description Collision
+
+Converting GML script: ${project_dir}/objects/obPlayer/Draw_0.gml
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 26: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 29: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 30: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 22: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 26: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 29: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 30: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 21: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 21: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}/objects/obAds/Create_0.gml
+Converted string - line 1: 'ca-app-pub-9332731232952754/3424940003' -> "ca-app-pub-9332731232952754/3424940003"
+Converted string - line 2: 'ca-app-pub-9332731232952754/3424940003' -> "ca-app-pub-9332731232952754/3424940003"
+
+Converting GML script: ${project_dir}/objects/obBattle/Step_2.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 2: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}/objects/obVictory/Step_2.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 2: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}/objects/obOverview/Draw_0.gml
+Converted string - line 11: '
+    soundimage.org
+    GUI, Art, FX and Music: Opengameart.org
+    FX and Voice: Freesound.org
+    Animation: PivotAnimator
+    Art: GlitchTheGame
+    
+    Music by Kevin MacLeod (incompetech.com)
+    Licensed under Creative Commons: By Attribution 3.0 License
+    http://creativecommons.org/licenses/by/3.0
+    
+    Developer: Bukmand' -> "
+    soundimage.org
+    GUI, Art, FX and Music: Opengameart.org
+    FX and Voice: Freesound.org
+    Animation: PivotAnimator
+    Art: GlitchTheGame
+    
+    Music by Kevin MacLeod (incompetech.com)
+    Licensed under Creative Commons: By Attribution 3.0 License
+    http://creativecommons.org/licenses/by/3.0
+    
+    Developer: Bukmand"
+Converted string - line 28: 'Total matches: ' -> "Total matches: "
+Converted string - line 29: 'Wins: ' -> "Wins: "
+Converted string - line 30: 'Loss: ' -> "Loss: "
+
+Converting GML script: ${project_dir}/objects/obQuest/Step_2.gml
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 11: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}/objects/obSun/Step_2.gml
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}/objects/obMessage/Step_2.gml
+Converted builtin - line 12: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 30: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 31: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 12: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}/objects/obBlack2/Draw_0.gml
+Converted builtin - line 9: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 9: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 9: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 9: view_hview[0] -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: ${project_dir}/objects/obExit/Step_2.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 1: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}/objects/obBack00/Step_2.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'fxAttack01' - setting to default audio group
+Missing audiogroup for sound: 'fxAttack02' - setting to default audio group
+Missing audiogroup for sound: 'fxBlink' - setting to default audio group
+Missing audiogroup for sound: 'fxClick' - setting to default audio group
+Missing audiogroup for sound: 'fxMatchFound' - setting to default audio group
+Missing audiogroup for sound: 'fxWalk' - setting to default audio group
+Missing audiogroup for sound: 'fxGlow00' - setting to default audio group
+Missing audiogroup for sound: 'fxLocked' - setting to default audio group
+Missing audiogroup for sound: 'fxUnlock' - setting to default audio group
+Missing audiogroup for sound: 'fxOldAge' - setting to default audio group
+Missing audiogroup for sound: 'fxSwing' - setting to default audio group
+Missing audiogroup for sound: 'fxBot00' - setting to default audio group
+Missing audiogroup for sound: 'fxCreate' - setting to default audio group
+Missing audiogroup for sound: 'fxDemon00' - setting to default audio group
+Missing audiogroup for sound: 'fxFantasy' - setting to default audio group
+Missing audiogroup for sound: 'fxTeeth' - setting to default audio group
+Missing audiogroup for sound: 'fxHeartbeat' - setting to default audio group
+Missing audiogroup for sound: 'fxQuest' - setting to default audio group
+Missing audiogroup for sound: 'fxRevamp' - setting to default audio group
+Missing audiogroup for sound: 'fxShield00' - setting to default audio group
+Missing audiogroup for sound: 'fxShield01' - setting to default audio group
+Missing audiogroup for sound: 'fxVictory' - setting to default audio group
+Missing audiogroup for sound: 'fxVictory2' - setting to default audio group
+Missing audiogroup for sound: 'fxVictory3' - setting to default audio group
+Missing audiogroup for sound: 'fxKnife' - setting to default audio group
+Missing audiogroup for sound: 'fxBell' - setting to default audio group
+Missing audiogroup for sound: 'fxDog00' - setting to default audio group
+Missing audiogroup for sound: 'fxDoorOpen' - setting to default audio group
+Missing audiogroup for sound: 'fxLevelup' - setting to default audio group
+Missing audiogroup for sound: 'fxStar' - setting to default audio group
+Missing audiogroup for sound: 'fxStar2' - setting to default audio group
+Missing audiogroup for sound: 'fxStar3' - setting to default audio group
+Missing audiogroup for sound: 'fxStart' - setting to default audio group
+Missing audiogroup for sound: 'fxSword00' - setting to default audio group
+Missing audiogroup for sound: 'fxBowRelease' - setting to default audio group
+Missing audiogroup for sound: 'fxFire' - setting to default audio group
+Missing audiogroup for sound: 'fxFireHit' - setting to default audio group
+Missing audiogroup for sound: 'fxBat' - setting to default audio group
+Missing audiogroup for sound: 'fxRound1' - setting to default audio group
+Missing audiogroup for sound: 'fxRound2' - setting to default audio group
+Missing audiogroup for sound: 'fxRound3' - setting to default audio group
+Missing audiogroup for sound: 'fxPrepare' - setting to default audio group
+Missing audiogroup for sound: 'fxBattle' - setting to default audio group
+Missing audiogroup for sound: 'fxHurt00' - setting to default audio group
+Missing audiogroup for sound: 'fxHurt01' - setting to default audio group
+Missing audiogroup for sound: 'fxHurt02' - setting to default audio group
+Missing audiogroup for sound: 'fxHurt03' - setting to default audio group
+Missing audiogroup for sound: 'fxHurt04' - setting to default audio group
+Missing audiogroup for sound: 'fxHurt05' - setting to default audio group
+Missing audiogroup for sound: 'fxHurt06' - setting to default audio group
+Missing audiogroup for sound: 'auMusic00' - setting to default audio group
+Missing audiogroup for sound: 'auMusic01' - setting to default audio group
+Missing audiogroup for sound: 'fxCrow' - setting to default audio group
+Missing audiogroup for sound: 'fxHeavyStep' - setting to default audio group
+Missing audiogroup for sound: 'fxLightbeam' - setting to default audio group
+Missing audiogroup for sound: 'fxBeam' - setting to default audio group
+Missing audiogroup for sound: 'fxKnife0' - setting to default audio group
+Missing audiogroup for sound: 'fxCharge0' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

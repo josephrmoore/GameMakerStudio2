@@ -1,0 +1,11 @@
+draw_sprite_ext(sprite_index, 0, x, y, 1, 0.5, 0, c_white, image_alpha)
+draw_set_font(foQuest)
+draw_set_color(c_black)
+draw_set_alpha(1)
+draw_set_alpha(image_alpha)
+draw_set_valign(fa_middle)
+draw_text(x, y-22, string_hash_to_newline(type))
+draw_set_color(c_purple)
+draw_text(x, y+25, string_hash_to_newline(string(ward)))
+draw_set_alpha(1)
+

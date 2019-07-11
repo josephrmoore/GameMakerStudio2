@@ -1,0 +1,32 @@
+{
+    "id": "812f4cda-a581-4e72-a5f8-3493debba5bb",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "812f4cda-a581-4e72-a5f8-3493debba5bb",
+    "children": [
+        "119fb91c-af79-4730-b9a8-30e983ece902",
+        "765a2016-a467-423f-8937-2f3368855ad1",
+        "9e3a3aee-a453-47c3-93d7-15f3e6755b2d",
+        "936238ed-5418-4f4c-83e8-e96378b85966",
+        "f8604c37-436c-4eec-a08d-46dde5127b37",
+        "a5e048a4-0adc-4599-bae8-37f8ddc2f5eb",
+        "85dfadac-82e0-42a2-ac1e-27feaafbba14",
+        "6b94e1a1-74b5-48e6-bc7b-a56c35c7c097",
+        "67d5c8bd-6a2e-43b7-aec7-f875b198de97",
+        "44e62820-8955-4e9e-84e6-d9b639331392",
+        "c31935ef-64fa-4a40-ab22-d1deeb7ebb94",
+        "c0084594-217f-4e0c-ae69-197a1eb0739b",
+        "74b60a59-6fe3-4587-b409-1402e622bd62",
+        "03626e7a-e089-463e-85f2-3e24d63596d4",
+        "30c47027-2c96-495b-a280-18c9dab591a8",
+        "5b31b2ef-14c0-43c3-8800-0634d2883065",
+        "29a5d5d0-828c-4997-b0e6-bf358bbcd6dc",
+        "53327aa5-dba6-44eb-806f-92e41750010f",
+        "cb5b078b-eea6-4df9-b8ef-639d6b147e0f",
+        "ba50a15a-837e-4657-84e3-397ff714fec7"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Stickman 03",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

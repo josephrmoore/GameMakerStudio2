@@ -1,0 +1,2 @@
+enemyMove=0
+
