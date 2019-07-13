@@ -491,6 +491,34 @@
             "value": "True",
             "varName": "has_missiles",
             "varType": 3
+        },
+        {
+            "id": "128166e1-f145-49bb-a496-3229ab4682d8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "has_long_slash",
+            "varType": 3
+        },
+        {
+            "id": "34800999-9a51-4f0a-8533-f1e24995a676",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "has_orb_slash",
+            "varType": 3
         }
     ],
     "solid": false,

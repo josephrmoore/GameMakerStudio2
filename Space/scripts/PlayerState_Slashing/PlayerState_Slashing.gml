@@ -3,6 +3,18 @@
 left_right();
 grav();
 
+var slash_sprite, slash_mask;
+if(oPlayer.has_long_slash && !oPlayer.has_orb_slash){
+	slash_sprite = sPlayerAttackLong;
+	slash_mask = sPlayerAttackLongHB;
+} else if (oPlayer.has_orb_slash){
+	slash_sprite = sPlayerAttackOrb;
+	slash_mask = sPlayerAttackOrbHB;
+} else {
+	slash_sprite = sPlayerAttack;
+	slash_mask = sPlayerAttackHB;
+}
+
 if(can_slash){
 	image_xscale = facing;
 	if(hanging_left || hanging_right){
@@ -20,13 +32,33 @@ if(key_up){
 	image_angle = 0;
 }
 
-if (sprite_index != sPlayerAttack) {
-	sprite_index = sPlayerAttack;
+//if (sprite_index != sPlayerAttack || sprite_index != sPlayerAttackLong || sprite_index != sPlayerAttackOrb) {
+//	if(oPlayer.has_long_slash){
+//		sprite_index = sPlayerAttackLong;
+//	} else if (oPlayer.has_orb_slash){
+//		sprite_index = sPlayerAttackOrb;
+//	} else {
+//		sprite_index = sPlayerAttack;
+//	}
+//	image_index = 0;
+//	ds_list_clear(hitByAttack);
+//}
+
+if (sprite_index != slash_sprite) {
+	sprite_index = slash_sprite;
 	image_index = 0;
 	ds_list_clear(hitByAttack);
 }
 
-mask_index = sPlayerAttackHB;
+//if(oPlayer.has_long_slash){
+//	mask_index = sPlayerAttackLongHB; 
+//} else if (oPlayer.has_orb_slash){
+//	mask_index = sPlayerAttackOrbHB;
+//} else {
+//	mask_index = sPlayerAttackHB;
+//}
+
+mask_index = slash_mask;
 var hitByAttackNow = ds_list_create();
 var hits = instance_place_list(x,y,oEnemy,hitByAttackNow,false);
 
