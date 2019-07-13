@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "2ae0bdbb-fb3e-4ad0-8c12-0c09858daeeb",
+            "Value": {
+                "id": "13fee8fc-e494-48bd-be99-12376d18fcbf",
+                "resourcePath": "sprites\/sPlayerAttackLongHB\/sPlayerAttackLongHB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2eaf9780-c5ea-4dbf-81ef-2ca73be3003b",
             "Value": {
                 "id": "d8ddab94-8539-49b9-a640-40703ffa3e44",
@@ -155,6 +163,14 @@
             "Value": {
                 "id": "64ae404c-46db-4392-a245-ec42e5027387",
                 "resourcePath": "sprites\/sTiles\/sTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3ae7e2ef-0d95-4256-9d05-1d677acad865",
+            "Value": {
+                "id": "d6386d93-818c-4971-99b4-afef71e7b484",
+                "resourcePath": "sprites\/sPlayerAttackOrb\/sPlayerAttackOrb.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -260,6 +276,14 @@
                 "id": "ed1f77f4-b3ce-44b6-8921-0966c2a71733",
                 "resourcePath": "scripts\/EnemyState_Free\/EnemyState_Free.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6b92dc0b-2e25-44c2-a56a-609db27c0ba0",
+            "Value": {
+                "id": "cdd82210-65db-48c0-892c-dc04f8cbad46",
+                "resourcePath": "sprites\/sPlayerAttackLong\/sPlayerAttackLong.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -380,6 +404,14 @@
                 "id": "3b56686b-5303-436c-841e-6002fc756c7f",
                 "resourcePath": "views\/b4e7dd30-8e05-49ad-8225-020a0273c96a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bb280411-20fa-4bc7-a652-44e2aa6cb650",
+            "Value": {
+                "id": "ecb31af7-5fcf-4c72-b272-8f442fcca0cb",
+                "resourcePath": "sprites\/sPlayerAttackOrbHB\/sPlayerAttackOrbHB.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
