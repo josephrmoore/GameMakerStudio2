@@ -1,13 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
 if(vsp < oPlayer.max_vsp){
-	vsp += oPlayer.grv;
+	vsp += (oPlayer.grv/2);
 } else {
-	vsp = oPlayer.max_vsp;
+	vsp = (oPlayer.max_vsp/2);
 }
 
-hsp = approach(hsp, 0, 1);
+hsp = approach(hsp, 0, 0.5);
 
 if(place_meeting(x,y,oDoor)){
 	vsp = 0;

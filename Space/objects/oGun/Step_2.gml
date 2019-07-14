@@ -58,8 +58,8 @@ if(key_up){
 --bomb_delay;
 
 if(bomb && bomb_delay<0){
-	bomb_delay = 60;
-	instance_create_layer(x,y,"Bullets",oBomb);
+	bomb_delay = 20;
+	instance_create_layer(x,y,"Bombs",oBomb);
 }
 
 
