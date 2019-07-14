@@ -11,3 +11,9 @@ if(oPlayer.has_wave && wavey){
 		y = wave(y-20, y+20, .1, 0, false);
 	}
 }
+
+if(place_meeting(x,y,oEnemy)){
+	with(oEnemy){
+		EnemyHit(other.bullet_strength);
+	}	
+}

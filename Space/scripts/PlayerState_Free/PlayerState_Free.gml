@@ -1,5 +1,14 @@
 input();
 
+if(has_slow_fall){
+	grv = 0.05;
+}
+
+if(has_small_avatar){
+	image_xscale = 0.5;
+	image_yscale = image_xscale;
+}
+
 // Determing hanging gravity
 
 if(sticky_hang){

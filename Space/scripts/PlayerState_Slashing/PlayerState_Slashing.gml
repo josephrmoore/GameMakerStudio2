@@ -15,12 +15,21 @@ if(oPlayer.has_long_slash && !oPlayer.has_orb_slash){
 	slash_mask = sPlayerAttackHB;
 }
 
+var scale_factor;
+if(has_small_avatar){
+	scale_factor = 0.5;
+} else {
+	scale_factor = 1;
+}
+
 if(can_slash){
-	image_xscale = facing;
+	image_xscale = scale_factor*facing;
 	if(hanging_left || hanging_right){
-		image_xscale = -facing;
+		image_xscale = -facing*scale_factor;
 	}
 }
+
+
 
 if(key_up){
 	image_angle = 90*facing;

@@ -519,6 +519,34 @@
             "value": "False",
             "varName": "has_orb_slash",
             "varType": 3
+        },
+        {
+            "id": "324550aa-21fe-4bf0-912b-51d2636b892e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "has_slow_fall",
+            "varType": 3
+        },
+        {
+            "id": "4af4b0c6-a4f4-4d7b-93bc-c18c18b9c9d1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "has_small_avatar",
+            "varType": 3
         }
     ],
     "solid": false,

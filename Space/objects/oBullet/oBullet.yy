@@ -75,6 +75,20 @@
             "value": "0",
             "varName": "wavey",
             "varType": 3
+        },
+        {
+            "id": "c9ba6e65-a5b8-4712-90fe-f34f6f0827f0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "bullet_strength",
+            "varType": 0
         }
     ],
     "solid": false,

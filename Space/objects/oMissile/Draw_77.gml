@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(place_meeting(x,y,oDoor)){
+if(place_meeting(x,y,oDoor) || place_meeting(x,y,oEnemy)){
 	instance_create_layer(x,y,"Bullets",oExplosion);
 	instance_destroy();
 }
