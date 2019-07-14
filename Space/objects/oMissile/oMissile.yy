@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oMissile",
     "eventList": [
-        
+        {
+            "id": "b77c2fb4-04a2-43f4-a883-d7fe64aedd2e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 77,
+            "eventtype": 8,
+            "m_owner": "aa4b7837-6a45-4e33-bae5-b2e750fe81d3"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
