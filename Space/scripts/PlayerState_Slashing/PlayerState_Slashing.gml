@@ -4,6 +4,12 @@ left_right();
 grav();
 
 var slash_sprite, slash_mask;
+var slash_damage = 3;
+
+if(oPlayer.has_strong_swipe){
+	slash_damage = 6;
+}
+
 if(oPlayer.has_long_slash && !oPlayer.has_orb_slash){
 	slash_sprite = sPlayerAttackLong;
 	slash_mask = sPlayerAttackLongHB;
@@ -85,7 +91,7 @@ if(hits > 0){
 				if(other.key_down && !other.grounded){
 					other.vsp = -10;
 				}
-				EnemyHit(2);
+				EnemyHit(slash_damage);
 			}
 		}
 	}

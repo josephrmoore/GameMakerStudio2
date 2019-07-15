@@ -14,3 +14,7 @@ switch (state) {
 		PlayerState_Dashing();
 		break;
 }
+
+if(hp<=0){
+	room_goto(dead);
+}

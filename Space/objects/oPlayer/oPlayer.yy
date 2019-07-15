@@ -530,7 +530,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_slow_fall",
             "varType": 3
         },
@@ -547,6 +547,48 @@
             "value": "False",
             "varName": "has_small_avatar",
             "varType": 3
+        },
+        {
+            "id": "ed7de96e-d82b-49c9-a924-45df19052053",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "has_strong_swipe",
+            "varType": 3
+        },
+        {
+            "id": "6f821c5c-c048-4651-a6d2-be841d053ace",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "has_sharp_dash",
+            "varType": 3
+        },
+        {
+            "id": "e05f071d-5d34-406d-8333-43e233e8e8ec",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "hp",
+            "varType": 0
         }
     ],
     "solid": false,

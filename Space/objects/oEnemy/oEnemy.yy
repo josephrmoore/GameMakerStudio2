@@ -69,6 +69,20 @@
             "value": "10",
             "varName": "hp",
             "varType": 0
+        },
+        {
+            "id": "0a47453d-9807-46c2-a349-ed8ba7205471",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "7",
+            "varName": "damaging",
+            "varType": 0
         }
     ],
     "solid": false,

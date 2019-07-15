@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "a03bb1ef-7cba-4744-b8de-fd6eea600849",
+            "Value": {
+                "id": "c68bf36c-66f2-4ca2-bf1b-408510259b88",
+                "resourcePath": "fonts\/fStats\/fStats.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "a3d102b3-151e-45db-b0a7-1aa80d920fd8",
             "Value": {
                 "id": "5972d6a2-e5ed-475d-913e-7bb338f4c0fa",
@@ -468,6 +476,14 @@
                 "id": "bf0deb6e-22e5-444d-9660-67e9fd8328ea",
                 "resourcePath": "options\/windows\/options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cdb72903-88cf-401a-b556-f362afafbf0d",
+            "Value": {
+                "id": "a8744b75-d343-4adc-8ac5-229e931d9890",
+                "resourcePath": "rooms\/dead\/dead.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
