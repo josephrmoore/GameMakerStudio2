@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "302c7512-e711-43c6-82ce-5adf1b1b3461",
+            "Value": {
+                "id": "bbdc3fba-625e-4caa-bd1d-91336ceb3cb6",
+                "resourcePath": "sprites\/sPickupMissiles\/sPickupMissiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "30e73321-78d2-49da-9fbf-ed937b5807a3",
             "Value": {
                 "id": "5c3f12cd-b38f-4d03-b7d8-a784d16d86f6",
@@ -188,6 +196,14 @@
                 "id": "92f4f5b9-a21c-4fbe-b3c2-1a1adedbe955",
                 "resourcePath": "sprites\/sBomb\/sBomb.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "44458086-2286-477a-a9f7-aaccaa47bd8f",
+            "Value": {
+                "id": "a5ed8906-4ba2-4033-850c-448a96c27bbb",
+                "resourcePath": "objects\/oPickup\/oPickup.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -327,10 +343,26 @@
             }
         },
         {
+            "Key": "8b397b80-5eb6-4609-80ec-3e9e5b3fbf37",
+            "Value": {
+                "id": "5db8420d-0e75-4ada-9dc8-3a85ad1783e2",
+                "resourcePath": "sprites\/sPickupUpgrade\/sPickupUpgrade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8fb0ec1e-203b-4db4-80c8-c52059a51b87",
             "Value": {
                 "id": "fa1d68c0-5fd4-4443-9c13-11403820568e",
                 "resourcePath": "objects\/oDoor\/oDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "99286c8b-32c0-4433-9a34-fd87b211e5b5",
+            "Value": {
+                "id": "ef3657c0-e343-4ee4-8a4e-bfb2deb78f75",
+                "resourcePath": "objects\/oPickupMissiles\/oPickupMissiles.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -383,6 +415,14 @@
             }
         },
         {
+            "Key": "a4eafeef-d828-49cb-9fca-54e10f94fe30",
+            "Value": {
+                "id": "b14b72d8-896a-4bc8-86d8-db80f4d904ad",
+                "resourcePath": "objects\/oPickupHealthSmall\/oPickupHealthSmall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a8a92d1f-84b0-43fd-8e14-eed37d3c6515",
             "Value": {
                 "id": "e55801bd-adef-497f-9c85-913de3044c3a",
@@ -427,6 +467,14 @@
             "Value": {
                 "id": "ecb31af7-5fcf-4c72-b272-8f442fcca0cb",
                 "resourcePath": "sprites\/sPlayerAttackOrbHB\/sPlayerAttackOrbHB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bdc5b994-4f20-4c2f-b7db-9a16e9839cfa",
+            "Value": {
+                "id": "d3ef2082-f236-4a5a-9cc5-f8e049362298",
+                "resourcePath": "sprites\/sPickupHealth\/sPickupHealth.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -487,6 +535,14 @@
             }
         },
         {
+            "Key": "d3483f1b-5f34-40a7-8763-7e879da11045",
+            "Value": {
+                "id": "6753e31f-ab6c-455c-a03e-1c3f43dd3a7f",
+                "resourcePath": "objects\/oPickupUpgradeBombs\/oPickupUpgradeBombs.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d3975ba7-1bfe-4684-bd3b-586c04c7073b",
             "Value": {
                 "id": "485fba73-eac5-4ddb-baa3-da96349aba87",
@@ -527,6 +583,14 @@
             }
         },
         {
+            "Key": "ea36364a-7e34-4980-a106-d2d2a2d2b871",
+            "Value": {
+                "id": "97f4f56b-b52b-48b7-956d-cf0ad7c4c417",
+                "resourcePath": "sprites\/sPickupHealthLarge\/sPickupHealthLarge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ef375073-06de-4ff0-b5b8-c672984569a8",
             "Value": {
                 "id": "af6f37c8-c1d2-407f-bd76-5611e623ac91",
@@ -563,6 +627,14 @@
             "Value": {
                 "id": "957e2a64-1c9a-4b62-8942-513772c1a7b4",
                 "resourcePath": "objects\/oExplosion\/oExplosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f6b4e31b-2112-4cc2-bb2b-ca29b8a8227b",
+            "Value": {
+                "id": "80d3e2e2-d82c-485f-9cbf-dd3b16186dbc",
+                "resourcePath": "objects\/oPickupHealthLarge\/oPickupHealthLarge.yy",
                 "resourceType": "GMObject"
             }
         },

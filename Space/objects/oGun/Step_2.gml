@@ -57,18 +57,19 @@ if(key_up){
 --missile_delay;
 --bomb_delay;
 
-if(bomb && bomb_delay<0){
+if(bomb && oPlayer.has_bombs && bomb_delay<0){
 	bomb_delay = 20;
 	instance_create_layer(x,y,"Bombs",oBomb);
 }
 
 
-if(missile && missile_delay<0){
+if(missile && oPlayer.has_missiles && oPlayer.missiles > 0 && missile_delay<0){
 	missile_delay = 40;
 	with(instance_create_layer(x,y,"Bullets",oMissile)){
 		speed = other.bullet_speed/1.5;
 		direction = other.image_angle + random_range(-1,1);
 		image_angle = other.image_angle;
+		oPlayer.missiles -= 1;
 	}
 }
 
