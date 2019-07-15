@@ -1,4 +1,5 @@
 var obj = argument0;
+var damage_percent = argument1;
 var dash_damage = 1;
 
 // Horizontal object collision - oEnemy
@@ -18,7 +19,7 @@ if (place_meeting(x+hsp,y,obj)) {
 			hsp = -facing*10;
 		}
 		player_collision();
-		oPlayer.hp -= obj.damaging;
+		oPlayer.hp -= (obj.damaging*damage_percent);
 	}
 
 }
@@ -41,6 +42,6 @@ if (place_meeting(x,y+vsp,obj)) {
 			hsp = -facing*10;
 		}
 		player_collision();
-		oPlayer.hp -= obj.damaging;
+		oPlayer.hp -= (obj.damaging*damage_percent);
 	}
 }

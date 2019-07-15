@@ -49,7 +49,7 @@ player_collision();
 if(vsp > 0){
 	grounded = false;
 }
-enemy_collision(oEnemy);
+enemy_collision(oEnemy, 1);
 object_collision(oDoor);
 
 // Apply speeds to position

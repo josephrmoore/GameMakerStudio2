@@ -6,4 +6,6 @@ switch (state) {
 		break;
 	case ENEMYSTATE.DEAD: EnemyState_Dead();
 		break;
+	case ENEMYSTATE.SHOOTING: EnemyState_Shooting();
+		break;
 }

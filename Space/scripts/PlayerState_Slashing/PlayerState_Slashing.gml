@@ -6,7 +6,7 @@ grav();
 var slash_sprite, slash_mask;
 var slash_damage = 3;
 
-if(oPlayer.has_strong_swipe){
+if(oPlayer.has_strong_slash){
 	slash_damage = 6;
 }
 
@@ -101,7 +101,7 @@ mask_index = sPlayer;
 
 player_collision();
 
-enemy_collision(oEnemy);
+enemy_collision(oEnemy, 1);
 object_collision(oDoor);
 
 // Apply speeds to position

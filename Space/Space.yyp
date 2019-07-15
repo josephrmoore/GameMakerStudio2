@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1472bf47-d970-42a1-8c58-073f4a7246a3",
+            "Value": {
+                "id": "48ec17fb-acab-42d3-9759-2600a58e95d0",
+                "resourcePath": "scripts\/EnemyState_Shooting\/EnemyState_Shooting.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1769f3d2-9a4c-48da-90e1-cf941afaa4e4",
             "Value": {
                 "id": "5b0b33bf-8a31-4288-a275-1a99c6ef8618",
@@ -212,6 +220,14 @@
                 "id": "8640ff0e-d5e3-4e34-8fd3-4cbc41ec6ca1",
                 "resourcePath": "scripts\/player_collision\/player_collision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "48d3c22f-25a0-4765-94c1-16271bac05b0",
+            "Value": {
+                "id": "7e78cc07-a3a8-4a93-bc46-769d7049ce12",
+                "resourcePath": "objects\/oBulletEnemy\/oBulletEnemy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -355,6 +371,14 @@
             "Value": {
                 "id": "fa1d68c0-5fd4-4443-9c13-11403820568e",
                 "resourcePath": "objects\/oDoor\/oDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "91ca1b88-b0ee-45b9-883e-07f94a3da36c",
+            "Value": {
+                "id": "ac8baf94-5209-47b7-b393-4ec2a748ada5",
+                "resourcePath": "objects\/oEnemyShooter\/oEnemyShooter.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -559,6 +583,14 @@
             }
         },
         {
+            "Key": "d5e9952b-6343-4d02-9fb9-eb78b723b2d3",
+            "Value": {
+                "id": "f76252c8-c3a5-4d1f-ba64-adf4c0115ec5",
+                "resourcePath": "sprites\/sEnemyShooter\/sEnemyShooter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d648aa0d-f19d-4052-aebf-07fc16824662",
             "Value": {
                 "id": "bc463b36-88a5-417e-966b-d9e756a806e2",
@@ -664,6 +696,7 @@
         "5ca4ac7b-d12f-40eb-96b5-51c5757c28bf",
         "32c507c8-3bae-4e7d-9539-348bac6502c1",
         "5e7c0261-8d18-4244-adc4-121f7854839b",
+        "1472bf47-d970-42a1-8c58-073f4a7246a3",
         "7250a41a-9936-4286-91a4-ae0c1066ac3e",
         "29f4a896-8b57-451d-b4ed-35cdd7c68638",
         "1769f3d2-9a4c-48da-90e1-cf941afaa4e4",
