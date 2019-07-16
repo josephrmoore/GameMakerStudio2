@@ -42,7 +42,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "has_bombs",
+            "value": "nothing",
             "varName": "upgrade",
             "varType": 2
         }
