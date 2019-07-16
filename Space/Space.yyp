@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "6901c786-6d56-4938-bfae-e4d89c4ad98e",
+            "Value": {
+                "id": "95285ec7-50e5-4b28-ac86-1e573c9b62fe",
+                "resourcePath": "objects\/oDeadScreen\/oDeadScreen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6b92dc0b-2e25-44c2-a56a-609db27c0ba0",
             "Value": {
                 "id": "cdd82210-65db-48c0-892c-dc04f8cbad46",
@@ -356,6 +364,14 @@
                 "id": "c04f2747-57c2-41e1-a44d-0418fdf057d9",
                 "resourcePath": "sprites\/sExplosion\/sExplosion.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "883996d0-6960-4e63-86fe-3fb9dc06fa67",
+            "Value": {
+                "id": "93188d5e-2534-43ff-b31a-39a404baff4b",
+                "resourcePath": "fonts\/fH1\/fH1.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -562,7 +578,7 @@
             "Key": "d3483f1b-5f34-40a7-8763-7e879da11045",
             "Value": {
                 "id": "6753e31f-ab6c-455c-a03e-1c3f43dd3a7f",
-                "resourcePath": "objects\/oPickupUpgradeBombs\/oPickupUpgradeBombs.yy",
+                "resourcePath": "objects\/oPickupUpgrade\/oPickupUpgrade.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -612,6 +628,14 @@
                 "id": "21dc0639-43f4-4a4c-8862-5c92ddfcb197",
                 "resourcePath": "sprites\/sExplosionHB\/sExplosionHB.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e6978930-fa3e-4414-bedc-1007cd52939e",
+            "Value": {
+                "id": "8966312c-1957-4734-b55a-18f0968086cf",
+                "resourcePath": "fonts\/fH2\/fH2.yy",
+                "resourceType": "GMFont"
             }
         },
         {

@@ -35,7 +35,7 @@ if(key_slash) state = PLAYERSTATE.SLASHING;
 
 // Dashing
 
-if(key_dash && alarm[1] == -1 && (dashes < max_dashes)){
+if(key_dash && can_dash && alarm[1] == -1 && (dashes < max_dashes)){
 	++dashes;
 	state = PLAYERSTATE.DASHING;
 	alarm[1] = 10;

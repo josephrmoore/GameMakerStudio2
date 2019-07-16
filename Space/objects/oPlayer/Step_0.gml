@@ -15,6 +15,10 @@ switch (state) {
 		break;
 }
 
+if(has_regen && alarm[2]<=0){
+	alarm[2] = 60;
+}
+
 if(hp<=0){
 	room_goto(dead);
 }
