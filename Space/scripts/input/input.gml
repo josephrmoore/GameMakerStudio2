@@ -31,3 +31,35 @@ key_seven = keyboard_check_pressed(ord("7"));
 key_eight = keyboard_check_pressed(ord("8"));
 key_nine = keyboard_check_pressed(ord("9"));
 key_zero = keyboard_check_pressed(ord("0"));  
+
+if(key_one){
+	has_wave = false;
+	has_spread = false;
+}
+
+if(key_two){
+	has_wave = false;
+	has_spread = true;
+}
+
+if(key_three){
+	has_wave = true;
+	has_spread = false;
+}
+
+if(key_four){
+	has_wave = true;
+	has_spread = true;
+}
+
+if(key_five){
+	if(has_turbo){
+		has_turbo = false;
+	} else {
+		has_turbo = true;
+	}
+}
+
+if(has_turbo){
+	key_shoot = key_shoot_auto;
+}

@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "c9d75bc8-4d2c-4b93-9d29-8653c34b16bf",
+            "Value": {
+                "id": "08ba6545-cc80-4e17-8101-822838889932",
+                "resourcePath": "scripts\/PlayerState_Ducking\/PlayerState_Ducking.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "bf0deb6e-22e5-444d-9660-67e9fd8328ea",
@@ -718,6 +726,7 @@
         "074d764c-199f-4a7f-b26d-332691e34a32",
         "52416e01-5ef3-4e60-8343-b930da7edd39",
         "5ca4ac7b-d12f-40eb-96b5-51c5757c28bf",
+        "c9d75bc8-4d2c-4b93-9d29-8653c34b16bf",
         "32c507c8-3bae-4e7d-9539-348bac6502c1",
         "5e7c0261-8d18-4244-adc4-121f7854839b",
         "1472bf47-d970-42a1-8c58-073f4a7246a3",

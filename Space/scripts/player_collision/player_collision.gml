@@ -54,6 +54,8 @@ if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+ceil(vsp)) != 0 || tilemap
 		grounded = true;
 		jumps = 0;
 		dashes = 0;
+		//image_speed = 0;
+		//image_index = 0;
 	} else {
 		y = y - (y mod 32) - (bbox_top - y);
 	}

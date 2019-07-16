@@ -47,31 +47,12 @@ if(key_up){
 	image_angle = 0;
 }
 
-//if (sprite_index != sPlayerAttack || sprite_index != sPlayerAttackLong || sprite_index != sPlayerAttackOrb) {
-//	if(oPlayer.has_long_slash){
-//		sprite_index = sPlayerAttackLong;
-//	} else if (oPlayer.has_orb_slash){
-//		sprite_index = sPlayerAttackOrb;
-//	} else {
-//		sprite_index = sPlayerAttack;
-//	}
-//	image_index = 0;
-//	ds_list_clear(hitByAttack);
-//}
-
 if (sprite_index != slash_sprite) {
 	sprite_index = slash_sprite;
 	image_index = 0;
+	image_speed = 1;
 	ds_list_clear(hitByAttack);
 }
-
-//if(oPlayer.has_long_slash){
-//	mask_index = sPlayerAttackLongHB; 
-//} else if (oPlayer.has_orb_slash){
-//	mask_index = sPlayerAttackOrbHB;
-//} else {
-//	mask_index = sPlayerAttackHB;
-//}
 
 mask_index = slash_mask;
 var hitByAttackNow = ds_list_create();
@@ -119,6 +100,8 @@ var ani_result = image_index+ani_spd >= sprite_get_number(sprite_index);
 
 if(ani_result){
 	sprite_index = sPlayer;
+	image_index = 0;
+	image_speed = 0;
 	state = PLAYERSTATE.FREE;
 	can_slash = true;
 }

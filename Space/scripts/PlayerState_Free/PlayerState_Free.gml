@@ -1,3 +1,6 @@
+image_speed = 0;
+image_index = 0;
+
 input();
 
 if(has_slow_fall){
@@ -29,9 +32,13 @@ if(key_right){
 
 if(key_block && grounded) state = PLAYERSTATE.BLOCKING;
 
+if(key_down && grounded) state = PLAYERSTATE.DUCKING;
+
 // Slashing
 
-if(key_slash) state = PLAYERSTATE.SLASHING;
+if(key_slash){ 
+	state = PLAYERSTATE.SLASHING;
+}
 
 // Dashing
 
@@ -52,54 +59,25 @@ if(vsp > 0){
 enemy_collision(oEnemy, 1);
 object_collision(oDoor);
 
+//var walk_index_start = 3;
+//var walk_index_end = 5;
+//if(hsp != 0){
+//	image_speed = 1;
+//	if(image_index < walk_index_start || image_index > walk_index_end){
+//		image_index = walk_index_start;
+//	} else if (image_index == walk_index_end){
+//		image_speed = 0;
+//	}
+//} else {
+//	image_index = 0;
+//	image_speed = 0;
+//}
+
+image_xscale = facing;
+
+show_debug_message(image_index);
+
 // Apply speeds to position
 
 x += hsp;
 y += vsp;
-
-
-// Shooting
-
-if(key_one){
-	has_wave = false;
-	has_spread = false;
-}
-
-if(key_two){
-	has_wave = false;
-	has_spread = true;
-}
-
-if(key_three){
-	has_wave = true;
-	has_spread = false;
-}
-
-if(key_four){
-	has_wave = true;
-	has_spread = true;
-}
-
-if(key_five){
-	if(has_turbo){
-		has_turbo = false;
-	} else {
-		has_turbo = true;
-	}
-}
-
-if(has_turbo){
-	key_shoot = key_shoot_auto;
-}
-
-
-// Missile
-
-
-
-// Bomb
-
-
-
-// Sprite Animation
-
