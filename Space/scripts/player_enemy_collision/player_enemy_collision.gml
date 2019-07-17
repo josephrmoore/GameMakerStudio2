@@ -18,7 +18,7 @@ if (place_meeting(x+hsp,y,obj)) {
 		if(pushback){
 			hsp = -facing*10;
 		}
-		player_collision();
+		player_tile_collision();
 		oPlayer.hp -= (obj.damaging*damage_percent);
 	}
 
@@ -41,7 +41,7 @@ if (place_meeting(x,y+vsp,obj)) {
 			vsp = -20;
 			hsp = -facing*10;
 		}
-		player_collision();
+		player_tile_collision();
 		oPlayer.hp -= (obj.damaging*damage_percent);
 	}
 }

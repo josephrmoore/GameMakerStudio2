@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 state = PLAYERSTATE.FREE;
+location = PLAYERLOCATION.AIRBORNE;
 
 hitByAttack = ds_list_create();
 
@@ -10,5 +11,13 @@ enum PLAYERSTATE {
 	SLASHING,
 	BLOCKING,
 	DASHING,
-	DUCKING
+	DUCKING,
+	DEAD
+}
+
+enum PLAYERLOCATION {
+	GROUNDED,
+	AIRBORNE,
+	SWIMMING,
+	HANGING
 }

@@ -80,10 +80,10 @@ if(hits > 0){
 ds_list_destroy(hitByAttackNow);
 mask_index = sPlayer;
 
-player_collision();
+player_tile_collision();
 
-enemy_collision(oEnemy, 1);
-object_collision(oDoor);
+player_enemy_collision(oEnemy, 1);
+player_object_collision(oDoor);
 
 // Apply speeds to position
 

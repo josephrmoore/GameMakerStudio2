@@ -3,22 +3,10 @@ image_index = 0;
 
 input();
 
-if(has_slow_fall){
-	grv = 0.05;
-}
-
 if(has_small_avatar){
 	image_xscale = 0.5;
 	image_yscale = image_xscale;
 }
-
-// Determing hanging gravity
-
-if(sticky_hang){
-	hang_grv = 0;
-}
-
-// Set "facing" var
 
 if(key_left){
 	facing = -1;
@@ -52,12 +40,9 @@ left_right();
 grav();
 jumping();
 
-player_collision();
-if(vsp > 0){
-	grounded = false;
-}
-enemy_collision(oEnemy, 1);
-object_collision(oDoor);
+player_tile_collision();
+player_enemy_collision(oEnemy, 1);
+player_object_collision(oDoor);
 
 //var walk_index_start = 3;
 //var walk_index_end = 5;
@@ -74,8 +59,6 @@ object_collision(oDoor);
 //}
 
 image_xscale = facing;
-
-show_debug_message(image_index);
 
 // Apply speeds to position
 
