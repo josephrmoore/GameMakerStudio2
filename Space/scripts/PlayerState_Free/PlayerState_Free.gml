@@ -1,6 +1,3 @@
-image_speed = 0;
-image_index = 0;
-
 input();
 
 if(has_small_avatar){

@@ -40,7 +40,7 @@ if(key_up){
 		image_angle = 90;
 	}
 } else {
-	if(!oPlayer.grounded && key_down){
+	if(oPlayer.location == PLAYERLOCATION.AIRBORNE && key_down){
 		if(key_left){
 			image_angle = 225;
 		} else if(key_right){

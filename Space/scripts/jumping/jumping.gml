@@ -12,7 +12,7 @@ if(key_jump){
 		grounded = false;
 		jumps++;
 	}
-	if(hanging_left || hanging_right){
+	if(location = PLAYERLOCATION.HANGING){
 		alarm[0] = 5;
 		pushback = true;
 	}
@@ -28,5 +28,5 @@ if(key_jump){
 	}
 }
 
-if (!grounded && !key_jump_held) vsp = max(vsp, -jSpeed/4);
+if (location == PLAYERLOCATION.AIRBORNE && !key_jump_held) vsp = max(vsp, -jSpeed/4);
 

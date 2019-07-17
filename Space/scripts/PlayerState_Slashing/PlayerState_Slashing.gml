@@ -30,7 +30,7 @@ if(has_small_avatar){
 
 if(can_slash){
 	image_xscale = scale_factor*facing;
-	if(hanging_left || hanging_right){
+	if(location == PLAYERLOCATION.HANGING){
 		image_xscale = -facing*scale_factor;
 	}
 }
@@ -50,7 +50,6 @@ if(key_up){
 if (sprite_index != slash_sprite) {
 	sprite_index = slash_sprite;
 	image_index = 0;
-	image_speed = 1;
 	ds_list_clear(hitByAttack);
 }
 
