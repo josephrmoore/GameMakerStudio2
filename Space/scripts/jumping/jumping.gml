@@ -3,9 +3,14 @@
 if(key_jump){
 	if(jumps < max_jumps){
 		vsp = -jSpeed;
-		grounded = false;
 		jumps++;
+		if(jumps <= 1){
+			audio_play_sound(sndJump, 7, false);
+		} else {
+			audio_play_sound(sndJumpLong, 7, false);
+		}
 	}
+
 	if(location = PLAYERLOCATION.HANGING){
 		alarm[0] = 5;
 		pushback = true;

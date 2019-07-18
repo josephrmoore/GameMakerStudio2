@@ -15,14 +15,18 @@ if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+ceil(vsp)) != 0 || tilemap
 	if(vsp > 0){
 		y = y - (y mod 32) + 31 - (bbox_bottom - y);
 		location = PLAYERLOCATION.GROUNDED;
+		if(!ground_sound){
+			audio_play_sound(sndLandGround, 6, false);
+			ground_sound = true;
+		}
 	} else {
 		y = y - (y mod 32) - (bbox_top - y);
 	}
 	vsp = 0;
-	show_debug_message("ground");
 } else {
 	if(vsp != 0){
 		location = PLAYERLOCATION.AIRBORNE;
+		ground_sound = false;
 	}
 }
 

@@ -63,6 +63,16 @@
             "enumb": 2,
             "eventtype": 2,
             "m_owner": "e0cd8db8-b100-4abd-990f-994de8a83e3c"
+        },
+        {
+            "id": "5772914a-4071-436c-9e53-91837e90ba0c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "e0cd8db8-b100-4abd-990f-994de8a83e3c"
         }
     ],
     "maskSpriteId": "efd5256b-884b-40b5-97d0-838e567356b9",
@@ -302,7 +312,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "31",
+            "value": "290",
             "varName": "hp",
             "varType": 0
         },
@@ -710,6 +720,34 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "can_triple_dash",
+            "varType": 3
+        },
+        {
+            "id": "b2667b7f-5e43-4368-ab8e-d894495b78e6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "(energy_tanks*100)+100",
+            "varName": "max_hp",
+            "varType": 4
+        },
+        {
+            "id": "96c32f70-6a38-4fe3-a920-5fa0ba5b6a1c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "ground_sound",
             "varType": 3
         }
     ],

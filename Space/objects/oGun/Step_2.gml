@@ -65,12 +65,14 @@ if(key_up){
 
 if(bomb && oPlayer.has_bombs && bomb_delay<0){
 	bomb_delay = 20;
+	audio_play_sound(sndBomb, 5, false);
 	instance_create_layer(x,y,"Bombs",oBomb);
 }
 
 
 if(missile && oPlayer.has_missiles && oPlayer.missiles > 0 && missile_delay<0){
 	missile_delay = 40;
+	audio_play_sound(sndMissile, 5, false);
 	with(instance_create_layer(x,y,"Bullets",oMissile)){
 		speed = other.bullet_speed/1.5;
 		direction = other.image_angle + random_range(-1,1);
@@ -81,6 +83,7 @@ if(missile && oPlayer.has_missiles && oPlayer.missiles > 0 && missile_delay<0){
 
 if(shoot && firing_delay<0 && oPlayer.state == PLAYERSTATE.FREE){
 	firing_delay = 5;
+	audio_play_sound(sndShootSoft, 5, false);
 	if(has_spread && has_wave){
 		with(instance_create_layer(x,y,"Bullets",oSpreadWave)){
 			speed = other.bullet_speed;

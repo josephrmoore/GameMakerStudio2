@@ -17,6 +17,7 @@ if(key_down && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.DUCKING;
 // Slashing
 
 if(key_slash){ 
+	audio_play_sound(sndSlash, 9, false);
 	state = PLAYERSTATE.SLASHING;
 }
 
@@ -24,6 +25,7 @@ if(key_slash){
 
 if(key_dash && can_dash && alarm[1] == -1 && (dashes < max_dashes)){
 	++dashes;
+	audio_play_sound(sndDash, 8, false);
 	state = PLAYERSTATE.DASHING;
 	alarm[1] = 10;
 }
