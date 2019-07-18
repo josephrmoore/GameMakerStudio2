@@ -8,3 +8,5 @@ if(key_block){
 } else {
 	state = PLAYERSTATE.FREE;
 }
+
+sprite_index = sPlayer_blocking;

@@ -204,7 +204,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "0.3",
             "varName": "hang_grv",
             "varType": 0
         },
@@ -471,7 +471,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "False",
-            "varName": "sticky_hang",
+            "varName": "has_sticky_hang",
             "varType": 3
         },
         {
@@ -714,6 +714,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "efd5256b-884b-40b5-97d0-838e567356b9",
+    "spriteId": "2bdec61a-91f1-4e88-8249-3676c18d8e43",
     "visible": true
 }

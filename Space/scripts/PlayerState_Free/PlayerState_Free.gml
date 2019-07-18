@@ -41,6 +41,8 @@ player_object_collision(oDoor);
 x += hsp;
 y += vsp;
 
+sprite_index = sPlayer_free;
+
 image_xscale = facing;
 
 if(has_small_avatar){

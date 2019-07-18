@@ -25,3 +25,9 @@ player_object_collision(oDoor);
 player_enemy_collision(oEnemy, 1);
 
 x += hsp;
+
+var dash_sprite = sPlayer_dashing;
+if(oPlayer.has_sharp_dash){
+	dash_sprite = sPlayer_dashing_sharp;
+}
+sprite_index = dash_sprite;

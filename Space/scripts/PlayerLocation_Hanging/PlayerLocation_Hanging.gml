@@ -1,6 +1,7 @@
-if(sticky_hang){
+if(has_sticky_hang){
 	hang_grv = 0;
 }
-vsp = hang_grv;
+grv = hang_grv;
+vsp = grv;
 jumps = 0;
 dashes = 0;

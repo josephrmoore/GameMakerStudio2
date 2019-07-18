@@ -40,7 +40,7 @@ if(can_slash){
 if(key_up){
 	image_angle = 90*facing;
 	can_slash = false;
-} else if(!grounded && key_down){
+} else if(location == PLAYERLOCATION.AIRBORNE && key_down){
 	image_angle = 270*facing;
 	can_slash = false;
 } else {
@@ -68,7 +68,7 @@ if(hits > 0){
 				if(other.pushback){
 					other.hsp -= (other.facing * 5);
 				}
-				if(other.key_down && !other.grounded){
+				if(other.key_down && other.location == PLAYERLOCATION.AIRBORNE){
 					other.vsp = -10;
 				}
 				EnemyHit(slash_damage);
@@ -99,8 +99,6 @@ var ani_result = image_index+ani_spd >= sprite_get_number(sprite_index);
 
 if(ani_result){
 	sprite_index = sPlayer;
-	image_index = 0;
-	image_speed = 0;
 	state = PLAYERSTATE.FREE;
 	can_slash = true;
 }

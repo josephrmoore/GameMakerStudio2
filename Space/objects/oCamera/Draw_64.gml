@@ -22,3 +22,7 @@ if(oPlayer.has_missiles){
 	draw_text(10, 45, "MISSILES");
 	draw_text_color(100, 45, string(oPlayer.missiles),c_black, c_black,c_black,c_black,1);
 }
+
+draw_text(800, 25, "Debug info");
+draw_text(800, 45, "State: "+string(oPlayer.state));
+draw_text(800, 65, "Location: "+string(oPlayer.location));

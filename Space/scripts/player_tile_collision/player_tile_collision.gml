@@ -1,9 +1,30 @@
-// Horizontal tile collision
-
 // Set bbox_side
 
 var bbox_side;
 var hsp_integer;
+
+// Vertical tile collision
+
+if(vsp > 0){
+	bbox_side = bbox_bottom;
+} else {
+	bbox_side = bbox_top;
+}
+
+if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+ceil(vsp)) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+ceil(vsp)) != 0){
+	if(vsp > 0){
+		y = y - (y mod 32) + 31 - (bbox_bottom - y);
+		location = PLAYERLOCATION.GROUNDED;
+	} else {
+		y = y - (y mod 32) - (bbox_top - y);
+	}
+	vsp = 0;
+} else {
+	location = PLAYERLOCATION.AIRBORNE;
+}
+
+// Horizontal tile collision
+
 if(oPlayer.facing > 0) {
 	bbox_side = oPlayer.bbox_right;
 	hsp_integer = ceil(hsp);
@@ -26,24 +47,3 @@ if(tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_top) != 0 || tilema
 	}
 	hsp = 0;
 }
-
-// Vertical tile collision
-
-if(vsp > 0){
-	bbox_side = bbox_bottom;
-} else {
-	bbox_side = bbox_top;
-}
-
-if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+ceil(vsp)) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+ceil(vsp)) != 0){
-	if(vsp > 0){
-		y = y - (y mod 32) + 31 - (bbox_bottom - y);
-		location = PLAYERLOCATION.GROUNDED;
-	} else {
-		y = y - (y mod 32) - (bbox_top - y);
-	}
-	vsp = 0;
-} else {
-	location = PLAYERLOCATION.AIRBORNE;
-}
-
