@@ -41,7 +41,19 @@ player_object_collision(oDoor);
 x += hsp;
 y += vsp;
 
-sprite_index = sPlayer_free;
+
+
+if(location == PLAYERLOCATION.AIRBORNE && jumps > 1){
+	if(has_screw_attack){
+		sprite_index = sPlayer_screw;
+	} else {
+		sprite_index = sPlayer_jumping;
+	}
+} else if(location == PLAYERLOCATION.GROUNDED && hsp!=0){
+	sprite_index = sPlayer_walking;
+} else {
+	sprite_index = sPlayer_free;
+}
 
 image_xscale = facing;
 

@@ -19,8 +19,11 @@ if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+ceil(vsp)) != 0 || tilemap
 		y = y - (y mod 32) - (bbox_top - y);
 	}
 	vsp = 0;
+	show_debug_message("ground");
 } else {
-	location = PLAYERLOCATION.AIRBORNE;
+	if(vsp != 0){
+		location = PLAYERLOCATION.AIRBORNE;
+	}
 }
 
 // Horizontal tile collision

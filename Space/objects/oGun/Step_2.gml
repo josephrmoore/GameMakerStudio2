@@ -25,10 +25,16 @@ var has_wave = oPlayer.has_wave;
 
 if(key_left){
 	gun_dir = 180;
+	if(oPlayer.location == PLAYERLOCATION.HANGING){
+		gun_dir = 0;
+	}
 }
 
 if(key_right){
 	gun_dir = 0;
+	if(oPlayer.location == PLAYERLOCATION.HANGING){
+		gun_dir = 180;
+	}
 }
 
 if(key_up){
@@ -73,7 +79,7 @@ if(missile && oPlayer.has_missiles && oPlayer.missiles > 0 && missile_delay<0){
 	}
 }
 
-if(shoot && firing_delay<0){
+if(shoot && firing_delay<0 && oPlayer.state == PLAYERSTATE.FREE){
 	firing_delay = 5;
 	if(has_spread && has_wave){
 		with(instance_create_layer(x,y,"Bullets",oSpreadWave)){
