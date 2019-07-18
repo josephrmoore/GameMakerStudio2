@@ -43,5 +43,7 @@ if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+ceil(vsp)) != 0 || tilemap
 		y = y - (y mod 32) - (bbox_top - y);
 	}
 	vsp = 0;
+} else {
+	location = PLAYERLOCATION.AIRBORNE;
 }
 

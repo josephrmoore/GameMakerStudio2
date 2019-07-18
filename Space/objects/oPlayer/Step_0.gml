@@ -4,6 +4,10 @@ if(hp<=0){
 	state = PLAYERSTATE.DEAD;
 }
 
+if(has_regen && alarm[2]<=0){
+	alarm[2] = 60;
+}
+
 switch (state) {
 	case PLAYERSTATE.FREE: 
 		PlayerState_Free();
@@ -37,9 +41,5 @@ switch (location){
 	case PLAYERLOCATION.HANGING:
 		PlayerLocation_Hanging();
 		break;
-}
-
-if(has_regen && alarm[2]<=0){
-	alarm[2] = 60;
 }
 

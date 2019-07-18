@@ -1,10 +1,5 @@
 input();
 
-if(has_small_avatar){
-	image_xscale = 0.5;
-	image_yscale = image_xscale;
-}
-
 if(key_left){
 	facing = -1;
 }
@@ -15,9 +10,9 @@ if(key_right){
 
 // Blocking
 
-if(key_block && grounded) state = PLAYERSTATE.BLOCKING;
+if(key_block && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.BLOCKING;
 
-if(key_down && grounded) state = PLAYERSTATE.DUCKING;
+if(key_down && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.DUCKING;
 
 // Slashing
 
@@ -41,23 +36,14 @@ player_tile_collision();
 player_enemy_collision(oEnemy, 1);
 player_object_collision(oDoor);
 
-//var walk_index_start = 3;
-//var walk_index_end = 5;
-//if(hsp != 0){
-//	image_speed = 1;
-//	if(image_index < walk_index_start || image_index > walk_index_end){
-//		image_index = walk_index_start;
-//	} else if (image_index == walk_index_end){
-//		image_speed = 0;
-//	}
-//} else {
-//	image_index = 0;
-//	image_speed = 0;
-//}
-
-image_xscale = facing;
-
 // Apply speeds to position
 
 x += hsp;
 y += vsp;
+
+image_xscale = facing;
+
+if(has_small_avatar){
+	image_xscale = 0.5;
+	image_yscale = image_xscale;
+}
