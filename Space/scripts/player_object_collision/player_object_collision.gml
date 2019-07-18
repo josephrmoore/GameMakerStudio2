@@ -14,16 +14,16 @@ if (place_meeting(x+hsp,y,obj)) {
 // Vertical object collision - oDoor
 
 if (place_meeting(x,y+vsp,obj)) {
+	location = PLAYERLOCATION.GROUNDED
+	jumps = 0;
+	dashes = 0;
 	while(!place_meeting(x,y+sign(vsp),obj)){
 		y = y + sign(vsp);
 	}
-	if(state == PLAYERSTATE.SLASHING && key_down && !grounded){
+	if(state == PLAYERSTATE.SLASHING && key_down && location == PLAYERLOCATION.GROUNDED){
 		vsp = -10;
 	} else {
 		vsp = 0;
 	}
-//	grounded = true;
-	jumps = 0;
-	dashes = 0;
 	player_tile_collision();
 }

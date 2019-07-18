@@ -55,9 +55,10 @@ if(location == PLAYERLOCATION.AIRBORNE && jumps > 1){
 	sprite_index = sPlayer_free;
 }
 
-image_xscale = facing;
-
 if(has_small_avatar){
-	image_xscale = 0.5;
-	image_yscale = image_xscale;
+	var diminish = 0.5;
+	image_xscale = diminish*facing;
+	image_yscale = diminish;
+} else {
+	image_xscale = facing;
 }
