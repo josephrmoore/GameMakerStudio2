@@ -26,8 +26,8 @@ if (place_meeting(x,y,oPlayer)) {
 			oPlayer.has_wave = true;
 		} else if (upgrade == "has_turbo"){
 			oPlayer.has_turbo = true;
-		} else if (upgrade == "sticky_hang"){
-			oPlayer.sticky_hang = true;
+		} else if (upgrade == "has_sticky_hang"){
+			oPlayer.has_sticky_hang = true;
 		} else if (upgrade == "has_missiles"){
 			oPlayer.has_missiles = true;
 		} else if (upgrade == "has_orb_slash"){

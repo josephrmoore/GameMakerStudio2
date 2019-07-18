@@ -7,7 +7,7 @@ if (place_meeting(x+hsp,y,obj)) {
 		x = x + sign(hsp);
 	}
 	hsp = 0;
-	player_collision();
+	player_tile_collision();
 }
 
 
@@ -25,5 +25,5 @@ if (place_meeting(x,y+vsp,obj)) {
 //	grounded = true;
 	jumps = 0;
 	dashes = 0;
-	player_collision();
+	player_tile_collision();
 }

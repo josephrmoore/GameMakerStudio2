@@ -1,8 +1,8 @@
 {
-    "id": "476c0b5d-ddbe-4b62-b1ad-141bc1890fe6",
+    "id": "a1446769-834a-4fcd-a5a0-8dd7769ef734",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "player_collision",
+    "name": "PlayerLocation_Grounded",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,24 +1,4 @@
-image_speed = 0;
-image_index = 0;
-
 input();
-
-if(has_slow_fall){
-	grv = 0.05;
-}
-
-if(has_small_avatar){
-	image_xscale = 0.5;
-	image_yscale = image_xscale;
-}
-
-// Determing hanging gravity
-
-if(sticky_hang){
-	hang_grv = 0;
-}
-
-// Set "facing" var
 
 if(key_left){
 	facing = -1;
@@ -30,9 +10,9 @@ if(key_right){
 
 // Blocking
 
-if(key_block && grounded) state = PLAYERSTATE.BLOCKING;
+if(key_block && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.BLOCKING;
 
-if(key_down && grounded) state = PLAYERSTATE.DUCKING;
+if(key_down && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.DUCKING;
 
 // Slashing
 
@@ -52,32 +32,32 @@ left_right();
 grav();
 jumping();
 
-player_collision();
-if(vsp > 0){
-	grounded = false;
-}
-enemy_collision(oEnemy, 1);
-object_collision(oDoor);
-
-//var walk_index_start = 3;
-//var walk_index_end = 5;
-//if(hsp != 0){
-//	image_speed = 1;
-//	if(image_index < walk_index_start || image_index > walk_index_end){
-//		image_index = walk_index_start;
-//	} else if (image_index == walk_index_end){
-//		image_speed = 0;
-//	}
-//} else {
-//	image_index = 0;
-//	image_speed = 0;
-//}
-
-image_xscale = facing;
-
-show_debug_message(image_index);
+player_tile_collision();
+player_enemy_collision(oEnemy, 1);
+player_object_collision(oDoor);
 
 // Apply speeds to position
 
 x += hsp;
 y += vsp;
+
+
+
+if(location == PLAYERLOCATION.AIRBORNE && jumps > 1){
+	if(has_screw_attack){
+		sprite_index = sPlayer_screw;
+	} else {
+		sprite_index = sPlayer_jumping;
+	}
+} else if(location == PLAYERLOCATION.GROUNDED && hsp!=0){
+	sprite_index = sPlayer_walking;
+} else {
+	sprite_index = sPlayer_free;
+}
+
+image_xscale = facing;
+
+if(has_small_avatar){
+	image_xscale = 0.5;
+	image_yscale = image_xscale;
+}

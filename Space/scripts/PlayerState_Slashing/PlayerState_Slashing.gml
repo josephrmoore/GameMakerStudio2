@@ -30,7 +30,7 @@ if(has_small_avatar){
 
 if(can_slash){
 	image_xscale = scale_factor*facing;
-	if(hanging_left || hanging_right){
+	if(location == PLAYERLOCATION.HANGING){
 		image_xscale = -facing*scale_factor;
 	}
 }
@@ -40,8 +40,8 @@ if(can_slash){
 if(key_up){
 	image_angle = 90*facing;
 	can_slash = false;
-} else if(!grounded && key_down){
-	image_angle = 270*facing;
+} else if(location == PLAYERLOCATION.AIRBORNE && key_down){
+	image_angle = -90*facing;
 	can_slash = false;
 } else {
 	image_angle = 0;
@@ -50,7 +50,6 @@ if(key_up){
 if (sprite_index != slash_sprite) {
 	sprite_index = slash_sprite;
 	image_index = 0;
-	image_speed = 1;
 	ds_list_clear(hitByAttack);
 }
 
@@ -69,7 +68,7 @@ if(hits > 0){
 				if(other.pushback){
 					other.hsp -= (other.facing * 5);
 				}
-				if(other.key_down && !other.grounded){
+				if(other.key_down && other.location == PLAYERLOCATION.AIRBORNE){
 					other.vsp = -10;
 				}
 				EnemyHit(slash_damage);
@@ -80,10 +79,10 @@ if(hits > 0){
 ds_list_destroy(hitByAttackNow);
 mask_index = sPlayer;
 
-player_collision();
+player_tile_collision();
 
-enemy_collision(oEnemy, 1);
-object_collision(oDoor);
+player_enemy_collision(oEnemy, 1);
+player_object_collision(oDoor);
 
 // Apply speeds to position
 
@@ -99,9 +98,8 @@ if(ani_type == spritespeed_framespersecond){
 var ani_result = image_index+ani_spd >= sprite_get_number(sprite_index);
 
 if(ani_result){
+	image_angle = 0;
 	sprite_index = sPlayer;
-	image_index = 0;
-	image_speed = 0;
 	state = PLAYERSTATE.FREE;
 	can_slash = true;
 }

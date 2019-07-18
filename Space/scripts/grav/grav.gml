@@ -1,5 +1,9 @@
 /// @description Gravity calculation
 
+if(has_slow_fall){
+	max_vsp = 3;
+}
+
 if(vsp < max_vsp){
 	vsp += grv;
 } else {

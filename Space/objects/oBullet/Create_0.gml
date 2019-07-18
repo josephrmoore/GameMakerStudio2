@@ -14,5 +14,5 @@ if(oPlayer.key_up || oPlayer.key_down){
 	vert_wave = false;
 }
 
-x = oPlayer.x + oPlayer.facing*(oPlayer.sprite_width/2);
-y = oPlayer.y - (oPlayer.sprite_height/4);
+x = oPlayer.x;
+y = oPlayer.y;

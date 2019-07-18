@@ -1,8 +1,8 @@
 {
-    "id": "1769f3d2-9a4c-48da-90e1-cf941afaa4e4",
+    "id": "72f67fb5-a6fd-463e-9852-830d6759e985",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "object_collision",
+    "name": "player_enemy_collision",
     "IsCompatibility": false,
     "IsDnD": false
 }

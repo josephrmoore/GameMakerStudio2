@@ -1,5 +1,13 @@
 /// @description Player step code, collision, movement
 
+if(hp<=0){
+	state = PLAYERSTATE.DEAD;
+}
+
+if(has_regen && alarm[2]<=0){
+	alarm[2] = 60;
+}
+
 switch (state) {
 	case PLAYERSTATE.FREE: 
 		PlayerState_Free();
@@ -16,12 +24,22 @@ switch (state) {
 	case PLAYERSTATE.DASHING: 
 		PlayerState_Dashing();
 		break;
+	case PLAYERSTATE.DEAD:
+		PlayerState_Dead();
 }
 
-if(has_regen && alarm[2]<=0){
-	alarm[2] = 60;
+switch (location){
+	case PLAYERLOCATION.AIRBORNE:
+		PlayerLocation_Airborne();
+		break;
+	case PLAYERLOCATION.GROUNDED:
+		PlayerLocation_Grounded();
+		break;
+	case PLAYERLOCATION.SWIMMING:
+		PlayerLocation_Swimming();
+		break;
+	case PLAYERLOCATION.HANGING:
+		PlayerLocation_Hanging();
+		break;
 }
 
-if(hp<=0){
-	room_goto(dead);
-}
