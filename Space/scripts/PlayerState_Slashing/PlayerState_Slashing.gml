@@ -41,7 +41,7 @@ if(key_up){
 	image_angle = 90*facing;
 	can_slash = false;
 } else if(location == PLAYERLOCATION.AIRBORNE && key_down){
-	image_angle = 270*facing;
+	image_angle = -90*facing;
 	can_slash = false;
 } else {
 	image_angle = 0;
@@ -98,6 +98,7 @@ if(ani_type == spritespeed_framespersecond){
 var ani_result = image_index+ani_spd >= sprite_get_number(sprite_index);
 
 if(ani_result){
+	image_angle = 0;
 	sprite_index = sPlayer;
 	state = PLAYERSTATE.FREE;
 	can_slash = true;
