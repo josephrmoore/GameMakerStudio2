@@ -63,3 +63,7 @@ if(key_five){
 if(has_turbo){
 	key_shoot = key_shoot_auto;
 }
+
+if(key_six){
+	room_goto(testroom);
+}
