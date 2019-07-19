@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "3d1ddbd0-7ffc-4d76-a146-5982060cbdb8",
+            "Value": {
+                "id": "ed1779e9-9d0b-490e-85b0-e386bd303c14",
+                "resourcePath": "sounds\/sndPickupUpgrade\/sndPickupUpgrade.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "44458086-2286-477a-a9f7-aaccaa47bd8f",
             "Value": {
                 "id": "a5ed8906-4ba2-4033-850c-448a96c27bbb",
@@ -383,6 +391,14 @@
             }
         },
         {
+            "Key": "5d5ede26-b1a6-475e-86f1-fdeb806a092d",
+            "Value": {
+                "id": "7438a713-d24d-4627-ae3c-096b5cd5e03f",
+                "resourcePath": "sounds\/sndPickupHealth\/sndPickupHealth.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5d78613e-569f-4c64-bb65-f3f66c803fa7",
             "Value": {
                 "id": "823b01ad-6eb2-4d11-abde-85684cc98a60",
@@ -451,6 +467,14 @@
             "Value": {
                 "id": "dc1f6002-fda1-4ec4-af11-5da7578305c3",
                 "resourcePath": "sounds\/sndDash\/sndDash.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "82a0b46f-fc1b-4cad-9fd0-c6d4a8c92a46",
+            "Value": {
+                "id": "05492838-3f1a-4162-820d-6dcc4707396e",
+                "resourcePath": "sounds\/sndPickupMissiles\/sndPickupMissiles.yy",
                 "resourceType": "GMSound"
             }
         },

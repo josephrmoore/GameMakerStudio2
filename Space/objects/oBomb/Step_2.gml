@@ -14,18 +14,27 @@ hsp = approach(hsp, 0, 0.5);
 if(place_meeting(x,y,oDoor)){
 	vsp = 0;
 	y = y + sign(vsp);
-	//vsp = approach(vsp, 0, 3);
-	//vsp *= -1;
-	//hsp *= -1;
 }
 
-if(tilemap_get_at_pixel(oPlayer.tilemap, bbox_left, bbox_top) != 0 || tilemap_get_at_pixel(oPlayer.tilemap, bbox_right, bbox_bottom) != 0){
+if(tilemap_get_at_pixel(oPlayer.tilemap, bbox_left, bbox_bottom+ceil(vsp)) != 0 || tilemap_get_at_pixel(oPlayer.tilemap, bbox_right, bbox_bottom+ceil(vsp)) != 0){
 	vsp = 0;
 	y = y - (y mod 32) + 31 - (bbox_bottom - y);
-	//vsp = approach(vsp, 0, 3);
-	//vsp *= -1;
-	//hsp *= -1;
 }
+
+var hsp_int, bbox_side;
+if(hsp>0){
+	hsp_int = ceil(hsp);
+	bbox_side = bbox_right;
+} else {
+	hsp_int = floor(hsp);
+	bbox_side = bbox_left;
+}
+
+if(tilemap_get_at_pixel(oPlayer.tilemap, bbox_side+hsp_int, bbox_top) != 0 || tilemap_get_at_pixel(oPlayer.tilemap, bbox_side+hsp_int, bbox_bottom) != 0){
+	vsp = 0;
+	x = x - (x mod 32) + 31 - (bbox_side - x);
+}
+
 
 x += hsp;
 y += vsp;

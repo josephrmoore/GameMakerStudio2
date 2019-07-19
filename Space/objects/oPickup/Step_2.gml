@@ -4,14 +4,16 @@
 if (place_meeting(x,y,oPlayer)) {
 	if(kind == "health"){
 		oPlayer.hp += amount;
+		audio_play_sound(sndPickupHealth,7,false);
 	} else if (kind == "missiles"){
 		if(oPlayer.missiles+amount<oPlayer.max_missiles){
 			oPlayer.missiles += amount;
 		} else {
 			oPlayer.missiles = oPlayer.max_missiles;
 		}
-		
+		audio_play_sound(sndPickupMissiles,7,false);
 	} else if (kind == "upgrade") {
+		audio_play_sound(sndPickupUpgrade,7,false);
 		if (upgrade == "has_long_slash"){
 			oPlayer.has_long_slash = true;
 		} else if (upgrade == "has_bombs"){
