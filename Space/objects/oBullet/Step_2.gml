@@ -13,7 +13,12 @@ if(oPlayer.has_wave && wavey){
 }
 
 if(place_meeting(x,y,oEnemy)){
-	with(oEnemy){
-		EnemyHit(other.bullet_strength);
-	}	
+	var hitByBulletAttackNow = ds_list_create();
+	var bulletHits = instance_place_list(x,y,oEnemy,hitByBulletAttackNow,false);
+	for(var i=0; i<bulletHits; i++){
+		var hitID = hitByBulletAttackNow[| i]; // ds_list_find_value(hitByAttackNow, i) ALT version for shorthand
+		with (hitID){
+			EnemyHit(other.bullet_strength);
+		}
+	}
 }

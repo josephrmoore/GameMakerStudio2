@@ -2,3 +2,4 @@
 // You can write your code in this editor
 
 ds_list_destroy(hitByAttack);
+ds_list_destroy(hitByAttackBullet);

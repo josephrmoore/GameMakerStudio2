@@ -7,6 +7,7 @@ state = PLAYERSTATE.FREE;
 location = PLAYERLOCATION.AIRBORNE;
 
 hitByAttack = ds_list_create();
+hitByAttackBullet = ds_list_create();
 
 enum PLAYERSTATE {
 	FREE,
