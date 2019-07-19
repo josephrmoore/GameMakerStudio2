@@ -21,4 +21,5 @@ if(place_meeting(x,y,oEnemy)){
 			EnemyHit(other.bullet_strength);
 		}
 	}
+	ds_list_destroy(hitByBulletAttackNow);
 }
