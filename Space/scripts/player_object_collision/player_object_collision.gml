@@ -23,11 +23,7 @@ if (place_meeting(x,y+vsp,obj)) {
 		while(!place_meeting(x,y+sign(vsp),obj)){
 			y = y + sign(vsp);
 		}
-		if(state == PLAYERSTATE.SLASHING && key_down && location == PLAYERLOCATION.GROUNDED){
-			vsp = -10;
-		} else {
-			vsp = 0;
-		}
+		vsp = 0;
 		player_tile_collision();
 	}
 }

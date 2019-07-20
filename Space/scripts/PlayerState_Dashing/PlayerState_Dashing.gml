@@ -22,6 +22,7 @@ vsp = 0;
 
 player_tile_collision();
 player_object_collision(oDoor);
+player_object_collision(oBreakable);
 player_enemy_collision(oEnemy, 1);
 
 x += hsp;

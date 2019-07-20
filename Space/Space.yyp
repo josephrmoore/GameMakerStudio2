@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0f62b99c-97fa-487c-a6dc-9f26a78ce01e",
+            "Value": {
+                "id": "c39a6692-c4dc-4228-9744-dc2183db786c",
+                "resourcePath": "sprites\/sBreakable\/sBreakable.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "12a69f1a-a663-466e-b7c6-fb34325094d1",
             "Value": {
                 "id": "28ffc4e3-b93f-4808-8fd9-07a185e482e1",
@@ -716,6 +724,14 @@
                 "id": "e55801bd-adef-497f-9c85-913de3044c3a",
                 "resourcePath": "views\/a8a92d1f-84b0-43fd-8e14-eed37d3c6515.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a8e6afc0-83a7-4e6c-9cbb-76ef44d6b69e",
+            "Value": {
+                "id": "8628ac15-336f-483a-a3d8-4898f1101506",
+                "resourcePath": "objects\/oBreakable\/oBreakable.yy",
+                "resourceType": "GMObject"
             }
         },
         {

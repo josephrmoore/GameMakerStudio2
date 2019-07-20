@@ -32,3 +32,11 @@ if(place_meeting(x,y,oDoor)){
 		}
 	}
 }
+
+if(place_meeting(x,y,oBreakable)){
+	if(oBreakable.weapon == "bullet"){
+		with(oBreakable){
+			instance_destroy();
+		}
+	}
+}

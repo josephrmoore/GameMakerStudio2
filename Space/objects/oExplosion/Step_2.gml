@@ -15,12 +15,20 @@ if(creating_weapon == "bomb"){
 		for(var i=0; i<explosion_hits; i++){
 			var hitID = hitByExplosionNow[| i]; // ds_list_find_value(hitByAttackNow, i) ALT version for shorthand
 			if(ds_list_find_index(hitByExplosion, hitID) == -1){
-			ds_list_add(hitByExplosion,hitID);
-			with (hitID){
-				EnemyHit(bomb_damage);
+				ds_list_add(hitByExplosion,hitID);
+				with (hitID){
+					EnemyHit(bomb_damage);
+				}
 			}
 		}
 	}
-}
-ds_list_destroy(hitByExplosionNow);
+	ds_list_destroy(hitByExplosionNow);
+	
+	if(place_meeting(x,y,oBreakable)){
+		if(oBreakable.weapon == "bomb"){
+			with(oBreakable){
+				instance_destroy();
+			}
+		}
+	}
 }
