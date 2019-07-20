@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "2da231c4-47fd-427a-b908-8d8af1ef6d3c",
+            "Value": {
+                "id": "7c5bc630-5e35-479b-a157-6577918b30b7",
+                "resourcePath": "scripts\/player_object_collision_backup\/player_object_collision_backup.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2eaf9780-c5ea-4dbf-81ef-2ca73be3003b",
             "Value": {
                 "id": "d8ddab94-8539-49b9-a640-40703ffa3e44",
@@ -303,6 +311,14 @@
             }
         },
         {
+            "Key": "3f5090df-2b8d-4919-aaef-a92d2baa6bf4",
+            "Value": {
+                "id": "afe3391f-06eb-4499-9ad6-f46d8ccc0011",
+                "resourcePath": "scripts\/DoorState_Closed\/DoorState_Closed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "44458086-2286-477a-a9f7-aaccaa47bd8f",
             "Value": {
                 "id": "a5ed8906-4ba2-4033-850c-448a96c27bbb",
@@ -367,6 +383,14 @@
             }
         },
         {
+            "Key": "4fc96aed-41be-4b4a-9f95-2e361c74c902",
+            "Value": {
+                "id": "50d61503-50dd-43ef-8e57-353417596b69",
+                "resourcePath": "scripts\/DoorState_Open\/DoorState_Open.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "52416e01-5ef3-4e60-8343-b930da7edd39",
             "Value": {
                 "id": "baf6521d-76e0-449d-beed-a5496cd66b10",
@@ -419,6 +443,14 @@
             "Value": {
                 "id": "ed1f77f4-b3ce-44b6-8921-0966c2a71733",
                 "resourcePath": "scripts\/EnemyState_Free\/EnemyState_Free.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "64ec6f75-6804-40c1-9a09-22bd5c8a436d",
+            "Value": {
+                "id": "fbb6776d-7f16-4cc3-b0c0-3a811eb33249",
+                "resourcePath": "scripts\/open_door_animation\/open_door_animation.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -935,6 +967,14 @@
             }
         },
         {
+            "Key": "e86671b8-9583-4861-b682-8ee9da559f54",
+            "Value": {
+                "id": "7b7c64cc-2164-4b78-a694-24cc1478e963",
+                "resourcePath": "scripts\/close_door_animation\/close_door_animation.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ea36364a-7e34-4980-a106-d2d2a2d2b871",
             "Value": {
                 "id": "97f4f56b-b52b-48b7-956d-cf0ad7c4c417",
@@ -1055,6 +1095,7 @@
         "1472bf47-d970-42a1-8c58-073f4a7246a3",
         "7250a41a-9936-4286-91a4-ae0c1066ac3e",
         "1769f3d2-9a4c-48da-90e1-cf941afaa4e4",
+        "2da231c4-47fd-427a-b908-8d8af1ef6d3c",
         "72f67fb5-a6fd-463e-9852-830d6759e985",
         "476c0b5d-ddbe-4b62-b1ad-141bc1890fe6",
         "59aef928-e1e7-4472-b15f-fc23fad59a75",
@@ -1067,7 +1108,11 @@
         "b545f798-3391-409f-bf1a-819032e8aa95",
         "028a5c78-f2cd-4144-bfe2-19e227344076",
         "d3de394c-79c0-4c01-a27b-cbd4adbed761",
-        "fe53928b-b172-47df-9f24-ae3a037a8aa4"
+        "fe53928b-b172-47df-9f24-ae3a037a8aa4",
+        "4fc96aed-41be-4b4a-9f95-2e361c74c902",
+        "3f5090df-2b8d-4919-aaef-a92d2baa6bf4",
+        "64ec6f75-6804-40c1-9a09-22bd5c8a436d",
+        "e86671b8-9583-4861-b682-8ee9da559f54"
     ],
     "tutorial": ""
 }

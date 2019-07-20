@@ -23,3 +23,12 @@ if(place_meeting(x,y,oEnemy)){
 	}
 	ds_list_destroy(hitByBulletAttackNow);
 }
+
+if(place_meeting(x,y,oDoor)){
+	with(oDoor){
+		if(door_state = DOORSTATE.CLOSED){
+			open_door_animation();
+			door_state= DOORSTATE.OPEN;
+		}
+	}
+}
