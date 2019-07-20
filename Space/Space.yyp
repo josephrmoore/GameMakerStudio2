@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "2266e242-b42f-4307-84b0-d29331729641",
+            "Value": {
+                "id": "d11a05f8-cb12-468d-bd98-d108c37819ad",
+                "resourcePath": "sprites\/sBombSuper\/sBombSuper.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "29f4a896-8b57-451d-b4ed-35cdd7c68638",
             "Value": {
                 "id": "b91a179c-6d27-428b-9bcd-5c6d3bd3a076",
@@ -663,6 +671,14 @@
             }
         },
         {
+            "Key": "a9ef7a73-6a64-450a-8c62-98b788ac19ff",
+            "Value": {
+                "id": "617186db-f290-4cce-877e-b2bdc3113892",
+                "resourcePath": "sounds\/sndDead\/sndDead.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "aa4b7837-6a45-4e33-bae5-b2e750fe81d3",
             "Value": {
                 "id": "b28de555-aba1-458e-8ddc-5cd83333d840",
@@ -756,6 +772,14 @@
                 "id": "9b18eefd-1d19-4f38-a83d-973024a7d43d",
                 "resourcePath": "objects\/oCamera\/oCamera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c4344ff5-b319-4b83-a383-6cb17ea3a6e5",
+            "Value": {
+                "id": "185136de-e361-4a2a-bb08-d56d2d4067fa",
+                "resourcePath": "sounds\/sndMountains\/sndMountains.yy",
+                "resourceType": "GMSound"
             }
         },
         {
