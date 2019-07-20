@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "372a57fe-f464-400d-93f6-889ac15e4dfa",
+            "Value": {
+                "id": "4536e6c3-e688-49c3-8ac1-02c06c4edda1",
+                "resourcePath": "tilesets\/tHazards\/tHazards.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "379e2bd4-5e36-44d6-aa61-f623106e81f9",
             "Value": {
                 "id": "895942ca-3c4e-47bd-8ee3-d9d4177d3c3e",
@@ -348,6 +356,14 @@
                 "id": "8a26e692-d082-48bd-b26d-e8f1c6c30bb5",
                 "resourcePath": "objects\/oSpread\/oSpread.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4c88b5ae-955f-4103-9797-c2c1efa2d111",
+            "Value": {
+                "id": "87c9dbc6-78fb-425c-8f9e-e95e7fc4117f",
+                "resourcePath": "tilesets\/tWater\/tWater.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -452,6 +468,14 @@
                 "id": "fbb6776d-7f16-4cc3-b0c0-3a811eb33249",
                 "resourcePath": "scripts\/open_door_animation\/open_door_animation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "68cadb10-ed38-491d-8bea-09110f72aab4",
+            "Value": {
+                "id": "9090e601-c138-403a-8cd9-154cc2ce4809",
+                "resourcePath": "sprites\/sHazards\/sHazards.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
