@@ -22,16 +22,19 @@ if (place_meeting(x+hsp,y,obj)) {
 				with (screwHitIDH){
 					EnemyHit(5);
 				}
+				Pushback(-facing*10, -20);
 			}
 			ds_list_destroy(hitScrewH);
 		} else {
-			oPlayer.hp -= (obj.damaging*damage_percent);
+			PlayerHit(obj.damaging*damage_percent);
+			Pushback(-facing*10);
 		}
-		alarm[0] = 5;
-		pushback = true;
-		if(pushback){
-			hsp = -facing*10;
-		}
+		
+		//alarm[0] = 5;
+		//pushback = true;
+		//if(pushback){
+		//	hsp = -facing*10;
+		//}
 		player_tile_collision();
 	}
 
@@ -57,17 +60,20 @@ if (place_meeting(x,y+vsp,obj)) {
 				with (screwHitID){
 					EnemyHit(5);
 				}
+				Pushback(-facing*10, -20);
 			}
 			ds_list_destroy(hitScrew);
 		} else {
-			oPlayer.hp -= (obj.damaging*damage_percent);
+			PlayerHit(obj.damaging*damage_percent);
+			Pushback(-facing*10, -20);
 		}
-		alarm[0] = 5;
-		pushback = true;
-		if(pushback){
-			vsp = -20;
-			hsp = -facing*10;
-		}
+		
+		//alarm[0] = 5;
+		//pushback = true;
+		//if(pushback){
+		//	vsp = -20;
+		//	hsp = -facing*10;
+		//}
 		player_tile_collision();
 	}
 }
