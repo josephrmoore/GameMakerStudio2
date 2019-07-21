@@ -89,6 +89,20 @@
             "value": "1",
             "varName": "bullet_strength",
             "varType": 0
+        },
+        {
+            "id": "58b2fa8f-3910-4b27-9d65-efddf1cf6e52",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "bullet",
+            "varName": "fired_from",
+            "varType": 2
         }
     ],
     "solid": false,

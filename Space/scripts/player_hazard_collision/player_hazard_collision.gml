@@ -14,8 +14,18 @@ if(vsp > 0){
 	bbox_side = bbox_top;
 }
 
-if(tilemap_get_at_pixel(hazards, bbox_left, bbox_side+ceil(vsp)) != 0 || tilemap_get_at_pixel(hazards, bbox_right, bbox_side+ceil(vsp)) != 0){
-	Pushback(xoff, yoff);
+var hc1 = tilemap_get_at_pixel(hazards, bbox_left, bbox_side+ceil(vsp));
+var hc2 = tilemap_get_at_pixel(hazards, bbox_right, bbox_side+ceil(vsp));
+
+if(hc1 != 0 || hc2 != 0){
+	if(hc1 == 1 || hc2 == 1){
+		Pushback(xoff, yoff);
+		PlayerHit(20);
+	} else if (hc1 == 2 || hc2 == 2){
+		PlayerHit(0.05);
+	} else if (hc1 == 3 || hc2 == 3){
+		room_goto(dead);
+	}
 }
 
 if(oPlayer.facing > 0) {
@@ -26,6 +36,18 @@ if(oPlayer.facing > 0) {
 	hsp_integer = floor(hsp);
 }
 
-if(tilemap_get_at_pixel(hazards, bbox_side+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(hazards, bbox_side+hsp_integer, bbox_bottom) != 0){
-	Pushback(xoff, yoff);
+var vc1 = tilemap_get_at_pixel(hazards, bbox_side+hsp_integer, bbox_top);
+var vc2 = tilemap_get_at_pixel(hazards, bbox_side+hsp_integer, bbox_bottom);
+
+if(vc1 != 0 || vc2 != 0){
+	if(vc1 == 1 || vc2 == 1){
+		Pushback(xoff, yoff);
+		PlayerHit(20);
+	} else if (vc1 == 2 || vc2 == 2) {
+		PlayerHit(0.05);
+	} else if (vc1 == 3 || vc2 == 3){
+		room_goto(dead);
+	}
 }
+
+

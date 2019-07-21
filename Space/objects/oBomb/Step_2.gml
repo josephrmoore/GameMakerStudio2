@@ -11,7 +11,7 @@ if(vsp < oPlayer.max_vsp){
 
 hsp = approach(hsp, 0, 0.5);
 
-if(place_meeting(x,y,oDoor)){
+if(place_meeting(x,y,oDoor) || place_meeting(x,y,oBreakable)){
 	vsp = 0;
 	y = y + sign(vsp);
 }

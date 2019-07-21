@@ -24,11 +24,25 @@ if(creating_weapon == "bomb"){
 	}
 	ds_list_destroy(hitByExplosionNow);
 	
+	//if(place_meeting(x,y,oBreakable)){
+	//	if(oBreakable.weapon == "bomb"){
+	//		with(oBreakable){
+	//			instance_destroy();
+	//		}
+	//	}
+	//}
+	
 	if(place_meeting(x,y,oBreakable)){
-		if(oBreakable.weapon == "bomb"){
-			with(oBreakable){
-				instance_destroy();
+		var hitBreakable = ds_list_create();
+		var breakableHits = instance_place_list(x,y,oBreakable,hitBreakable,false);
+		for(var i=0; i<breakableHits; i++){
+			var breakableID = hitBreakable[| i]; // ds_list_find_value(hitByAttackNow, i) ALT version for shorthand
+			with (breakableID){
+				if(weapon == other.creating_weapon){
+					instance_destroy();
+				}
 			}
 		}
+		ds_list_destroy(hitBreakable);
 	}
 }

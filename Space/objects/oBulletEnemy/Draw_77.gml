@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(place_meeting(x,y,oDoor) || place_meeting(x,y,oPlayer)){
+if(place_meeting(x,y,oDoor) || place_meeting(x,y,oPlayer) || place_meeting(x,y,oBreakable)){
 	instance_destroy();
 }
 

@@ -16,7 +16,7 @@ if(oPlayer.energy_tanks > 0){
 		draw_rectangle(85+(i*15), 10, 95+(i*15), 20, emptiness);
 	}
 }
-draw_text_color(100, 25, string(hp),c_black,c_black,c_black,c_black,1);
+draw_text_color(100, 25, string(floor(hp)),c_black,c_black,c_black,c_black,1);
 
 if(oPlayer.has_missiles){
 	draw_text(10, 45, "MISSILES");

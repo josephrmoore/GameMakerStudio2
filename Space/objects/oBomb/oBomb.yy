@@ -89,6 +89,20 @@
             "value": "0",
             "varName": "hsp",
             "varType": 0
+        },
+        {
+            "id": "a76e49dc-fc57-49e3-be78-77ae6a48e773",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "bomb",
+            "varName": "fired_from",
+            "varType": 2
         }
     ],
     "solid": false,
