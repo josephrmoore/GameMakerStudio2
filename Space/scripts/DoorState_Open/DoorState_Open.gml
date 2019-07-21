@@ -6,6 +6,6 @@ if(image_speed == 1){
 	passable = true;
 }
 
-if(alarm[0] == -1 || place_meeting(x,y,oPlayer)){
+if(alarm[0] == -1 || distance_to_object(oPlayer) < 32 ){
 	alarm[0] = 60;
 }

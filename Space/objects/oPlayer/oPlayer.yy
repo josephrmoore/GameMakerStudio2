@@ -749,6 +749,20 @@
             "value": "0",
             "varName": "ground_sound",
             "varType": 3
+        },
+        {
+            "id": "a3381fb6-2ab4-46d8-872d-c842f75ef1e0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "layer_tilemap_get_id(\"Hazards\")",
+            "varName": "hazards",
+            "varType": 4
         }
     ],
     "solid": false,

@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0109f7b5-b522-4f73-88a7-b65b7c23dc17",
+            "Value": {
+                "id": "a1b29f9d-21be-4f12-89a1-ef429476d03b",
+                "resourcePath": "objects\/oPit\/oPit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "028a5c78-f2cd-4144-bfe2-19e227344076",
             "Value": {
                 "id": "82cce598-b513-4948-a5e9-1172dace55d8",
@@ -271,14 +279,6 @@
             }
         },
         {
-            "Key": "372a57fe-f464-400d-93f6-889ac15e4dfa",
-            "Value": {
-                "id": "4536e6c3-e688-49c3-8ac1-02c06c4edda1",
-                "resourcePath": "tilesets\/tHazards\/tHazards.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "379e2bd4-5e36-44d6-aa61-f623106e81f9",
             "Value": {
                 "id": "895942ca-3c4e-47bd-8ee3-d9d4177d3c3e",
@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "4df10029-0125-4062-8f25-6d45e5c0d5bd",
+            "Value": {
+                "id": "81c59c1e-840d-4a3a-aa31-b9d697f3e930",
+                "resourcePath": "objects\/oLava\/oLava.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4f5d541f-c819-4d16-ade5-8df0b6c82fc2",
             "Value": {
                 "id": "485bdd1b-7ea3-46c8-b261-7898005a7e58",
@@ -479,6 +487,14 @@
             }
         },
         {
+            "Key": "63565062-aad0-4ef7-a37e-d8b6d99fd008",
+            "Value": {
+                "id": "21572d3b-ada5-4969-bfa2-6691bc7e1b09",
+                "resourcePath": "sprites\/sHazardsSpikes\/sHazardsSpikes.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "64ec6f75-6804-40c1-9a09-22bd5c8a436d",
             "Value": {
                 "id": "fbb6776d-7f16-4cc3-b0c0-3a811eb33249",
@@ -490,7 +506,7 @@
             "Key": "68cadb10-ed38-491d-8bea-09110f72aab4",
             "Value": {
                 "id": "9090e601-c138-403a-8cd9-154cc2ce4809",
-                "resourcePath": "sprites\/sHazards\/sHazards.yy",
+                "resourcePath": "sprites\/sHazardsLava\/sHazardsLava.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -572,6 +588,14 @@
                 "id": "526b1355-7554-4619-beef-07c1f9faf755",
                 "resourcePath": "sprites\/sPlayer_jumping\/sPlayer_jumping.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "847a443c-cb1c-47c7-b9b0-00c59fce7f13",
+            "Value": {
+                "id": "de2a2273-7867-4c9a-9911-70c682920762",
+                "resourcePath": "objects\/oHazard\/oHazard.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -855,6 +879,14 @@
             }
         },
         {
+            "Key": "c1d6d450-b00e-463d-97de-6ffab2118e99",
+            "Value": {
+                "id": "897fea3c-dc3a-4083-a911-88c180c9c1d5",
+                "resourcePath": "sprites\/sHazardsPit\/sHazardsPit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c2db67f1-17f3-49ff-9f85-65d711312eeb",
             "Value": {
                 "id": "9b18eefd-1d19-4f38-a83d-973024a7d43d",
@@ -1004,6 +1036,14 @@
                 "id": "21dc0639-43f4-4a4c-8862-5c92ddfcb197",
                 "resourcePath": "sprites\/sExplosionHB\/sExplosionHB.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e42f7ac1-d65e-456d-872d-2e7dcb278de7",
+            "Value": {
+                "id": "2e22d17e-9470-4211-9d67-d9218cba5e3a",
+                "resourcePath": "objects\/oSpikes\/oSpikes.yy",
+                "resourceType": "GMObject"
             }
         },
         {

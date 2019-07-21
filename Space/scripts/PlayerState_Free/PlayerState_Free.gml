@@ -35,7 +35,6 @@ grav();
 jumping();
 
 player_tile_collision();
-player_hazard_collision();
 player_enemy_collision(oEnemy, 1);
 player_object_collision(oDoor);
 player_object_collision(oBreakable);

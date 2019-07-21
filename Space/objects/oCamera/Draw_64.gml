@@ -26,3 +26,5 @@ if(oPlayer.has_missiles){
 draw_text(800, 25, "Debug info");
 draw_text(800, 45, "State: "+string(oPlayer.state));
 draw_text(800, 65, "Location: "+string(oPlayer.location));
+draw_text(800, 85, "FPS: "+string(fps));
+draw_text(800, 105, "FPS Real: " +string(fps_real));
