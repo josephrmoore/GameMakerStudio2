@@ -34,6 +34,18 @@ left_right();
 grav();
 jumping();
 
+if(can_double_dash && mod_double_dash){
+	max_dashes = 2;
+}
+
+if(can_triple_dash && mod_triple_dash){
+	max_dashes = 3;
+}
+
+if(can_triple_jump && mod_triple_jump){
+	max_jumps = 3;
+}
+
 player_tile_collision();
 player_enemy_collision(oEnemy, 1);
 player_object_collision(oDoor);
@@ -58,7 +70,7 @@ if(location == PLAYERLOCATION.AIRBORNE && jumps > 1){
 	sprite_index = sPlayer_free;
 }
 
-if(has_small_avatar){
+if(has_small_avatar && mod_small_avatar){
 	var diminish = 0.5;
 	image_xscale = diminish*facing;
 	image_yscale = diminish;

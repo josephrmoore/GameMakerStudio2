@@ -19,6 +19,10 @@ key_missile = gamepad_button_check(0,gp_face2) || keyboard_check(ord("V"));
 
 key_bomb = gamepad_axis_value(0,gp_axisrh) > 0.2 || gamepad_axis_value(0,gp_axisrh) < -0.2 || gamepad_axis_value(0,gp_axisrv) < -0.2 || gamepad_axis_value(0,gp_axisrv) > 0.2 || keyboard_check_pressed(ord("P"));
 
+if(has_turbo && mod_turbo){
+	key_shoot = key_shoot_auto;
+}
+
 // ADMIN CONTROLS
 
 key_one = keyboard_check_pressed(ord("1"));
@@ -60,10 +64,7 @@ if(key_five){
 	}
 }
 
-if(has_turbo){
-	key_shoot = key_shoot_auto;
-}
-
 if(key_six){
 	room_goto(testroom);
 }
+

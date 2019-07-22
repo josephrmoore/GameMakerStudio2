@@ -4,8 +4,12 @@ if(hp<=0){
 	state = PLAYERSTATE.DEAD;
 }
 
-if(has_regen && alarm[2]<=0 && hp<max_hp){
+if(has_regen && mod_regen && alarm[2]<=0 && hp<max_hp){
 	alarm[2] = 60;
+}
+
+if(has_shield && mod_shield){
+	
 }
 
 switch (state) {

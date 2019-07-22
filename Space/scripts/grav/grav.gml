@@ -1,6 +1,6 @@
 /// @description Gravity calculation
 
-if(has_slow_fall){
+if(has_slow_fall && mod_slow_fall){
 	max_vsp = 3;
 }
 

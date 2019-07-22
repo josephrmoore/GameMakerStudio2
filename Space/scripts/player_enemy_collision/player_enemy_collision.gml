@@ -5,7 +5,7 @@ var dash_damage = 1;
 // Horizontal object collision - oEnemy
 
 if (place_meeting(x+hsp,y,obj)) {
-	if(oPlayer.has_sharp_dash && oPlayer.state == PLAYERSTATE.DASHING){
+	if(oPlayer.has_sharp_dash && oPlayer.state == PLAYERSTATE.DASHING && oPlayer.mod_sharp_dash){
 		with(obj){
 			EnemyHit(dash_damage);
 		}
@@ -43,7 +43,7 @@ if (place_meeting(x+hsp,y,obj)) {
 // Vertical object collision - oEnemy
 
 if (place_meeting(x,y+vsp,obj)) {
-	if(oPlayer.has_sharp_dash && oPlayer.state == PLAYERSTATE.DASHING){
+	if(oPlayer.has_sharp_dash && oPlayer.state == PLAYERSTATE.DASHING && oPlayer.mod_sharp_dash){
 		with(obj){
 			EnemyHit(dash_damage);
 		}

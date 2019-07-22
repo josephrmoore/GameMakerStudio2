@@ -6,11 +6,11 @@ grav();
 var slash_sprite, slash_mask;
 var slash_damage = 3;
 
-if(oPlayer.has_strong_slash){
+if(oPlayer.has_strong_slash && oPlayer.mod_strong_slash){
 	slash_damage = 6;
 }
 
-if(oPlayer.has_long_slash && !oPlayer.has_orb_slash){
+if(oPlayer.has_long_slash && oPlayer.mod_long_slash){
 	slash_sprite = sPlayerAttackLong;
 	slash_mask = sPlayerAttackLongHB;
 } else if (oPlayer.has_orb_slash){
@@ -22,7 +22,7 @@ if(oPlayer.has_long_slash && !oPlayer.has_orb_slash){
 }
 
 var scale_factor;
-if(has_small_avatar){
+if(oPlayer.has_small_avatar && oPlayer.mod_small_avatar){
 	scale_factor = 0.5;
 } else {
 	scale_factor = 1;
