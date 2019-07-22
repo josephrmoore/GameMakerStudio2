@@ -1,11 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-state = ENEMYSTATE.FREE;
+enemy_state = ENEMYSTATE.WALKING;
+if(facing_right){
+	hsp = 2;
+} else {
+	hsp = -2;
+}
 
 enum ENEMYSTATE {
 	FREE,
-	HIT,
 	DEAD,
-	SHOOTING
+	SHOOTING,
+	WALKING
 } 

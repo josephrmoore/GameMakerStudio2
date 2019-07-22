@@ -3,7 +3,11 @@
 
 if (place_meeting(x,y,oPlayer)) {
 	if(kind == "health"){
-		oPlayer.hp += amount;
+		if(oPlayer.hp + amount > oPlayer.max_hp){
+			oPlayer.hp = oPlayer.max_hp;
+		} else {
+			oPlayer.hp += amount;
+		}
 		audio_play_sound(sndPickupHealth,7,false);
 	} else if (kind == "missiles"){
 		if(oPlayer.missiles+amount<oPlayer.max_missiles){

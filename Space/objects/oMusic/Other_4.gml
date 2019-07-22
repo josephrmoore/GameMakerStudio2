@@ -14,4 +14,8 @@ switch(roomname){
 		audio_stop_all();
 		audio_play_sound(sndDead, 1000, true);
 		break;
+	case "title":
+		audio_stop_all();
+		audio_play_sound(sndTitle, 1000, true);
+		break;
 }

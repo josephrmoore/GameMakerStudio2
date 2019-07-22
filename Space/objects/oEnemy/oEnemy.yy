@@ -83,6 +83,48 @@
             "value": "7",
             "varName": "damaging",
             "varType": 0
+        },
+        {
+            "id": "d2cac8e7-38ba-4cdf-a77d-bd66e9686a9c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "facing_right",
+            "varType": 3
+        },
+        {
+            "id": "5618ceb4-fc95-43c0-a408-bee93ae23fe0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "hsp",
+            "varType": 0
+        },
+        {
+            "id": "84c1a245-80bc-4f7f-aa9b-0c13f9cfebef",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "vsp",
+            "varType": 0
         }
     ],
     "solid": false,
