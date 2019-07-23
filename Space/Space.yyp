@@ -839,6 +839,14 @@
             }
         },
         {
+            "Key": "b429a54e-b5de-4bb5-96f8-d852008b5189",
+            "Value": {
+                "id": "86e4376f-89d7-40e5-8ec9-83901d03a58d",
+                "resourcePath": "scripts\/WORKLIST\/WORKLIST.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b4e7dd30-8e05-49ad-8225-020a0273c96a",
             "Value": {
                 "id": "3b56686b-5303-436c-841e-6002fc756c7f",
@@ -1248,6 +1256,7 @@
         }
     ],
     "script_order": [
+        "b429a54e-b5de-4bb5-96f8-d852008b5189",
         "13d22e9c-2d83-4b0d-8bbc-3be4c7f24fed",
         "074d764c-199f-4a7f-b26d-332691e34a32",
         "52416e01-5ef3-4e60-8343-b930da7edd39",
