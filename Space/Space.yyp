@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "12c3d55c-e077-4065-b2e1-37e63dd4cb38",
+            "Value": {
+                "id": "6db7fc1f-4a5d-497a-959c-ea7f6f1c022c",
+                "resourcePath": "sprites\/sShipFrontTooDetailed\/sShipFrontTooDetailed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "13601e6d-7de7-4064-8223-a0f181261401",
             "Value": {
                 "id": "56a877d3-04ad-4a32-9f99-23beaf1d1dc6",
@@ -351,6 +359,14 @@
             }
         },
         {
+            "Key": "44ada7fb-a048-4f08-8dd8-cdeee63231be",
+            "Value": {
+                "id": "096c9d3b-5fa3-43ef-937c-8c9e3881a74f",
+                "resourcePath": "objects\/oShip\/oShip.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "476c0b5d-ddbe-4b62-b1ad-141bc1890fe6",
             "Value": {
                 "id": "8640ff0e-d5e3-4e34-8fd3-4cbc41ec6ca1",
@@ -548,6 +564,22 @@
                 "id": "810b39ca-6805-4845-a616-24ad3ac0072b",
                 "resourcePath": "scripts\/player_enemy_collision\/player_enemy_collision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "747b9f4b-db30-4f50-af31-9b8ae4d194d6",
+            "Value": {
+                "id": "8f92e449-6023-4fa7-9dae-d01d025d6b31",
+                "resourcePath": "rooms\/plains\/plains.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "7abaeb6a-71bf-48f2-baad-a5fe65d6fd15",
+            "Value": {
+                "id": "d4843bb2-47ba-455a-bf59-51e9c4d6a1db",
+                "resourcePath": "sprites\/sShipPixel\/sShipPixel.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
