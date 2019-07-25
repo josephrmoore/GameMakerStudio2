@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "1499dbdf-1e97-48dd-96e9-0a0754b0f012",
+            "Value": {
+                "id": "3247ce61-4a74-43a7-9919-d317c12dc4b0",
+                "resourcePath": "rooms\/mountainsE\/mountainsE.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1571e8cc-9088-4485-b8d1-3ff5f4814586",
             "Value": {
                 "id": "79226e6f-3435-4bdf-ab5d-ce40686dcdbf",
@@ -1103,11 +1111,27 @@
             }
         },
         {
+            "Key": "de8d3d34-32ca-49bc-b7fe-c69900090e64",
+            "Value": {
+                "id": "9458ac99-0428-43e6-ad25-59f2e810b8a7",
+                "resourcePath": "objects\/oWarp\/oWarp.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e0cd8db8-b100-4abd-990f-994de8a83e3c",
             "Value": {
                 "id": "28c88675-0182-4afb-8208-b998d7494779",
                 "resourcePath": "objects\/oPlayer\/oPlayer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e0d01a50-fbf5-4f61-9bc0-ab0217e6478a",
+            "Value": {
+                "id": "d611b855-b82f-4ac7-9323-f82ca4d61cf0",
+                "resourcePath": "rooms\/mountainsD\/mountainsD.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1172,6 +1196,14 @@
                 "id": "03420a5d-c975-4c1e-b58f-da42e5e255b9",
                 "resourcePath": "sounds\/sndTitle\/sndTitle.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e9b83bff-3ed4-4395-b053-86f8a5f8e141",
+            "Value": {
+                "id": "4651cea7-52ba-4e6e-a2c2-7eaf64b3ada3",
+                "resourcePath": "sprites\/sWarp\/sWarp.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

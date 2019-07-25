@@ -73,12 +73,22 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "e0cd8db8-b100-4abd-990f-994de8a83e3c"
+        },
+        {
+            "id": "f824efe7-b6cb-4241-bfef-3a365ab1e5e6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "e0cd8db8-b100-4abd-990f-994de8a83e3c"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -256,7 +266,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "5",
             "varName": "max_jumps",
             "varType": 0
         },
@@ -298,7 +308,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "5",
             "varName": "max_dashes",
             "varType": 0
         },
@@ -438,7 +448,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "can_hook",
             "varType": 3
         },
@@ -452,7 +462,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "can_dash",
             "varType": 3
         },
@@ -508,7 +518,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "has_sticky_hang",
             "varType": 3
         },
@@ -704,7 +714,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "False",
             "varName": "can_double_jump",
             "varType": 3
         },
@@ -718,7 +728,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "False",
             "varName": "can_triple_jump",
             "varType": 3
         },
@@ -732,7 +742,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "False",
             "varName": "can_double_dash",
             "varType": 3
         },
@@ -746,7 +756,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "False",
             "varName": "can_triple_dash",
             "varType": 3
         },
@@ -802,7 +812,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "False",
             "varName": "mod_sticky_hang",
             "varType": 3
         },
@@ -928,7 +938,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "False",
             "varName": "mod_triple_jump",
             "varType": 3
         },
@@ -942,7 +952,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "False",
             "varName": "mod_double_dash",
             "varType": 3
         },
@@ -956,7 +966,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "False",
             "varName": "mod_triple_dash",
             "varType": 3
         }
