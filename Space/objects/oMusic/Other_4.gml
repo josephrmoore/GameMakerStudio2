@@ -15,8 +15,8 @@ switch(roomname){
 		audio_play_sound(sndMountains, 1000, true);
 		break;
 	case "valleyA":
-		audio_stop_all();
-//		audio_play_sound(sndValley, 1000, true);
+			audio_stop_all();
+//			audio_play_sound(sndValley, 1000, true);
 		break;
 	case "scientistsA":
 		audio_stop_all();
