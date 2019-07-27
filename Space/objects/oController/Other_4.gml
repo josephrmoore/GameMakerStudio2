@@ -16,6 +16,10 @@ switch(roomname){
 		audio_stop_all();
 		audio_play_sound(sndTitle, 1000, true);
 		break;
+	case "found":
+		audio_stop_all();
+		audio_play_sound(sndFound, 1000, true);	
+		break;
 	default:
 		// play music
 		music_module();

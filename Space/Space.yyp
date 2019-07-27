@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "266aac9e-4af6-4fed-bda0-98ee0b826b4e",
+            "Value": {
+                "id": "262ea895-836a-4beb-aef5-fcf96dd8b887",
+                "resourcePath": "rooms\/valleyH\/valleyH.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "29f4a896-8b57-451d-b4ed-35cdd7c68638",
             "Value": {
                 "id": "b91a179c-6d27-428b-9bcd-5c6d3bd3a076",
@@ -495,6 +503,14 @@
             }
         },
         {
+            "Key": "5326087b-cdfa-43b0-9949-e3a05ff35eb8",
+            "Value": {
+                "id": "d19d7f92-0929-4d2d-981b-5208c8895157",
+                "resourcePath": "rooms\/valleyC\/valleyC.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "579bb567-2ced-443d-b9e5-93e873a1f1f2",
             "Value": {
                 "id": "dea723cd-2faf-4b54-8b07-9235d56024a5",
@@ -543,6 +559,14 @@
             }
         },
         {
+            "Key": "630c4e3e-92e9-452a-82a2-50ac6b53d20c",
+            "Value": {
+                "id": "94e30a43-56b7-4b72-8b84-ec8da5f76c2b",
+                "resourcePath": "rooms\/valleyD\/valleyD.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "63565062-aad0-4ef7-a37e-d8b6d99fd008",
             "Value": {
                 "id": "21572d3b-ada5-4969-bfa2-6691bc7e1b09",
@@ -588,6 +612,14 @@
                 "id": "cdd82210-65db-48c0-892c-dc04f8cbad46",
                 "resourcePath": "sprites\/sPlayerAttackLong\/sPlayerAttackLong.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6e76402b-25ee-4100-8655-6fa329fbbb00",
+            "Value": {
+                "id": "17cf5eeb-fd9c-492b-a362-338b34398914",
+                "resourcePath": "rooms\/runA\/runA.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -927,6 +959,14 @@
             }
         },
         {
+            "Key": "b2da8dd4-c5c7-4b49-8009-241be35554f2",
+            "Value": {
+                "id": "fcab5c1a-8136-4c35-8520-72de502da111",
+                "resourcePath": "rooms\/valleyB\/valleyB.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "b429a54e-b5de-4bb5-96f8-d852008b5189",
             "Value": {
                 "id": "86e4376f-89d7-40e5-8ec9-83901d03a58d",
@@ -964,6 +1004,14 @@
                 "id": "3122525f-f6c5-41f3-ad59-9b86ad1f570b",
                 "resourcePath": "scripts\/outline_init\/outline_init.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b8464640-9212-430a-93be-6a26a4ef6594",
+            "Value": {
+                "id": "cde6549a-5732-4043-83b5-35a1cc69da96",
+                "resourcePath": "rooms\/valleyG\/valleyG.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1012,6 +1060,14 @@
                 "id": "d39c24a0-d8d9-465e-a4ae-ba7454bf99ab",
                 "resourcePath": "sprites\/sEnemy\/sEnemy.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c194f78b-32fe-45b4-98c4-a883eb2e749c",
+            "Value": {
+                "id": "29c16284-be16-4da1-8f29-cc127bb18011",
+                "resourcePath": "rooms\/found\/found.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1119,6 +1175,14 @@
             }
         },
         {
+            "Key": "d41de166-bdc6-4f46-8554-76f296e05d91",
+            "Value": {
+                "id": "0e1c962a-6661-4304-9d69-686b1e2b39ba",
+                "resourcePath": "rooms\/valleyI\/valleyI.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d44b19a0-0cfe-4fc4-836f-2612aecafbd9",
             "Value": {
                 "id": "44c444ef-893c-4541-9db5-840ec9eea0e7",
@@ -1180,6 +1244,14 @@
                 "id": "9458ac99-0428-43e6-ad25-59f2e810b8a7",
                 "resourcePath": "objects\/oWarp\/oWarp.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "de8f097d-c7f8-4ee5-ad7c-7e5aea5f7c2e",
+            "Value": {
+                "id": "dec3e558-4e5d-4ca7-9f8e-bd987e00ddef",
+                "resourcePath": "rooms\/valleyF\/valleyF.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1404,6 +1476,14 @@
                 "id": "a8014122-7832-4e32-bba2-4c42d64c6bc4",
                 "resourcePath": "sounds\/sndSlash\/sndSlash.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "f93bfe17-3be4-4119-886a-045fd291ac72",
+            "Value": {
+                "id": "870a4f66-85d5-4dbf-923c-b6a9dd82f454",
+                "resourcePath": "rooms\/valleyE\/valleyE.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
