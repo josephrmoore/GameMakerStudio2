@@ -26,12 +26,7 @@ switch(roomname){
 		}
 		
 		if(!ds_map_empty(player_stats)){
-			oPlayer.hp = ds_map_find_value(player_stats, "hp");
-			oPlayer.missiles = ds_map_find_value(player_stats, "missiles");
-			oPlayer.max_jumps = ds_map_find_value(player_stats, "max_jumps");
-			oPlayer.max_dashes = ds_map_find_value(player_stats, "max_dashes");
-			oPlayer.has_missiles = ds_map_find_value(player_stats, "has_missiles");
-			oPlayer.has_spread = ds_map_find_value(player_stats, "has_spread");
+			access_player_stats("get");
 		}
 		
 		break;

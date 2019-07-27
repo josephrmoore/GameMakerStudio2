@@ -12,13 +12,11 @@ switch(roomname){
 	case "init":
 		break;
 	default:
-		ds_map_add(player_stats,"hp",oPlayer.hp);
-		ds_map_add(player_stats,"missiles",oPlayer.missiles);
-		ds_map_add(player_stats,"max_jumps",oPlayer.max_jumps);
-		ds_map_add(player_stats,"max_dashes",oPlayer.max_dashes);
-		ds_map_add(player_stats,"has_missiles",oPlayer.has_missiles);
-		ds_map_add(player_stats,"has_spread",oPlayer.has_spread);
-		// add the restof the upgrades
+		if(ds_map_empty(player_stats)){
+			access_player_stats("create");
+		} else {
+			access_player_stats("set");
+		}
 		show_debug_message(player_stats);
 		break;
 }

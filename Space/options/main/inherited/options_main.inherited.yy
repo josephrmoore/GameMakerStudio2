@@ -7,6 +7,38 @@
     "targets": 461609314234257646,
     "autocrop": false,
     "scaled": true
+}←7fa50043-cea6-4cd0-9521-a8ba8c6ea9f0|{
+    "audioGroups": {
+        "Additions": [
+            {
+                "Key": 1,
+                "Value": {
+                    "id": "6d800a2a-8e84-4424-bbf1-e5b12aa9422f",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "SFX",
+                    "targets": 461609314234257646
+                }
+            },
+            {
+                "Key": 2,
+                "Value": {
+                    "id": "3aca3290-c3d7-4da2-a27a-9c1f18ceb285",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "Music",
+                    "targets": 461609314234257646
+                }
+            }
+        ],
+        "Checksum": "濑Ⱥ朦씁ᬄ縈",
+        "Deletions": [
+            
+        ],
+        "Ordering": [
+            
+        ]
+    }
 }←7b2c4976-1e09-44e5-8256-c527145e03bb|{
     "targets": 461609314234257646
 }
