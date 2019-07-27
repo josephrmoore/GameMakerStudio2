@@ -1,8 +1,7 @@
 //image_speed = 0;
 //image_index = 1;
 
-if(key_down){
-	input();
+if(oController.key_down){
 	grav();
 } else {
 	state = PLAYERSTATE.FREE;

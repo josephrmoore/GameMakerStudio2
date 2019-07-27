@@ -13,6 +13,46 @@
             "enumb": 4,
             "eventtype": 7,
             "m_owner": "bd26c33a-46e9-4504-ad50-ea6fbecb43dd"
+        },
+        {
+            "id": "d525b1b6-3052-4bb4-a579-78f76175843c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 7,
+            "m_owner": "bd26c33a-46e9-4504-ad50-ea6fbecb43dd"
+        },
+        {
+            "id": "7e4809f5-a890-45e9-aded-320059d4a073",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 3,
+            "m_owner": "bd26c33a-46e9-4504-ad50-ea6fbecb43dd"
+        },
+        {
+            "id": "4de119e8-78c4-40ce-a01d-2358395ed7f1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "bd26c33a-46e9-4504-ad50-ea6fbecb43dd"
+        },
+        {
+            "id": "e090f391-41fe-4ea5-9819-90f95d43dd73",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "bd26c33a-46e9-4504-ad50-ea6fbecb43dd"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -42,9 +82,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "oPlayer.x",
+            "value": "-1",
             "varName": "player_x",
-            "varType": 4
+            "varType": 1
         },
         {
             "id": "8e6ac869-daaf-46b7-87f5-7bad5da8210b",
@@ -56,12 +96,40 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "oPlayer.y",
+            "value": "-1",
             "varName": "player_y",
-            "varType": 4
+            "varType": 1
+        },
+        {
+            "id": "3ab06b14-43e4-4d22-bad8-d9ecda6e688f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "none",
+            "varName": "current_music",
+            "varType": 2
+        },
+        {
+            "id": "7c766365-dd0e-42ff-aeeb-4a1aab42feef",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "none",
+            "varName": "last_music",
+            "varType": 2
         }
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }

@@ -2,13 +2,13 @@
 // You can write your code in this editor
 
 
-if(oPlayer.key_left || oPlayer.key_right){
+if(oController.key_left || oController.key_right){
 	horiz_wave = true;
 } else {
 	horiz_wave = false;
 }
 
-if(oPlayer.key_up || oPlayer.key_down){
+if(oController.key_up || oController.key_down){
 	vert_wave = true;
 } else {
 	vert_wave = false;

@@ -16,12 +16,12 @@ if(oPlayer.facing > 0) {
 if(tilemap_get_at_pixel(tilemap, bbox_right+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(tilemap, bbox_right+hsp_integer, bbox_bottom) != 0 || tilemap_get_at_pixel(tilemap, bbox_left+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(tilemap, bbox_left+hsp_integer, bbox_bottom) != 0){
 	if(hsp > 0){
 		x = x - (x mod 32) + 31 - (bbox_right - x);
-		if(location == PLAYERLOCATION.AIRBORNE && can_hook && key_right){
+		if(location == PLAYERLOCATION.AIRBORNE && can_hook && oController.key_right){
 			location = PLAYERLOCATION.HANGING;
 		}
 	} else {
 		x = x - (x mod 32) - (bbox_left - x);
-		if(location == PLAYERLOCATION.AIRBORNE && can_hook && key_left){
+		if(location == PLAYERLOCATION.AIRBORNE && can_hook && oController.key_left){
 			location = PLAYERLOCATION.HANGING;
 		}
 	}

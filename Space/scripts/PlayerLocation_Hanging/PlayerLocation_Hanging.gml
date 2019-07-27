@@ -1,4 +1,4 @@
-if(key_left || key_right){
+if(oController.key_left || oController.key_right){
 	if(has_sticky_hang && mod_sticky_hang){
 		hang_grv = 0;
 	}

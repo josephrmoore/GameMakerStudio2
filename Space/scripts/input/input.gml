@@ -19,11 +19,9 @@ key_missile = gamepad_button_check(0,gp_face2) || keyboard_check(ord("V"));
 
 key_bomb = gamepad_axis_value(0,gp_axisrh) > 0.2 || gamepad_axis_value(0,gp_axisrh) < -0.2 || gamepad_axis_value(0,gp_axisrv) < -0.2 || gamepad_axis_value(0,gp_axisrv) > 0.2 || keyboard_check_pressed(ord("P"));
 
-if(has_turbo && mod_turbo){
-	key_shoot = key_shoot_auto;
-}
-
 // ADMIN CONTROLS
+
+key_any = key_right || key_left || key_up || key_down || key_jump || key_dash || key_block || key_shoot || key_slash || key_missile || key_bomb || keyboard_check_pressed(vk_anykey);
 
 key_one = keyboard_check_pressed(ord("1"));
 key_two = keyboard_check_pressed(ord("2"));
@@ -36,33 +34,33 @@ key_eight = keyboard_check_pressed(ord("8"));
 key_nine = keyboard_check_pressed(ord("9"));
 key_zero = keyboard_check_pressed(ord("0"));  
 
-if(key_one){
-	has_wave = false;
-	has_spread = false;
-}
+//if(key_one){
+//	has_wave = false;
+//	has_spread = false;
+//}
 
-if(key_two){
-	has_wave = false;
-	has_spread = true;
-}
+//if(key_two){
+//	has_wave = false;
+//	has_spread = true;
+//}
 
-if(key_three){
-	has_wave = true;
-	has_spread = false;
-}
+//if(key_three){
+//	has_wave = true;
+//	has_spread = false;
+//}
 
-if(key_four){
-	has_wave = true;
-	has_spread = true;
-}
+//if(key_four){
+//	has_wave = true;
+//	has_spread = true;
+//}
 
-if(key_five){
-	if(has_turbo){
-		has_turbo = false;
-	} else {
-		has_turbo = true;
-	}
-}
+//if(key_five){
+//	if(has_turbo){
+//		has_turbo = false;
+//	} else {
+//		has_turbo = true;
+//	}
+//}
 
 if(key_six){
 	room_goto(testroom);

@@ -37,10 +37,10 @@ if(can_slash){
 
 
 
-if(key_up){
+if(oController.key_up){
 	image_angle = 90*facing;
 	can_slash = false;
-} else if(location == PLAYERLOCATION.AIRBORNE && key_down){
+} else if(location == PLAYERLOCATION.AIRBORNE && oController.key_down){
 	image_angle = -90*facing;
 	can_slash = false;
 } else {
@@ -68,7 +68,7 @@ if(hits > 0){
 				if(other.pushback){
 					other.hsp -= (other.facing * 5);
 				}
-				if(other.key_down && other.location == PLAYERLOCATION.AIRBORNE){
+				if(oController.key_down && other.location == PLAYERLOCATION.AIRBORNE){
 					other.vsp = -10;
 				}
 				EnemyHit(slash_damage);

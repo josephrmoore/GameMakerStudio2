@@ -10,11 +10,36 @@
         "0fa89069-999f-4290-825f-478f5e9b9239",
         "6e228f60-9fe9-41dc-a935-b733580955cb",
         "aaf40ed2-2d16-4696-ad32-b08ad64009d2",
-        "a5447b77-3294-4022-9942-ae189812ebda",
-        "de8b520b-1cca-4182-9af2-2d4e681bbf66"
+        "a5447b77-3294-4022-9942-ae189812ebda"
     ],
     "IsDnD": false,
     "layers": [
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Controller",
+            "id": "f606cb55-37bd-4a26-9a72-89bd8e6ac739",
+            "depth": -100,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Breakables",
@@ -212,7 +237,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_5B92B434","id": "de8b520b-1cca-4182-9af2-2d4e681bbf66","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_5B92B434","objId": "4f5d541f-c819-4d16-ade5-8df0b6c82fc2","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 832,"y": 480}
+
             ],
             "layers": [
 

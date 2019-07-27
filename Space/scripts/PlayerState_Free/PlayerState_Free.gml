@@ -1,29 +1,27 @@
-input();
-
-if(key_left){
+if(oController.key_left){
 	facing = -1;
 }
 
-if(key_right){
+if(oController.key_right){
 	facing = 1;
 }
 
 // Blocking
 
-if(key_block && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.BLOCKING;
+if(oController.key_block && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.BLOCKING;
 
-if(key_down && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.DUCKING;
+if(oController.key_down && location == PLAYERLOCATION.GROUNDED) state = PLAYERSTATE.DUCKING;
 
 // Slashing
 
-if(key_slash){ 
+if(oController.key_slash){ 
 	audio_play_sound(sndSlash, 9, false);
 	state = PLAYERSTATE.SLASHING;
 }
 
 // Dashing
 
-if(key_dash && can_dash && alarm[1] == -1 && (dashes < max_dashes)){
+if(oController.key_dash && can_dash && alarm[1] == -1 && (dashes < max_dashes)){
 	++dashes;
 	audio_play_sound(sndDash, 8, false);
 	state = PLAYERSTATE.DASHING;

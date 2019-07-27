@@ -322,7 +322,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "5",
             "varName": "energy_tanks",
             "varType": 0
         },
@@ -336,7 +336,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "290",
+            "value": "590",
             "varName": "hp",
             "varType": 0
         },
@@ -364,7 +364,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "20",
+            "value": "5",
             "varName": "missiles",
             "varType": 0
         },
@@ -378,7 +378,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
+            "value": "10",
             "varName": "max_missiles",
             "varType": 0
         },
@@ -518,7 +518,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_sticky_hang",
             "varType": 3
         },
@@ -546,7 +546,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "has_long_slash",
             "varType": 3
         },
@@ -630,7 +630,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "has_bombs",
             "varType": 3
         },
@@ -784,7 +784,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "mod_long_slash",
             "varType": 3
         },
