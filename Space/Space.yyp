@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "43051af3-c92b-41c8-8868-a91d3c23727d",
+            "Value": {
+                "id": "93d6b5d5-5534-44c7-aaae-f5bd39f4d8c7",
+                "resourcePath": "sprites\/sBreakableAmbush\/sBreakableAmbush.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44458086-2286-477a-a9f7-aaccaa47bd8f",
             "Value": {
                 "id": "a5ed8906-4ba2-4033-850c-448a96c27bbb",
