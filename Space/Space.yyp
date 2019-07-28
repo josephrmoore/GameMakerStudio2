@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "04161fb8-2f13-4aa6-b27b-e4a73814f921",
+            "Value": {
+                "id": "cf77af9d-6a66-40bd-bbc3-ca4511d345b2",
+                "resourcePath": "scripts\/NPCState_Panic\/NPCState_Panic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "070e69e0-328d-4a81-acae-53f31d63f946",
             "Value": {
                 "id": "4fc48422-3f87-48ef-8af1-042db8c40bd7",
@@ -84,6 +92,14 @@
                 "id": "33793bad-75a4-4c4c-bfd8-09f1e48405a1",
                 "resourcePath": "views\/0caae977-a373-404e-8e5e-3df24f793858.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0d0fe1de-f669-4417-aabe-99afeab53eab",
+            "Value": {
+                "id": "e7a14a6d-483c-45af-9afa-8aebe1577c9e",
+                "resourcePath": "scripts\/NPCState_Still\/NPCState_Still.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -343,6 +359,14 @@
             }
         },
         {
+            "Key": "3775634a-073a-45d9-a568-18a04b44c996",
+            "Value": {
+                "id": "89df4d1b-e6b5-49a8-bacd-c3591908e7c0",
+                "resourcePath": "scripts\/NPCState_Helping\/NPCState_Helping.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "379e2bd4-5e36-44d6-aa61-f623106e81f9",
             "Value": {
                 "id": "895942ca-3c4e-47bd-8ee3-d9d4177d3c3e",
@@ -423,6 +447,14 @@
             }
         },
         {
+            "Key": "446ab918-e4af-4cd8-9649-2ec17a6391a6",
+            "Value": {
+                "id": "48f870be-9a27-4d31-96a3-4ef0a7542e1f",
+                "resourcePath": "sprites\/sScientist1\/sScientist1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44ada7fb-a048-4f08-8dd8-cdeee63231be",
             "Value": {
                 "id": "096c9d3b-5fa3-43ef-937c-8c9e3881a74f",
@@ -492,6 +524,14 @@
                 "id": "81c59c1e-840d-4a3a-aa31-b9d697f3e930",
                 "resourcePath": "objects\/oLava\/oLava.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4e07c476-88d4-4642-88d8-7151db8deacf",
+            "Value": {
+                "id": "98dadf6a-1ab6-4b5b-9527-bba58fc8ac7d",
+                "resourcePath": "scripts\/fade\/fade.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -631,6 +671,14 @@
             }
         },
         {
+            "Key": "7241a6e0-1077-4540-939b-4d4719e47d9a",
+            "Value": {
+                "id": "12a645ca-7487-40dd-ba68-7dd396054d8b",
+                "resourcePath": "objects\/oNPC\/oNPC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7250a41a-9936-4286-91a4-ae0c1066ac3e",
             "Value": {
                 "id": "36edde09-fb7d-438d-a230-ab65440ee758",
@@ -735,6 +783,22 @@
             }
         },
         {
+            "Key": "86d0df91-dd74-4ef5-99c7-f7071ff60dc5",
+            "Value": {
+                "id": "88796ff3-44e8-4d64-a4ab-876d1febb5db",
+                "resourcePath": "sprites\/sScientist2\/sScientist2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "87079829-0f21-4986-a29f-2a44e58ecd61",
+            "Value": {
+                "id": "a06eda91-0b9e-4fd3-a57a-aaf712ae5e6d",
+                "resourcePath": "scripts\/NPCState_Dead\/NPCState_Dead.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "883996d0-6960-4e63-86fe-3fb9dc06fa67",
             "Value": {
                 "id": "93188d5e-2534-43ff-b31a-39a404baff4b",
@@ -756,6 +820,14 @@
                 "id": "00f289e4-e886-4f4d-9cc3-b6831ea8ed20",
                 "resourcePath": "sprites\/sPlayer_walking\/sPlayer_walking.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8e39f180-0407-4200-a6e0-0c04fcb2d8bf",
+            "Value": {
+                "id": "d81bc8d4-51e9-4398-9951-fb590630a3f2",
+                "resourcePath": "objects\/oFade\/oFade.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -804,6 +876,14 @@
                 "id": "ef3657c0-e343-4ee4-8a4e-bfb2deb78f75",
                 "resourcePath": "objects\/oPickupMissiles\/oPickupMissiles.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9af3f77f-0a0a-4ae6-91f1-9e99e53e2d7c",
+            "Value": {
+                "id": "ed971cf3-37ff-471e-bca6-3731f701a549",
+                "resourcePath": "scripts\/NPCState_Happy\/NPCState_Happy.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -868,6 +948,14 @@
                 "id": "35c2ed3c-e593-4ef7-996e-4b1a61e3e1d8",
                 "resourcePath": "rooms\/title\/title.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a49a45f0-a273-4b37-87ac-0da023056b63",
+            "Value": {
+                "id": "52641e38-b488-44aa-b818-e7ee3030d3e5",
+                "resourcePath": "sprites\/sScientist3\/sScientist3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1573,7 +1661,13 @@
         "f11c9c06-681d-4643-9676-4b992215910e",
         "e3ac6743-da20-4cf8-b1a1-8539b169895c",
         "f0b965a4-f86a-4a0d-860f-1551ce199e1b",
-        "b440e662-fc1b-4f6a-8754-5b80e67a5101"
+        "b440e662-fc1b-4f6a-8754-5b80e67a5101",
+        "4e07c476-88d4-4642-88d8-7151db8deacf",
+        "0d0fe1de-f669-4417-aabe-99afeab53eab",
+        "87079829-0f21-4986-a29f-2a44e58ecd61",
+        "9af3f77f-0a0a-4ae6-91f1-9e99e53e2d7c",
+        "04161fb8-2f13-4aa6-b27b-e4a73814f921",
+        "3775634a-073a-45d9-a568-18a04b44c996"
     ],
     "tutorial": ""
 }

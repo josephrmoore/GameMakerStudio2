@@ -20,6 +20,10 @@ if(oController.current_music != oController.last_music){
 			audio_stop_all();
 			audio_play_sound(sndRun, 1000, true);	
 			break;
+		case "found":
+			audio_stop_all();
+			audio_play_sound(sndFound, 1000, true);	
+			break;
 	}
 
 }
