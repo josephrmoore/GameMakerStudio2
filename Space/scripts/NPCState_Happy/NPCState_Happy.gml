@@ -10,3 +10,7 @@ if(y==startY){
 
 y += ceil(vsp);
 
+if(place_meeting(x,y,oBullet)){
+	y = startY;
+	npc_state = NPCSTATE.DEAD;
+}

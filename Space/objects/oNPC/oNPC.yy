@@ -111,6 +111,20 @@
             "value": "0",
             "varName": "vsp",
             "varType": 0
+        },
+        {
+            "id": "08ea35ae-5ab6-428b-ade7-bb29d49e2b69",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "sScientist1Dead",
+            "varName": "sprite_dead",
+            "varType": 4
         }
     ],
     "solid": false,

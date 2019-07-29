@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "05a32cc0-0700-4fd9-a7e6-7e8891129731",
+            "Value": {
+                "id": "76af7c26-3d0c-414a-b26c-deea25fdff8d",
+                "resourcePath": "objects\/oShipSide\/oShipSide.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "070e69e0-328d-4a81-acae-53f31d63f946",
             "Value": {
                 "id": "4fc48422-3f87-48ef-8af1-042db8c40bd7",
@@ -115,6 +123,14 @@
             "Value": {
                 "id": "c39a6692-c4dc-4228-9744-dc2183db786c",
                 "resourcePath": "sprites\/sBreakable\/sBreakable.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "10513bed-9830-40c0-b236-b116199c2e02",
+            "Value": {
+                "id": "a24973c4-8659-495d-b8a4-056a57c6c3c3",
+                "resourcePath": "sprites\/sShipPixelSide\/sShipPixelSide.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "22bdfe79-45e6-44d3-b991-4406b8ce175e",
+            "Value": {
+                "id": "123c410b-f289-49da-86e3-4fd84be25a3b",
+                "resourcePath": "sprites\/sShipPixelBack\/sShipPixelBack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "237736e5-e662-4141-9a58-f2a7fb8edc95",
             "Value": {
                 "id": "d4022755-5e40-458b-878e-7d48f8d32936",
@@ -323,6 +347,14 @@
             "Value": {
                 "id": "bbdc3fba-625e-4caa-bd1d-91336ceb3cb6",
                 "resourcePath": "sprites\/sPickupMissiles\/sPickupMissiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3040db23-ab0c-473c-8b4b-bbcc54b937d5",
+            "Value": {
+                "id": "ed5e97d6-8ce5-4bda-a7c2-2d3fea8f003f",
+                "resourcePath": "sprites\/sScientist2Dead\/sScientist2Dead.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -703,6 +735,14 @@
             }
         },
         {
+            "Key": "75ee9787-3fb7-4701-841e-97893b2224c4",
+            "Value": {
+                "id": "80e11ed2-9855-44e6-a966-514df07e72e7",
+                "resourcePath": "sprites\/sScientist3Dead\/sScientist3Dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7abaeb6a-71bf-48f2-baad-a5fe65d6fd15",
             "Value": {
                 "id": "d4843bb2-47ba-455a-bf59-51e9c4d6a1db",
@@ -724,6 +764,14 @@
                 "id": "560d0299-5ab1-4c3f-af55-81aa1136efa2",
                 "resourcePath": "rooms\/mountainsC\/mountainsC.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "7dcbcbed-2262-4064-9eb1-1feea99a4a1a",
+            "Value": {
+                "id": "0f88af16-695b-4ebf-ae12-0683f751cb10",
+                "resourcePath": "objects\/oStar\/oStar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -836,6 +884,14 @@
                 "id": "1926fe4a-0317-4e67-9aa7-44b54070fe4c",
                 "resourcePath": "sounds\/sndLandGround\/sndLandGround.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "8eccdb17-96a3-4378-bfb1-b2445e100fb9",
+            "Value": {
+                "id": "b0a57721-b739-471e-96c8-93545524294d",
+                "resourcePath": "objects\/oCameraTitle\/oCameraTitle.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1119,6 +1175,14 @@
             }
         },
         {
+            "Key": "bb761fb3-f4d2-48d4-a733-2a4170c63454",
+            "Value": {
+                "id": "cdc91e02-590d-42fc-9381-1654e9d2411c",
+                "resourcePath": "sprites\/sStar\/sStar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bd26c33a-46e9-4504-ad50-ea6fbecb43dd",
             "Value": {
                 "id": "106e7d43-9176-42e8-9a2c-d3e9ae3e57f5",
@@ -1327,6 +1391,14 @@
             }
         },
         {
+            "Key": "d8651185-69d1-45ac-8c1b-b737910031d3",
+            "Value": {
+                "id": "4c97c466-8d8f-4a70-8e2e-d63f7d2c263e",
+                "resourcePath": "objects\/oPlanet\/oPlanet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "db1432e1-2fcd-4ddc-8753-3afae20566e8",
             "Value": {
                 "id": "8f74318d-7c5a-4ca1-bc85-381999a058ae",
@@ -1423,6 +1495,14 @@
             }
         },
         {
+            "Key": "e6b08500-1a35-448d-8c78-813b962ed8e5",
+            "Value": {
+                "id": "97e1f8b3-a8e9-4e0b-a9f9-571cc6b8e6c3",
+                "resourcePath": "sprites\/sPlanet\/sPlanet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e86671b8-9583-4861-b682-8ee9da559f54",
             "Value": {
                 "id": "7b7c64cc-2164-4b78-a694-24cc1478e963",
@@ -1483,6 +1563,14 @@
             "Value": {
                 "id": "c5bc5fd5-7ee8-410e-92a7-9dc16ec66f1a",
                 "resourcePath": "sprites\/sPlayer\/sPlayer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f0a4bd3f-10f9-4777-a9bb-06dc29274761",
+            "Value": {
+                "id": "b7310a31-0092-4599-824d-6a0a7d1e30c3",
+                "resourcePath": "sprites\/sScientist1Dead\/sScientist1Dead.yy",
                 "resourceType": "GMSprite"
             }
         },
