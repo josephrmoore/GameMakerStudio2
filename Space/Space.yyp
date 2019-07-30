@@ -671,14 +671,6 @@
             }
         },
         {
-            "Key": "6901c786-6d56-4938-bfae-e4d89c4ad98e",
-            "Value": {
-                "id": "95285ec7-50e5-4b28-ac86-1e573c9b62fe",
-                "resourcePath": "objects\/oDeadScreen\/oDeadScreen.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "69bc4a9c-7ca5-45a6-9b29-5d5f2cab8557",
             "Value": {
                 "id": "e0dec60b-5896-4173-a9ed-87d97e915d98",
@@ -1635,14 +1627,6 @@
             "Value": {
                 "id": "80d3e2e2-d82c-485f-9cbf-dd3b16186dbc",
                 "resourcePath": "objects\/oPickupHealthLarge\/oPickupHealthLarge.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "f76f4f22-0866-4f78-9fbc-68782b427342",
-            "Value": {
-                "id": "aaba9907-246b-4afc-8ef8-63032e47e289",
-                "resourcePath": "objects\/oTitleScreen\/oTitleScreen.yy",
                 "resourceType": "GMObject"
             }
         },

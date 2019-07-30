@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-var roomname = room_get_name(room);
+current_room = room_get_name(room);
 
-roomname = multiple_rooms(roomname);
-current_music = roomname;
+current_room = multiple_rooms(current_room);
+current_music = current_room;
 
-switch(roomname){
+switch(current_room){
 	case "dead":
 		// play music
 		audio_stop_all();

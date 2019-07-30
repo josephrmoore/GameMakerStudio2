@@ -1,10 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-var roomname = room_get_name(room);
-
-roomname = multiple_rooms(roomname);
-last_music = roomname;
-switch(roomname){
+last_music = current_room;
+switch(current_room){
 	case "dead":
 		break;
 	case "title":
@@ -17,6 +14,6 @@ switch(roomname){
 		} else {
 			access_player_stats("set");
 		}
-		show_debug_message(player_stats);
+		//show_debug_message(player_stats);
 		break;
 }

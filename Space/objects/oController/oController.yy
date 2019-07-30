@@ -127,9 +127,23 @@
             "value": "none",
             "varName": "last_music",
             "varType": 2
+        },
+        {
+            "id": "589e61e2-27a2-4c1e-a802-bf4e2bf1acb5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "init",
+            "varName": "current_room",
+            "varType": 2
         }
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": false
+    "visible": true
 }
