@@ -85,7 +85,7 @@
             "m_owner": "e0cd8db8-b100-4abd-990f-994de8a83e3c"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "2bdec61a-91f1-4e88-8249-3676c18d8e43",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
@@ -224,7 +224,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.3",
+            "value": "0.8",
             "varName": "hang_grv",
             "varType": 0
         },
@@ -518,7 +518,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "has_sticky_hang",
             "varType": 3
         },
@@ -812,7 +812,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "mod_sticky_hang",
             "varType": 3
         },

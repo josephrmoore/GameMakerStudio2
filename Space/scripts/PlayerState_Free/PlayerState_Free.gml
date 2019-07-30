@@ -51,8 +51,8 @@ player_object_collision(oBreakable);
 
 // Apply speeds to position
 
-x += hsp;
-y += vsp;
+x += floor(hsp);
+y += floor(vsp);
 
 
 

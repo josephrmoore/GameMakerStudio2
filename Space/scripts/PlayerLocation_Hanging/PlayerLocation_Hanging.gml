@@ -4,6 +4,7 @@ if(oController.key_left || oController.key_right){
 	}
 	grv = hang_grv;
 	vsp = grv;
+	y += vsp;
 	jumps = 0;
 	dashes = 0;
 } else {

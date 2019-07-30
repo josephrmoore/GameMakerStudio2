@@ -141,6 +141,34 @@
             "value": "init",
             "varName": "current_room",
             "varType": 2
+        },
+        {
+            "id": "6957d9da-084b-4035-92de-725f18b81b1d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "fx_vol",
+            "varType": 0
+        },
+        {
+            "id": "93b4c6c8-e441-4dfb-914f-dbc5c1f46758",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "music_vol",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -3,8 +3,10 @@
 
 if(oController.key_down){
 	grav();
+	mask_index = sPlayer_ducking;
 } else {
 	state = PLAYERSTATE.FREE;
+	mask_index = sPlayer_free;
 }
 
 sprite_index = sPlayer_ducking;

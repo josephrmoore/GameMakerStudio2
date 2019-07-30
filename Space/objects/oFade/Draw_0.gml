@@ -7,6 +7,9 @@ if(a == 1){
 	oController.player_y = targetY;
 	room_goto(targetRoom);
 	roomfade = -1;
+	if(oController.current_music != oController.last_music){
+		audio_group_set_gain(Music, 1,300);
+	}
 }
 
 if (a == 0 && roomfade == -1){

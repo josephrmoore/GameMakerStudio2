@@ -66,3 +66,10 @@ if(key_six){
 	room_goto(testroom);
 }
 
+if(key_one){
+	audio_group_set_gain(Music,0,0);
+}
+if(key_two){
+	audio_group_set_gain(Music,1,0);
+}
+
