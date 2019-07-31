@@ -7,4 +7,10 @@ switch (door_state) {
 	case DOORSTATE.CLOSED: 
 		DoorState_Closed();
 		break;
+	case DOORSTATE.OPENING: 
+		DoorState_Opening();
+		break;
+	case DOORSTATE.CLOSING: 
+		DoorState_Closing();
+		break;
 }

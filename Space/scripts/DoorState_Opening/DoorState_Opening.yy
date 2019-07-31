@@ -1,8 +1,8 @@
 {
-    "id": "e86671b8-9583-4861-b682-8ee9da559f54",
+    "id": "659e527c-0cfc-4b42-abaa-7a9b9cea3fac",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "close_door_animation",
+    "name": "DoorState_Opening",
     "IsCompatibility": false,
     "IsDnD": false
 }

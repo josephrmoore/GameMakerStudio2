@@ -663,10 +663,10 @@
             }
         },
         {
-            "Key": "64ec6f75-6804-40c1-9a09-22bd5c8a436d",
+            "Key": "659e527c-0cfc-4b42-abaa-7a9b9cea3fac",
             "Value": {
-                "id": "fbb6776d-7f16-4cc3-b0c0-3a811eb33249",
-                "resourcePath": "scripts\/open_door_animation\/open_door_animation.yy",
+                "id": "1dc91323-8246-4f0f-8cec-b7129a244b0d",
+                "resourcePath": "scripts\/DoorState_Opening\/DoorState_Opening.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -924,6 +924,14 @@
                 "id": "4af3ef20-7cf6-45f8-b878-72af7f2aa0dc",
                 "resourcePath": "views\/9750f952-7889-4c13-8cd6-ea251c9d2574.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "979f294f-4945-413d-a2b2-68dfacafba6d",
+            "Value": {
+                "id": "a9317424-b435-4fbc-a6cf-358e918378dc",
+                "resourcePath": "scripts\/DoorState_Closing\/DoorState_Closing.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1503,14 +1511,6 @@
             }
         },
         {
-            "Key": "e86671b8-9583-4861-b682-8ee9da559f54",
-            "Value": {
-                "id": "7b7c64cc-2164-4b78-a694-24cc1478e963",
-                "resourcePath": "scripts\/close_door_animation\/close_door_animation.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e88b9648-e2cf-4fac-95e8-876e2692d1d0",
             "Value": {
                 "id": "03420a5d-c975-4c1e-b58f-da42e5e255b9",
@@ -1730,14 +1730,14 @@
         "fe53928b-b172-47df-9f24-ae3a037a8aa4",
         "4fc96aed-41be-4b4a-9f95-2e361c74c902",
         "3f5090df-2b8d-4919-aaef-a92d2baa6bf4",
-        "64ec6f75-6804-40c1-9a09-22bd5c8a436d",
-        "e86671b8-9583-4861-b682-8ee9da559f54",
+        "979f294f-4945-413d-a2b2-68dfacafba6d",
+        "659e527c-0cfc-4b42-abaa-7a9b9cea3fac",
+        "d6dbe02e-be2c-4733-a2bf-a581ed8653fa",
         "ecd4ece8-cfa7-4420-8240-14a6b5683cea",
         "eeba60d9-3dff-4a43-955c-f3201d1914b1",
         "1571e8cc-9088-4485-b8d1-3ff5f4814586",
         "a6770197-3ea1-4ab0-bf9a-1f1eed3922df",
         "d177c436-4b85-4432-af98-159fcec65fad",
-        "d6dbe02e-be2c-4733-a2bf-a581ed8653fa",
         "f11c9c06-681d-4643-9676-4b992215910e",
         "e3ac6743-da20-4cf8-b1a1-8539b169895c",
         "f0b965a4-f86a-4a0d-860f-1551ce199e1b",
