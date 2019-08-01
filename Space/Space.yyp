@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0ca38a95-eb6b-498d-bd49-fb05d1da66b4",
+            "Value": {
+                "id": "cc9a8944-fddd-48f8-9de7-417874739196",
+                "resourcePath": "sprites\/sEnemyGoatShooting\/sEnemyGoatShooting.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0caae977-a373-404e-8e5e-3df24f793858",
             "Value": {
                 "id": "33793bad-75a4-4c4c-bfd8-09f1e48405a1",
