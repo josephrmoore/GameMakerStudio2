@@ -12,6 +12,11 @@ if(enemy_state == ENEMYSTATE.WALKING || enemy_state == ENEMYSTATE.JUMPING){
 	}
 }
 
+if(default_state == ENEMYSTATE.FLYING){
+	hsp = random_range(-5,5);
+	vsp = random_range(-5,5);
+}
+
 enum ENEMYSTATE {
 	STATIONARY,
 	WALKING,

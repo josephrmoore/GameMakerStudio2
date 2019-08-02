@@ -32,11 +32,11 @@ if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+ceil(vsp)) != 0 || tilemap
 
 // Horizontal tile collision
 
-if(oPlayer.hsp > 0) {
-	bbox_side = oPlayer.bbox_right;
+if(hsp > 0) {
+	bbox_side = bbox_right;
 	hsp_integer = ceil(hsp);
 } else {
-	bbox_side = oPlayer.bbox_left;
+	bbox_side = bbox_left;
 	hsp_integer = floor(hsp);
 }
 

@@ -1,5 +1,5 @@
-hsp = random_range(-5,5);
-vsp = random_range(-5,5);
+//hsp = random_range(-5,5);
+//vsp = random_range(-5,5);
 
 // Set bbox_side
 
