@@ -1,18 +1,15 @@
-if(facing_right){
-	hsp = 2;
-} else {
-	hsp = -2;
-}
+hsp = random_range(-5,5);
+vsp = random_range(-5,5);
 
 // Set bbox_side
 
 var bbox_side;
 
-if(vsp < oPlayer.max_vsp){
-	vsp += oPlayer.grv;
-} else {
-	vsp = oPlayer.max_vsp;
-}
+//if(vsp < oPlayer.max_vsp){
+//	vsp += oPlayer.grv;
+//} else {
+//	vsp = oPlayer.max_vsp;
+//}
 
 // Horizontal tile collision
 
@@ -48,11 +45,7 @@ if(tilemap_get_at_pixel(oPlayer.tilemap, bbox_left, bbox_side+vsp) != 0 || tilem
 	} else {
 		y = y - (y mod 32) - (bbox_top - y);
 	}
-	vsp = 0;
-}
-
-if(vsp > 5){
-	vsp = 5;
+	vsp *= -1;
 }
 
 x += ceil(hsp);

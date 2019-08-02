@@ -969,6 +969,20 @@
             "value": "False",
             "varName": "mod_triple_dash",
             "varType": 3
+        },
+        {
+            "id": "7e685681-dc78-4c99-87bf-d113a5a4547c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "flash",
+            "varType": 0
         }
     ],
     "solid": false,

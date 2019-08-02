@@ -1,16 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-enemy_state = ENEMYSTATE.WALKING;
-if(facing_right){
-	hsp = 2;
-} else {
-	hsp = -2;
-}
+enemy_state = ENEMYSTATE.STATIONARY;
+sprite_index = sprite;
 
 enum ENEMYSTATE {
-	FREE,
-	DEAD,
+	STATIONARY,
+	WALKING,
+	FLYING,
+	JUMPING,
 	SHOOTING,
-	WALKING
+	DEAD
 } 

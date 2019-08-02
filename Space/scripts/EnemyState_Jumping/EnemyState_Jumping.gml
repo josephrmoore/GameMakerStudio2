@@ -48,7 +48,7 @@ if(tilemap_get_at_pixel(oPlayer.tilemap, bbox_left, bbox_side+vsp) != 0 || tilem
 	} else {
 		y = y - (y mod 32) - (bbox_top - y);
 	}
-	vsp = 0;
+	vsp *= -1;
 }
 
 if(vsp > 5){

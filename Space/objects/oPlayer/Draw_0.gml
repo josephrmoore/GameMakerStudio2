@@ -11,3 +11,10 @@ if(has_shield){
 } else {
 	draw_self();
 }
+
+if(flash>0){
+	flash--;
+	shader_set(hitflash);
+	draw_self();
+	shader_reset();
+}

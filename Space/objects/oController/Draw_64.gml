@@ -47,7 +47,7 @@ switch(current_room){
 		}
 		draw_text(800, 85, "FPS: "+string(fps));
 		draw_text(800, 105, "FPS Real: " +string(fps_real));
-		draw_text(800, 125, "player vsp: "+string(oPlayer.vsp));
-		draw_text(800, 145, "player grav: "+string(oPlayer.grv));
+		//draw_text(800, 125, "player vsp: "+string(oPlayer.vsp));
+		//draw_text(800, 145, "player grav: "+string(oPlayer.grv));
 	break;
 }
