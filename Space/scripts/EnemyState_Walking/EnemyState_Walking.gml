@@ -1,9 +1,3 @@
-if(facing_right){
-	hsp = 2;
-} else {
-	hsp = -2;
-}
-
 // Set bbox_side
 
 var bbox_side;
@@ -57,3 +51,15 @@ if(vsp > 5){
 
 x += ceil(hsp);
 y += floor(vsp);
+
+var reversible = 1;
+
+if(facing_right){
+	reversible = -1;
+}
+
+if(hsp<0){
+	image_xscale = 1*reversible;
+} else {
+	image_xscale = -1*reversible;
+}
