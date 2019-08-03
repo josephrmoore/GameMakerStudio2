@@ -27,6 +27,11 @@ switch(current_room){
 		if(!ds_map_empty(player_stats)){
 			access_player_stats("get");
 		}
-		
+		if(current_room == "found" && story_progress == STORY.BEGIN){
+			story_progress = STORY.FOUND;
+		}
+		if(room_get_name(room)== "runA" && story_progress == STORY.AMBUSH){
+			story_progress = STORY.RUN;
+		}
 		break;
 }

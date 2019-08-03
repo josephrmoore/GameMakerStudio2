@@ -3,6 +3,7 @@
 
 if(oController.key_down){
 	grav();
+	y += floor(vsp);
 	mask_index = sPlayer_ducking;
 } else {
 	state = PLAYERSTATE.FREE;

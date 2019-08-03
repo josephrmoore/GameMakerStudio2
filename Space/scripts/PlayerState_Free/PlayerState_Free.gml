@@ -59,6 +59,7 @@ y += floor(vsp);
 if(location == PLAYERLOCATION.AIRBORNE && jumps > 1){
 	if(has_screw_attack){
 		sprite_index = sPlayer_screw;
+		audio_play_sound(sndScrew, 1000, false);
 	} else {
 		sprite_index = sPlayer_jumping;
 	}

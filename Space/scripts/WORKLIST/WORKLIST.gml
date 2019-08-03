@@ -2,59 +2,43 @@
 
 ***BUGS***
 
-
-OPLAYER
-
-Hook doesn't work
-
-ODOOR
-
-Doors aren't passable
-Change when passable book changes so can't get stuck in them
-
-
-OENEMY
-
-Walking, ledges, collision still weird
-
+Duck & block state collision with enemies, doors, breakables all fucked up
 
 
 ***FEATURES/FIXES TO WORK ON***
 
-
-Enemy flash/sound when hit
-Player flash/sound when hit
-
-Sound for screw attack
-Lava collision sound
-
-Do a swimming area
+Do "Run" rooms
 
 Pause game logic
 Save/Load logic
+
 Map system
-
-Mod menu
-Inventory menu
-Map menu
-Pause menu
-Options menu
-Data menu
-
-Logic to transition rooms
-
-Logic for camera to stop moving at edge of room
-
-Add more enemies
-Have enemies that patrol then charge at you when you get close enough
-Add a boss
-
-Do a cheering, dying, & a leading NPC
-
 Text system
-Radar system
-Ship pieces
 
+Do a swimming area
+Ship pieces
+Boss
+Balance attack damage damaging on player and enemies
+
+
+***AI STUFF***
+Do a leading NPC
+Have enemies that patrol then charge at you when you get close enough
+
+
+***ANIMATIONS***
 Do intro animation
+Do Found/Ambush/Run sequence
+Do return to ship sequence
+
+
+***MENUS***
+
+Mod
+Inventory
+Map
+Pause
+Options
+Data
 
 */
