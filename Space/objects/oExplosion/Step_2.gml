@@ -1,3 +1,4 @@
+if(!oController.is_paused){
 /// @description Insert description here
 // You can write your code in this editor
 if(creating_weapon == "bomb"){
@@ -45,4 +46,5 @@ if(creating_weapon == "bomb"){
 		}
 		ds_list_destroy(hitBreakable);
 	}
+}
 }

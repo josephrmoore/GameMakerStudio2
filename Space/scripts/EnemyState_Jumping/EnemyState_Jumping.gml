@@ -1,3 +1,4 @@
+if(!oController.is_paused){
 // Set bbox_side
 
 var bbox_side;
@@ -62,4 +63,5 @@ if(hsp<0){
 	image_xscale = 1*reversible;
 } else {
 	image_xscale = -1*reversible;
+}
 }

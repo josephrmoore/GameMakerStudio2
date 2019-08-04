@@ -103,6 +103,20 @@
             "value": "bullet",
             "varName": "fired_from",
             "varType": 2
+        },
+        {
+            "id": "a4f4a612-bd3d-4003-85b0-2b874ae6ece3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "bullet_speed",
+            "varType": 0
         }
     ],
     "solid": false,

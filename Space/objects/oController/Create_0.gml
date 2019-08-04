@@ -7,6 +7,9 @@ story_progress = STORY.BEGIN;
 audio_group_load(Music);
 audio_group_load(SFX);
 
+music_gain = round(audio_sound_get_gain(Music)*100);
+sfx_gain = round(audio_sound_get_gain(SFX)*100);
+
 enum STORY {
 	BEGIN,
 	FOUND,
@@ -19,4 +22,16 @@ enum STORY {
 	TRAGEDY,
 	EXTERMINTE,
 	ESCAPE
+}
+
+enum SCREENSTATE {
+	COLDOPEN,
+	TITLE,
+	DATA,
+	GAME,
+	PAUSED,
+	OPTIONS,
+	MODS,
+	MAP,
+	INVENTORY
 }

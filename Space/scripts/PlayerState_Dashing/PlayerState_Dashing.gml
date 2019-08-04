@@ -17,18 +17,20 @@
 
 //image_xscale = facing;
 
-hsp = 5*mSpeed*facing;
-vsp = 0;
+if(!oController.is_paused){
+	hsp = 5*mSpeed*facing;
+	vsp = 0;
 
-player_tile_collision();
-player_object_collision(oDoor);
-player_object_collision(oBreakable);
-player_enemy_collision(oEnemy, 1);
+	player_tile_collision();
+	player_object_collision(oDoor);
+	player_object_collision(oBreakable);
+	player_enemy_collision(oEnemy, 1);
 
-x += hsp;
+	x += hsp;
 
-var dash_sprite = sPlayer_dashing;
-if(oPlayer.has_sharp_dash && oPlayer.mod_sharp_dash){
-	dash_sprite = sPlayer_dashing_sharp;
+	var dash_sprite = sPlayer_dashing;
+	if(oPlayer.has_sharp_dash && oPlayer.mod_sharp_dash){
+		dash_sprite = sPlayer_dashing_sharp;
+	}
+	sprite_index = dash_sprite;
 }
-sprite_index = dash_sprite;

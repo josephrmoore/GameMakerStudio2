@@ -3,23 +3,24 @@
 ***BUGS***
 
 Duck & block state collision with enemies, doors, breakables all fucked up
+Breakable Door var bug on player collision
 
 
 ***FEATURES/FIXES TO WORK ON***
 
 Do "Run" rooms
 
-Pause game logic
 Save/Load logic
 
 Map system
-Text system
+Text system?
 
 Do a swimming area
 Ship pieces
 Boss
 Balance attack damage damaging on player and enemies
 
+Controller screen in Options
 
 ***AI STUFF***
 Do a leading NPC
@@ -37,8 +38,7 @@ Do return to ship sequence
 Mod
 Inventory
 Map
-Pause
-Options
+
 Data
 
 */

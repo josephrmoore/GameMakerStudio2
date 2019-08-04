@@ -1,3 +1,4 @@
+if(!oController.is_paused){
 //hsp = random_range(-5,5);
 //vsp = random_range(-5,5);
 
@@ -50,3 +51,5 @@ if(tilemap_get_at_pixel(oPlayer.tilemap, bbox_left, bbox_side+vsp) != 0 || tilem
 
 x += ceil(hsp);
 y += floor(vsp);
+
+}

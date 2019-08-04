@@ -1327,6 +1327,14 @@
             }
         },
         {
+            "Key": "b8c9c6a7-903b-43a7-907f-3bd4321f880d",
+            "Value": {
+                "id": "91c7feda-1092-44d6-9a76-38228377235b",
+                "resourcePath": "objects\/oColdOpen\/oColdOpen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bb280411-20fa-4bc7-a652-44e2aa6cb650",
             "Value": {
                 "id": "ecb31af7-5fcf-4c72-b272-8f442fcca0cb",

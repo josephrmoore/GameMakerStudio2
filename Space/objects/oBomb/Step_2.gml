@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(!oController.is_paused){
 
 
 if(vsp < oPlayer.max_vsp){
@@ -38,3 +39,5 @@ if(tilemap_get_at_pixel(oPlayer.tilemap, bbox_side+hsp_int, bbox_top) != 0 || ti
 
 x += hsp;
 y += vsp;
+
+}

@@ -75,3 +75,9 @@ if (place_meeting(x,y,oPlayer)) {
 	}
 	instance_destroy();
 }
+
+if(oController.is_paused){
+	image_speed = 0;
+} else {
+	image_speed = 1;
+}
