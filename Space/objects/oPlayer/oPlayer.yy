@@ -85,10 +85,10 @@
             "m_owner": "e0cd8db8-b100-4abd-990f-994de8a83e3c"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "2bdec61a-91f1-4e88-8249-3676c18d8e43",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -224,7 +224,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.3",
+            "value": "0.8",
             "varName": "hang_grv",
             "varType": 0
         },
@@ -322,7 +322,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "5",
             "varName": "energy_tanks",
             "varType": 0
         },
@@ -336,7 +336,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "290",
+            "value": "590",
             "varName": "hp",
             "varType": 0
         },
@@ -364,7 +364,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "20",
+            "value": "5",
             "varName": "missiles",
             "varType": 0
         },
@@ -378,7 +378,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
+            "value": "10",
             "varName": "max_missiles",
             "varType": 0
         },
@@ -509,20 +509,6 @@
             "varType": 3
         },
         {
-            "id": "7a7f2f81-67f7-4257-b414-ef71a2ae8e62",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "True",
-            "varName": "has_sticky_hang",
-            "varType": 3
-        },
-        {
             "id": "41db6ff4-ce11-4f2a-ae5e-f8e331966790",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -532,12 +518,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "has_missiles",
             "varType": 3
         },
         {
-            "id": "128166e1-f145-49bb-a496-3229ab4682d8",
+            "id": "e635a45c-41e1-411c-bb22-5a1565030b4d",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -546,8 +532,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
-            "varName": "has_long_slash",
+            "value": "True",
+            "varName": "has_bombs",
             "varType": 3
         },
         {
@@ -565,6 +551,20 @@
             "varType": 3
         },
         {
+            "id": "dfce1a8f-4c6b-4fb2-9052-bcfc3020fb66",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "has_screw_attack",
+            "varType": 3
+        },
+        {
             "id": "324550aa-21fe-4bf0-912b-51d2636b892e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -576,6 +576,34 @@
             "resourceFilter": 1023,
             "value": "False",
             "varName": "has_slow_fall",
+            "varType": 3
+        },
+        {
+            "id": "128166e1-f145-49bb-a496-3229ab4682d8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "has_long_slash",
+            "varType": 3
+        },
+        {
+            "id": "7a7f2f81-67f7-4257-b414-ef71a2ae8e62",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "has_sticky_hang",
             "varType": 3
         },
         {
@@ -621,34 +649,6 @@
             "varType": 3
         },
         {
-            "id": "e635a45c-41e1-411c-bb22-5a1565030b4d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "False",
-            "varName": "has_bombs",
-            "varType": 3
-        },
-        {
-            "id": "dfce1a8f-4c6b-4fb2-9052-bcfc3020fb66",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "has_screw_attack",
-            "varType": 3
-        },
-        {
             "id": "2cae61b5-0e08-4b52-95c9-f4f4c60c9103",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -677,20 +677,6 @@
             "varType": 3
         },
         {
-            "id": "38d35ab6-7c37-47dc-8dd3-f00b63d4d195",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "has_cluster_missiles",
-            "varType": 3
-        },
-        {
             "id": "ed79ba7b-9239-4a0f-9f7c-dd602996dc1e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -702,6 +688,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "has_super_bombs",
+            "varType": 3
+        },
+        {
+            "id": "38d35ab6-7c37-47dc-8dd3-f00b63d4d195",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "has_cluster_missiles",
             "varType": 3
         },
         {
@@ -784,7 +784,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "mod_long_slash",
             "varType": 3
         },
@@ -812,7 +812,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "mod_sticky_hang",
             "varType": 3
         },
@@ -969,6 +969,20 @@
             "value": "False",
             "varName": "mod_triple_dash",
             "varType": 3
+        },
+        {
+            "id": "7e685681-dc78-4c99-87bf-d113a5a4547c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "flash",
+            "varType": 0
         }
     ],
     "solid": false,

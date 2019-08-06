@@ -23,6 +23,14 @@
             "objectId": "f78f2bed-0ab8-4864-995f-e255f3a88e72",
             "propertyId": "58b2fa8f-3910-4b27-9d65-efddf1cf6e52",
             "value": "missile"
+        },
+        {
+            "id": "dbfff779-87fb-45e2-b415-0c31ae9a3a95",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "f78f2bed-0ab8-4864-995f-e255f3a88e72",
+            "propertyId": "a4f4a612-bd3d-4003-85b0-2b874ae6ece3",
+            "value": "10"
         }
     ],
     "parentObjectId": "f78f2bed-0ab8-4864-995f-e255f3a88e72",

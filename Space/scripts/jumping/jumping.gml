@@ -1,6 +1,6 @@
 // Jumping
 
-if(key_jump){
+if(oController.key_jump){
 	if(jumps < max_jumps){
 		vsp = -jSpeed;
 		jumps++;
@@ -27,5 +27,5 @@ if(key_jump){
 	//}
 }
 
-if (location == PLAYERLOCATION.AIRBORNE && !key_jump_held) vsp = max(vsp, -jSpeed/4);
+if (location == PLAYERLOCATION.AIRBORNE && !oController.key_jump_held) vsp = max(vsp, -jSpeed/4);
 

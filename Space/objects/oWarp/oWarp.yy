@@ -73,6 +73,34 @@
             "value": "0",
             "varName": "targetY",
             "varType": 0
+        },
+        {
+            "id": "391c5f8f-02a3-480e-9c9b-95731f0d6a52",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "a",
+            "varType": 0
+        },
+        {
+            "id": "ec4902d3-5c1b-4fd9-a2f3-dd17f606c32f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "fade1",
+            "varType": 0
         }
     ],
     "solid": false,

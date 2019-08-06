@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(!oController.is_paused){
+
+speed = bullet_speed;
 
 if(oPlayer.has_wave && wavey){
 	if(vert_wave){
@@ -58,4 +61,7 @@ if(place_meeting(x,y,oBreakable)){
 	//	}
 	//}
 	//ds_list_destroy(hitBreakable);
+}
+} else {
+	speed = 0;
 }

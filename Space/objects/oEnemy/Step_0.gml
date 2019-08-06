@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 switch (enemy_state) {
-	case ENEMYSTATE.FREE: EnemyState_Free();
+	case ENEMYSTATE.STATIONARY: EnemyState_Stationary();
 		break;
 	case ENEMYSTATE.DEAD: EnemyState_Dead();
 		break;
@@ -10,4 +10,14 @@ switch (enemy_state) {
 		break;
 	case ENEMYSTATE.WALKING: EnemyState_Walking();
 		break;
+	case ENEMYSTATE.FLYING: EnemyState_Flying();
+		break;
+	case ENEMYSTATE.JUMPING: EnemyState_Jumping();
+		break;
+}
+
+if(oController.is_paused){
+	image_speed = 0;
+} else {
+	image_speed = 1;
 }

@@ -10,9 +10,9 @@ if (place_meeting(x+hsp,y,obj)) {
 			EnemyHit(dash_damage);
 		}
 	} else {
-		while(!place_meeting(x+sign(hsp),y,obj)){
-			x = x + sign(hsp);
-		}
+		//while(!place_meeting(x+sign(hsp),y,obj)){
+		//	x = x + sign(hsp);
+		//}
 		if(oPlayer.has_screw_attack && oPlayer.jumps > 1){
 			var hitScrewH = ds_list_create();
 			var screwHitsH = instance_place_list(x+hsp,y,oEnemy,hitScrewH,false);
@@ -27,7 +27,10 @@ if (place_meeting(x+hsp,y,obj)) {
 			ds_list_destroy(hitScrewH);
 		} else {
 			PlayerHit(obj.damaging*damage_percent);
-			Pushback(-facing*10);
+			Pushback(facing*10);
+			if(state == PLAYERSTATE.DASHING){
+				state = PLAYERSTATE.FREE;
+			}
 		}
 		
 		//alarm[0] = 5;
@@ -65,7 +68,7 @@ if (place_meeting(x,y+vsp,obj)) {
 			ds_list_destroy(hitScrew);
 		} else {
 			PlayerHit(obj.damaging*damage_percent);
-			Pushback(-facing*10, -20);
+			Pushback(-hsp, -40);
 		}
 		
 		//alarm[0] = 5;

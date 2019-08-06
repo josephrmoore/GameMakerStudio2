@@ -7,49 +7,40 @@
 x = oPlayer.x;
 y = oPlayer.y;
 
-var key_left = oPlayer.key_left;
-var key_right =oPlayer.key_right;
-var key_up = oPlayer.key_up;
-var key_down = oPlayer.key_down;
-var shoot = oPlayer.key_shoot;
-var missile = oPlayer.key_missile;
-var bomb = oPlayer.key_bomb;
-
-var has_spread = oPlayer.has_spread;
-var has_wave = oPlayer.has_wave;
-
-
+if(oPlayer.has_turbo && oPlayer.mod_turbo){
+	oController.key_shoot = oController.key_shoot_auto;
+}
 
 
 //show_debug_message(shoot);
 
-if(key_left){
+if(oController.key_left){
 	gun_dir = 180;
 	if(oPlayer.location == PLAYERLOCATION.HANGING){
 		gun_dir = 0;
 	}
 }
 
-if(key_right){
+if(oController.key_right){
 	gun_dir = 0;
 	if(oPlayer.location == PLAYERLOCATION.HANGING){
 		gun_dir = 180;
 	}
 }
 
-if(key_up){
-	if(key_right){
+if(oController.key_up){
+	if(oController.key_right){
 		image_angle = 45;
-	} else if(key_left){
+	} else if(oController.key_left){
 		image_angle = 135;
 	} else {
 		image_angle = 90;
 	}
 } else {
-	if(oPlayer.location == PLAYERLOCATION.AIRBORNE && key_down){
-		if(key_left){
+	if(oPlayer.location == PLAYERLOCATION.AIRBORNE && oController.key_down){
+		if(oController.key_left){
 			image_angle = 225;
-		} else if(key_right){
+		} else if(oController.key_right){
 			image_angle = 315;
 		} else {
 			image_angle = 270;
@@ -63,80 +54,79 @@ if(key_up){
 --missile_delay;
 --bomb_delay;
 
-if(bomb && oPlayer.has_bombs && bomb_delay<0){
+if(oController.key_bomb && oPlayer.has_bombs && bomb_delay<0 && !oController.is_paused){
 	bomb_delay = 20;
 	audio_play_sound(sndBomb, 5, false);
 	instance_create_layer(x,y,"Bombs",oBomb);
 }
 
 
-if(missile && oPlayer.has_missiles && oPlayer.missiles > 0 && missile_delay<0){
+if(oController.key_missile && oPlayer.has_missiles && oPlayer.missiles > 0 && missile_delay<0 && !oController.is_paused){
 	missile_delay = 40;
 	audio_play_sound(sndMissile, 5, false);
 	with(instance_create_layer(x,y,"Bullets",oMissile)){
-		speed = other.bullet_speed/1.5;
+		speed = bullet_speed;
 		direction = other.image_angle + random_range(-1,1);
 		image_angle = other.image_angle;
 		oPlayer.missiles -= 1;
 	}
 }
 
-if(shoot && firing_delay<0 && oPlayer.state == PLAYERSTATE.FREE){
+if(oController.key_shoot && firing_delay<0 && oPlayer.state == PLAYERSTATE.FREE && !oController.is_paused){
 	firing_delay = 5;
 	audio_play_sound(sndShootSoft, 5, false);
-	if(has_spread && has_wave){
+	if(oPlayer.has_spread && oPlayer.has_wave){
 		with(instance_create_layer(x,y,"Bullets",oSpreadWave)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle - 30 + random_range(-1,1);	
 		}
 		with(instance_create_layer(x,y,"Bullets",oSpreadWave)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle - 15 + random_range(-1,1);	
 		}
 		with(instance_create_layer(x,y,"Bullets",oSpreadWave)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle + random_range(-1,1);	
 		}
 		with(instance_create_layer(x,y,"Bullets",oSpreadWave)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle + 15 + random_range(-1,1);	
 		}
 		with(instance_create_layer(x,y,"Bullets",oSpreadWave)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle + 30 + random_range(-1,1);	
 		}
-	} else if(has_spread){
+	} else if(oPlayer.has_spread){
 		with(instance_create_layer(x,y,"Bullets",oSpread)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle - 30 + random_range(-1,1);	
 		}
 		with(instance_create_layer(x,y,"Bullets",oSpread)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle - 15 + random_range(-1,1);	
 		}
 		with(instance_create_layer(x,y,"Bullets",oSpread)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle + random_range(-1,1);	
 		}
 		with(instance_create_layer(x,y,"Bullets",oSpread)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle + 15 + random_range(-1,1);	
 		}
 		with(instance_create_layer(x,y,"Bullets",oSpread)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle + 30 + random_range(-1,1);	
 		}
-	} else if (has_wave){
+	} else if (oPlayer.has_wave){
 		// add wave function to direction
 		with(instance_create_layer(x,y,"Bullets",oWave)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle + random_range(-1,1);	
 		}
 	} else {
 		with(instance_create_layer(x,y,"Bullets",oBullet)){
-			speed = other.bullet_speed;
+			speed = bullet_speed;
 			direction = other.image_angle + random_range(-1,1);	
 		}
 	}
 }
-

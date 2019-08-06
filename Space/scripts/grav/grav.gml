@@ -9,3 +9,7 @@ if(vsp < max_vsp){
 } else {
 	vsp = max_vsp;
 }
+
+if(vsp < -max_vsp){
+	vsp = -max_vsp;
+}
