@@ -9,3 +9,7 @@ camera_set_view_mat(camera,vm);
 camera_set_proj_mat(camera,pm);
 
 view_camera[0] = camera;
+
+alarm[0] = 1300;
+alarm[1] = 1800;
+alarm[2] = 2200;

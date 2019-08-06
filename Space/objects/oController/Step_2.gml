@@ -9,7 +9,26 @@ switch(current_room){
 	break;
 	case "title":
 		if(key_any){
-			room_goto(plains);
+			if(intro_animation_on){
+				// skip to end
+				intro_animation_on = false;
+				with(oShipInside){
+					instance_destroy();
+				}
+				with(oShipSide){
+					instance_destroy();
+				}
+				oCameraTitle.x = 3726;
+				oCameraTitle.moving = false;
+				oPlanet.rising = false;
+				oPlanet.y = 684;
+				//show_debug_message(audio_sound_get_track_position(sndTitle));
+				
+				//audio_sound_set_track_position(asset_get_index(sndTitle), 20);
+				//show_debug_message(audio_sound_get_track_position(sndTitle));
+			} else {
+				room_goto(plains);
+			}
 		}
 	break;
 	case "dead":

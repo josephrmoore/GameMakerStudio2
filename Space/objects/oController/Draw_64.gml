@@ -3,11 +3,13 @@
 
 switch(current_room){
 	case "title":
+		if(!intro_animation_on){
 		draw_set_font(fH1);
 		draw_set_color(c_white)
 		draw_text(180, 200, "SPACE");
 		draw_set_font(fH2);
 		draw_text(160, 350, "PRESS ANY BUTTON TO BEGIN");
+		}
 	break;
 	case "init":
 		break;
@@ -119,39 +121,47 @@ switch(current_room){
 				draw_set_font(fH1);
 				draw_text(50, 50, "INVENTORY");
 				draw_set_font(fH2);
-				var upgrades = 0;
-				if(oPlayer.has_missiles){
-					upgrades++;
-					draw_text(50, 100+(upgrades*50), "Missiles");
-				}
-				if(oPlayer.has_bombs){
-					upgrades++;
-					draw_text(50, 100+(upgrades*50), "Bombs");
-				}
-				if(oPlayer.can_dash){
-					upgrades++;
-					draw_text(50, 100+(upgrades*50), "Dash");
-				}
-				if(oPlayer.can_double_jump){
-					upgrades++;
-					draw_text(50, 100+(upgrades*50), "Double Jump");
-				}
-				if(oPlayer.can_hook){
-					upgrades++;
-					draw_text(50, 100+(upgrades*50), "Hook");
-				}
-				if(oPlayer.has_bombs){
-					upgrades++;
-					draw_text(50, 100+(upgrades*50), "Screw Attack");
-				}
-				if(oPlayer.has_wave){
-					upgrades++;
-					draw_text(50, 100+(upgrades*50), "Wave Gun");
-				}
-				if(oPlayer.has_spread){
-					upgrades++;
-					draw_text(50, 100+(upgrades*50), "Spread Gun");
-				}
+				//draw_text(50, 150, json_encode(player_stats));
+				//var k = ds_map_find_first(player_stats), 
+				//   maptext = "";
+				//while (!is_undefined(k)) {
+				//  maptext += k + ": " + player_stats[? k] + "#";
+				//  k = ds_map_find_next(player_stats, k);
+				//}
+				//draw_text(50, 150, maptext);
+				//var upgrades = 0;
+				//if(oPlayer.has_missiles){
+				//	upgrades++;
+				//	draw_text(50, 100+(upgrades*50), "Missiles");
+				//}
+				//if(oPlayer.has_bombs){
+				//	upgrades++;
+				//	draw_text(50, 100+(upgrades*50), "Bombs");
+				//}
+				//if(oPlayer.can_dash){
+				//	upgrades++;
+				//	draw_text(50, 100+(upgrades*50), "Dash");
+				//}
+				//if(oPlayer.can_double_jump){
+				//	upgrades++;
+				//	draw_text(50, 100+(upgrades*50), "Double Jump");
+				//}
+				//if(oPlayer.can_hook){
+				//	upgrades++;
+				//	draw_text(50, 100+(upgrades*50), "Hook");
+				//}
+				//if(oPlayer.has_bombs){
+				//	upgrades++;
+				//	draw_text(50, 100+(upgrades*50), "Screw Attack");
+				//}
+				//if(oPlayer.has_wave){
+				//	upgrades++;
+				//	draw_text(50, 100+(upgrades*50), "Wave Gun");
+				//}
+				//if(oPlayer.has_spread){
+				//	upgrades++;
+				//	draw_text(50, 100+(upgrades*50), "Spread Gun");
+				//}
 			}
 		}
 		break;

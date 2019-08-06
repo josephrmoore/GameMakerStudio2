@@ -59,6 +59,20 @@
             "value": "0",
             "varName": "amount",
             "varType": 0
+        },
+        {
+            "id": "dfefed18-e727-4224-b497-0ed40f5407ac",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "collected",
+            "varType": 3
         }
     ],
     "solid": false,

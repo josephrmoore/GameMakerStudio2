@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "08a4325e-3227-417e-a0d0-f843f8a282be",
+            "Value": {
+                "id": "bdb5d599-f232-4fa4-9c9d-579c9f10855c",
+                "resourcePath": "sprites\/sInsideShipRedFlash\/sInsideShipRedFlash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0a836365-6437-4c11-9680-10b257aa3706",
             "Value": {
                 "id": "659d41a7-c611-4ddf-a3a6-e23f536727c6",
@@ -543,6 +551,14 @@
             }
         },
         {
+            "Key": "43f43b3e-2198-4f87-b36c-5c3dba03e5ed",
+            "Value": {
+                "id": "cdf6681a-cb62-408b-883b-9f56f8672ea7",
+                "resourcePath": "scripts\/LoadPlayer\/LoadPlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "44458086-2286-477a-a9f7-aaccaa47bd8f",
             "Value": {
                 "id": "a5ed8906-4ba2-4033-850c-448a96c27bbb",
@@ -791,6 +807,14 @@
             }
         },
         {
+            "Key": "69397f48-f1c8-4ae9-a038-03e0148d34d4",
+            "Value": {
+                "id": "c97cfb63-ddb0-4d27-8527-eff3118a6331",
+                "resourcePath": "rooms\/data\/data.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "69bc4a9c-7ca5-45a6-9b29-5d5f2cab8557",
             "Value": {
                 "id": "e0dec60b-5896-4173-a9ed-87d97e915d98",
@@ -895,11 +919,35 @@
             }
         },
         {
+            "Key": "7e0d97da-620e-4c3f-84a9-e67552fb389b",
+            "Value": {
+                "id": "b3150622-5d8c-46c9-89ce-855e7d26aabf",
+                "resourcePath": "sprites\/sInsideShip\/sInsideShip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7e2df1bb-801a-4e5d-bbcc-6c264facfcee",
             "Value": {
                 "id": "dc1f6002-fda1-4ec4-af11-5da7578305c3",
                 "resourcePath": "sounds\/sndDash\/sndDash.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "7f967da6-0cf5-473a-bf88-f7b0c2d439d2",
+            "Value": {
+                "id": "41c8e767-8d07-4d8f-ab14-39dd6ebeded3",
+                "resourcePath": "objects\/oShipInside\/oShipInside.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8159d339-bc83-4e2c-ba56-3b4f90267adb",
+            "Value": {
+                "id": "a4655461-ef27-4908-bb1f-255558a2d6f5",
+                "resourcePath": "scripts\/SaveStringToFile\/SaveStringToFile.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1199,6 +1247,14 @@
             }
         },
         {
+            "Key": "a898e8d6-31b2-4bfb-b585-cfe98e013177",
+            "Value": {
+                "id": "ad04ea24-cf88-4d33-8bdc-4190c1034761",
+                "resourcePath": "scripts\/SavePlayer\/SavePlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a8a92d1f-84b0-43fd-8e14-eed37d3c6515",
             "Value": {
                 "id": "e55801bd-adef-497f-9c85-913de3044c3a",
@@ -1330,7 +1386,7 @@
             "Key": "b8c9c6a7-903b-43a7-907f-3bd4321f880d",
             "Value": {
                 "id": "91c7feda-1092-44d6-9a76-38228377235b",
-                "resourcePath": "objects\/oColdOpen\/oColdOpen.yy",
+                "resourcePath": "objects\/oSaveSlot\/oSaveSlot.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1548,6 +1604,14 @@
                 "id": "bc463b36-88a5-417e-966b-d9e756a806e2",
                 "resourcePath": "objects\/oWave\/oWave.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d674ad15-236f-45dd-9d84-64d876f9729d",
+            "Value": {
+                "id": "69c7e8f9-aa01-42ee-9fa9-724be28c2264",
+                "resourcePath": "scripts\/LoadJsonFromFile\/LoadJsonFromFile.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1887,6 +1951,14 @@
             }
         },
         {
+            "Key": "fad26f5e-7856-44cb-a45a-0bf7c378ce80",
+            "Value": {
+                "id": "fcda5c72-5744-424b-af98-6e6a9ea68756",
+                "resourcePath": "sprites\/sSaveSlot\/sSaveSlot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fb79c414-ec58-438e-b802-a707989b8cc7",
             "Value": {
                 "id": "20e11cdf-f608-4d02-b391-3b1934825ae5",
@@ -1975,7 +2047,11 @@
         "fe53928b-b172-47df-9f24-ae3a037a8aa4",
         "3e24d731-902c-4497-ba4d-6a476b126ae6",
         "3b0283ac-3741-4021-9386-0a6e017b7df9",
-        "206fbe9b-d859-4da7-8fb0-9dc8da4db7e2"
+        "206fbe9b-d859-4da7-8fb0-9dc8da4db7e2",
+        "8159d339-bc83-4e2c-ba56-3b4f90267adb",
+        "d674ad15-236f-45dd-9d84-64d876f9729d",
+        "a898e8d6-31b2-4bfb-b585-cfe98e013177",
+        "43f43b3e-2198-4f87-b36c-5c3dba03e5ed"
     ],
     "tutorial": ""
 }

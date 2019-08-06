@@ -305,6 +305,34 @@
             "value": "100",
             "varName": "sfx_gain",
             "varType": 0
+        },
+        {
+            "id": "a4f2e949-9727-4eb1-ae7e-f93acc3d724f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "save_slot",
+            "varType": 0
+        },
+        {
+            "id": "9b632e97-a8ca-4185-b0de-c063b107e9fb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "intro_animation_on",
+            "varType": 3
         }
     ],
     "solid": false,
