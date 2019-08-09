@@ -19,6 +19,14 @@ switch(current_room){
 	case "init":
 		break;
 	default:
+		if(story_progress == STORY.FIRSTPLAY && current_room == "plains"){
+			if(ds_map_empty(player_stats)){
+				access_player_stats("create");
+			} else {
+				access_player_stats("set");
+			}
+			story_progress = STORY.BEGIN;
+		}
 		if(current_room == "found" && story_progress == STORY.BEGIN){
 			story_progress = STORY.FOUND;
 		}

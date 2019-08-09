@@ -17,7 +17,7 @@ breakable_srs = [];
 //breakable_srs = ds_list_create();
 
 
-story_progress = STORY.BEGIN;
+story_progress = STORY.FIRSTPLAY;
 
 audio_group_load(Music);
 audio_group_load(SFX);
@@ -26,6 +26,7 @@ music_gain = round(audio_sound_get_gain(Music)*100);
 sfx_gain = round(audio_sound_get_gain(SFX)*100);
 
 enum STORY {
+	FIRSTPLAY,
 	BEGIN,
 	FOUND,
 	AMBUSH,
