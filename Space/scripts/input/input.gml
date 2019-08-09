@@ -97,6 +97,10 @@ if(key_two){
 	audio_group_set_gain(Music,1,0);
 }
 
-if(key_five){
-	
+if(key_three){
+	SaveGame();
+}
+
+if (key_four){
+	LoadGame();
 }

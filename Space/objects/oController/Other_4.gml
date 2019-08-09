@@ -16,7 +16,15 @@ switch(current_room){
 		audio_stop_all();
 		audio_play_sound(sndTitle, 1000, true);
 		break;
+	case "init":
+		break;
 	default:
+		if(current_room == "found" && story_progress == STORY.BEGIN){
+			story_progress = STORY.FOUND;
+		}
+		if(room_get_name(room)== "runA" && story_progress == STORY.AMBUSH){
+			story_progress = STORY.RUN;
+		}
 		// play music
 		music_module();
 		// Player position in new rooms
@@ -25,13 +33,47 @@ switch(current_room){
 			oPlayer.y = player_y;
 		}
 		if(!ds_map_empty(player_stats)){
-			access_player_stats("get");
+			access_player_stats("load");
 		}
-		if(current_room == "found" && story_progress == STORY.BEGIN){
-			story_progress = STORY.FOUND;
+		for(var i=0; i<array_length_1d(upgrade_srs); i++){
+			if(srs_in_room(upgrade_srs[i])){
+				for(var j=0; j<instance_number(oPickupUpgrade); j++){
+					var inst = instance_find(oPickupUpgrade, j);
+					if(get_srs() == get_srs_obj(inst)){
+						inst.collected = true;
+					}
+				}
+			}
 		}
-		if(room_get_name(room)== "runA" && story_progress == STORY.AMBUSH){
-			story_progress = STORY.RUN;
+		for(var i=0; i<array_length_1d(mod_srs); i++){
+			if(srs_in_room(mod_srs[i])){
+				for(var j=0; j<instance_number(oPickupMod); j++){
+					var inst = instance_find(oPickupMod, j);
+					if(get_srs() == get_srs_obj(inst)){
+						inst.collected = true;
+					}
+				}
+			}
+		}
+		for(var i=0; i<array_length_1d(energy_tank_srs); i++){
+			if(srs_in_room(energy_tank_srs[i])){
+				for(var j=0; j<instance_number(oPickupEnergyTank); j++){
+					var inst = instance_find(oPickupEnergyTank, j);
+					if(get_srs() == get_srs_obj(inst)){
+						inst.collected = true;
+					}
+				}
+			}
+		}
+		for(var i=0; i<array_length_1d(missile_upgrade_srs); i++){
+			if(srs_in_room(missile_upgrade_srs[i])){
+				for(var j=0; j<instance_number(oPickupMissileUpgrade); j++){
+					var inst = instance_find(oPickupMissileUpgrade, j);
+					if(get_srs() == get_srs_obj(inst)){
+						inst.collected = true;
+					}
+				}
+			}
 		}
 		break;
 }

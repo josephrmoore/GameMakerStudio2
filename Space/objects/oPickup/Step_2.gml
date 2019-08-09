@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(oController.is_paused){
+	image_speed = 0;
+} else {
+	image_speed = 1;
+}
+
+
 if(!collected){
 	if (place_meeting(x,y,oPlayer)) {
 		if(kind == "health"){
@@ -39,51 +46,52 @@ if(!collected){
 				oPlayer.has_mod_system = true;
 			} else if (upgrade == "can_double_jump"){
 				oPlayer.max_jumps = 2;
-			} // add else ifs for all other mods here
-		
-		
-			//if (upgrade == "has_long_slash"){
-			//	oPlayer.has_long_slash = true;
-			//} else if (upgrade == "has_turbo"){
-			//	oPlayer.has_turbo = true;
-			//} else if (upgrade == "has_sticky_hang"){
-			//	oPlayer.has_sticky_hang = true;
-			//} else if (upgrade == "has_slow_fall"){
-			//	oPlayer.has_slow_fall = true;
-			//} else if (upgrade == "has_small_avatar"){
-			//	oPlayer.has_small_avatar = true;
-			//} else if (upgrade == "has_strong_slash"){
-			//	oPlayer.has_strong_slash = true;
-			//} else if (upgrade == "has_sharp_dash"){
-			//	oPlayer.has_sharp_dash = true;
-			//} else if (upgrade == "has_shield"){
-			//	oPlayer.has_shield = true;
-			//} else if (upgrade == "has_regen"){
-			//	oPlayer.has_regen = true;
-			//} else if (upgrade == "has_cluster_missiles"){
-			//	oPlayer.has_cluster_missiles = true;
-			//} else if (upgrade == "has_super_bombs"){
-			//	oPlayer.has_super_bombs = true;
-			//} else if (upgrade == "can_triple_jump"){
-			//	oPlayer.max_jumps = 3;
-			//} else if (upgrade == "can_double_dash"){
-			//	oPlayer.max_dashes = 2;
-			//} else if (upgrade == "can_triple_dash"){
-			//	oPlayer.max_dashes = 3;
-			//}
-		
-		
+			}
+			// update upgrade srs
+			oController.upgrade_srs[array_length_1d(oController.upgrade_srs)] = get_srs();
+		} else if (kind == "mod"){
+			audio_play_sound(sndPickupUpgrade,7,false);
+			if (upgrade == "has_long_slash"){
+				oPlayer.has_long_slash = true;
+			} else if (upgrade == "has_turbo"){
+				oPlayer.has_turbo = true;
+			} else if (upgrade == "has_sticky_hang"){
+				oPlayer.has_sticky_hang = true;
+			} else if (upgrade == "has_slow_fall"){
+				oPlayer.has_slow_fall = true;
+			} else if (upgrade == "has_small_avatar"){
+				oPlayer.has_small_avatar = true;
+			} else if (upgrade == "has_strong_slash"){
+				oPlayer.has_strong_slash = true;
+			} else if (upgrade == "has_sharp_dash"){
+				oPlayer.has_sharp_dash = true;
+			} else if (upgrade == "has_shield"){
+				oPlayer.has_shield = true;
+			} else if (upgrade == "has_regen"){
+				oPlayer.has_regen = true;
+			} else if (upgrade == "has_cluster_missiles"){
+				oPlayer.has_cluster_missiles = true;
+			} else if (upgrade == "has_super_bombs"){
+				oPlayer.has_super_bombs = true;
+			}
+			// update mod srs
+			oController.mod_srs[array_length_1d(oController.mod_srs)] = get_srs();
+		} else if (kind == "missile_upgrade"){
+			oPlayer.max_missiles += 5;
+			oPlayer.missiles += 5;
+			// update missile srs
+			oController.missile_upgrade_srs[array_length_1d(oController.missile_upgrade_srs)] = get_srs();
+		} else if (kind == "energy_tank"){
+			oPlayer.energy_tanks += 1;
+			oPlayer.hp = (oPlayer.energy_tanks*100) + 100;
+			// update energy tank srs
+			oController.energy_tank_srs[array_length_1d(oController.energy_tank_srs)] = get_srs();
 		}
-		instance_destroy();
 		collected = true;
-		// change player save data to reflect new upgrade
+		// update player_stats
+		access_player_stats("set");
+		instance_destroy();
 	}
 } else {
 	instance_destroy();
-}
-
-if(oController.is_paused){
-	image_speed = 0;
-} else {
-	image_speed = 1;
 }

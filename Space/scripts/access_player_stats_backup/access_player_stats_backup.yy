@@ -1,8 +1,8 @@
 {
-    "id": "43f43b3e-2198-4f87-b36c-5c3dba03e5ed",
+    "id": "b440e662-fc1b-4f6a-8754-5b80e67a5101",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "LoadPlayer",
+    "name": "access_player_stats_backup",
     "IsCompatibility": false,
     "IsDnD": false
 }

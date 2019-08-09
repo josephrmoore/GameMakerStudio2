@@ -1,5 +1,5 @@
 {
-    "id": "b440e662-fc1b-4f6a-8754-5b80e67a5101",
+    "id": "a969da61-23fb-4025-9e76-f629c7a45e5e",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "access_player_stats",
