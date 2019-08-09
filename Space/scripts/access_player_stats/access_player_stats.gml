@@ -3,6 +3,7 @@ var action = argument0;
 if(action == "load"){
 	oPlayer.hp = ds_map_find_value(oController.player_stats, "hp");
 	oPlayer.energy_tanks = ds_map_find_value(oController.player_stats, "energy_tanks");
+	oPlayer.max_hp = ds_map_find_value(oController.player_stats, "max_hp");
 	oPlayer.missiles = ds_map_find_value(oController.player_stats, "missiles");
 	oPlayer.max_jumps = ds_map_find_value(oController.player_stats, "max_jumps");
 	oPlayer.max_dashes = ds_map_find_value(oController.player_stats, "max_dashes");
@@ -31,13 +32,14 @@ if(action == "load"){
 } else if (action == "set"){	
 	ds_map_set(oController.player_stats,"hp",oPlayer.hp);
 	ds_map_set(oController.player_stats,"energy_tanks",oPlayer.energy_tanks);
+	ds_map_set(oController.player_stats,"max_hp",oPlayer.max_hp);
 	ds_map_set(oController.player_stats,"missiles",oPlayer.missiles);
 	ds_map_set(oController.player_stats,"max_jumps",oPlayer.max_jumps);
 	ds_map_set(oController.player_stats,"max_dashes",oPlayer.max_dashes);
 	ds_map_set(oController.player_stats,"has_missiles",oPlayer.has_missiles);
 	ds_map_set(oController.player_stats,"has_spread",oPlayer.has_spread);
-	ds_map_set(oController.player_stats,"has_bombs",oPlayer.has_missiles);
-	ds_map_set(oController.player_stats,"has_wave",oPlayer.has_spread);
+	ds_map_set(oController.player_stats,"has_bombs",oPlayer.has_bombs);
+	ds_map_set(oController.player_stats,"has_wave",oPlayer.has_wave);
 	ds_map_set(oController.player_stats,"has_screw_attack",oPlayer.has_screw_attack);
 	ds_map_set(oController.player_stats,"has_orb_slash",oPlayer.has_orb_slash);
 	ds_map_set(oController.player_stats,"has_mod_system",oPlayer.has_mod_system);
@@ -58,14 +60,15 @@ if(action == "load"){
 	ds_map_set(oController.player_stats,"has_cluster_missiles",oPlayer.has_cluster_missiles);
 } else if (action == "create"){
 	ds_map_add(oController.player_stats,"hp",oPlayer.hp);
+	ds_map_add(oController.player_stats,"max_hp",oPlayer.max_hp);
 	ds_map_add(oController.player_stats,"energy_tanks",oPlayer.energy_tanks);
 	ds_map_add(oController.player_stats,"missiles",oPlayer.missiles);
 	ds_map_add(oController.player_stats,"max_jumps",oPlayer.max_jumps);
 	ds_map_add(oController.player_stats,"max_dashes",oPlayer.max_dashes);
 	ds_map_add(oController.player_stats,"has_missiles",oPlayer.has_missiles);
 	ds_map_add(oController.player_stats,"has_spread",oPlayer.has_spread);
-	ds_map_add(oController.player_stats,"has_bombs",oPlayer.has_missiles);
-	ds_map_add(oController.player_stats,"has_wave",oPlayer.has_spread);
+	ds_map_add(oController.player_stats,"has_bombs",oPlayer.has_bombs);
+	ds_map_add(oController.player_stats,"has_wave",oPlayer.has_wave);
 	ds_map_add(oController.player_stats,"has_screw_attack",oPlayer.has_screw_attack);
 	ds_map_add(oController.player_stats,"has_orb_slash",oPlayer.has_orb_slash);
 	ds_map_add(oController.player_stats,"has_mod_system",oPlayer.has_mod_system);

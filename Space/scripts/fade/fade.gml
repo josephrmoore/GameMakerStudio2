@@ -3,3 +3,5 @@ with(instance_create_layer(0,0,"Fade",oFade)){
 	targetX = argument1;
 	targetY = argument2;
 }
+
+oController.player_has_control = false;

@@ -28,7 +28,7 @@ Have enemies that patrol then charge at you when you get close enough
 
 
 ***ANIMATIONS***
-Do intro animation
+Refine intro animation
 Do Found/Ambush/Run sequence
 Do return to ship sequence
 

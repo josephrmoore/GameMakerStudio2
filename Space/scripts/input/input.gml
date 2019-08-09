@@ -1,6 +1,7 @@
 /// @description All input capture code
 // key capture
 
+if(oController.player_has_control){
 key_right = gamepad_button_check(0,gp_padr) || gamepad_axis_value(0,gp_axislh) > 0.2 || keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_left = gamepad_button_check(0,gp_padl)|| gamepad_axis_value(0,gp_axislh) < -0.2 || keyboard_check(vk_left) || keyboard_check(ord("A"));
 
@@ -34,14 +35,16 @@ key_mmi_l = gamepad_button_check_pressed(0,gp_shoulderl) || keyboard_check_press
 key_mmi_r = gamepad_button_check_pressed(0,gp_shoulderr) || keyboard_check_pressed(vk_rshift);
 key_mmi = key_mmi_l || key_mmi_r;
 
+key_any = key_right || key_left || key_up || key_down || key_jump || key_dash || key_block || key_shoot || key_slash || key_missile || key_bomb || key_pause || keyboard_check_pressed(vk_anykey);
+
+}
+
 
 //if(key_pause){
 //	show_debug_message("PAWS!");
 //}
 
 // ADMIN CONTROLS
-
-key_any = key_right || key_left || key_up || key_down || key_jump || key_dash || key_block || key_shoot || key_slash || key_missile || key_bomb || key_pause || keyboard_check_pressed(vk_anykey);
 
 key_one = keyboard_check_pressed(ord("1"));
 key_two = keyboard_check_pressed(ord("2"));
@@ -86,10 +89,6 @@ key_zero = keyboard_check_pressed(ord("0"));
 //	}
 //}
 
-if(key_six){
-	room_goto(testroom);
-}
-
 if(key_one){
 	audio_group_set_gain(Music,0,0);
 }
@@ -103,4 +102,28 @@ if(key_three){
 
 if (key_four){
 	LoadGame();
+}
+
+if(key_five){
+	oController.player_has_control = true;
+}
+
+if (key_six){
+	
+}
+
+if(key_seven){
+	
+}
+
+if (key_eight){
+	
+}
+
+if(key_nine){
+	
+}
+
+if(key_zero){
+	game_restart();
 }

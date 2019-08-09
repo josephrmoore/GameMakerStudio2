@@ -14,6 +14,7 @@ if(a == 1){
 
 if (a == 0 && roomfade == -1){
 	instance_destroy();
+	oController.player_has_control = true;
 }
 
 draw_set_color(c_black);

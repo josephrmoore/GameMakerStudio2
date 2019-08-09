@@ -333,6 +333,20 @@
             "value": "True",
             "varName": "intro_animation_on",
             "varType": 3
+        },
+        {
+            "id": "231884bd-e413-467e-a153-a9e9d99541a0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "player_has_control",
+            "varType": 3
         }
     ],
     "solid": false,

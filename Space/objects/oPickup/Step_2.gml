@@ -83,7 +83,8 @@ if(!collected){
 			oController.missile_upgrade_srs[array_length_1d(oController.missile_upgrade_srs)] = get_srs();
 		} else if (kind == "energy_tank"){
 			oPlayer.energy_tanks += 1;
-			oPlayer.hp = (oPlayer.energy_tanks*100) + 100;
+			oPlayer.max_hp += 100;
+			oPlayer.hp = oPlayer.max_hp;
 			// update energy tank srs
 			oController.energy_tank_srs[array_length_1d(oController.energy_tank_srs)] = get_srs();
 		}
