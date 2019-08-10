@@ -175,13 +175,14 @@ if(screen_state == SCREENSTATE.PAUSED){
 	
 	if(key_any_no_dir){
 		if(s0.selected){
-			if(file_exists("saveX.sav")){
+			if(file_exists("save0.sav")){
 				show_debug_message("0 sav exists");
-				LoadGame("saveX.sav")
+				LoadGame("save0.sav")
 			} else {
 				room_goto(plains);
 			}
 			screen_state = SCREENSTATE.GAME;
+			save_data_file = 0;
 		} else if (s1.selected){
 			if(file_exists("save1.sav")){
 				show_debug_message("1 sav exists");
@@ -190,6 +191,7 @@ if(screen_state == SCREENSTATE.PAUSED){
 				room_goto(plains);
 			}
 			screen_state = SCREENSTATE.GAME;
+			save_data_file = 1;
 		} else if (s2.selected){
 			if(file_exists("save2.sav")){
 				show_debug_message("2 sav exists");
@@ -198,24 +200,7 @@ if(screen_state == SCREENSTATE.PAUSED){
 				room_goto(plains);
 			}
 			screen_state = SCREENSTATE.GAME;
+			save_data_file = 2;
 		}
 	}
-	
-	if(file_exists("saveX.sav")){
-		var save_data = LoadJsonFromFile("saveX.sav");
-		s0.current_room = ds_map_find_value(save_data, "room");	
-		s0.has_save_data = true;
-	} 
-	if(file_exists("save1.sav")){
-		var save_data = LoadJsonFromFile("save1.sav");
-		s1.current_room = ds_map_find_value(save_data, "room");	
-		s1.has_save_data = true;
-	} 
-	if(file_exists("save2.sav")){
-		var save_data = LoadJsonFromFile("save2.sav");
-		s2.current_room = ds_map_find_value(save_data, "room");	
-		s2.has_save_data = true;
-	}
 }
-
-show_debug_message(screen_state);

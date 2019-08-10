@@ -361,6 +361,20 @@
             "value": "0",
             "varName": "save_screen_selected",
             "varType": 0
+        },
+        {
+            "id": "2329621b-6c46-43df-a189-bda067f9f2a2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "save_data_file",
+            "varType": 0
         }
     ],
     "solid": false,

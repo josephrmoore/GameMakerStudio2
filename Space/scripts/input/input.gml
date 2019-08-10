@@ -98,11 +98,13 @@ if(key_two){
 }
 
 if(key_three){
-	SaveGame("saveX.sav");
+	var k = "save" + string(oController.save_data_file) + ".sav";
+	SaveGame(k);
 }
 
 if (key_four){
-	LoadGame("saveX.sav");
+	var k = "save" + string(oController.save_data_file) + ".sav";
+	LoadGame(k);
 }
 
 if(key_five){

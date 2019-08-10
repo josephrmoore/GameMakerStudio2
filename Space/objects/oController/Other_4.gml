@@ -18,7 +18,29 @@ switch(current_room){
 		break;
 	case "init":
 		break;
+	case "data":
+		var s0 = instance_find(oSaveSlot,0);
+		var s1 = instance_find(oSaveSlot,1);
+		var s2 = instance_find(oSaveSlot,2);
+	
+		if(file_exists("save0.sav")){
+			var save_data = LoadJsonFromFile("save0.sav");
+			s0.current_room = ds_map_find_value(save_data, "room");	
+			s0.has_save_data = true;
+		} 
+		if(file_exists("save1.sav")){
+			var save_data = LoadJsonFromFile("save1.sav");
+			s1.current_room = ds_map_find_value(save_data, "room");	
+			s1.has_save_data = true;
+		} 
+		if(file_exists("save2.sav")){
+			var save_data = LoadJsonFromFile("save2.sav");
+			s2.current_room = ds_map_find_value(save_data, "room");	
+			s2.has_save_data = true;
+		}
+		break;
 	default:
+		SaveGame("save"+string(oController.save_data_file)+".sav");
 		if(story_progress == STORY.FIRSTPLAY && current_room == "plains"){
 			if(ds_map_empty(player_stats)){
 				access_player_stats("create");
