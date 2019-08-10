@@ -139,4 +139,83 @@ if(screen_state == SCREENSTATE.PAUSED){
 		screen_state = SCREENSTATE.GAME;
 	}
 	// no controls, just display upgrades
+} else if (screen_state == SCREENSTATE.DATA) {
+	var s0 = instance_find(oSaveSlot,0);
+	var s1 = instance_find(oSaveSlot,1);
+	var s2 = instance_find(oSaveSlot,2);
+	
+	if(save_screen_selected == 0){
+		s0.selected = true;
+		s1.selected = false;
+		s2.selected = false;
+	} else if (save_screen_selected == 1){
+		s0.selected = false;
+		s1.selected = true;
+		s2.selected = false;
+	} else if (save_screen_selected == 2){
+		s0.selected = false;
+		s1.selected = false;
+		s2.selected = true;
+	}
+	
+	if(key_down_pressed){
+		if(save_screen_selected == 2){
+			save_screen_selected = 0;
+		} else {
+			save_screen_selected++;
+		}
+	}
+	if(key_up_pressed){
+		if(save_screen_selected == 0){
+			save_screen_selected = 2;
+		} else {
+			save_screen_selected--;
+		}
+	}
+	
+	if(key_any_no_dir){
+		if(s0.selected){
+			if(file_exists("saveX.sav")){
+				show_debug_message("0 sav exists");
+				LoadGame("saveX.sav")
+			} else {
+				room_goto(plains);
+			}
+			screen_state = SCREENSTATE.GAME;
+		} else if (s1.selected){
+			if(file_exists("save1.sav")){
+				show_debug_message("1 sav exists");
+				LoadGame("save1.sav")
+			} else {
+				room_goto(plains);
+			}
+			screen_state = SCREENSTATE.GAME;
+		} else if (s2.selected){
+			if(file_exists("save2.sav")){
+				show_debug_message("2 sav exists");
+				LoadGame("save2.sav")
+			} else {
+				room_goto(plains);
+			}
+			screen_state = SCREENSTATE.GAME;
+		}
+	}
+	
+	if(file_exists("saveX.sav")){
+		var save_data = LoadJsonFromFile("saveX.sav");
+		s0.current_room = ds_map_find_value(save_data, "room");	
+		s0.has_save_data = true;
+	} 
+	if(file_exists("save1.sav")){
+		var save_data = LoadJsonFromFile("save1.sav");
+		s1.current_room = ds_map_find_value(save_data, "room");	
+		s1.has_save_data = true;
+	} 
+	if(file_exists("save2.sav")){
+		var save_data = LoadJsonFromFile("save2.sav");
+		s2.current_room = ds_map_find_value(save_data, "room");	
+		s2.has_save_data = true;
+	}
 }
+
+show_debug_message(screen_state);

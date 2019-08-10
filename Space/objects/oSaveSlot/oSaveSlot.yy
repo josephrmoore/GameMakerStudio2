@@ -69,6 +69,34 @@
             "value": "0",
             "varName": "selected",
             "varType": 3
+        },
+        {
+            "id": "0c9ba9c6-4f7f-4eea-b92b-adaabc59ad0e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "save_slot_number",
+            "varType": 0
+        },
+        {
+            "id": "698d764a-46a5-4b14-aabf-cca0096c6a6b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "none",
+            "varName": "current_room",
+            "varType": 2
         }
     ],
     "solid": false,

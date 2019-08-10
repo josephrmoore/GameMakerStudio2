@@ -2,19 +2,19 @@
 // You can write your code in this editor
 player_stats = ds_map_create();
 
-upgrade_srs = [];
-mod_srs = [];
-energy_tank_srs = [];
-missile_upgrade_srs = [];
-boss_srs = [];
-breakable_srs = [];
+//upgrade_srs = [];
+//mod_srs = [];
+//energy_tank_srs = [];
+//missile_upgrade_srs = [];
+//boss_srs = [];
+//breakable_srs = [];
 
-//upgrade_srs = ds_list_create();
-//mod_srs = ds_list_create();
-//energy_tank_srs = ds_list_create();
-//missile_upgrade_srs = ds_list_create();
-//boss_srs = ds_list_create();
-//breakable_srs = ds_list_create();
+upgrade_srs = ds_list_create();
+mod_srs = ds_list_create();
+energy_tank_srs = ds_list_create();
+missile_upgrade_srs = ds_list_create();
+boss_srs = ds_list_create();
+breakable_srs = ds_list_create();
 
 
 story_progress = STORY.FIRSTPLAY;

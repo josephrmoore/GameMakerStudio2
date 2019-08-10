@@ -347,6 +347,20 @@
             "value": "True",
             "varName": "player_has_control",
             "varType": 3
+        },
+        {
+            "id": "9b845d7f-d751-4c61-bfcf-a61ad6a7afe5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "save_screen_selected",
+            "varType": 0
         }
     ],
     "solid": false,

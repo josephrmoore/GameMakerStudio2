@@ -9,11 +9,5 @@ switch(current_room){
 	case "init":
 		break;
 	default:
-		if(ds_map_empty(player_stats)){
-			access_player_stats("create");
-		} else {
-			access_player_stats("set");
-		}
-		//show_debug_message(player_stats);
 		break;
 }

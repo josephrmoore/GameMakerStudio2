@@ -13,6 +13,28 @@ switch(current_room){
 	break;
 	case "init":
 		break;
+	case "data":
+		draw_set_color(c_white);
+		draw_set_font(fH2);
+		var s0 = instance_find(oSaveSlot, 0);
+		var s1 = instance_find(oSaveSlot, 1);
+		var s2 = instance_find(oSaveSlot, 2);
+		if(!s0.has_save_data){
+			draw_text(200, 150, "NEW GAME");
+		} else {
+			draw_text(300, 150, string(s0.current_room));
+		}
+		if(!s1.has_save_data){
+			draw_text(200, 400, "NEW GAME");
+		} else {
+			draw_text(300, 400, string(s1.current_room));
+		}
+		if(!s2.has_save_data){
+			draw_text(200, 650, "NEW GAME");
+		} else {
+			draw_text(300, 650, string(s2.current_room));
+		}
+		break;		
 	case "dead":
 		draw_set_font(fH1);
 		draw_set_color(c_white);

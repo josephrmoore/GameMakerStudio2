@@ -48,7 +48,8 @@ if(!collected){
 				oPlayer.max_jumps = 2;
 			}
 			// update upgrade srs
-			oController.upgrade_srs[array_length_1d(oController.upgrade_srs)] = get_srs();
+			ds_list_add(oController.upgrade_srs, get_srs());
+			//oController.upgrade_srs[array_length_1d(oController.upgrade_srs)] = get_srs();
 		} else if (kind == "mod"){
 			audio_play_sound(sndPickupUpgrade,7,false);
 			if (upgrade == "has_long_slash"){
@@ -75,18 +76,21 @@ if(!collected){
 				oPlayer.has_super_bombs = true;
 			}
 			// update mod srs
-			oController.mod_srs[array_length_1d(oController.mod_srs)] = get_srs();
+			ds_list_add(oController.mod_srs, get_srs());
+			//oController.mod_srs[array_length_1d(oController.mod_srs)] = get_srs();
 		} else if (kind == "missile_upgrade"){
 			oPlayer.max_missiles += 5;
 			oPlayer.missiles += 5;
 			// update missile srs
-			oController.missile_upgrade_srs[array_length_1d(oController.missile_upgrade_srs)] = get_srs();
+			ds_list_add(oController.missile_upgrade_srs, get_srs());
+			//oController.missile_upgrade_srs[array_length_1d(oController.missile_upgrade_srs)] = get_srs();
 		} else if (kind == "energy_tank"){
 			oPlayer.energy_tanks += 1;
 			oPlayer.max_hp += 100;
 			oPlayer.hp = oPlayer.max_hp;
 			// update energy tank srs
-			oController.energy_tank_srs[array_length_1d(oController.energy_tank_srs)] = get_srs();
+			ds_list_add(oController.energy_tank_srs, get_srs());
+			//oController.energy_tank_srs[array_length_1d(oController.energy_tank_srs)] = get_srs();
 		}
 		collected = true;
 		// update player_stats

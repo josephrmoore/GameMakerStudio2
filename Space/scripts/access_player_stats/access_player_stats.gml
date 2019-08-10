@@ -2,6 +2,7 @@ var action = argument0;
 
 if(action == "load"){
 	oPlayer.hp = ds_map_find_value(oController.player_stats, "hp");
+	oPlayer.max_missiles = ds_map_find_value(oController.player_stats, "max_missiles");
 	oPlayer.energy_tanks = ds_map_find_value(oController.player_stats, "energy_tanks");
 	oPlayer.max_hp = ds_map_find_value(oController.player_stats, "max_hp");
 	oPlayer.missiles = ds_map_find_value(oController.player_stats, "missiles");
@@ -31,6 +32,7 @@ if(action == "load"){
 	oPlayer.has_cluster_missiles = ds_map_find_value(oController.player_stats, "has_cluster_missiles");
 } else if (action == "set"){	
 	ds_map_set(oController.player_stats,"hp",oPlayer.hp);
+	ds_map_set(oController.player_stats,"max_missiles",oPlayer.max_missiles);
 	ds_map_set(oController.player_stats,"energy_tanks",oPlayer.energy_tanks);
 	ds_map_set(oController.player_stats,"max_hp",oPlayer.max_hp);
 	ds_map_set(oController.player_stats,"missiles",oPlayer.missiles);
@@ -60,6 +62,7 @@ if(action == "load"){
 	ds_map_set(oController.player_stats,"has_cluster_missiles",oPlayer.has_cluster_missiles);
 } else if (action == "create"){
 	ds_map_add(oController.player_stats,"hp",oPlayer.hp);
+	ds_map_add(oController.player_stats,"max_missiles",oPlayer.max_missiles);
 	ds_map_add(oController.player_stats,"max_hp",oPlayer.max_hp);
 	ds_map_add(oController.player_stats,"energy_tanks",oPlayer.energy_tanks);
 	ds_map_add(oController.player_stats,"missiles",oPlayer.missiles);

@@ -35,7 +35,8 @@ key_mmi_l = gamepad_button_check_pressed(0,gp_shoulderl) || keyboard_check_press
 key_mmi_r = gamepad_button_check_pressed(0,gp_shoulderr) || keyboard_check_pressed(vk_rshift);
 key_mmi = key_mmi_l || key_mmi_r;
 
-key_any = key_right || key_left || key_up || key_down || key_jump || key_dash || key_block || key_shoot || key_slash || key_missile || key_bomb || key_pause || keyboard_check_pressed(vk_anykey);
+key_any_no_dir = key_jump || key_dash || key_block || key_shoot || key_slash || key_missile || key_bomb || key_pause;
+key_any = key_right || key_left || key_up || key_down || key_any_no_dir || keyboard_check_pressed(vk_anykey);
 
 }
 
@@ -97,11 +98,11 @@ if(key_two){
 }
 
 if(key_three){
-	SaveGame();
+	SaveGame("saveX.sav");
 }
 
 if (key_four){
-	LoadGame();
+	LoadGame("saveX.sav");
 }
 
 if(key_five){

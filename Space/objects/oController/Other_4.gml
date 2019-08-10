@@ -43,8 +43,9 @@ switch(current_room){
 		if(!ds_map_empty(player_stats)){
 			access_player_stats("load");
 		}
-		for(var i=0; i<array_length_1d(upgrade_srs); i++){
-			if(srs_in_room(upgrade_srs[i])){
+
+		for(var i=0; i<ds_list_size(upgrade_srs); i++){
+			if(srs_in_room(ds_list_find_value(upgrade_srs,i))){
 				for(var j=0; j<instance_number(oPickupUpgrade); j++){
 					var inst = instance_find(oPickupUpgrade, j);
 					if(srs_in_room(get_srs_obj(inst))){
@@ -53,8 +54,8 @@ switch(current_room){
 				}
 			}
 		}
-		for(var i=0; i<array_length_1d(mod_srs); i++){
-			if(srs_in_room(mod_srs[i])){
+		for(var i=0; i<ds_list_size(mod_srs); i++){
+			if(srs_in_room(ds_list_find_value(mod_srs, i))){
 				for(var j=0; j<instance_number(oPickupMod); j++){
 					var inst = instance_find(oPickupMod, j);
 					if(srs_in_room(get_srs_obj(inst))){
@@ -63,8 +64,8 @@ switch(current_room){
 				}
 			}
 		}
-		for(var i=0; i<array_length_1d(energy_tank_srs); i++){
-			if(srs_in_room(energy_tank_srs[i])){
+		for(var i=0; i<ds_list_size(energy_tank_srs); i++){
+			if(srs_in_room(ds_list_find_value(energy_tank_srs, i))){
 				for(var j=0; j<instance_number(oPickupEnergyTank); j++){
 					var inst = instance_find(oPickupEnergyTank, j);
 					if(srs_in_room(get_srs_obj(inst))){
@@ -74,8 +75,8 @@ switch(current_room){
 				}
 			}
 		}
-		for(var i=0; i<array_length_1d(missile_upgrade_srs); i++){
-			if(srs_in_room(missile_upgrade_srs[i])){
+		for(var i=0; i<ds_list_size(missile_upgrade_srs); i++){
+			if(srs_in_room(ds_list_find_value(missile_upgrade_srs, i))){
 				for(var j=0; j<instance_number(oPickupMissileUpgrade); j++){
 					var inst = instance_find(oPickupMissileUpgrade, j);
 					if(srs_in_room(get_srs_obj(inst))){
