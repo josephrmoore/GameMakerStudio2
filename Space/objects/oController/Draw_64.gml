@@ -130,6 +130,21 @@ switch(current_room){
 				draw_set_color(c_white);
 				draw_set_font(fH1);
 				draw_text(50, 50, "MODS");
+				draw_sprite(sModSystem,0,120,170);
+				var slot_index = 0;
+				for(var i=0; i<PLAYERMODS.size; i++){
+					draw_sprite(sModItem,0,20+(i*80),400);
+					with(oPlayer){
+						if(has_mods_vars[i]){
+							draw_sprite(sModItem,1,20+(i*80),400);
+							draw_sprite(sModItemPics,i,24+(i*80),404);
+						}
+						if(mods_on_vars[i]){
+							draw_sprite(sModItemPics,i,180+(slot_index*200),235);
+							slot_index++;
+						}
+					}
+				}
 			} else if (screen_state == SCREENSTATE.MAP){
 				draw_set_colour(c_black);
 				draw_rectangle(0, 0, room_width, room_height, false);

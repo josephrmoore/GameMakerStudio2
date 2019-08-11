@@ -375,6 +375,34 @@
             "value": "-1",
             "varName": "save_data_file",
             "varType": 0
+        },
+        {
+            "id": "d4e04df0-39cb-49c2-9792-5c2054f13e09",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "camera_x",
+            "varType": 1
+        },
+        {
+            "id": "e9366bc3-62cb-436c-9cc1-f3277d4d9bbe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "camera_y",
+            "varType": 1
         }
     ],
     "solid": false,

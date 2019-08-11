@@ -714,7 +714,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "can_double_jump",
             "varType": 3
         },
@@ -728,7 +728,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "can_triple_jump",
             "varType": 3
         },
@@ -756,7 +756,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "can_triple_dash",
             "varType": 3
         },
@@ -826,7 +826,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "mod_slow_fall",
             "varType": 3
         },

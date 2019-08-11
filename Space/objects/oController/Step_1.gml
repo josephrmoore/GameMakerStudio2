@@ -114,6 +114,8 @@ if(screen_state == SCREENSTATE.PAUSED){
 		is_paused = false;
 		screen_state = SCREENSTATE.GAME;
 	}
+	
+	
 } else if (screen_state == SCREENSTATE.MAP) {
 	if(key_mmi_l){
 		screen_state = SCREENSTATE.MODS;
