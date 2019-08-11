@@ -49,6 +49,7 @@ for(var i=0; i<num_terminals; i++){
 	}
 	var nodes = [];
 	for (var j=0; j<num_node_holders; j++){
+		instance_create_layer((each_node*(j+1))+starting_x, 0,"NodeHolders",oBlocker);
 		nodes[j] = instance_create_layer((each_node*(j+1))+starting_x, y_margin+(i*(y_height+y_padding)),"NodeHolders",oNodeHolder);
 		with(nodes[j]){
 			row = i;
