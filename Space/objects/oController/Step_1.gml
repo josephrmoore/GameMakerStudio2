@@ -114,7 +114,6 @@ if(screen_state == SCREENSTATE.PAUSED){
 		is_paused = false;
 		screen_state = SCREENSTATE.GAME;
 	}
-	// control system for mod selection
 } else if (screen_state == SCREENSTATE.MAP) {
 	if(key_mmi_l){
 		screen_state = SCREENSTATE.MODS;
