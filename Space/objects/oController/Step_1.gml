@@ -175,7 +175,6 @@ if(screen_state == SCREENSTATE.PAUSED){
 	if(key_any_no_dir){
 		if(s0.selected){
 			if(file_exists("save0.sav")){
-				show_debug_message("0 sav exists");
 				LoadGame("save0.sav")
 			} else {
 				room_goto(plains);
@@ -184,7 +183,6 @@ if(screen_state == SCREENSTATE.PAUSED){
 			save_data_file = 0;
 		} else if (s1.selected){
 			if(file_exists("save1.sav")){
-				show_debug_message("1 sav exists");
 				LoadGame("save1.sav")
 			} else {
 				room_goto(plains);
@@ -193,7 +191,6 @@ if(screen_state == SCREENSTATE.PAUSED){
 			save_data_file = 1;
 		} else if (s2.selected){
 			if(file_exists("save2.sav")){
-				show_debug_message("2 sav exists");
 				LoadGame("save2.sav")
 			} else {
 				room_goto(plains);

@@ -58,37 +58,7 @@ key_eight = keyboard_check_pressed(ord("8"));
 key_nine = keyboard_check_pressed(ord("9"));
 key_zero = keyboard_check_pressed(ord("0"));  
 
-//if(key_one){
-//	has_wave = false;
-//	has_spread = false;
-//}
-
-//if(key_two){
-//	has_wave = false;
-//	has_spread = true;
-//}
-
-//if(key_three){
-//	if(oController.is_paused){
-//		oController.is_paused = false;
-//	} else {
-//		oController.is_paused = true;
-//	}
-//	show_debug_message("thwee");
-//}
-
-//if(key_four){
-//	has_wave = true;
-//	has_spread = true;
-//}
-
-//if(key_five){
-//	if(has_turbo){
-//		has_turbo = false;
-//	} else {
-//		has_turbo = true;
-//	}
-//}
+key_delete = keyboard_check_pressed(vk_delete) || keyboard_check_pressed(vk_backspace);
 
 if(key_one){
 	audio_group_set_gain(Music,0,0);
@@ -129,4 +99,20 @@ if(key_nine){
 
 if(key_zero){
 	game_restart();
+}
+
+if(key_delete){
+	show_debug_message("pressed");
+	if file_exists("save0.sav"){
+		file_delete("save0.sav");
+		show_debug_message("save 0 deleted");
+	}
+	if file_exists("save1.sav"){
+		file_delete("save1.sav");
+		show_debug_message("save 1 deleted");
+	}
+	if file_exists("save2.sav"){
+		file_delete("save2.sav");
+		show_debug_message("save 2 deleted");
+	}
 }

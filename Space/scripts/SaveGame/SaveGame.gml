@@ -16,7 +16,7 @@ ds_list_copy(mod_srs,oController.mod_srs);
 ds_list_copy(energy_tank_srs,oController.energy_tank_srs);
 ds_list_copy(missile_upgrade_srs,oController.missile_upgrade_srs);
 
-ds_map_set(player_stats, "hp", oPlayer.max_hp);
+//ds_map_set(player_stats, "hp", oPlayer.max_hp);
 
 ds_map_add(save_data,"room",room_get_name(room));
 ds_map_add(save_data,"story_progress", oController.story_progress);
