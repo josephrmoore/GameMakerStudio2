@@ -114,8 +114,25 @@ if(screen_state == SCREENSTATE.PAUSED){
 		is_paused = false;
 		screen_state = SCREENSTATE.GAME;
 	}
-	
-	
+	if(key_left_pressed){
+		if(mod_screen_selected > 0){
+			mod_screen_selected--;
+		} else {
+			mod_screen_selected = 13;
+		}
+	}
+	if(key_right_pressed){
+		if(mod_screen_selected < 13){
+			mod_screen_selected++;
+		} else {
+			mod_screen_selected = 0;
+		}
+	}
+	if(key_any_no_dir){
+		if(oPlayer.has_mods_vars[mod_screen_selected]){
+			// if less than 4 are activated, activate this one
+		}
+	}
 } else if (screen_state == SCREENSTATE.MAP) {
 	if(key_mmi_l){
 		screen_state = SCREENSTATE.MODS;

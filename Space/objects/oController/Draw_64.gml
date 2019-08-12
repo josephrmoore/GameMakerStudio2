@@ -132,14 +132,38 @@ switch(current_room){
 				draw_text(50, 50, "MODS");
 				draw_sprite(sModSystem,0,120,170);
 				var slot_index = 0;
+				
 				for(var i=0; i<PLAYERMODS.size; i++){
-					draw_sprite(sModItem,0,20+(i*80),400);
-					with(oPlayer){
-						if(has_mods_vars[i]){
-							draw_sprite(sModItem,1,20+(i*80),400);
-							draw_sprite(sModItemPics,i,24+(i*80),404);
+					var row = 0;
+					if(i>=(PLAYERMODS.size/2)){
+						row = 1;
+					}
+					
+					var f = 0;
+					if(oPlayer.mods_on_vars[i]){
+						f = 2;
+					}
+					if(i == oController.mod_screen_selected){
+						f = 1;
+						if(oPlayer.mods_on_vars[i]){
+							f = 3;
 						}
-						if(mods_on_vars[i]){
+					}
+					if(oController.mods_activated >3 && !oPlayer.mods_on_vars[i]){
+						f =4;
+					}
+
+					draw_sprite(sModItem,f,200+((i-((PLAYERMODS.size/2)*row))*80),400+(row*100));
+					with(oPlayer){
+						if(oPlayer.has_mods_vars[i]){
+							draw_sprite(sModItemPics,i,204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100));
+							if(oController.mods_activated >3 && !oPlayer.mods_on_vars[i]){
+								draw_set_alpha(0.6);
+								draw_rectangle(204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100),268+((i-((PLAYERMODS.size/2)*row))*80),468+(row*100),false);
+								draw_set_alpha(1);
+							}
+						}
+						if(oPlayer.mods_on_vars[i]){
 							draw_sprite(sModItemPics,i,180+(slot_index*200),235);
 							slot_index++;
 						}

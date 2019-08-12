@@ -403,6 +403,34 @@
             "value": "0",
             "varName": "camera_y",
             "varType": 1
+        },
+        {
+            "id": "94ede01a-9961-4d78-9ddf-8d6fc544e74c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "mod_screen_selected",
+            "varType": 1
+        },
+        {
+            "id": "1dae98cb-8d5d-4bff-a934-c0a4ad9f9801",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "mods_activated",
+            "varType": 0
         }
     ],
     "solid": false,
