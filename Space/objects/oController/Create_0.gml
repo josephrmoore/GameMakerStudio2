@@ -2,6 +2,10 @@
 // You can write your code in this editor
 player_stats = ds_map_create();
 
+player_upgrades = ds_list_create();
+player_mods = ds_list_create();
+player_mods_activated = ds_list_create();
+
 upgrade_srs = ds_list_create();
 mod_srs = ds_list_create();
 energy_tank_srs = ds_list_create();
@@ -29,7 +33,8 @@ enum STORY {
 	PART3,
 	TRAGEDY,
 	EXTERMINTE,
-	ESCAPE
+	ESCAPE,
+	size
 }
 
 enum SCREENSTATE {
@@ -41,5 +46,38 @@ enum SCREENSTATE {
 	OPTIONS,
 	MODS,
 	MAP,
-	INVENTORY
+	INVENTORY,
+	size
+}
+
+enum PLAYERUPGRADES {
+	MISSILES,
+	HOOK,
+	DOUBLEJUMP,
+	DASH,
+	SPREAD,
+	WAVE,
+	BOMB,
+	SCREWATTACK,
+	ORBSLASH,
+	MODSYSTEM,
+	size
+}
+
+enum PLAYERMODS {
+	TURBO,
+	TRIPLEJUMP,
+	DOUBLEDASH,
+	TRIPLEDASH,
+	STRONGSLASH,
+	LONGSLASH,
+	STICKYHANG,
+	SLOWFALL,
+	SMALLAVATAR,
+	SHARPDASH,
+	REGEN,
+	SHIELD,
+	SUPERBOMB,
+	CLUSTERMISSILES,
+	size
 }

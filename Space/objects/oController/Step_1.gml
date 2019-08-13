@@ -128,9 +128,23 @@ if(screen_state == SCREENSTATE.PAUSED){
 			mod_screen_selected = 0;
 		}
 	}
-	if(key_any_no_dir){
-		if(oPlayer.has_mods_vars[mod_screen_selected]){
-			// if less than 4 are activated, activate this one
+	if(key_shoot_pressed){
+		show_debug_message("prssd");
+		var active_mods = ds_list_find_index(oController.player_mods_activated, true);
+		show_debug_message(active_mods);
+		if(!is_array(active_mods)){
+			active_mods = [];
+		}
+		if(ds_list_find_value(oController.player_mods, mod_screen_selected)){
+			if(ds_list_find_value(oController.player_mods_activated, mod_screen_selected)){
+				// deactivate this one
+				ds_list_set(oController.player_mods_activated, mod_screen_selected, false);
+				access_player_stats("set");
+			} else if(array_length_1d(active_mods) < 4){
+				// activate this one
+				ds_list_set(oController.player_mods_activated, mod_screen_selected, true);
+				access_player_stats("set");
+			}
 		}
 	}
 } else if (screen_state == SCREENSTATE.MAP) {
@@ -143,6 +157,7 @@ if(screen_state == SCREENSTATE.PAUSED){
 	if(key_jump_pressed){
 		is_paused = false;
 		screen_state = SCREENSTATE.GAME;
+		// update player_stats with changes & player object
 	}
 	// l,r,u,d on the different rooms
 } else if (screen_state == SCREENSTATE.INVENTORY) {

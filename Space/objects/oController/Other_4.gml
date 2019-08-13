@@ -22,6 +22,7 @@ switch(current_room){
 		get_room_from_save(0);
 		get_room_from_save(1);
 		get_room_from_save(2);
+		access_player_stats("create");
 		//var s0 = instance_find(oSaveSlot,0);
 		//var s1 = instance_find(oSaveSlot,1);
 		//var s2 = instance_find(oSaveSlot,2);

@@ -149,7 +149,7 @@ switch(current_room){
 							f = 3;
 						}
 					}
-					if(oController.mods_activated >3 && !oPlayer.mods_on_vars[i]){
+					if(array_length_1d(oPlayer.mods_on_vars) >3 && !oPlayer.mods_on_vars[i]){
 						f =4;
 					}
 
