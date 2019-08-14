@@ -44,6 +44,9 @@ switch(current_room){
 		//}
 		break;
 	default:
+		for(var i=0; i<ds_list_size(oController.player_mods_activated); i++){
+			show_debug_message(ds_list_find_value(oController.player_mods_activated, i));
+		}
 		SaveGame("save"+string(oController.save_data_file)+".sav");
 		if(story_progress == STORY.FIRSTPLAY && current_room == "plains"){
 			if(ds_map_empty(player_stats)){

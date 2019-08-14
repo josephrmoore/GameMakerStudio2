@@ -140,33 +140,31 @@ switch(current_room){
 					}
 					
 					var f = 0;
-					if(oPlayer.mods_on_vars[i]){
+					if(ds_list_find_value(oController.player_mods_activated, i)){
 						f = 2;
 					}
 					if(i == oController.mod_screen_selected){
 						f = 1;
-						if(oPlayer.mods_on_vars[i]){
+						if(ds_list_find_value(oController.player_mods_activated, i)){
 							f = 3;
 						}
 					}
-					if(array_length_1d(oPlayer.mods_on_vars) >3 && !oPlayer.mods_on_vars[i]){
-						f =4;
-					}
+					//if(ds_list_size(oController.player_mods_activated)>3 && !ds_list_find_value(oController.player_mods_activated, i)){
+					//	f =4;
+					//}
 
 					draw_sprite(sModItem,f,200+((i-((PLAYERMODS.size/2)*row))*80),400+(row*100));
-					with(oPlayer){
-						if(oPlayer.has_mods_vars[i]){
-							draw_sprite(sModItemPics,i,204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100));
-							if(oController.mods_activated >3 && !oPlayer.mods_on_vars[i]){
-								draw_set_alpha(0.6);
-								draw_rectangle(204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100),268+((i-((PLAYERMODS.size/2)*row))*80),468+(row*100),false);
-								draw_set_alpha(1);
-							}
-						}
-						if(oPlayer.mods_on_vars[i]){
-							draw_sprite(sModItemPics,i,180+(slot_index*200),235);
-							slot_index++;
-						}
+					if(ds_list_find_value(oController.player_mods, i)){
+						draw_sprite(sModItemPics,i,204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100));
+						//if(ds_list_size(oController.player_mods_activated) >3  && !ds_list_find_value(oController.player_mods_activated, i)){
+						//	draw_set_alpha(0.6);
+						//	draw_rectangle(204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100),268+((i-((PLAYERMODS.size/2)*row))*80),468+(row*100),false);
+						//	draw_set_alpha(1);
+						//}
+					}
+					if(ds_list_find_value(oController.player_mods_activated, i)){
+						draw_sprite(sModItemPics,i,180+(slot_index*200),235);
+						slot_index++;
 					}
 				}
 			} else if (screen_state == SCREENSTATE.MAP){

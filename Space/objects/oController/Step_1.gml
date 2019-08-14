@@ -130,20 +130,23 @@ if(screen_state == SCREENSTATE.PAUSED){
 	}
 	if(key_shoot_pressed){
 		show_debug_message("prssd");
-		var active_mods = ds_list_find_index(oController.player_mods_activated, true);
-		show_debug_message(active_mods);
-		if(!is_array(active_mods)){
-			active_mods = [];
+		var active_mods = 0;
+		for(var i=0; i<ds_list_size(oController.player_mods_activated); i++){
+			if(ds_list_find_value(oController.player_mods_activated, i)){
+				active_mods++;
+			}
 		}
 		if(ds_list_find_value(oController.player_mods, mod_screen_selected)){
 			if(ds_list_find_value(oController.player_mods_activated, mod_screen_selected)){
+				show_debug_message("activated selected pressed");
 				// deactivate this one
-				ds_list_set(oController.player_mods_activated, mod_screen_selected, false);
-				access_player_stats("set");
-			} else if(array_length_1d(active_mods) < 4){
+				ds_list_replace(oController.player_mods_activated, mod_screen_selected, false);
+				access_player_stats("load");
+				show_debug_message(ds_list_find_value(oController.player_mods_activated, mod_screen_selected));
+			} else if(active_mods < 4){
 				// activate this one
-				ds_list_set(oController.player_mods_activated, mod_screen_selected, true);
-				access_player_stats("set");
+				ds_list_replace(oController.player_mods_activated, mod_screen_selected, true);
+				access_player_stats("load");
 			}
 		}
 	}

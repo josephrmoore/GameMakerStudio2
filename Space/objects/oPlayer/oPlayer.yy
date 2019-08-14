@@ -504,7 +504,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "false",
+            "value": "True",
             "varName": "has_turbo",
             "varType": 3
         },
@@ -574,7 +574,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "has_slow_fall",
             "varType": 3
         },
@@ -672,7 +672,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "has_shield",
             "varType": 3
         },
@@ -770,7 +770,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "has_mod_system",
             "varType": 3
         },

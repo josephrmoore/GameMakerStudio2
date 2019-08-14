@@ -2,6 +2,8 @@
 
 if(has_slow_fall && mod_slow_fall){
 	max_vsp = 3;
+} else {
+	max_vsp = 20;
 }
 
 if(vsp < max_vsp){
