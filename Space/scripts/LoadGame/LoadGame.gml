@@ -10,7 +10,8 @@ if(file_exists(file)){
 	ds_list_copy(oController.missile_upgrade_srs, ds_map_find_value(save_data, "missile_upgrade_srs"));
 	ds_list_copy(oController.player_upgrades, ds_map_find_value(save_data, "player_upgrades"));
 	ds_list_copy(oController.player_mods, ds_map_find_value(save_data, "player_mods"));
-	ds_list_copy(oController.player_mods_activated, ds_map_find_value(save_data, "player_mods_activated"));		
+	ds_list_copy(oController.player_mods_activated, ds_map_find_value(save_data, "player_mods_activated"));	
+	ds_grid_read(global.map_visited_grid, ds_map_find_value(save_data, "map"));
 	oController.story_progress = ds_map_find_value(save_data, "story_progress");
 	room_goto(asset_get_index(load_room));
 }

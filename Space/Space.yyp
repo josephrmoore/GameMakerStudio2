@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "6765a172-497b-4701-abfb-5b0a88874de8",
+            "Value": {
+                "id": "ca198d3b-4e63-48be-aa58-683a5fd6feec",
+                "resourcePath": "scripts\/generate_map_colliders\/generate_map_colliders.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "68cadb10-ed38-491d-8bea-09110f72aab4",
             "Value": {
                 "id": "9090e601-c138-403a-8cd9-154cc2ce4809",
@@ -2233,7 +2241,8 @@
         "7a0d7457-c2b9-4948-8d40-5dc423a4b2ad",
         "3b45b255-9a0a-48bc-8920-9df7e0e58220",
         "fcc774ca-4897-4141-8b0a-201459da3d69",
-        "27e03666-01a8-4a74-9491-9ff1c678f348"
+        "27e03666-01a8-4a74-9491-9ff1c678f348",
+        "6765a172-497b-4701-abfb-5b0a88874de8"
     ],
     "tutorial": ""
 }

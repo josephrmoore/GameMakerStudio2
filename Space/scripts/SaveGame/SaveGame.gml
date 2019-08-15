@@ -26,6 +26,7 @@ ds_list_copy(player_upgrades,oController.player_upgrades);
 
 ds_map_add(save_data,"room",room_get_name(room));
 ds_map_add(save_data,"story_progress", oController.story_progress);
+ds_map_add(save_data, "map", ds_grid_write(global.map_visited_grid));
 ds_map_add_map(save_data, "player_stats", player_stats);
 ds_map_add_list(save_data,"upgrade_srs", upgrade_srs);
 ds_map_add_list(save_data,"mod_srs", mod_srs);
