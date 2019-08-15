@@ -205,6 +205,20 @@ switch(current_room){
 				draw_set_color(c_white);
 				draw_set_font(fH1);
 				draw_text(50, 50, "MAP");
+				// change this to draw part logic
+				
+				//draw_sprite(sWorldMap,0,0,0);
+				
+				// use global map vars to draw only parts visited
+				for(var i=0; i<136; i++){
+					for(var j=0; j<69; j++){
+						if(global.map_visited[j,i]){
+							show_debug_message("has stuff");
+							draw_sprite_part(sWorldMap,0,j*15,i*13,15,13,j*15,i*13);
+						}
+					}
+				}
+				
 			}
 		}
 		break;

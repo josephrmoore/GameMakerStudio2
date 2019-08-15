@@ -15,6 +15,13 @@ missile_upgrade_srs = ds_list_create();
 
 story_progress = STORY.FIRSTPLAY;
 
+global.map_visited = [];
+for(var i=0; i<136; i++){
+	for(var j=0; j<69; j++){
+		global.map_visited[j, i] = false;
+	}
+}
+
 audio_group_load(Music);
 audio_group_load(SFX);
 

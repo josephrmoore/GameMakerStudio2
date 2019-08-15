@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "2b2f955c-c01e-4d35-ae2a-b11c74949610",
+            "Value": {
+                "id": "e82aa840-5dee-47a1-aa56-d0e7bb2a0502",
+                "resourcePath": "sprites\/sMapCollider\/sMapCollider.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2bdec61a-91f1-4e88-8249-3676c18d8e43",
             "Value": {
                 "id": "0b5411eb-5210-4a9f-9441-9b678a5d9ff0",
@@ -572,6 +580,14 @@
                 "id": "93d6b5d5-5534-44c7-aaae-f5bd39f4d8c7",
                 "resourcePath": "sprites\/sBreakableAmbush\/sBreakableAmbush.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "43291f37-34d3-47cb-9b26-70d859b8821d",
+            "Value": {
+                "id": "4f395fcf-ba0c-4f09-834c-e6ca2756488b",
+                "resourcePath": "objects\/oMapCollider\/oMapCollider.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2036,6 +2052,14 @@
                 "id": "5b3211fd-ff37-413d-a41b-f3588676811e",
                 "resourcePath": "rooms\/mountainsB\/mountainsB.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f60df3a7-d409-4bbf-8a07-a1aa6d67e97d",
+            "Value": {
+                "id": "3844a58a-d9e1-4e70-8161-4d8827bc19d1",
+                "resourcePath": "sprites\/sWorldMap\/sWorldMap.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
