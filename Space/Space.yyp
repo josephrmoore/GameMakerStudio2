@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "55ae4cb9-5aa6-47e4-ad52-9b6241bf1220",
+            "Value": {
+                "id": "dfce9511-69a9-4a07-bde9-fef4c417b7fb",
+                "resourcePath": "sprites\/sUpgradeItemPics\/sUpgradeItemPics.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "579bb567-2ced-443d-b9e5-93e873a1f1f2",
             "Value": {
                 "id": "dea723cd-2faf-4b54-8b07-9235d56024a5",
@@ -1012,6 +1020,14 @@
                 "id": "41c8e767-8d07-4d8f-ab14-39dd6ebeded3",
                 "resourcePath": "objects\/oShipInside\/oShipInside.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "80b6785a-82f1-4551-8e98-e9f8e7b2e06c",
+            "Value": {
+                "id": "9dfe764c-b876-46fe-8faf-0c59fdc37f8b",
+                "resourcePath": "sprites\/sUpgradeItem\/sUpgradeItem.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

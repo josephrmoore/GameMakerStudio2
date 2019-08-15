@@ -47,7 +47,11 @@ if(screen_state == SCREENSTATE.PAUSED){
 			screen_state = SCREENSTATE.PAUSED;
 		}
 	}
-	if(key_mmi){
+	if(key_mmi_l){
+		is_paused = true;
+		screen_state = SCREENSTATE.MAP;
+	}
+	if(key_mmi_r){
 		is_paused = true;
 		screen_state = SCREENSTATE.MODS;
 	}
@@ -105,12 +109,9 @@ if(screen_state == SCREENSTATE.PAUSED){
 	
 }  else if (screen_state == SCREENSTATE.MODS) {
 	if(key_mmi_l){
-		screen_state = SCREENSTATE.INVENTORY;
-	}
-	if(key_mmi_r){
 		screen_state = SCREENSTATE.MAP;
 	}
-	if(key_jump_pressed){
+	if(key_jump_pressed || key_mmi_r){
 		is_paused = false;
 		screen_state = SCREENSTATE.GAME;
 	}
@@ -128,8 +129,7 @@ if(screen_state == SCREENSTATE.PAUSED){
 			mod_screen_selected = 0;
 		}
 	}
-	if(key_shoot_pressed){
-		show_debug_message("prssd");
+	if(key_shoot_pressed || key_missile_pressed || key_slash){
 		var active_mods = 0;
 		for(var i=0; i<ds_list_size(oController.player_mods_activated); i++){
 			if(ds_list_find_value(oController.player_mods_activated, i)){
@@ -138,11 +138,9 @@ if(screen_state == SCREENSTATE.PAUSED){
 		}
 		if(ds_list_find_value(oController.player_mods, mod_screen_selected)){
 			if(ds_list_find_value(oController.player_mods_activated, mod_screen_selected)){
-				show_debug_message("activated selected pressed");
 				// deactivate this one
 				ds_list_replace(oController.player_mods_activated, mod_screen_selected, false);
 				access_player_stats("load");
-				show_debug_message(ds_list_find_value(oController.player_mods_activated, mod_screen_selected));
 			} else if(active_mods < 4){
 				// activate this one
 				ds_list_replace(oController.player_mods_activated, mod_screen_selected, true);
@@ -151,30 +149,14 @@ if(screen_state == SCREENSTATE.PAUSED){
 		}
 	}
 } else if (screen_state == SCREENSTATE.MAP) {
-	if(key_mmi_l){
+	if(key_mmi_r){
 		screen_state = SCREENSTATE.MODS;
 	}
-	if(key_mmi_r){
-		screen_state = SCREENSTATE.INVENTORY;
-	}
-	if(key_jump_pressed){
+	if(key_jump_pressed || key_shoot_pressed || key_slash || key_missile_pressed || key_mmi_l){
 		is_paused = false;
 		screen_state = SCREENSTATE.GAME;
-		// update player_stats with changes & player object
 	}
 	// l,r,u,d on the different rooms
-} else if (screen_state == SCREENSTATE.INVENTORY) {
-	if(key_mmi_l){
-		screen_state = SCREENSTATE.MAP;
-	}
-	if(key_mmi_r){
-		screen_state = SCREENSTATE.MODS;
-	}
-	if(key_jump_pressed){
-		is_paused = false;
-		screen_state = SCREENSTATE.GAME;
-	}
-	// no controls, just display upgrades
 } else if (screen_state == SCREENSTATE.DATA) {
 	var s0 = instance_find(oSaveSlot,0);
 	var s1 = instance_find(oSaveSlot,1);

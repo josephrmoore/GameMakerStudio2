@@ -1,44 +1,34 @@
 /*
 
 ***BUGS***
-
 Duck & block state collision with enemies, doors, breakables all fucked up
 Breakable Door var bug on player collision
-
+slowfall gravity bug
 
 ***FEATURES/FIXES TO WORK ON***
-
-Do "Run" rooms
-
-Save/Load logic
-
 Map system
-Text system?
-
-Do a swimming area
-Ship pieces
-Boss
-Balance attack damage damaging on player and enemies
-
+Text system
 Controller screen in Options
 
-***AI STUFF***
-Do a leading NPC
-Have enemies that patrol then charge at you when you get close enough
-
-
-***ANIMATIONS***
+***FINESSE STUFF***
+Balance attack damage damaging on player and enemies
+Separate and paint collision/paint tile layers
 Refine intro animation
+
+***FOUND/AMBUSH/RUN***
+Do a leading NPC
+Have enemies that charge at you when you get close enough, follow you, attack you
 Do Found/Ambush/Run sequence
 Do return to ship sequence
 
 
-***MENUS***
 
-Mod
-Inventory
-Map
 
-Data
+*** AFTER DEMO ***
+Do a swimming area
+Ship pieces
+Bosses
+More enemies
+More rooms
 
 */

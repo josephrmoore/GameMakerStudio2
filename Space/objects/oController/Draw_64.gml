@@ -128,43 +128,75 @@ switch(current_room){
 				draw_set_colour(c_black);
 				draw_rectangle(0, 0, room_width, room_height, false);
 				draw_set_color(c_white);
-				draw_set_font(fH1);
-				draw_text(50, 50, "MODS");
-				draw_sprite(sModSystem,0,120,170);
-				var slot_index = 0;
-				
-				for(var i=0; i<PLAYERMODS.size; i++){
-					var row = 0;
-					if(i>=(PLAYERMODS.size/2)){
-						row = 1;
-					}
-					
-					var f = 0;
-					if(ds_list_find_value(oController.player_mods_activated, i)){
-						f = 2;
-					}
-					if(i == oController.mod_screen_selected){
-						f = 1;
-						if(ds_list_find_value(oController.player_mods_activated, i)){
-							f = 3;
+				draw_set_font(fStats);
+				draw_text(20, 10, "ENERGY");
+				var last_tank = 0;
+				var hp = oPlayer.hp;
+				if(oPlayer.energy_tanks > 0){
+					for(var i=1; i<oPlayer.energy_tanks+1; i++){
+						var emptiness = true;
+						if(hp>100){
+							emptiness = false;
+							hp -= 100;
 						}
+						draw_rectangle(85+(i*15), 10, 95+(i*15), 20, emptiness);
+						last_tank = 85+(i*15);
 					}
-					//if(ds_list_size(oController.player_mods_activated)>3 && !ds_list_find_value(oController.player_mods_activated, i)){
-					//	f =4;
-					//}
-
-					draw_sprite(sModItem,f,200+((i-((PLAYERMODS.size/2)*row))*80),400+(row*100));
-					if(ds_list_find_value(oController.player_mods, i)){
-						draw_sprite(sModItemPics,i,204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100));
-						//if(ds_list_size(oController.player_mods_activated) >3  && !ds_list_find_value(oController.player_mods_activated, i)){
-						//	draw_set_alpha(0.6);
-						//	draw_rectangle(204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100),268+((i-((PLAYERMODS.size/2)*row))*80),468+(row*100),false);
-						//	draw_set_alpha(1);
+				}
+				
+				draw_text(last_tank+20, 10, string(string(oPlayer.hp) + "/" + string(((oPlayer.energy_tanks*100)+100))));
+				if(oPlayer.has_missiles){
+					draw_text(800, 20, "MISSILES");
+					draw_text(900, 20, string((string(oPlayer.missiles) + "/" + string(oPlayer.max_missiles))));
+				}
+				draw_set_font(fH2);
+				draw_text(400, 50, "UPGRADES");
+				
+				for(var i=0; i<ds_list_size(oController.player_upgrades)-1; i++){
+					if(ds_list_find_value(oController.player_upgrades, i)){
+						draw_sprite(sUpgradeItem,0,120+(i*80),100);
+						draw_sprite(sUpgradeItemPics,i,120+(i*80),100);
+					}
+				}
+				// draw all upgrades
+				if(oPlayer.has_mod_system){
+					draw_text(430, 200, "MODS");
+					draw_sprite(sModSystem,0,120,270);
+					var slot_index = 0;
+				
+					for(var i=0; i<PLAYERMODS.size; i++){
+						var row = 0;
+						if(i>=(PLAYERMODS.size/2)){
+							row = 1;
+						}
+					
+						var f = 0;
+						if(ds_list_find_value(oController.player_mods_activated, i)){
+							f = 2;
+						}
+						if(i == oController.mod_screen_selected){
+							f = 1;
+							if(ds_list_find_value(oController.player_mods_activated, i)){
+								f = 3;
+							}
+						}
+						//if(ds_list_size(oController.player_mods_activated)>3 && !ds_list_find_value(oController.player_mods_activated, i)){
+						//	f =4;
 						//}
-					}
-					if(ds_list_find_value(oController.player_mods_activated, i)){
-						draw_sprite(sModItemPics,i,180+(slot_index*200),235);
-						slot_index++;
+
+						draw_sprite(sModItem,f,200+((i-((PLAYERMODS.size/2)*row))*80),500+(row*100));
+						if(ds_list_find_value(oController.player_mods, i)){
+							draw_sprite(sModItemPics,i,204+((i-((PLAYERMODS.size/2)*row))*80),504+(row*100));
+							//if(ds_list_size(oController.player_mods_activated) >3  && !ds_list_find_value(oController.player_mods_activated, i)){
+							//	draw_set_alpha(0.6);
+							//	draw_rectangle(204+((i-((PLAYERMODS.size/2)*row))*80),404+(row*100),268+((i-((PLAYERMODS.size/2)*row))*80),468+(row*100),false);
+							//	draw_set_alpha(1);
+							//}
+						}
+						if(ds_list_find_value(oController.player_mods_activated, i)){
+							draw_sprite(sModItemPics,i,180+(slot_index*200),335);
+							slot_index++;
+						}
 					}
 				}
 			} else if (screen_state == SCREENSTATE.MAP){
@@ -173,54 +205,6 @@ switch(current_room){
 				draw_set_color(c_white);
 				draw_set_font(fH1);
 				draw_text(50, 50, "MAP");
-			} else if (screen_state == SCREENSTATE.INVENTORY){
-				draw_set_colour(c_black);
-				draw_rectangle(0, 0, room_width, room_height, false);
-				draw_set_color(c_white);
-				draw_set_font(fH1);
-				draw_text(50, 50, "INVENTORY");
-				draw_set_font(fH2);
-				//draw_text(50, 150, json_encode(player_stats));
-				//var k = ds_map_find_first(player_stats), 
-				//   maptext = "";
-				//while (!is_undefined(k)) {
-				//  maptext += k + ": " + player_stats[? k] + "#";
-				//  k = ds_map_find_next(player_stats, k);
-				//}
-				//draw_text(50, 150, maptext);
-				//var upgrades = 0;
-				//if(oPlayer.has_missiles){
-				//	upgrades++;
-				//	draw_text(50, 100+(upgrades*50), "Missiles");
-				//}
-				//if(oPlayer.has_bombs){
-				//	upgrades++;
-				//	draw_text(50, 100+(upgrades*50), "Bombs");
-				//}
-				//if(oPlayer.can_dash){
-				//	upgrades++;
-				//	draw_text(50, 100+(upgrades*50), "Dash");
-				//}
-				//if(oPlayer.can_double_jump){
-				//	upgrades++;
-				//	draw_text(50, 100+(upgrades*50), "Double Jump");
-				//}
-				//if(oPlayer.can_hook){
-				//	upgrades++;
-				//	draw_text(50, 100+(upgrades*50), "Hook");
-				//}
-				//if(oPlayer.has_bombs){
-				//	upgrades++;
-				//	draw_text(50, 100+(upgrades*50), "Screw Attack");
-				//}
-				//if(oPlayer.has_wave){
-				//	upgrades++;
-				//	draw_text(50, 100+(upgrades*50), "Wave Gun");
-				//}
-				//if(oPlayer.has_spread){
-				//	upgrades++;
-				//	draw_text(50, 100+(upgrades*50), "Spread Gun");
-				//}
 			}
 		}
 		break;
