@@ -124,6 +124,14 @@ switch(current_room){
 					draw_set_color(c_yellow);
 				}
 				draw_text(50, 300, "Back");
+				if(controls_screen){
+					// show controls / allow mapping
+					if(gamepad_plugged_in){
+						draw_sprite(sGamepad, 0, 100, 300);
+					} else {
+						draw_sprite(sKeyboard, 0, 100, 300);
+					}
+				}
 			} else if (screen_state == SCREENSTATE.MODS){
 				draw_set_colour(c_black);
 				draw_rectangle(0, 0, room_width, room_height, false);

@@ -1079,6 +1079,14 @@
             }
         },
         {
+            "Key": "828ca4e9-bf72-4c2b-b814-b6857412bba5",
+            "Value": {
+                "id": "71b401e4-3b50-4727-b83e-b17ed49635dd",
+                "resourcePath": "sprites\/sGamepad\/sGamepad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "82a0b46f-fc1b-4cad-9fd0-c6d4a8c92a46",
             "Value": {
                 "id": "05492838-3f1a-4162-820d-6dcc4707396e",
@@ -1700,6 +1708,14 @@
                 "id": "a8744b75-d343-4adc-8ac5-229e931d9890",
                 "resourcePath": "rooms\/dead\/dead.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "cee6efbb-2d25-49c5-991a-db6b31518309",
+            "Value": {
+                "id": "7612fb9d-aa58-4c00-a308-1f8ddaf4da4d",
+                "resourcePath": "sprites\/sKeyboard\/sKeyboard.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

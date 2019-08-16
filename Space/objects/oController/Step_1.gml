@@ -104,7 +104,9 @@ if(screen_state == SCREENSTATE.PAUSED){
 	}
 	
 	if(controls_screen){
-		// show controls / allow mapping
+		if(key_any_no_dir){
+			controls_screen = false;
+		}
 	}
 	
 }  else if (screen_state == SCREENSTATE.MODS) {
@@ -217,5 +219,13 @@ if(screen_state == SCREENSTATE.PAUSED){
 			screen_state = SCREENSTATE.GAME;
 			save_data_file = 2;
 		}
+	}
+}
+
+var gp_num = gamepad_get_device_count();
+gamepad_plugged_in = false;
+for (var i = 0; i < gp_num; i++;){
+	if (gamepad_is_connected(i)){
+		gamepad_plugged_in = true;
 	}
 }

@@ -441,6 +441,20 @@
             "value": "0",
             "varName": "mods_activated",
             "varType": 0
+        },
+        {
+            "id": "47873e70-0314-4efe-b5b2-4827ea3f60dd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "gamepad_plugged_in",
+            "varType": 3
         }
     ],
     "solid": false,
