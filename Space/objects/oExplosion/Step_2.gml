@@ -3,7 +3,7 @@ if(!oController.is_paused){
 // You can write your code in this editor
 if(creating_weapon == "bomb"){
 	var bomb_damage = 5;
-	if(oPlayer.has_super_bombs && mod_super_bombs){
+	if(oPlayer.has_super_bombs && oPlayer.mod_super_bombs){
 		image_xscale = 2;
 		image_yscale = image_xscale;
 		bomb_damage = 20;

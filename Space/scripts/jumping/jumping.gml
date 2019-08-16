@@ -3,6 +3,8 @@
 if(oController.key_jump){
 	if(jumps < max_jumps){
 		vsp = -jSpeed;
+		show_debug_message(vsp);
+		show_debug_message(max_vsp);
 		jumps++;
 		if(jumps <= 1){
 			audio_play_sound(sndJump, 7, false);

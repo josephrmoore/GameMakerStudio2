@@ -812,7 +812,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "mod_sticky_hang",
             "varType": 3
         },
@@ -826,7 +826,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "mod_slow_fall",
             "varType": 3
         },
@@ -854,7 +854,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "mod_strong_slash",
             "varType": 3
         },

@@ -7,6 +7,4 @@ if(oController.key_left || oController.key_right){
 	y += vsp;
 	jumps = 0;
 	dashes = 0;
-} else {
-	location = PLAYERLOCATION.AIRBORNE;
-}
+} 

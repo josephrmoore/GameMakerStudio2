@@ -212,7 +212,8 @@ switch(current_room){
 				// use global map vars to draw only parts visited
 				for(var i=0; i<136; i++){
 					for(var j=0; j<69; j++){
-						if(global.map_visited[j,i] || ds_grid_get(global.map_visited_grid, j, i)){
+						//if(global.map_visited[j,i] || ds_grid_get(global.map_visited_grid, j, i)){
+						if(ds_grid_get(global.map_visited_grid, j, i)){
 							draw_sprite_part(sWorldMap,0,j*15,i*13,15,13,j*15,i*13);
 							
 						}

@@ -15,13 +15,13 @@ missile_upgrade_srs = ds_list_create();
 
 story_progress = STORY.FIRSTPLAY;
 
-global.map_visited = [];
+//global.map_visited = [];
 global.map_visited_grid = ds_grid_create(69,136);
 
 for(var i=0; i<136; i++){
 	for(var j=0; j<69; j++){
 		ds_grid_add(global.map_visited_grid, j, i, false);
-		global.map_visited[j, i] = false;
+		//global.map_visited[j, i] = false;
 	}
 }
 

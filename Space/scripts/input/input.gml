@@ -82,19 +82,19 @@ if(key_five){
 }
 
 if (key_six){
-	
+	console(oPlayer.can_dash);
 }
 
 if(key_seven){
-	
+	console(oController.player_upgrades, "upgrade list");
 }
 
 if (key_eight){
-	
+	console(oController.player_stats, "player_stats");
 }
 
 if(key_nine){
-	
+	console(global.map_visited_grid, "map grid");
 }
 
 if(key_zero){

@@ -12,6 +12,6 @@ if(vsp < max_vsp){
 	vsp = max_vsp;
 }
 
-if(vsp < -max_vsp){
-	vsp = -max_vsp;
+if(vsp < -jSpeed){
+	vsp = -jSpeed;
 }
