@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "0b525523-d531-42d7-90e4-283b86c3417c",
+            "Value": {
+                "id": "0f0a29d6-75e7-4e86-b4fa-63f17ea5fe72",
+                "resourcePath": "scripts\/draw_line_poly\/draw_line_poly.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0b6c606c-ac9c-47b8-ba35-b6861efae0cc",
             "Value": {
                 "id": "ade0bc57-2b08-48d0-824d-4ca9aff591ed",
@@ -596,14 +604,6 @@
                 "id": "cdf6681a-cb62-408b-883b-9f56f8672ea7",
                 "resourcePath": "scripts\/LoadGame\/LoadGame.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "44318eb0-65b8-4749-a854-2af3e8c398cb",
-            "Value": {
-                "id": "d3549e91-509d-4f16-a2d8-ab0beb5d4be3",
-                "resourcePath": "sprites\/sTextBox\/sTextBox.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1372,6 +1372,14 @@
                 "id": "5972d6a2-e5ed-475d-913e-7bb338f4c0fa",
                 "resourcePath": "views\/a3d102b3-151e-45db-b0a7-1aa80d920fd8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a446c999-8978-489c-9d78-e4db67108934",
+            "Value": {
+                "id": "02212f9c-8fba-411d-a4df-fc0fbd97213b",
+                "resourcePath": "objects\/oTextBoxManager\/oTextBoxManager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2292,7 +2300,8 @@
         "27e03666-01a8-4a74-9491-9ff1c678f348",
         "6765a172-497b-4701-abfb-5b0a88874de8",
         "562a6e7c-b0ca-40de-b2cd-1c95a402fd6e",
-        "b3f26714-f457-4387-9bca-16a4c7290dd0"
+        "b3f26714-f457-4387-9bca-16a4c7290dd0",
+        "0b525523-d531-42d7-90e4-283b86c3417c"
     ],
     "tutorial": ""
 }

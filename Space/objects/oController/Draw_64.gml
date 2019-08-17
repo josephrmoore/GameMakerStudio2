@@ -125,12 +125,41 @@ switch(current_room){
 				}
 				draw_text(50, 300, "Back");
 				if(controls_screen){
+					show_debug_message("controls screen");
 					// show controls / allow mapping
 					if(gamepad_plugged_in){
-						draw_sprite(sGamepad, 0, 100, 300);
+						show_debug_message("gamepad");
+						draw_sprite(sGamepad, 0, 150, 380);
+						draw_set_color(c_gray);
+						draw_text(100, 720, "MAP");
+						draw_text(700, 720, "INVENTORY");
+						draw_text(700, 350, "BOMB");
+						draw_text(100, 380, "MOVE/AIM");
+						draw_line_poly(380, 400, 350, 470, 2);
+						draw_line_poly(380, 400, 750, 570, 2);
+						draw_text(400, 200, "SHOOT");
+						draw_text(400, 250, "SLASH");
+						draw_text(400, 300, "BLOCK");
+						draw_text(700, 200, "MISSILE");
+						draw_text(700, 250, "JUMP");
+						draw_text(700, 300, "DASH");
 					} else {
-						draw_sprite(sKeyboard, 0, 100, 300);
+						draw_sprite(sKeyboard, 0, 0, 280);
+						draw_set_color(c_gray);
+						draw_text(100, 720, "MAP");
+						draw_text(700, 720, "INVENTORY");
+						draw_text(700, 350, "BOMB");
+						draw_text(100, 380, "MOVE/AIM");
+						draw_line_poly(380, 400, 350, 470, 2);
+						draw_line_poly(380, 400, 750, 570, 2);
+						draw_text(400, 200, "SHOOT");
+						draw_text(400, 250, "SLASH");
+						draw_text(400, 300, "BLOCK");
+						draw_text(700, 200, "MISSILE");
+						draw_text(700, 250, "JUMP");
+						draw_text(700, 300, "DASH");
 					}
+
 				}
 			} else if (screen_state == SCREENSTATE.MODS){
 				draw_set_colour(c_black);
@@ -224,6 +253,10 @@ switch(current_room){
 						if(ds_grid_get(global.map_visited_grid, j, i)){
 							draw_sprite_part(sWorldMap,0,j*15,i*13,15,13,j*15,i*13);
 							
+						}
+						if(j == oController.current_x_tile && i == oController.current_y_tile){
+							draw_set_color(c_yellow);
+							draw_rectangle(j*15, i*13,(j*15)+15,(i*13)+13, true);
 						}
 					}
 				}

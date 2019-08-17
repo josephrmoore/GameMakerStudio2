@@ -1,6 +1,6 @@
 room_music = "valley";
 
-global_offset_x = 9;
-global_offset_y = 48;
+oController.global_offset_x = 10;
+oController.global_offset_y = 49;
 
 generate_map_colliders();

@@ -33,10 +33,7 @@ if(screen_state == SCREENSTATE.PAUSED){
 		} else if (pause_screen_selected == 1){
 			screen_state = SCREENSTATE.OPTIONS;
 		} else if (pause_screen_selected == 2){
-			room_goto(title);
-			is_paused = false;
-			pause_screen_selected = 0;
-			screen_state = SCREENSTATE.TITLE;
+			game_end();
 		}
 	}
 } else if (screen_state == SCREENSTATE.GAME) {
@@ -73,8 +70,9 @@ if(screen_state == SCREENSTATE.PAUSED){
 	
 	if(option_screen_selected == 0){
 		// controls
+		show_debug_message(controls_screen);
 		if(key_jump_pressed || key_shoot_pressed || key_slash || key_missile_pressed || key_pause){
-			controls_screen = true;
+			controls_screen = !controls_screen;
 		}
 	} else if (option_screen_selected == 1){
 		if(key_left_pressed){
@@ -103,11 +101,11 @@ if(screen_state == SCREENSTATE.PAUSED){
 		}
 	}
 	
-	if(controls_screen){
-		if(key_any_no_dir){
-			controls_screen = false;
-		}
-	}
+	//if(controls_screen){
+	//	if(key_any_no_dir){
+	//		controls_screen = false;
+	//	}
+	//}
 	
 }  else if (screen_state == SCREENSTATE.MODS) {
 	if(key_mmi_l){

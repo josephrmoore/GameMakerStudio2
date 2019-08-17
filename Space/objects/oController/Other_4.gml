@@ -55,15 +55,18 @@ switch(current_room){
 				access_player_stats("set");
 			}
 			story_progress = STORY.BEGIN;
-			oController.is_paused = true;
+			var tm = instance_create_layer(oPlayer.x, oPlayer.y, "Player", oTextBoxManager);
+			tm.last_text_box = 1;
 			var t1 = instance_create_layer(oPlayer.x, oPlayer.y, "Player", oTextBox);
 			t1.line1 = "RESCUE THE LOST SCIENTISTS";
 			t1.line2 = "YOU ARE THEIR ONLY HOPE";
-			var t2 = instance_create_layer(oPlayer.x-200, oPlayer.y+100, "Player", oTextBox);
+			t1.order = 1;
+			var t2 = instance_create_layer(oPlayer.x, oPlayer.y, "Player", oTextBox);
 			t2.line1 = "EMERGENCY";
 			t2.line2 = "UNKNOWN PLANET";
 			t2.line3 = "ASSISTANCE NEEDED";
 			t2.line4 = "NO INFORMATION AVAILABLE";
+			t2.order = 0;
 		}
 		if(current_room == "found" && story_progress == STORY.BEGIN){
 			story_progress = STORY.FOUND;

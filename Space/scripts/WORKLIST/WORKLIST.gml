@@ -1,13 +1,13 @@
 /*
 
+***BUGS***
+sharpdash plays real loud sound and kills all oEnemy
+
 ***FEATURES/FIXES TO WORK ON***
-Text system
-  Get to work properly and easy to stack
   
 Controller screen in Options
   - use gamepad logic to print correct button instructions on map, mod, options, data pages
-
-Add where you are now to the map
+  - finish adding text/lines to controls screen
 
 ***FOUND/AMBUSH/RUN***
 Do a leading NPC
