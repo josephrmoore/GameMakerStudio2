@@ -83,6 +83,16 @@
             "enumb": 4,
             "eventtype": 7,
             "m_owner": "e0cd8db8-b100-4abd-990f-994de8a83e3c"
+        },
+        {
+            "id": "00708b78-9327-4998-82a1-e8b9d9baee2f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 3,
+            "eventtype": 2,
+            "m_owner": "e0cd8db8-b100-4abd-990f-994de8a83e3c"
         }
     ],
     "maskSpriteId": "2bdec61a-91f1-4e88-8249-3676c18d8e43",
@@ -983,6 +993,20 @@
             "value": "0",
             "varName": "flash",
             "varType": 0
+        },
+        {
+            "id": "41b1fdc9-f1d0-46ab-856b-4b10f4b9ebed",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "sharp_dash_timer",
+            "varType": 3
         }
     ],
     "solid": false,

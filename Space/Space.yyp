@@ -1351,14 +1351,6 @@
             }
         },
         {
-            "Key": "a03bb1ef-7cba-4744-b8de-fd6eea600849",
-            "Value": {
-                "id": "c68bf36c-66f2-4ca2-bf1b-408510259b88",
-                "resourcePath": "fonts\/fStats\/fStats.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "a1446769-834a-4fcd-a5a0-8dd7769ef734",
             "Value": {
                 "id": "be5370f5-2320-4a7c-9ee8-38da1f505555",
@@ -1404,6 +1396,14 @@
                 "id": "b14b72d8-896a-4bc8-86d8-db80f4d904ad",
                 "resourcePath": "objects\/oPickupHealthSmall\/oPickupHealthSmall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a6410daa-3c43-43b1-bde0-e77c00e857cb",
+            "Value": {
+                "id": "4c321f49-6965-4f6c-b212-b40c4ffe6e0b",
+                "resourcePath": "fonts\/fStats\/fStats.yy",
+                "resourceType": "GMFont"
             }
         },
         {

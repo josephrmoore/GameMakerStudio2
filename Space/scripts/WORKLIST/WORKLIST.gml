@@ -1,12 +1,8 @@
 /*
 
 ***BUGS***
-sharpdash plays real loud sound and kills all oEnemy
 
 ***FEATURES/FIXES TO WORK ON***
-  
-Controller screen in Options
-  - use gamepad logic to print correct button instructions on map, mod, options, data pages
 
 ***FOUND/AMBUSH/RUN***
 Do a leading NPC
@@ -15,6 +11,7 @@ Do Found/Ambush/Run sequence
 Do return to ship sequence
 
 ***FINESSE STUFF***
+Use images in menus, controller/keyboard logic
 Balance attack damage damaging on player and enemies
 Separate and paint collision/paint tile layers
 Do valley & mountains rooms, enemies, upgrades etc.
