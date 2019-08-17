@@ -7,7 +7,6 @@ sharpdash plays real loud sound and kills all oEnemy
   
 Controller screen in Options
   - use gamepad logic to print correct button instructions on map, mod, options, data pages
-  - finish adding text/lines to controls screen
 
 ***FOUND/AMBUSH/RUN***
 Do a leading NPC

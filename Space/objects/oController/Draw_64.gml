@@ -125,39 +125,11 @@ switch(current_room){
 				}
 				draw_text(50, 300, "Back");
 				if(controls_screen){
-					show_debug_message("controls screen");
 					// show controls / allow mapping
 					if(gamepad_plugged_in){
-						show_debug_message("gamepad");
-						draw_sprite(sGamepad, 0, 150, 380);
-						draw_set_color(c_gray);
-						draw_text(100, 720, "MAP");
-						draw_text(700, 720, "INVENTORY");
-						draw_text(700, 350, "BOMB");
-						draw_text(100, 380, "MOVE/AIM");
-						draw_line_poly(380, 400, 350, 470, 2);
-						draw_line_poly(380, 400, 750, 570, 2);
-						draw_text(400, 200, "SHOOT");
-						draw_text(400, 250, "SLASH");
-						draw_text(400, 300, "BLOCK");
-						draw_text(700, 200, "MISSILE");
-						draw_text(700, 250, "JUMP");
-						draw_text(700, 300, "DASH");
+						draw_sprite(sGamepad, 0, 0, 280);
 					} else {
-						draw_sprite(sKeyboard, 0, 0, 280);
-						draw_set_color(c_gray);
-						draw_text(100, 720, "MAP");
-						draw_text(700, 720, "INVENTORY");
-						draw_text(700, 350, "BOMB");
-						draw_text(100, 380, "MOVE/AIM");
-						draw_line_poly(380, 400, 350, 470, 2);
-						draw_line_poly(380, 400, 750, 570, 2);
-						draw_text(400, 200, "SHOOT");
-						draw_text(400, 250, "SLASH");
-						draw_text(400, 300, "BLOCK");
-						draw_text(700, 200, "MISSILE");
-						draw_text(700, 250, "JUMP");
-						draw_text(700, 300, "DASH");
+						draw_sprite(sKeyboard, 0, 0, 200);
 					}
 
 				}
