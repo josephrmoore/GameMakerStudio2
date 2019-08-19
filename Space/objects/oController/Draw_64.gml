@@ -4,11 +4,17 @@
 switch(current_room){
 	case "title":
 		if(!intro_animation_on){
-		draw_set_font(fH1);
-		draw_set_color(c_white)
-		draw_text(180, 200, "SPACE");
-		draw_set_font(fH2);
-		draw_text(160, 350, "PRESS ANY BUTTON TO BEGIN");
+			//draw_set_font(fH1);
+			//draw_set_color(c_white)
+			//draw_text(180, 200, "SPACE");
+			//draw_set_font(fH2);
+			//draw_text(160, 350, "PRESS ANY BUTTON TO BEGIN");
+			draw_sprite(sTitleSpace,0,0,0);
+			if(oController.gamepad_plugged_in){
+				draw_sprite(sTitleButton,0,0,0);
+			} else {
+				draw_sprite(sTitleKey,0,0,0);
+			} 
 		}
 	break;
 	case "init":
@@ -34,13 +40,25 @@ switch(current_room){
 		} else {
 			draw_text(300, 650, string(s2.current_room));
 		}
+		if(oController.gamepad_plugged_in){
+			draw_sprite(sDataButton, 0, 0, 0);
+		} else {
+			draw_sprite(sDataKey, 0, 0, 0);
+		}
 		break;		
 	case "dead":
-		draw_set_font(fH1);
-		draw_set_color(c_white);
-		draw_text(180, 200, "YOU'RE DEAD");
-		draw_set_font(fH2);
-		draw_text(160, 350, "PRESS ANY BUTTON TO START OVER");
+		//draw_set_font(fH1);
+		//draw_set_color(c_white);
+		//draw_text(180, 200, "YOU'RE DEAD");
+		//draw_set_font(fH2);
+		draw_sprite(sDeadText, 0, 0, 0);
+		if(oController.gamepad_plugged_in){
+			draw_sprite(sDeadButton,0,0,0);
+			//draw_text(160, 350, "PRESS ANY BUTTON TO START OVER");
+		} else {
+			draw_sprite(sDeadKey,0,0,0);
+			//draw_text(160, 350, "PRESS ANY KEY TO START OVER");
+		}
 		break;
 	default:
 		if(!is_paused){
@@ -84,17 +102,17 @@ switch(current_room){
 				if(pause_screen_selected == 0){
 					draw_set_color(c_yellow);
 				}
-				draw_text(300, 450, "Continue");
+				draw_text(300, 450, "CONTINUE");
 				draw_set_color(c_white);
 				if(pause_screen_selected == 1){
 					draw_set_color(c_yellow);
 				}
-				draw_text(300, 500, "Options");
+				draw_text(300, 500, "OPTIONS");
 				draw_set_color(c_white);
 				if(pause_screen_selected == 2){
 					draw_set_color(c_yellow);
 				}
-				draw_text(300, 550, "Quit");
+				draw_text(300, 550, "QUIT");
 			} else if (screen_state == SCREENSTATE.OPTIONS){
 				draw_set_colour(c_black);
 				draw_rectangle(0, 0, room_width, room_height, false);
@@ -106,33 +124,36 @@ switch(current_room){
 				if(option_screen_selected == 0){
 					draw_set_color(c_yellow);
 				}
-				draw_text(50, 150, "Controls");
-				draw_set_color(c_white);
-				if(option_screen_selected == 1){
-					draw_set_color(c_yellow);
-				}
+				//draw_text(50, 150, "Controls");
+				//draw_set_color(c_white);
+				//if(option_screen_selected == 1){
+				//	draw_set_color(c_yellow);
+				//}
 				draw_text(50, 200, "Music");
 				draw_text(200, 200, string(music_gain));
 				draw_set_color(c_white);
-				if(option_screen_selected == 2){
+				if(option_screen_selected == 1){
 					draw_set_color(c_yellow);
 				}
 				draw_text(50, 250, "SFX");
 				draw_text(200, 250, string(sfx_gain));
 				draw_set_color(c_white);
-				if(option_screen_selected == 3){
-					draw_set_color(c_yellow);
-				}
-				draw_text(50, 300, "Back");
-				if(controls_screen){
+				//if(option_screen_selected == 3){
+				//	draw_set_color(c_yellow);
+				//}
+				//draw_text(50, 300, "Back");
+				//if(controls_screen){
 					// show controls / allow mapping
 					if(gamepad_plugged_in){
 						draw_sprite(sGamepad, 0, 0, 280);
+						draw_sprite(sOptionsButton, 0, 0, 0);
 					} else {
 						draw_sprite(sKeyboard, 0, 0, 200);
+						draw_sprite(sOptionsKey, 0, 0, 0);
 					}
 
-				}
+				//}
+				
 			} else if (screen_state == SCREENSTATE.MODS){
 				draw_set_colour(c_black);
 				draw_rectangle(0, 0, room_width, room_height, false);
@@ -167,7 +188,7 @@ switch(current_room){
 						draw_sprite(sUpgradeItemPics,i,120+(i*80),100);
 					}
 				}
-				// draw all upgrades
+				var active_mod = false;
 				if(oPlayer.has_mod_system){
 					draw_text(430, 200, "MODS");
 					draw_sprite(sModSystem,0,120,270);
@@ -185,8 +206,10 @@ switch(current_room){
 						}
 						if(i == oController.mod_screen_selected){
 							f = 1;
+							active_mod = false;
 							if(ds_list_find_value(oController.player_mods_activated, i)){
 								f = 3;
+								active_mod = true;
 							}
 						}
 						//if(ds_list_size(oController.player_mods_activated)>3 && !ds_list_find_value(oController.player_mods_activated, i)){
@@ -207,6 +230,19 @@ switch(current_room){
 							slot_index++;
 						}
 					}
+					if(active_mod){
+						if(oController.gamepad_plugged_in){
+							draw_sprite(sModsDeactButton, 0, 0, 0);
+						} else {
+							draw_sprite(sModsDeactKey, 0, 0, 0);
+						}
+					} else {
+						if(oController.gamepad_plugged_in){
+							draw_sprite(sModsActButton, 0, 0, 0);
+						} else {
+							draw_sprite(sModsActKey, 0, 0, 0);
+						}
+					}
 				}
 			} else if (screen_state == SCREENSTATE.MAP){
 				draw_set_colour(c_black);
@@ -223,16 +259,20 @@ switch(current_room){
 					for(var j=0; j<69; j++){
 						//if(global.map_visited[j,i] || ds_grid_get(global.map_visited_grid, j, i)){
 						if(ds_grid_get(global.map_visited_grid, j, i)){
-							draw_sprite_part(sWorldMap,0,j*15,i*13,15,13,j*15,i*13);
+							draw_sprite_part(sWorldMap,0,j*15,i*13,15,13,j*15,(i*13)+oController.map_y_offset);
 							
 						}
 						if(j == oController.current_x_tile && i == oController.current_y_tile){
 							draw_set_color(c_yellow);
-							draw_rectangle(j*15, i*13,(j*15)+15,(i*13)+13, true);
+							draw_rectangle(j*15, (i*13)+oController.map_y_offset,(j*15)+15,((i*13)+13)+oController.map_y_offset, true);
 						}
 					}
 				}
-				
+				if(oController.gamepad_plugged_in){
+					draw_sprite(sMapButton, 0, 0, 0);
+				} else {
+					draw_sprite(sMapKey, 0, 0, 0);
+				}
 			}
 		}
 		break;

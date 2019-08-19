@@ -53,28 +53,15 @@ if(screen_state == SCREENSTATE.PAUSED){
 		screen_state = SCREENSTATE.MODS;
 	}
 }  else if (screen_state == SCREENSTATE.OPTIONS) {
-	if(key_down_pressed){
-		if(option_screen_selected < 3){
-			option_screen_selected++;
+	if(key_down_pressed || key_up_pressed){
+		if(option_screen_selected == 0){
+			option_screen_selected = 1;
 		} else {
 			option_screen_selected = 0;
 		}
 	}
-	if(key_up_pressed){
-		if(option_screen_selected > 0){
-			option_screen_selected--;
-		} else {
-			option_screen_selected = 3;
-		}
-	}
 	
-	if(option_screen_selected == 0){
-		// controls
-		show_debug_message(controls_screen);
-		if(key_jump_pressed || key_shoot_pressed || key_slash || key_missile_pressed || key_pause){
-			controls_screen = !controls_screen;
-		}
-	} else if (option_screen_selected == 1){
+	if (option_screen_selected == 0){
 		if(key_left_pressed){
 			music_gain = clamp(music_gain-5,0,100);
 			audio_group_set_gain(Music,music_gain/100,0);
@@ -83,7 +70,7 @@ if(screen_state == SCREENSTATE.PAUSED){
 			music_gain = clamp(music_gain+5,0,100);
 			audio_group_set_gain(Music,music_gain/100,0);
 		}
-	} else if (option_screen_selected == 2){
+	} else if (option_screen_selected == 1){
 		if(key_left_pressed){
 			sfx_gain = clamp(sfx_gain-5,0,100);
 			audio_group_set_gain(SFX,sfx_gain/100,0);
@@ -94,11 +81,10 @@ if(screen_state == SCREENSTATE.PAUSED){
 			audio_group_set_gain(SFX,sfx_gain/100,0);
 			audio_play_sound(sndShootSoft,100,false);
 		}
-	} else if (option_screen_selected == 3){
-		// back
-		if(key_jump_pressed || key_shoot_pressed || key_slash || key_missile_pressed || key_pause){
-			screen_state = SCREENSTATE.PAUSED;
-		}
+	}
+	
+	if(key_jump_pressed){
+		screen_state = SCREENSTATE.PAUSED;
 	}
 	
 	//if(controls_screen){
@@ -155,6 +141,12 @@ if(screen_state == SCREENSTATE.PAUSED){
 	if(key_jump_pressed || key_shoot_pressed || key_slash || key_missile_pressed || key_mmi_l){
 		is_paused = false;
 		screen_state = SCREENSTATE.GAME;
+	}
+	if(key_down){
+		oController.map_y_offset = clamp(oController.map_y_offset-2, -878, 0);
+	}
+	if(key_up){
+		oController.map_y_offset = clamp(oController.map_y_offset+2, -878, 0);
 	}
 	// l,r,u,d on the different rooms
 } else if (screen_state == SCREENSTATE.DATA) {

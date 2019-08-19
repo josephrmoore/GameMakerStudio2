@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "125af52b-6eed-4ba6-8a2e-af19f4975221",
+            "Value": {
+                "id": "a61dcbea-69f3-4596-be21-1d891cdae014",
+                "resourcePath": "sprites\/sMapKey\/sMapKey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1266fd71-86a0-4e3f-839b-79576a2765d7",
             "Value": {
                 "id": "b52a8195-f0fe-437d-9615-960da6d76e0c",
@@ -236,6 +244,14 @@
                 "id": "79226e6f-3435-4bdf-ab5d-ce40686dcdbf",
                 "resourcePath": "scripts\/player_hazard_collision\/player_hazard_collision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "16a442d5-cb86-439b-9a33-1499183f00bd",
+            "Value": {
+                "id": "977636d5-467a-4528-9462-0dbdb1289dbf",
+                "resourcePath": "sprites\/sModsDeactKey\/sModsDeactKey.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -315,6 +331,14 @@
             "Value": {
                 "id": "d11a05f8-cb12-468d-bd98-d108c37819ad",
                 "resourcePath": "sprites\/sBombSuper\/sBombSuper.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "227c1c9a-992a-4ed3-af0f-57bbd3e4b77f",
+            "Value": {
+                "id": "1f2605f4-79b1-48fa-b51f-d7299f3eb162",
+                "resourcePath": "sprites\/sModsDeactButton\/sModsDeactButton.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -399,6 +423,14 @@
             }
         },
         {
+            "Key": "2c1f1078-1f3e-4ff4-8ae0-4afa9e5cc6ad",
+            "Value": {
+                "id": "d1b8c279-8477-4409-8b91-92a32ef39c62",
+                "resourcePath": "sprites\/sDataButton\/sDataButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2da231c4-47fd-427a-b908-8d8af1ef6d3c",
             "Value": {
                 "id": "7c5bc630-5e35-479b-a157-6577918b30b7",
@@ -428,6 +460,14 @@
                 "id": "35b53c49-51d3-49a0-bfab-9828a2d239b4",
                 "resourcePath": "scripts\/player_input\/player_input.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2f910289-21aa-44af-9070-2f4cccca706e",
+            "Value": {
+                "id": "a7ae6aab-f267-43d4-a92e-2d2b2bd9a12b",
+                "resourcePath": "sprites\/sTitleKey\/sTitleKey.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -807,6 +847,14 @@
             }
         },
         {
+            "Key": "5aa38032-3a3b-47be-a469-903e763465c9",
+            "Value": {
+                "id": "96613bc0-8b98-4e9f-9089-56300fcda0dd",
+                "resourcePath": "sprites\/sModsActKey\/sModsActKey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5ca4ac7b-d12f-40eb-96b5-51c5757c28bf",
             "Value": {
                 "id": "2cc0ec4c-33b0-4ef0-9d0e-f362edb6d703",
@@ -1007,6 +1055,14 @@
             }
         },
         {
+            "Key": "7bb0dd86-1d7a-4fc5-9956-8eaecd58da2b",
+            "Value": {
+                "id": "41af8605-9484-4014-a334-d0084d126842",
+                "resourcePath": "sprites\/sDeadKey\/sDeadKey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7c907860-b9b8-4e8e-972b-61c0ca70dcb5",
             "Value": {
                 "id": "feace42a-b9a5-4d8c-9428-7aa6c4c851b4",
@@ -1051,6 +1107,22 @@
             "Value": {
                 "id": "d71b3f70-fe91-442b-aa2c-2ed995ba7928",
                 "resourcePath": "sprites\/sModItem\/sModItem.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7e84cf27-3441-42d3-bac3-777338dcb9a8",
+            "Value": {
+                "id": "55e0ced8-e344-4a2c-806e-5b1f9f2fb91d",
+                "resourcePath": "sprites\/sOptionsButton\/sOptionsButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7f16b270-c525-43b8-9f09-d2c0b23e6fa0",
+            "Value": {
+                "id": "6b7ad608-3d02-43b9-b792-14b75d1feb02",
+                "resourcePath": "sprites\/sTitleSpace\/sTitleSpace.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1567,6 +1639,14 @@
             }
         },
         {
+            "Key": "b6ccc0a2-c2f1-4dfd-94b7-8618a26f16dd",
+            "Value": {
+                "id": "5f1727a8-38d7-489e-a05a-f974889d1155",
+                "resourcePath": "sprites\/sDeadButton\/sDeadButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b8464640-9212-430a-93be-6a26a4ef6594",
             "Value": {
                 "id": "cde6549a-5732-4043-83b5-35a1cc69da96",
@@ -1580,6 +1660,14 @@
                 "id": "91c7feda-1092-44d6-9a76-38228377235b",
                 "resourcePath": "objects\/oSaveSlot\/oSaveSlot.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b90e9be7-761d-4902-975b-ceb5aa88e6ff",
+            "Value": {
+                "id": "bbc249be-d169-4b4c-b72f-c890682266f9",
+                "resourcePath": "sprites\/sDeadText\/sDeadText.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1607,6 +1695,14 @@
             }
         },
         {
+            "Key": "bd5af8df-d48b-46ba-8c04-5882399a866e",
+            "Value": {
+                "id": "94d214a6-c68c-4568-8cd8-1a5c4da9ac3f",
+                "resourcePath": "sprites\/sTitleButton\/sTitleButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bdc5b994-4f20-4c2f-b7db-9a16e9839cfa",
             "Value": {
                 "id": "d3ef2082-f236-4a5a-9cc5-f8e049362298",
@@ -1620,6 +1716,14 @@
                 "id": "0735245c-fec0-4a13-8d4f-047bd6cd122f",
                 "resourcePath": "scripts\/Documentation\/Documentation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bf01b2e3-d0b1-40fe-9861-c9a5934c8908",
+            "Value": {
+                "id": "337a03a8-8074-4237-8b46-bf7ca6fc29e3",
+                "resourcePath": "sprites\/sOptionsKey\/sOptionsKey.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1684,6 +1788,14 @@
                 "id": "41125600-0685-4096-9d95-dd29f66805d0",
                 "resourcePath": "views\/c6977038-f8e5-4f9f-b554-906b9818039a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c70f3c75-5d8a-4c2d-80a6-5603b2a38deb",
+            "Value": {
+                "id": "60d48880-dc1e-4d2f-be16-e3ec514ed28d",
+                "resourcePath": "sprites\/sDataKey\/sDataKey.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1868,6 +1980,14 @@
                 "id": "50acdd5d-1845-4a1c-a5be-209db9e279a5",
                 "resourcePath": "sounds\/sndLava\/sndLava.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "dd7bb159-6116-4f85-b00b-381c8a96f362",
+            "Value": {
+                "id": "a6b06ac2-3a4f-435c-903a-ddc1ae157fe3",
+                "resourcePath": "sprites\/sModsActButton\/sModsActButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2132,6 +2252,14 @@
                 "id": "80d3e2e2-d82c-485f-9cbf-dd3b16186dbc",
                 "resourcePath": "objects\/oPickupHealthLarge\/oPickupHealthLarge.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f7222147-268e-4c18-851f-579288da348f",
+            "Value": {
+                "id": "b0013117-92cc-4ba2-93e8-455edf941d5e",
+                "resourcePath": "sprites\/sMapButton\/sMapButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
