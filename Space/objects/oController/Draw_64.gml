@@ -4,11 +4,6 @@
 switch(current_room){
 	case "title":
 		if(!intro_animation_on){
-			//draw_set_font(fH1);
-			//draw_set_color(c_white)
-			//draw_text(180, 200, "SPACE");
-			//draw_set_font(fH2);
-			//draw_text(160, 350, "PRESS ANY BUTTON TO BEGIN");
 			draw_sprite(sTitleSpace,0,0,0);
 			if(oController.gamepad_plugged_in){
 				draw_sprite(sTitleButton,0,0,0);
@@ -20,30 +15,38 @@ switch(current_room){
 	case "init":
 		break;
 	case "data":
-		draw_set_color(c_white);
-		draw_set_font(fH2);
-		var s0 = instance_find(oSaveSlot, 0);
-		var s1 = instance_find(oSaveSlot, 1);
-		var s2 = instance_find(oSaveSlot, 2);
-		if(!s0.has_save_data){
-			draw_text(200, 150, "NEW GAME");
+		//draw_set_color(c_white);
+		//draw_set_font(fH2);
+		//var s0 = instance_find(oSaveSlot, 0);
+		//var s1 = instance_find(oSaveSlot, 1);
+		//var s2 = instance_find(oSaveSlot, 2);
+		//if(!s0.has_save_data){
+		//	draw_text(200, 150, "NEW GAME");
+		//} else {
+		//	draw_text(300, 150, string(s0.current_room));
+		//}
+		//if(!s1.has_save_data){
+		//	draw_text(200, 400, "NEW GAME");
+		//} else {
+		//	draw_text(300, 400, string(s1.current_room));
+		//}
+		//if(!s2.has_save_data){
+		//	draw_text(200, 650, "NEW GAME");
+		//} else {
+		//	draw_text(300, 650, string(s2.current_room));
+		//}
+		if(delete_screen_up){
+			if(delete_screen_state == 1){
+				draw_sprite(sDataDeleteYes, 0, 0, 0);
+			} else {
+				draw_sprite(sDataDeleteNo, 0, 0, 0);
+			}
 		} else {
-			draw_text(300, 150, string(s0.current_room));
-		}
-		if(!s1.has_save_data){
-			draw_text(200, 400, "NEW GAME");
-		} else {
-			draw_text(300, 400, string(s1.current_room));
-		}
-		if(!s2.has_save_data){
-			draw_text(200, 650, "NEW GAME");
-		} else {
-			draw_text(300, 650, string(s2.current_room));
-		}
-		if(oController.gamepad_plugged_in){
-			draw_sprite(sDataButton, 0, 0, 0);
-		} else {
-			draw_sprite(sDataKey, 0, 0, 0);
+			if(oController.gamepad_plugged_in){
+				draw_sprite(sDataButton, 0, 0, 0);
+			} else {
+				draw_sprite(sDataKey, 0, 0, 0);
+			}
 		}
 		break;		
 	case "dead":
@@ -90,8 +93,6 @@ switch(current_room){
 			}
 			draw_text(800, 85, "FPS: "+string(fps));
 			draw_text(800, 105, "FPS Real: " +string(fps_real));
-			//draw_text(800, 125, "player vsp: "+string(oPlayer.vsp));
-			//draw_text(800, 145, "player grav: "+string(oPlayer.grv));
 		} else {
 			if(screen_state == SCREENSTATE.PAUSED){
 				draw_set_font(fH1);
@@ -250,14 +251,9 @@ switch(current_room){
 				draw_set_color(c_white);
 				draw_set_font(fH1);
 				draw_text(50, 50, "MAP");
-				// change this to draw part logic
-				
-				//draw_sprite(sWorldMap,0,0,0);
-				
 				// use global map vars to draw only parts visited
 				for(var i=0; i<136; i++){
 					for(var j=0; j<69; j++){
-						//if(global.map_visited[j,i] || ds_grid_get(global.map_visited_grid, j, i)){
 						if(ds_grid_get(global.map_visited_grid, j, i)){
 							draw_sprite_part(sWorldMap,0,j*15,i*13,15,13,j*15,(i*13)+oController.map_y_offset);
 							

@@ -23,10 +23,6 @@ switch(current_room){
 				oPlanet.rising = false;
 				oPlanet.y = 684;
 				screen_state = SCREENSTATE.TITLE;
-				//show_debug_message(audio_sound_get_track_position(sndTitle));
-				
-				//audio_sound_set_track_position(asset_get_index(sndTitle), 20);
-				//show_debug_message(audio_sound_get_track_position(sndTitle));
 			} else {
 				room_goto(data);
 				screen_state = SCREENSTATE.DATA;

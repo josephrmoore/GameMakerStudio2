@@ -153,61 +153,91 @@ if(screen_state == SCREENSTATE.PAUSED){
 	var s0 = instance_find(oSaveSlot,0);
 	var s1 = instance_find(oSaveSlot,1);
 	var s2 = instance_find(oSaveSlot,2);
-	
-	if(save_screen_selected == 0){
-		s0.selected = true;
-		s1.selected = false;
-		s2.selected = false;
-	} else if (save_screen_selected == 1){
-		s0.selected = false;
-		s1.selected = true;
-		s2.selected = false;
-	} else if (save_screen_selected == 2){
-		s0.selected = false;
-		s1.selected = false;
-		s2.selected = true;
-	}
-	
-	if(key_down_pressed){
-		if(save_screen_selected == 2){
-			save_screen_selected = 0;
-		} else {
-			save_screen_selected++;
-		}
-	}
-	if(key_up_pressed){
+	var slots;
+	slots[0] = s0;
+	slots[1] = s1;
+	slots[2] = s2;
+	if(!delete_screen_up){
 		if(save_screen_selected == 0){
-			save_screen_selected = 2;
-		} else {
-			save_screen_selected--;
+			s0.selected = true;
+			s1.selected = false;
+			s2.selected = false;
+		} else if (save_screen_selected == 1){
+			s0.selected = false;
+			s1.selected = true;
+			s2.selected = false;
+		} else if (save_screen_selected == 2){
+			s0.selected = false;
+			s1.selected = false;
+			s2.selected = true;
 		}
-	}
 	
-	if(key_any_no_dir){
-		if(s0.selected){
-			if(file_exists("save0.sav")){
-				LoadGame("save0.sav")
+		if(key_down_pressed){
+			if(save_screen_selected == 2){
+				save_screen_selected = 0;
 			} else {
-				room_goto(plains);
+				save_screen_selected++;
 			}
-			screen_state = SCREENSTATE.GAME;
-			save_data_file = 0;
-		} else if (s1.selected){
-			if(file_exists("save1.sav")){
-				LoadGame("save1.sav")
+		}
+		if(key_up_pressed){
+			if(save_screen_selected == 0){
+				save_screen_selected = 2;
 			} else {
-				room_goto(plains);
+				save_screen_selected--;
 			}
-			screen_state = SCREENSTATE.GAME;
-			save_data_file = 1;
-		} else if (s2.selected){
-			if(file_exists("save2.sav")){
-				LoadGame("save2.sav")
-			} else {
-				room_goto(plains);
+		}
+	
+		if(key_jump_pressed){
+			if(s0.selected){
+				if(file_exists("save0.sav")){
+					LoadGame("save0.sav")
+				} else {
+					room_goto(plains);
+				}
+				screen_state = SCREENSTATE.GAME;
+				save_data_file = 0;
+			} else if (s1.selected){
+				if(file_exists("save1.sav")){
+					LoadGame("save1.sav")
+				} else {
+					room_goto(plains);
+				}
+				screen_state = SCREENSTATE.GAME;
+				save_data_file = 1;
+			} else if (s2.selected){
+				if(file_exists("save2.sav")){
+					LoadGame("save2.sav")
+				} else {
+					room_goto(plains);
+				}
+				screen_state = SCREENSTATE.GAME;
+				save_data_file = 2;
 			}
-			screen_state = SCREENSTATE.GAME;
-			save_data_file = 2;
+		}
+		if(key_slash){
+			delete_screen_up = true;
+
+
+
+		}
+	} else {
+		if(key_left){
+			delete_screen_state = 1;
+		}
+		if(key_right){
+			delete_screen_state = 0;
+		}
+		if(delete_screen_state == 1 && key_any_no_dir){
+			var curr_file = string("save" + string(save_screen_selected) + ".sav");
+			if file_exists(curr_file){
+				file_delete(curr_file);
+			}
+			var slot = slots[save_screen_selected];
+			slot.has_save_data = false;
+			delete_screen_up = false;
+		}
+		if(delete_screen_state == 0 && key_any_no_dir){
+			delete_screen_up = false;
 		}
 	}
 }

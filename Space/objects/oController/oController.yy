@@ -525,6 +525,34 @@
             "value": "0",
             "varName": "map_y_offset",
             "varType": 1
+        },
+        {
+            "id": "808a0b97-1691-4550-b51c-0d3bbeef6eab",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "delete_screen_state",
+            "varType": 0
+        },
+        {
+            "id": "de486496-7758-456b-aa4e-39e982b0d923",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "delete_screen_up",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -10,7 +10,7 @@ var randy2 = round(random_range(0,droptotal));
 if(randy<=dropodds){
 	if(randy2 <= bighealthodds){
 		instance_create_layer(x,y,"Pickups",oPickupHealthLarge);
-	} else if (randy2 <= missileodds){
+	} else if (randy2 <= missileodds && oPlayer.has_missiles){
 		instance_create_layer(x,y,"Pickups",oPickupMissiles);
 	} else {
 		instance_create_layer(x,y,"Pickups",oPickupHealthSmall);

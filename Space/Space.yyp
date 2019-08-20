@@ -1575,6 +1575,14 @@
             }
         },
         {
+            "Key": "aebe5acc-183f-41e3-89c0-04f3e7d4aab4",
+            "Value": {
+                "id": "71e7d865-f561-4ab6-9975-0eb6d6a40c7a",
+                "resourcePath": "sprites\/sDataDeleteYes\/sDataDeleteYes.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b1fe05dc-1dfc-4fea-bde8-5cbf9298fb81",
             "Value": {
                 "id": "bb85dadf-5761-42b8-b42b-0e8ab5da5a56",
@@ -1732,6 +1740,14 @@
                 "id": "d5c4b881-7d8e-487b-88af-03087690d9cd",
                 "resourcePath": "views\/bf22de83-b2db-4c5e-a208-9e56bc1eeddd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bff6a6d0-5256-4fed-b80a-127c040f8915",
+            "Value": {
+                "id": "9c7f75f4-4fbc-4417-8979-c3ee902f5b79",
+                "resourcePath": "sprites\/sDataDeleteNo\/sDataDeleteNo.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

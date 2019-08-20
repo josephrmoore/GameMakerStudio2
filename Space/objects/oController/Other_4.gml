@@ -23,25 +23,6 @@ switch(current_room){
 		get_room_from_save(1);
 		get_room_from_save(2);
 		access_player_stats("create");
-		//var s0 = instance_find(oSaveSlot,0);
-		//var s1 = instance_find(oSaveSlot,1);
-		//var s2 = instance_find(oSaveSlot,2);
-	
-		//if(file_exists("save0.sav")){
-		//	var save_data = LoadJsonFromFile("save0.sav");
-		//	s0.current_room = ds_map_find_value(save_data, "room");	
-		//	s0.has_save_data = true;
-		//} 
-		//if(file_exists("save1.sav")){
-		//	var save_data = LoadJsonFromFile("save1.sav");
-		//	s1.current_room = ds_map_find_value(save_data, "room");	
-		//	s1.has_save_data = true;
-		//} 
-		//if(file_exists("save2.sav")){
-		//	var save_data = LoadJsonFromFile("save2.sav");
-		//	s2.current_room = ds_map_find_value(save_data, "room");	
-		//	s2.has_save_data = true;
-		//}
 		break;
 	default:
 		for(var i=0; i<ds_list_size(oController.player_mods_activated); i++){
@@ -90,47 +71,5 @@ switch(current_room){
 		srs_loop(mod_srs, oPickupMod);
 		srs_loop(energy_tank_srs, oPickupEnergyTank);
 		srs_loop(missile_upgrade_srs, oPickupMissileUpgrade);
-		
-		//for(var i=0; i<ds_list_size(upgrade_srs); i++){
-		//	if(srs_in_room(ds_list_find_value(upgrade_srs,i))){
-		//		for(var j=0; j<instance_number(oPickupUpgrade); j++){
-		//			var inst = instance_find(oPickupUpgrade, j);
-		//			if(srs_in_room(get_srs_obj(inst))){
-		//				inst.collected = true;
-		//			}
-		//		}
-		//	}
-		//}
-		//for(var i=0; i<ds_list_size(mod_srs); i++){
-		//	if(srs_in_room(ds_list_find_value(mod_srs, i))){
-		//		for(var j=0; j<instance_number(oPickupMod); j++){
-		//			var inst = instance_find(oPickupMod, j);
-		//			if(srs_in_room(get_srs_obj(inst))){
-		//				inst.collected = true;
-		//			}
-		//		}
-		//	}
-		//}
-		//for(var i=0; i<ds_list_size(energy_tank_srs); i++){
-		//	if(srs_in_room(ds_list_find_value(energy_tank_srs, i))){
-		//		for(var j=0; j<instance_number(oPickupEnergyTank); j++){
-		//			var inst = instance_find(oPickupEnergyTank, j);
-		//			if(srs_in_room(get_srs_obj(inst))){
-		//				inst.collected = true;
-		//				show_debug_message(inst);
-		//			}
-		//		}
-		//	}
-		//}
-		//for(var i=0; i<ds_list_size(missile_upgrade_srs); i++){
-		//	if(srs_in_room(ds_list_find_value(missile_upgrade_srs, i))){
-		//		for(var j=0; j<instance_number(oPickupMissileUpgrade); j++){
-		//			var inst = instance_find(oPickupMissileUpgrade, j);
-		//			if(srs_in_room(get_srs_obj(inst))){
-		//				inst.collected = true;
-		//			}
-		//		}
-		//	}
-		//}
 		break;
 }
