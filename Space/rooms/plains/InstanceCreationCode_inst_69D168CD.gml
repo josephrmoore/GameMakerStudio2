@@ -1,3 +1,3 @@
 targetRoom = mountainsA;;
-targetX = 6860;
-targetY = 3100;
+targetX = 7072;
+targetY = 3168;

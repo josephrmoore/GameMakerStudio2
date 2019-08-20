@@ -276,7 +276,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "1",
             "varName": "max_jumps",
             "varType": 0
         },
@@ -318,7 +318,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "1",
             "varName": "max_dashes",
             "varType": 0
         },
@@ -332,7 +332,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "0",
             "varName": "energy_tanks",
             "varType": 0
         },
@@ -346,7 +346,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "590",
+            "value": "100",
             "varName": "hp",
             "varType": 0
         },
@@ -374,7 +374,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "0",
             "varName": "missiles",
             "varType": 0
         },
@@ -458,7 +458,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "can_hook",
             "varType": 3
         },
@@ -472,7 +472,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "can_dash",
             "varType": 3
         },
@@ -514,7 +514,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_turbo",
             "varType": 3
         },
@@ -528,7 +528,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_missiles",
             "varType": 3
         },
@@ -542,7 +542,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_bombs",
             "varType": 3
         },
@@ -584,7 +584,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_slow_fall",
             "varType": 3
         },
@@ -598,7 +598,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_long_slash",
             "varType": 3
         },
@@ -612,7 +612,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_sticky_hang",
             "varType": 3
         },
@@ -626,7 +626,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_small_avatar",
             "varType": 3
         },
@@ -640,7 +640,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_strong_slash",
             "varType": 3
         },
@@ -654,7 +654,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_sharp_dash",
             "varType": 3
         },
@@ -668,7 +668,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_regen",
             "varType": 3
         },
@@ -682,7 +682,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_shield",
             "varType": 3
         },
@@ -696,7 +696,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_super_bombs",
             "varType": 3
         },
@@ -710,7 +710,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_cluster_missiles",
             "varType": 3
         },
@@ -724,7 +724,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "can_double_jump",
             "varType": 3
         },
@@ -738,7 +738,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "can_triple_jump",
             "varType": 3
         },
@@ -752,7 +752,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "can_double_dash",
             "varType": 3
         },
@@ -766,7 +766,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "can_triple_dash",
             "varType": 3
         },
@@ -780,7 +780,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_mod_system",
             "varType": 3
         },
@@ -794,7 +794,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "mod_long_slash",
             "varType": 3
         },
@@ -808,7 +808,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "mod_turbo",
             "varType": 3
         },
@@ -864,7 +864,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "mod_strong_slash",
             "varType": 3
         },
