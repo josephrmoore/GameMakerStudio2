@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "3e551720-bda2-4bbc-bcf4-5f9a4615e0f6",
+            "Value": {
+                "id": "3f3baba6-dfe7-4099-a966-a05e34c5ada1",
+                "resourcePath": "sprites\/sPlainsBk\/sPlainsBk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f5090df-2b8d-4919-aaef-a92d2baa6bf4",
             "Value": {
                 "id": "afe3391f-06eb-4499-9ad6-f46d8ccc0011",
@@ -780,6 +788,14 @@
                 "id": "50d61503-50dd-43ef-8e57-353417596b69",
                 "resourcePath": "scripts\/DoorState_Open\/DoorState_Open.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "512a0c97-3536-4ad5-9b50-2cfcf7838cd7",
+            "Value": {
+                "id": "fd339992-aec0-4405-8930-34d3ca51488f",
+                "resourcePath": "sprites\/sPlainsBkBack\/sPlainsBkBack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1468,6 +1484,14 @@
                 "id": "b14b72d8-896a-4bc8-86d8-db80f4d904ad",
                 "resourcePath": "objects\/oPickupHealthSmall\/oPickupHealthSmall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a58da2cd-1e2e-410f-9a6c-18c4f2c43d7c",
+            "Value": {
+                "id": "4a51c7c6-38db-4e51-9ee4-60a2a67bb1e5",
+                "resourcePath": "sprites\/sPlainsBkFront\/sPlainsBkFront.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

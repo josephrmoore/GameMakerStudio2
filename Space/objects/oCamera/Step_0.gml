@@ -6,7 +6,7 @@ y += (yTo - y)/5;
 
 if(follow != noone){
 	xTo = clamp(follow.x, camera_get_view_width(view_current)/2, room_width-(camera_get_view_width(view_current)/2));
-	yTo = clamp(follow.y, camera_get_view_height(view_current)/2, room_height-(camera_get_view_height(view_current)/2)-64);
+	yTo = clamp(follow.y, camera_get_view_height(view_current)/2, room_height-(camera_get_view_height(view_current)/2));
 	//yTo = follow.y;
 }
 
@@ -15,3 +15,11 @@ camera_set_view_mat(camera,vm);
 
 oController.camera_x = x;
 oController.camera_y = y;
+
+if(layer_exists(bk_str_fr)){
+	layer_x(bk_str_fr, x/2);
+}
+
+if(layer_exists(bk_str_b)){
+	layer_x(bk_str_b, x/4);
+}
