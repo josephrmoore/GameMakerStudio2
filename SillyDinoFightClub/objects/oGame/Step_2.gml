@@ -19,22 +19,22 @@ switch(current_room){
 				number_human_players = 1;
 			}
 			room_goto(chooseplayer);
-			choose_screen_select_p1 = 0;
-			choose_screen_select_p2 = 2;
+			p1_fighter = FIGHTERS.TREX;
+			p2_fighter = FIGHTERS.STEGASAURUS;
 		}
 		break;
 	case "chooseplayer":
 		if(key_p1_left_pressed){
-			choose_screen_select_p1 = clamp(choose_screen_select_p1-1, 0, 4);
+			p1_fighter = clamp(p1_fighter-1, 0, 4);
 		}
 		if(key_p1_right_pressed){
-			choose_screen_select_p1 = clamp(choose_screen_select_p1+1, 0, 4);
+			p1_fighter = clamp(p1_fighter+1, 0, 4);
 		}
 		if(key_p2_left_pressed){
-			choose_screen_select_p2 = clamp(choose_screen_select_p2-1, 0, 4);
+			p2_fighter = clamp(p2_fighter-1, 0, 4);
 		}
 		if(key_p2_right_pressed){
-			choose_screen_select_p2 = clamp(choose_screen_select_p2+1, 0, 4);
+			p2_fighter = clamp(p2_fighter+1, 0, 4);
 		}
 		if(key_any){
 			room_goto(game);

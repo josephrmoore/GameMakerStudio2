@@ -2,7 +2,7 @@ var num = oGame.number_human_players;
 // Do red highlight
 var red_x = 90;
 var red_y = 180;
-switch(choose_screen_select_p1){
+switch(p1_fighter){
 	case 0:
 		red_x = 90;
 		red_y = 180;
@@ -29,7 +29,7 @@ draw_sprite(sSelectFighterRed, 0, red_x, red_y);
 if(num == 2){
 	var blue_x = 709;
 	var blue_y = 180;
-	switch(choose_screen_select_p2){
+	switch(p2_fighter){
 		case 0:
 			blue_x = 90;
 			blue_y = 180;

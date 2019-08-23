@@ -33,6 +33,16 @@
             "enumb": 4,
             "eventtype": 7,
             "m_owner": "0e7f86f7-83f2-465c-8dc4-e45cec7f12e3"
+        },
+        {
+            "id": "dc133bc0-9d2b-4321-8335-43eedf2e610c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "0e7f86f7-83f2-465c-8dc4-e45cec7f12e3"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -149,6 +159,62 @@
             "value": "-1",
             "varName": "choose_screen_select_p2",
             "varType": 0
+        },
+        {
+            "id": "0146283e-b766-438d-907e-a52da61fce91",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "p1_fighter",
+            "varType": 0
+        },
+        {
+            "id": "aa5c05c5-81c2-43cf-afb8-65b04d2190ad",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "p2_fighter",
+            "varType": 0
+        },
+        {
+            "id": "b2c76684-c6eb-4ce3-804c-f1a6c81266b3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "is_paused",
+            "varType": 3
+        },
+        {
+            "id": "bb850817-d0ab-4133-84be-e8f4d1850725",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "players_can_move",
+            "varType": 3
         }
     ],
     "solid": false,

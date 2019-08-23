@@ -139,6 +139,34 @@
             "value": "2",
             "varName": "aSpeed",
             "varType": 0
+        },
+        {
+            "id": "e6af7ec1-ecd9-42c0-a909-2754dfe49756",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "player_num",
+            "varType": 0
+        },
+        {
+            "id": "00381af3-6e0d-4f18-a4ac-ebb8ad8cfa6e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "fighter_num",
+            "varType": 0
         }
     ],
     "solid": false,

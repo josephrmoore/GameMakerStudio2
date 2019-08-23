@@ -23,6 +23,7 @@ key_p1_attack1 = keyboard_check_pressed(ord("C"));
 key_p1_attack2 = keyboard_check_pressed(ord("V"));
 key_p1_attack3 = keyboard_check_pressed(ord("B"));
 key_p1_attack4 = keyboard_check_pressed(ord("N"));
+key_p1_any = key_p1_attack1 || key_p1_attack2 || key_p1_attack3 || key_p1_attack4;
 
 key_p2_left = keyboard_check(vk_left);
 key_p2_right = keyboard_check(vk_right);
@@ -36,6 +37,7 @@ key_p2_attack1 = keyboard_check_pressed(ord("U"));
 key_p2_attack2 = keyboard_check_pressed(ord("I"));
 key_p2_attack3 = keyboard_check_pressed(ord("O"));
 key_p2_attack4 = keyboard_check_pressed(ord("P"));
+key_p2_any = key_p2_attack1 || key_p2_attack2 || key_p2_attack3 || key_p2_attack4;
 
 if(keyboard_check_pressed(ord("0"))){
 	game_restart();
