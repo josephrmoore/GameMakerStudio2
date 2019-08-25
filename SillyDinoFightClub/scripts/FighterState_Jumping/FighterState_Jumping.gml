@@ -1,4 +1,11 @@
 input();
+left_right();
+grav();
+jumping();
+fighter_tile_collision();
+
+x += floor(hsp);
+y += floor(vsp);
 
 switch(fighter_num){
 	case FIGHTERS.TREX:
@@ -18,7 +25,7 @@ switch(fighter_num){
 		break;
 }
 
-grav();
+
 //if(fighter_state == FIGHTERSTATES.JUMPING && y>=650){
 //	fighter_state = FIGHTERSTATES.IDLE;
 //}

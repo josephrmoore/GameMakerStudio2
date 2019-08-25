@@ -9,8 +9,10 @@ if(player_num == 1){
 	    hsp = approach(hsp,mSpeed,aSpeed);
 		fighter_state = FIGHTERSTATES.WALKING;
 		image_xscale = -1;
-	}else{
-	    hsp = approach(hsp,0,dSpeed);
+	}else if (vsp>grv || vsp < 0){
+		fighter_state = FIGHTERSTATES.JUMPING;
+	} else {
+		hsp = approach(hsp,0,dSpeed);
 		fighter_state = FIGHTERSTATES.IDLE;
 	}
 } else if (player_num == 2){
@@ -22,8 +24,10 @@ if(player_num == 1){
 	    hsp = approach(hsp,mSpeed,aSpeed);
 		fighter_state = FIGHTERSTATES.WALKING;
 		image_xscale = -1;
-	}else{
-	    hsp = approach(hsp,0,dSpeed);
+	}else if(vsp>grv || vsp < 0){
+		fighter_state = FIGHTERSTATES.JUMPING;
+	} else {
+		hsp = approach(hsp,0,dSpeed);
 		fighter_state = FIGHTERSTATES.IDLE;
 	}
 }

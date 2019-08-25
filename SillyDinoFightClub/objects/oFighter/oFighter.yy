@@ -167,6 +167,20 @@
             "value": "0",
             "varName": "fighter_num",
             "varType": 0
+        },
+        {
+            "id": "4acaa4fe-ecea-4d86-9f17-f33dbb759bf9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "layer_tilemap_get_id(\"Collision\")",
+            "varName": "tilemap",
+            "varType": 0
         }
     ],
     "solid": false,

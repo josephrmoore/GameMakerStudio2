@@ -71,6 +71,22 @@
             }
         },
         {
+            "Key": "0bb535f2-1853-46ac-80f1-7bba53e01340",
+            "Value": {
+                "id": "86102b99-3594-4b95-bdfd-c318a4ca2895",
+                "resourcePath": "sprites\/sBrontoAttack4\/sBrontoAttack4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0bc52b10-9b74-4735-a050-6f97da02fc69",
+            "Value": {
+                "id": "1c936fef-3cb9-489a-bd00-9be9162373ca",
+                "resourcePath": "sprites\/sAnklyAttack4\/sAnklyAttack4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e7f86f7-83f2-465c-8dc4-e45cec7f12e3",
             "Value": {
                 "id": "c40d59ae-8db2-4418-b682-59203ab736df",
@@ -95,11 +111,35 @@
             }
         },
         {
+            "Key": "11cea3e9-232f-40ed-a338-0c13bc1dc4e8",
+            "Value": {
+                "id": "10c34f35-90cc-45d8-92b5-fb62f82746e3",
+                "resourcePath": "sprites\/sStegJump\/sStegJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1297352e-a3fa-4c7d-80e6-fc84cd088801",
+            "Value": {
+                "id": "b13eb9d1-9dad-4481-a5ac-6731560271a5",
+                "resourcePath": "sprites\/sTRexAttack3\/sTRexAttack3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "16dab0a8-4e1a-48b4-a7ee-44038d860e84",
             "Value": {
                 "id": "2bad543f-2db4-47d5-aa11-458dbe770357",
                 "resourcePath": "views\/16dab0a8-4e1a-48b4-a7ee-44038d860e84.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1a4ff599-48d5-43e3-9467-02e3a0773d18",
+            "Value": {
+                "id": "4e4aaa2c-8386-41eb-bdb0-db6b3717d5da",
+                "resourcePath": "sprites\/sBrontoAttack3\/sBrontoAttack3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -119,11 +159,27 @@
             }
         },
         {
+            "Key": "2004bc88-3eaf-433d-a9db-f5d075280c08",
+            "Value": {
+                "id": "52a0729f-78ca-457f-a8a4-116f7b148a79",
+                "resourcePath": "sprites\/sStegVictory\/sStegVictory.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2af6a6b1-0c82-4e8d-b9b4-2ecfa973e52e",
             "Value": {
                 "id": "4abfab69-848a-44e4-95cc-c009db30e797",
                 "resourcePath": "scripts\/FighterState_Idle\/FighterState_Idle.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "31803c85-ec9c-4055-b79a-8cc77f1411e9",
+            "Value": {
+                "id": "c9c575c6-4b6f-4a80-9c7d-7bdfeeb5519d",
+                "resourcePath": "sprites\/sTRexAttack2\/sTRexAttack2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -135,10 +191,42 @@
             }
         },
         {
+            "Key": "3503424d-8ae7-489f-8293-a7522585875e",
+            "Value": {
+                "id": "9a9a6b19-d168-4a87-b3be-2c9559a23308",
+                "resourcePath": "sprites\/sStegHurt\/sStegHurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "388fa2d1-104a-4204-8bc5-a13e4316835f",
+            "Value": {
+                "id": "f0dc7135-79b9-4fc3-b782-6d02c13c368e",
+                "resourcePath": "sprites\/sTRexHurt\/sTRexHurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38dca046-d678-4830-a148-ba569425b5a9",
             "Value": {
                 "id": "3617c875-fe09-444f-a1d8-e14c21c269d3",
                 "resourcePath": "sprites\/sAnklyIdle\/sAnklyIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3c2bc426-d1c5-466e-a53a-696ed768bda2",
+            "Value": {
+                "id": "f37a42e5-5edd-4f30-b51e-e1075b374c0a",
+                "resourcePath": "sprites\/sTRexJump\/sTRexJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3e067c10-df86-48ac-9849-f3a3ed30d11c",
+            "Value": {
+                "id": "b3b3f741-f63c-4170-be66-af25a6e7928d",
+                "resourcePath": "sprites\/sStegAttack2\/sStegAttack2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -199,6 +287,38 @@
             }
         },
         {
+            "Key": "59f0ca27-1b8d-46cb-8dfd-5c20e440eb90",
+            "Value": {
+                "id": "9682765f-8f6f-476b-86f1-13c64feea494",
+                "resourcePath": "sprites\/sAnklyHurt\/sAnklyHurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5afeacb5-4c12-4cd8-afaf-eb06b62ffe02",
+            "Value": {
+                "id": "0e806a97-235f-4a20-b635-1b818f340b4a",
+                "resourcePath": "tilesets\/tileset0\/tileset0.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "6110e5e5-a5b9-45b0-a036-10c097be8fa3",
+            "Value": {
+                "id": "93dedd84-8294-41f2-9f7f-d3ab0edf9624",
+                "resourcePath": "sprites\/sTriAttack4\/sTriAttack4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "629cd770-aa36-49ef-83cc-021866cafef2",
+            "Value": {
+                "id": "f6e18311-fcc4-4268-8013-a718d02ec825",
+                "resourcePath": "sprites\/sTRexAttack1\/sTRexAttack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "64cd8714-566b-467f-b4bb-08bcdebde1c9",
             "Value": {
                 "id": "8ab5bbf0-6561-4c5f-a42e-70652b5e835c",
@@ -207,11 +327,51 @@
             }
         },
         {
+            "Key": "650fb993-6234-4a70-a1b5-a62a13461d68",
+            "Value": {
+                "id": "76461031-280e-4b13-b962-0f9a107561a7",
+                "resourcePath": "sprites\/sStegAttack1\/sStegAttack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "66b65dd6-4a72-47e5-944b-6836abf02d9d",
+            "Value": {
+                "id": "7d884f68-96c3-4408-9c0a-21b2269ea56a",
+                "resourcePath": "sprites\/sAnklyAttack3\/sAnklyAttack3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "68fb2a62-78a9-40a4-8b3f-38a2d4b1c4cb",
+            "Value": {
+                "id": "4730036e-329b-4008-bb6c-8fe54234c848",
+                "resourcePath": "sprites\/sTRexSulk\/sTRexSulk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6d13302c-1c0d-46d2-827d-90ff3416a3e2",
+            "Value": {
+                "id": "3d124377-883f-4244-97bb-47c834ba1378",
+                "resourcePath": "sprites\/sStegJumpAttack\/sStegJumpAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6d7d13a0-c5ea-4dac-8ccb-22c43e5be778",
             "Value": {
                 "id": "7d69f28a-4dc3-4ff0-8588-586f1152e082",
                 "resourcePath": "scripts\/FighterState_Jumping\/FighterState_Jumping.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6f21a06e-e77e-4a93-96aa-87fb806aeb8d",
+            "Value": {
+                "id": "fb6c9da6-bc74-4f21-91c7-f55fb3d35044",
+                "resourcePath": "sprites\/sBrontoAttack2\/sBrontoAttack2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -239,10 +399,42 @@
             }
         },
         {
+            "Key": "714c8295-2152-496e-b5a7-96e5ad44d2dc",
+            "Value": {
+                "id": "895a4457-70b4-4ce9-9e8a-a284bc22f519",
+                "resourcePath": "sprites\/sTRexAttack4\/sTRexAttack4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "741e37d8-0ea8-486a-b05f-d2ac6396a9af",
+            "Value": {
+                "id": "599a8c15-7180-4876-91ea-9ff56a67d8a6",
+                "resourcePath": "sprites\/sTriAttack1\/sTriAttack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "75b18b7d-bab5-4d88-ae66-da5462bc055c",
+            "Value": {
+                "id": "82b05f88-55c9-46b0-9c73-cc856d940cd1",
+                "resourcePath": "scripts\/admin_input\/admin_input.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7624547c-3070-4a55-93a9-3c1281a421da",
             "Value": {
                 "id": "12bf2b39-01d5-46fd-ae55-c92bcf0a423e",
                 "resourcePath": "sprites\/sStegWalk\/sStegWalk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "789f5035-edc5-4d8d-89fb-70c5bed3f3bb",
+            "Value": {
+                "id": "3a5166f4-c747-4974-ac1f-7f363a5e2301",
+                "resourcePath": "sprites\/sStegAttack3\/sStegAttack3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -267,6 +459,38 @@
             "Value": {
                 "id": "2b09c9de-c406-4980-9aeb-f32ed1a0d256",
                 "resourcePath": "sprites\/sLose_key\/sLose_key.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7eb77a28-3ad6-4e25-aedd-2cee00437ac0",
+            "Value": {
+                "id": "f12baf66-03d2-4fcd-a2a3-fa46d0e1349d",
+                "resourcePath": "sprites\/sAnklyJump\/sAnklyJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "80c8929c-2c62-431f-9be0-a3529208836a",
+            "Value": {
+                "id": "fd1ee5a3-4dc8-47cd-b1b1-daf04c1b39ed",
+                "resourcePath": "sprites\/sAnklyAttack1\/sAnklyAttack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "86d9980e-e883-4f3c-8075-eff20b1aac07",
+            "Value": {
+                "id": "958ec636-6969-4ef1-89d3-a1524655edcc",
+                "resourcePath": "sprites\/sAnklyJumpAttack\/sAnklyJumpAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8829c7b8-dd76-4491-9a6a-24091f4173c0",
+            "Value": {
+                "id": "97601ff9-6851-49fa-954e-e09a9c6d0a7e",
+                "resourcePath": "sprites\/sAnklySulk\/sAnklySulk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -319,11 +543,35 @@
             }
         },
         {
+            "Key": "96c0a4e7-357c-45d0-9111-c79919e12071",
+            "Value": {
+                "id": "6f9ae8d3-75bf-419d-b86c-3681ebf78091",
+                "resourcePath": "sprites\/sTRexJumpAttack\/sTRexJumpAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9a2611de-e70d-42e4-9d77-d748038d388d",
             "Value": {
                 "id": "f70aa186-075c-49fe-9ef8-67ccbe5b4325",
                 "resourcePath": "rooms\/trashtalk\/trashtalk.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "9bf4519b-7e5d-4088-a979-e73b45446718",
+            "Value": {
+                "id": "c341bd45-7bd4-42cc-bcae-495314eb5104",
+                "resourcePath": "sprites\/sBrontoJumpAttack\/sBrontoJumpAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9f9a6cbc-270b-49bf-ab6d-dacd3e664a41",
+            "Value": {
+                "id": "3d70e3ca-afc0-4b35-8500-6299f37f1f84",
+                "resourcePath": "sprites\/sTriAttack3\/sTriAttack3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -375,6 +623,22 @@
             }
         },
         {
+            "Key": "aac0324d-c06a-48ff-b40a-44815ac96879",
+            "Value": {
+                "id": "d583d35c-da43-4486-ae1b-7e56e4df9644",
+                "resourcePath": "sprites\/sTRexVictory\/sTRexVictory.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "abe333f7-c559-4957-a6f6-3b252541e077",
+            "Value": {
+                "id": "3ee5c701-9bc4-46fb-b2ed-2ab8bfeea367",
+                "resourcePath": "sprites\/sStegAttack4\/sStegAttack4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ace0a2fd-ca64-4422-a42e-7966a1e117fb",
             "Value": {
                 "id": "c0742c7b-1def-434e-82eb-f8f959819a9d",
@@ -404,6 +668,46 @@
                 "id": "caacf460-d5d5-409c-a664-003989122c99",
                 "resourcePath": "rooms\/endchoice\/endchoice.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "bf3c72bf-fee5-497f-8073-68629a30b792",
+            "Value": {
+                "id": "09118b1e-765a-443f-a79a-54b80dbadec3",
+                "resourcePath": "sprites\/sTriVictory\/sTriVictory.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bfaf0770-5f59-42a6-9298-bf229a7c4c89",
+            "Value": {
+                "id": "25bd0596-6123-453f-b4b3-e7ed67b55eae",
+                "resourcePath": "sprites\/sStegSulk\/sStegSulk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bffbb10c-efd5-4724-8409-045e97184068",
+            "Value": {
+                "id": "bf907d03-691b-48f2-973e-1e6ae1babf44",
+                "resourcePath": "sprites\/sBrontoVictory\/sBrontoVictory.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c01aa52f-6316-456d-9fdd-4d4d610083a9",
+            "Value": {
+                "id": "7dcde8f3-91fa-4bee-a8c7-5eadf6677232",
+                "resourcePath": "sprites\/sTriAttack2\/sTriAttack2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c2f20e75-18ed-46f0-98e8-02dbb1ddb01a",
+            "Value": {
+                "id": "b4abd677-7cde-482b-94d4-0a590e6db526",
+                "resourcePath": "sprites\/sTileset\/sTileset.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -487,6 +791,14 @@
             }
         },
         {
+            "Key": "cf1d81ed-eccb-4e8f-91b5-7397289dbc61",
+            "Value": {
+                "id": "6503a3b9-789a-487c-badb-9c28f79a7050",
+                "resourcePath": "scripts\/fighter_tile_collision\/fighter_tile_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cf2274f9-0719-41dd-9ee6-cbff2335d990",
             "Value": {
                 "id": "72a1e673-dd9b-4ddd-a4dd-0a668e79f150",
@@ -495,11 +807,43 @@
             }
         },
         {
+            "Key": "d1aa5057-b89d-44fc-af0f-0c5bd64e1f7d",
+            "Value": {
+                "id": "6659343f-235c-4718-a702-b2e94871f6a4",
+                "resourcePath": "sprites\/sAnklyAttack2\/sAnklyAttack2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dae12f91-5523-4d35-88d2-5b00efc79df2",
+            "Value": {
+                "id": "1daaefd5-881a-4dab-9bcd-e0ebf6c3e75e",
+                "resourcePath": "sprites\/sBrontoAttack1\/sBrontoAttack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dd4844d4-a7e0-4189-859a-83841562dd3a",
+            "Value": {
+                "id": "739831a8-cec1-49cb-8db1-19fbd278a519",
+                "resourcePath": "sprites\/sTriHurt\/sTriHurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dd96d4df-6134-4d9e-a09b-62c62ea697ce",
             "Value": {
                 "id": "d554df89-e71a-4e9c-8733-745970db30c9",
                 "resourcePath": "views\/dd96d4df-6134-4d9e-a09b-62c62ea697ce.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "df245011-5ca5-4bcc-888e-9b7385621620",
+            "Value": {
+                "id": "fc5e0036-a8f1-4461-bdf8-a1290973b7be",
+                "resourcePath": "sprites\/sBrontoJump\/sBrontoJump.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -515,6 +859,14 @@
             "Value": {
                 "id": "30b89a0d-6204-4655-a162-d313ff30a55c",
                 "resourcePath": "sprites\/sLose_button\/sLose_button.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e894ccd4-1a59-4f62-a694-626fa61d65e2",
+            "Value": {
+                "id": "d8431fc5-b1e9-436f-bbe4-2d26ee8c106d",
+                "resourcePath": "sprites\/sBrontoSulk\/sBrontoSulk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -535,11 +887,27 @@
             }
         },
         {
+            "Key": "f0466045-3578-4050-9f4f-46b67028380a",
+            "Value": {
+                "id": "116a6187-5cb0-4725-9da6-8e526f3c9858",
+                "resourcePath": "sprites\/sBrontoHurt\/sBrontoHurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f0466d9b-657e-461e-88e2-be945caa3329",
             "Value": {
                 "id": "934c2aab-1fa8-44b9-b131-60804b1aa144",
                 "resourcePath": "objects\/oPlayer\/oPlayer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f1234f8a-559d-47a5-a942-12bf1e941bc0",
+            "Value": {
+                "id": "872196ed-c076-4b07-a51b-77c738a69e7e",
+                "resourcePath": "sprites\/sAnklyVictory\/sAnklyVictory.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -564,6 +932,14 @@
                 "id": "c8d24b4e-90b6-44bd-ab62-918a5434c3d4",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4b088c4-8898-4800-ba45-f54786de3c6d",
+            "Value": {
+                "id": "5fc2e3cf-b7d3-4314-a998-633b2c9c5140",
+                "resourcePath": "sprites\/sTriSulk\/sTriSulk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -629,7 +1005,9 @@
         "51f05058-3a6f-4a73-b743-9ee018b1ba62",
         "f3e56220-33d3-452b-8cc1-76337e72f3df",
         "e0507237-35e4-44b1-bd7e-47188dfec747",
-        "09bf6225-0b8a-4e85-a952-d0684724ef05"
+        "09bf6225-0b8a-4e85-a952-d0684724ef05",
+        "cf1d81ed-eccb-4e8f-91b5-7397289dbc61",
+        "75b18b7d-bab5-4d88-ae66-da5462bc055c"
     ],
     "tutorial": ""
 }

@@ -215,6 +215,20 @@
             "value": "0",
             "varName": "players_can_move",
             "varType": 3
+        },
+        {
+            "id": "c9d1e71b-a51f-4a06-b5af-4841d101183a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "admin_controls",
+            "varType": 3
         }
     ],
     "solid": false,

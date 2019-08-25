@@ -1,6 +1,17 @@
 input();
-left_right();
-jumping();
+if(!oGame.admin_controls){
+	left_right();
+	grav();
+	jumping();
+} else {
+	admin_input();
+}
+fighter_tile_collision();
+
+x = ceil(x+hsp);
+y = ceil(y+vsp);
+
+
 
 switch(fighter_num){
 	case FIGHTERS.TREX:
@@ -19,4 +30,3 @@ switch(fighter_num){
 		sprite_index = sAnklyIdle;
 		break;
 }
-grav();

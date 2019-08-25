@@ -1,6 +1,11 @@
 input();
 left_right();
+grav();
 jumping();
+fighter_tile_collision();
+
+x += floor(hsp);
+y += floor(vsp);
 
 switch(fighter_num){
 	case FIGHTERS.TREX:
@@ -19,4 +24,4 @@ switch(fighter_num){
 		sprite_index = sAnklyWalk;
 		break;
 }
-grav();
+

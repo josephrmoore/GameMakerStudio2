@@ -12,19 +12,19 @@ switch(current_room){
 		var p2;
 		switch(p1_fighter){
 			case FIGHTERS.TREX:
-				p1 = instance_create_layer(100,100,"Instances",oTRex);
+				p1 = instance_create_layer(600,400,"Instances",oTRex);
 				break;
 			case FIGHTERS.TRICERATOPS:
-				p1 = instance_create_layer(100,100,"Instances",oTri);
+				p1 = instance_create_layer(600,400,"Instances",oTri);
 				break;
 			case FIGHTERS.STEGASAURUS:
-				p1 = instance_create_layer(100,100,"Instances",oSteg);
+				p1 = instance_create_layer(600,400,"Instances",oSteg);
 				break;
 			case FIGHTERS.BRONTO:
-				p1 = instance_create_layer(100,100,"Instances",oBronto);
+				p1 = instance_create_layer(600,400,"Instances",oBronto);
 				break;
 			case FIGHTERS.ANKLY:
-				p1 = instance_create_layer(100,100,"Instances",oAnkly);
+				p1 = instance_create_layer(600,400,"Instances",oAnkly);
 				break;
 		}
 		p1.player_num = 1;
@@ -32,19 +32,19 @@ switch(current_room){
 		if(p2_fighter != -1){
 			switch(p2_fighter){
 			case FIGHTERS.TREX:
-				p2 = instance_create_layer(800,100,"Instances",oTRex);
+				p2 = instance_create_layer(600,400,"Instances",oTRex);
 				break;
 			case FIGHTERS.TRICERATOPS:
-				p2 = instance_create_layer(800,100,"Instances",oTri);
+				p2 = instance_create_layer(600,400,"Instances",oTri);
 				break;
 			case FIGHTERS.STEGASAURUS:
-				p2 = instance_create_layer(800,100,"Instances",oSteg);
+				p2 = instance_create_layer(600,400,"Instances",oSteg);
 				break;
 			case FIGHTERS.BRONTO:
-				p2 = instance_create_layer(800,100,"Instances",oBronto);
+				p2 = instance_create_layer(600,400,"Instances",oBronto);
 				break;
 			case FIGHTERS.ANKLY:
-				p2 = instance_create_layer(800,100,"Instances",oAnkly);
+				p2 = instance_create_layer(600,400,"Instances",oAnkly);
 				break;
 			}
 			p2.player_num = 2;

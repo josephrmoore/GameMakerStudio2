@@ -43,6 +43,10 @@ if(keyboard_check_pressed(ord("0"))){
 	game_restart();
 }
 
+if(keyboard_check_pressed(ord("9"))){
+	oGame.admin_controls = !oGame.admin_controls;
+}
+
 //if(key_walk_left){
 //	hsp -= 3;
 //} 
