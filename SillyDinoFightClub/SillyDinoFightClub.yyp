@@ -615,14 +615,6 @@
             }
         },
         {
-            "Key": "aa0742dd-0787-4e17-a8cc-451649775e1e",
-            "Value": {
-                "id": "42992698-00a4-478b-b569-6c50d6da3a2e",
-                "resourcePath": "objects\/oComp\/oComp.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "aac0324d-c06a-48ff-b40a-44815ac96879",
             "Value": {
                 "id": "d583d35c-da43-4486-ae1b-7e56e4df9644",
@@ -892,14 +884,6 @@
                 "id": "116a6187-5cb0-4725-9da6-8e526f3c9858",
                 "resourcePath": "sprites\/sBrontoHurt\/sBrontoHurt.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "f0466d9b-657e-461e-88e2-be945caa3329",
-            "Value": {
-                "id": "934c2aab-1fa8-44b9-b131-60804b1aa144",
-                "resourcePath": "objects\/oPlayer\/oPlayer.yy",
-                "resourceType": "GMObject"
             }
         },
         {

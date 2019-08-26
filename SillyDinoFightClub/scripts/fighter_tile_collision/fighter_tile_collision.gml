@@ -14,11 +14,13 @@ if(vsp > 0){
 }
 
 if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp) != 0){
-	//if(vsp > 0){
-	//	y = y - (y mod tile_size) + (tile_size-1) - (bbox_bottom - y);
-	//} else {
-	//	y = y - (y mod tile_size) - (bbox_top - y);
-	//}
+	if(vsp > 0){
+		show_debug_message("standing on tile");
+		y = y - (y mod 16) + 15 - (bbox_bottom - y);
+	} else {
+		show_debug_message("hitting head on tile");
+		y = y - (y mod 16) - (bbox_top - y);
+	}
 	if(vsp>0){
 		fighter_state = FIGHTERSTATES.IDLE;
 	}
