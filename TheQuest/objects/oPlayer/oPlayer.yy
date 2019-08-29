@@ -73,6 +73,20 @@
             "value": "5",
             "varName": "base_speed",
             "varType": 0
+        },
+        {
+            "id": "b1ff85ca-715a-4479-9f21-9deb32ab32dc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "compass",
+            "varType": 0
         }
     ],
     "solid": false,
