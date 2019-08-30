@@ -80,7 +80,7 @@
         },
         {
             "__type": "GMRPathLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Path_1",
+            "name": "fairy_entrance",
             "id": "c08b5f57-6ff0-40a6-8b30-283880715a23",
             "colour": { "Value": 4278190335 },
             "depth": 200,
