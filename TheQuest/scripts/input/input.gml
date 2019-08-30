@@ -4,3 +4,9 @@ key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 
 key_shoot = keyboard_check(vk_space);
+
+key_reset = keyboard_check(ord("0"));
+
+if(key_reset){
+	game_restart();
+}

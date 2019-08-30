@@ -87,6 +87,34 @@
             "value": "0",
             "varName": "compass",
             "varType": 0
+        },
+        {
+            "id": "089ec162-8b44-4e04-8634-63cb7dc4aebc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "has_gun",
+            "varType": 3
+        },
+        {
+            "id": "03b598d9-87f9-443b-a465-41ee56bc855e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "has_knife",
+            "varType": 3
         }
     ],
     "solid": false,

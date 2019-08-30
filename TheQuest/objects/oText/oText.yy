@@ -135,6 +135,34 @@
             "value": "10",
             "varName": "border",
             "varType": 0
+        },
+        {
+            "id": "58bdf5ea-bf75-4873-98bf-fa0708269f40",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "text_chunk",
+            "varType": 4
+        },
+        {
+            "id": "99be3f7e-5e43-45d5-9dde-79d77230b193",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "current_chunk",
+            "varType": 0
         }
     ],
     "solid": false,

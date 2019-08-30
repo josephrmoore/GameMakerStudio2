@@ -8,7 +8,7 @@ image_angle = gun_dir;
 
 --firing_delay;
 
-if(oPlayer.key_shoot && firing_delay<0){
+if(oPlayer.key_shoot && firing_delay<0 && !oBrain.no_control){
 	firing_delay = 5;
 	with(instance_create_layer(x,y,"Instances",oBullet)){
 		speed = bullet_speed;

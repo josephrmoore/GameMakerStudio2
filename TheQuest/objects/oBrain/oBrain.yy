@@ -13,6 +13,26 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "7c9435b3-5b63-4e1c-b70c-96af2b7960cf"
+        },
+        {
+            "id": "0fdaa6a3-4169-4b19-be3f-f84ffa7a2b98",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "7c9435b3-5b63-4e1c-b70c-96af2b7960cf"
+        },
+        {
+            "id": "8b4f1c72-9afa-4692-aa71-9e8399295a9d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 3,
+            "m_owner": "7c9435b3-5b63-4e1c-b70c-96af2b7960cf"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -45,6 +65,48 @@
             "value": "0",
             "varName": "story_state",
             "varType": 0
+        },
+        {
+            "id": "471c7975-6fa7-4350-a9cb-a784b03f0163",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "callback_text",
+            "varType": 0
+        },
+        {
+            "id": "02809b4d-14e5-43d3-a52a-ad48fb49c8c5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "callback_fairy",
+            "varType": 0
+        },
+        {
+            "id": "ba45edb7-b438-4e8d-b08c-f2347932941a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "no_control",
+            "varType": 3
         }
     ],
     "solid": false,

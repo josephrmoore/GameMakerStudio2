@@ -45,6 +45,20 @@
             "value": "0",
             "varName": "current_path",
             "varType": 0
+        },
+        {
+            "id": "3f5fb970-344a-4387-84f1-0a0cfe86ee47",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "textbox_remaining",
+            "varType": 0
         }
     ],
     "solid": false,
