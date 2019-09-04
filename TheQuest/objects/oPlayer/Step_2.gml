@@ -7,3 +7,7 @@ if(!oBrain.no_control){
 	speed_calculation();
 	wall_collision();
 }
+
+if(hearts<=0){
+	game_end();
+}

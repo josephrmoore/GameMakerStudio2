@@ -13,6 +13,16 @@
             "enumb": 2,
             "eventtype": 3,
             "m_owner": "090b849a-f2c8-4f07-b9f7-a269a4935a63"
+        },
+        {
+            "id": "ef515123-68ae-4f7d-8289-789f4cdb9801",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "090b849a-f2c8-4f07-b9f7-a269a4935a63"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -115,6 +125,20 @@
             "value": "0",
             "varName": "has_knife",
             "varType": 3
+        },
+        {
+            "id": "892a7cd3-55be-4a47-b582-3adffcd4f8fa",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "hearts",
+            "varType": 0
         }
     ],
     "solid": false,

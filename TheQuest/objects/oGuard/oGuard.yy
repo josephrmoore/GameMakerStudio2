@@ -4,7 +4,36 @@
     "mvc": "1.0",
     "name": "oGuard",
     "eventList": [
-        
+        {
+            "id": "8d6e3b56-a1a5-4b4d-8666-b7da39302498",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 3,
+            "m_owner": "c0f292c1-fe17-437a-883e-fc43e2ed9cb6"
+        },
+        {
+            "id": "055d6f0c-0b04-4dd0-994e-c40aa5bdfb97",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c0f292c1-fe17-437a-883e-fc43e2ed9cb6"
+        },
+        {
+            "id": "4806beec-fc23-4d5f-993f-c69287d7c596",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "090b849a-f2c8-4f07-b9f7-a269a4935a63",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "c0f292c1-fe17-437a-883e-fc43e2ed9cb6"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -22,7 +51,50 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "ec627995-d1e1-4ca3-a108-b39b05870e60",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "walksp",
+            "varType": 0
+        },
+        {
+            "id": "131ff918-d1d0-49e4-b645-0a029b4700a9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "runsp",
+            "varType": 0
+        },
+        {
+            "id": "cfb78950-54cb-4863-b64e-ff9fb14d5fb3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "mypath",
+            "varType": 4
+        }
+    ],
     "solid": false,
     "spriteId": "8a53c05c-7625-44ca-b8c5-f0abb4a15b68",
     "visible": true
