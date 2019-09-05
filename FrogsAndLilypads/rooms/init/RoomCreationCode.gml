@@ -1,1 +1,1 @@
-room_goto(gameboard);
+room_goto(title);
