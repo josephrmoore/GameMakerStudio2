@@ -32,4 +32,29 @@ switch(room){
 		if(key_enter){
 			room_goto(gameboard);
 		}
+	case gameboard:
+		switch(game_state){
+			case GAMESTATE.CHOOSEPLAYER:
+				GameState_ChoosePlayer();
+				break;
+			case GAMESTATE.ROLL:
+				GameState_Roll();
+				break;
+			case GAMESTATE.MOVE:
+				GameState_Move();
+				break;
+			case GAMESTATE.PREDATORS:
+				GameState_Predators();
+				break;
+			case GAMESTATE.LILYPADHOME:
+				GameState_LilypadHome();
+				break;
+			case GAMESTATE.LILYPADCAUGHT:
+				GameState_LilypadCaught();
+				break;
+			case GAMESTATE.ALLFROGSEATEN:
+				GameState_AllFrogsEaten();
+				break;
+		}
+		break;
 }

@@ -1,6 +1,7 @@
 any_key = keyboard_check_pressed(vk_anykey);
 
 key_enter = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_return) || keyboard_check_pressed(vk_enter);
+key_roll = keyboard_check_pressed(ord("R"));
 
 key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
 key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);

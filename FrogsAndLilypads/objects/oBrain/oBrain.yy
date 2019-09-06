@@ -33,6 +33,16 @@
             "enumb": 4,
             "eventtype": 7,
             "m_owner": "bffbc209-f8b1-4229-b7eb-3d1404862582"
+        },
+        {
+            "id": "1f97b3d7-87bc-435b-bb3e-6f6048449d6f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "bffbc209-f8b1-4229-b7eb-3d1404862582"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -190,6 +200,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "current_round",
+            "varType": 0
+        },
+        {
+            "id": "5d5e4fd1-89ec-4ae8-9557-ea57c3cf6bfe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "this_roll",
             "varType": 0
         }
     ],
