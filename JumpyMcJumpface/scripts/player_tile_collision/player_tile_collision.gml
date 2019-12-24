@@ -4,6 +4,7 @@ var bbox_side;
 var hsp_integer;
 var vsp_integer;
 
+var no_collision = 0;
 
 // Vertical tile collision
 
@@ -24,6 +25,8 @@ if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp_integer) != 0 || tilem
 		y = y - (y mod 60) - (bbox_top - y);
 	}
 	vsp = 0;
+} else {
+	no_collision += 1;
 }
 
 // Horizontal tile collision
@@ -43,4 +46,10 @@ if(tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_top) != 0 || tilema
 		x = x - (x mod 60) - (bbox_left - x);
 	}
 	hsp = 0;
+} else {
+	no_collision += 1;
+}
+
+if(no_collision == 2){
+	grounded = false;
 }

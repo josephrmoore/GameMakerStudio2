@@ -4,6 +4,9 @@ if(oGame.buttons){
 	if(jumps < max_jumps){
 		vsp = -jSpeed;
 		jumps++;
+		launch_x = x;
+		launch_y = y;
 	}
 }
-vsp = max(vsp, -jSpeed/4);
+
+if (!oGame.pressed_buttons_held) vsp = max(vsp, -jSpeed/4);

@@ -18,5 +18,7 @@ if (place_meeting(x,y+vsp,obj)) {
 			y = y + sign(vsp);
 		}
 		vsp = 0;
+		grounded = true;
+		jumps = 0;
 		player_tile_collision();
 }

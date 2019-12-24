@@ -99,6 +99,20 @@
             "varType": 0
         },
         {
+            "id": "a938f330-c7fd-4c40-951b-fb4809836bc1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "jSpeed",
+            "varType": 0
+        },
+        {
             "id": "175fe854-15b0-4342-86ba-98a2974f6e57",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -108,7 +122,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "4",
             "varName": "max_vsp",
             "varType": 0
         },
@@ -122,7 +136,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "7",
             "varName": "mSpeed",
             "varType": 0
         },
@@ -136,7 +150,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "1",
             "varName": "aSpeed",
             "varType": 0
         },
@@ -150,22 +164,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "1",
             "varName": "dSpeed",
-            "varType": 0
-        },
-        {
-            "id": "a938f330-c7fd-4c40-951b-fb4809836bc1",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "30",
-            "varName": "jSpeed",
             "varType": 0
         },
         {
@@ -178,7 +178,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.2",
+            "value": "0.5",
             "varName": "grv",
             "varType": 0
         },
@@ -262,7 +262,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "90",
+            "value": "121",
             "varName": "fall_at",
             "varType": 0
         }

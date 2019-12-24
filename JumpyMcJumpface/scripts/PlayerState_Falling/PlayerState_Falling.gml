@@ -1,6 +1,7 @@
 grounded = false;
 grav();
-vsp += 3;
+player_object_collision(oThroughBlock);
+player_object_collision(oElevator);
 player_tile_collision();
 x+=hsp;
 y+=vsp;

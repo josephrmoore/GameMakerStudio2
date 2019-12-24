@@ -1,11 +1,13 @@
 if(oGame.move_up){
-    y-=climb_speed;
+    vsp = approach(vsp,-mSpeed,aSpeed);
 }else if(oGame.move_down){
-    y+=climb_speed;
+    vsp = approach(vsp,mSpeed,aSpeed);
+}else{
+    vsp = approach(vsp,0,dSpeed);
 }
 
-if(oGame.move_left){
-	x-=5;
-} else if (oGame.move_right){
-	x+=5;
+if(vsp>0){
+	vsp = ceil(vsp);	
+} else {
+	vsp = floor(vsp);
 }

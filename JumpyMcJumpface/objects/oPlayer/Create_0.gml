@@ -12,3 +12,5 @@ enum PLAYERSTATE {
 }
 
 player_state = PLAYERSTATE.IDLE;
+launch_x = x;
+launch_y = y+1000;

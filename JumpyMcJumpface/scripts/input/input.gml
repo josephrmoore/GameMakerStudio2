@@ -14,3 +14,7 @@ pressed_down = gamepad_button_check_pressed(0,gp_padd) || gamepad_axis_value(0,g
 pressed_buttons = gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,gp_face4) || keyboard_check_pressed(vk_space);
 buttons = pressed_buttons;
 pressed_buttons_held = gamepad_button_check(0,gp_face1) || gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3) || gamepad_button_check(0,gp_face4) || keyboard_check(vk_space);
+
+if(keyboard_check(ord("0"))){
+	game_restart();
+}
