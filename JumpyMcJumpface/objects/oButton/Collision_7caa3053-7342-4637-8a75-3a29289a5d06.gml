@@ -3,4 +3,5 @@
 if(button_state == BUTTONSTATE.UNCLICKED){
 	oGame.buttons_pressed_this_level += 1;
 	button_state = BUTTONSTATE.CLICKED;
+	audio_play_sound(aButtonClick, 100, false);
 }

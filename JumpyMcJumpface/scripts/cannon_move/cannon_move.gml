@@ -10,8 +10,6 @@ if(axis == 0){
 	if(x<startx){
 		multiplier = 1;
 	}
-	show_debug_message("x axis");
-	show_debug_message(x);
 	hsp = approach(hsp,mSpeed*multiplier,aSpeed);
 	x+=hsp;
 } else if(axis == 1){
@@ -21,11 +19,6 @@ if(axis == 0){
 	if(y<starty){
 		multiplier = 1;
 	}
-	show_debug_message("y axis");
-	show_debug_message(y);
 	vsp = approach(vsp,mSpeed*multiplier,aSpeed);
 	y+=vsp;
 }
-
-//log(hsp, "hsp");
-//log(vsp, "vsp");

@@ -6,6 +6,7 @@ if(oGame.buttons){
 		jumps++;
 		launch_x = x;
 		launch_y = y;
+		audio_play_sound(aJump, 1000, false);
 	}
 }
 
