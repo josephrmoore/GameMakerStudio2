@@ -13,7 +13,9 @@ y+=vsp;
 launch_x = x;
 launch_y = y;
 
-audio_play_sound(aSliding,100,false);
+if(!audio_is_playing(aSliding)){
+	audio_play_sound(aSliding,100,false);
+}
 
 player_state_check();
 

@@ -1,28 +1,28 @@
 {
-    "id": "1c901b37-4d6d-46f1-b51b-e31377ee532c",
+    "id": "b7147cf6-056f-4a94-9602-33caa995c069",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oElevator",
+    "name": "oBullet",
     "eventList": [
         {
-            "id": "400300fb-4a28-47ea-b39a-1c61e05ec926",
+            "id": "48004b2b-2574-491a-9319-126daac55e26",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 2,
             "eventtype": 3,
-            "m_owner": "1c901b37-4d6d-46f1-b51b-e31377ee532c"
+            "m_owner": "b7147cf6-056f-4a94-9602-33caa995c069"
         },
         {
-            "id": "1146f6fd-70fa-473d-be3e-40b159c768ae",
+            "id": "f8e1b076-d236-488b-a137-48817b87f8f0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "dbcfd68d-755b-4ef1-8ff3-6701dee8ccc3",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "1c901b37-4d6d-46f1-b51b-e31377ee532c"
+            "eventtype": 4,
+            "m_owner": "b7147cf6-056f-4a94-9602-33caa995c069"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,7 +43,21 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "48312016-ab25-4be2-bcfd-f1ffb9ce8271",
+            "id": "6f33c929-dfbf-470c-8694-61031f9a689b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "6",
+            "varName": "chase_speed",
+            "varType": 0
+        },
+        {
+            "id": "6d1cdaa4-0787-4f39-8e14-b3d333507426",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -53,25 +67,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "moving",
-            "varType": 3
-        },
-        {
-            "id": "6eb61db8-3057-4a93-9100-aad078171d99",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1",
-            "varName": "spd",
+            "varName": "firing_angle",
             "varType": 0
         },
         {
-            "id": "1979225e-7f75-4d6a-93c2-7fdcd3c2d698",
+            "id": "82b8e666-f12a-4a0c-889c-52dafadd3c54",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -80,12 +80,40 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1020",
-            "varName": "floor_y",
+            "value": "0",
+            "varName": "chasing",
+            "varType": 3
+        },
+        {
+            "id": "403a1e96-a6f3-444b-b2c0-ae1d708ff6dd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "axis",
+            "varType": 0
+        },
+        {
+            "id": "ef19ad32-11dd-4e25-a7f9-e3b0d8f69324",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "spd",
             "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "7dd329b3-bd87-4a41-96e6-f407779927c6",
+    "spriteId": "42fdd104-3b41-41dc-86f7-0bf59ee6fb22",
     "visible": true
 }

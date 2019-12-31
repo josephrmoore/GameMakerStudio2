@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(moving){
+if(moving && !is_paused){
 	elevator_move(spd*2, -60);
 }

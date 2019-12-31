@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>90C19E72-169A-45E6-A78B-F89330FC3EE0</UUID>
-        <nextObjectID>111</nextObjectID>
+        <nextObjectID>112</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -194,6 +194,31 @@
         <attribute name="index" type="int32">73</attribute>
         <attribute name="highpassfiltercutoff" type="float">0.10785</attribute>
         <attribute name="decaytime" type="float">0.21364</attribute>
+        <attribute name="bitdepth" type="int16">16</attribute>
+        <attribute name="attacktime" type="float">0</attribute>
+    </object>
+    <object type="SOUND" id="z112">
+        <attribute name="wavetype" type="int16">2</attribute>
+        <attribute name="volume" type="float">50</attribute>
+        <attribute name="vibratospeed" type="float">0.03036972</attribute>
+        <attribute name="vibratodepth" type="float">0.007950044</attribute>
+        <attribute name="sustaintime" type="float">0.3882867</attribute>
+        <attribute name="sustainpunch" type="float">0.04143</attribute>
+        <attribute name="startfrequency" type="float">0.5057218</attribute>
+        <attribute name="squareduty" type="float">0.01975</attribute>
+        <attribute name="slide" type="float">-0.2709</attribute>
+        <attribute name="samplerate" type="int32">44100</attribute>
+        <attribute name="rating" type="int16">0</attribute>
+        <attribute name="name" type="string">falling</attribute>
+        <attribute name="minfrequencycutoff" type="float">0.07193552</attribute>
+        <attribute name="lowpassfiltercutoffsweep" type="float">-0.5675066</attribute>
+        <attribute name="lowpassfiltercutoff" type="float">1</attribute>
+        <attribute name="index" type="int32">77</attribute>
+        <attribute name="highpassfiltercutoff" type="float">0.2537687</attribute>
+        <attribute name="dutysweep" type="float">-0.09006381</attribute>
+        <attribute name="decaytime" type="float">0.9472106</attribute>
+        <attribute name="changespeed" type="float">0.517303</attribute>
+        <attribute name="changeamount" type="float">0.7754731</attribute>
         <attribute name="bitdepth" type="int16">16</attribute>
         <attribute name="attacktime" type="float">0</attribute>
     </object>

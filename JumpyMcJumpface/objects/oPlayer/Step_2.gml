@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if(rising){
+if(rising || is_paused){
 
 } else {
 	switch (player_state) {

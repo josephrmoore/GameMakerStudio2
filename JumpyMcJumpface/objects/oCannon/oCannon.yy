@@ -13,11 +13,21 @@
             "enumb": 2,
             "eventtype": 3,
             "m_owner": "93d64d68-5026-45a8-a9aa-2f6648503ed7"
+        },
+        {
+            "id": "17f06048-2122-4160-80fa-3ca70eb460d2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "93d64d68-5026-45a8-a9aa-2f6648503ed7"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "ca5cb3d3-3584-4ce5-906d-f42edf098d1b",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -84,7 +94,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "2",
             "varName": "mSpeed",
             "varType": 0
         },
@@ -114,6 +124,48 @@
             "resourceFilter": 1023,
             "value": "1",
             "varName": "multiplier",
+            "varType": 0
+        },
+        {
+            "id": "93d5add4-dac6-4399-bbd6-db7003fdfc2d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "bullet_speed",
+            "varType": 0
+        },
+        {
+            "id": "555e4f45-6567-4bbd-88a1-57b9dd80ea13",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "firing_rate",
+            "varType": 0
+        },
+        {
+            "id": "8e40537e-9933-46f5-a12b-b18d66299da3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "firing_angle",
             "varType": 0
         }
     ],

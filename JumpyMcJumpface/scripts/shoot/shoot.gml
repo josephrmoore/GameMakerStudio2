@@ -1,0 +1,12 @@
+with(instance_create_layer(x,y,"Bullets",oBullet)){
+	firing_angle = other.firing_angle;
+	spd = other.bullet_speed;
+	axis = other.axis;
+	if(other.axis == 0){
+		firing_angle = 270;
+	} else {
+		firing_angle = 0;
+	}
+	speed = spd;
+	direction = firing_angle + random_range(-1,1);	
+}
