@@ -21,6 +21,11 @@ if (place_meeting(x,y,oLadder)) {
 	}
 }
 
+if (place_meeting(x,y,oPole)) {
+	player_state = PLAYERSTATE.SLIDING;
+	grounded = false;
+}
+
 if(y>launch_y+fall_at){
 	player_state = PLAYERSTATE.FALLING;
 }

@@ -27,9 +27,9 @@ if(rising){
 		//case PLAYERSTATE.AUTO: 
 		//	PlayerState_Auto();
 		//	break;
-		//case PLAYERSTATE.SLIDING: 
-		//	PlayerState_Sliding();
-		//	break;
+		case PLAYERSTATE.SLIDING: 
+			PlayerState_Sliding();
+			break;
 		case PLAYERSTATE.DEAD: 
 			PlayerState_Dead();
 			break;

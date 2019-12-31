@@ -1,3 +1,5 @@
 oPlayer.rising = true;
 oPlayer.controllable = false;
-oElevator.moving_outro = true;
+oElevatorOutro.moving = true;
+audio_stop_all();
+audio_play_sound(aLevelOutro,100,false);
