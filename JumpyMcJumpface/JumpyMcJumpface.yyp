@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "264316f2-364b-4be4-bf71-1aa401eeb32c",
+            "Value": {
+                "id": "a2903f98-7c30-4ae2-aa5d-2054a4167d01",
+                "resourcePath": "sounds\/aLevelOutro\/aLevelOutro.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "27860feb-186f-4fb5-a381-03d88fe8fbf6",
             "Value": {
                 "id": "442885b7-5ff3-4b9f-9154-4511dcda3129",
@@ -527,6 +535,14 @@
             }
         },
         {
+            "Key": "9758089a-87d5-4676-8e11-aca998b3990e",
+            "Value": {
+                "id": "b9812395-4226-4a01-8caa-b050232b4bc1",
+                "resourcePath": "scripts\/elevator_move\/elevator_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9801a6e9-77d2-48b5-9a40-8c4da286e819",
             "Value": {
                 "id": "34564f2b-1c9b-488a-a2d4-b03300393af2",
@@ -580,6 +596,14 @@
                 "id": "a5e28ac0-fd9e-4f61-88dd-95735379ef16",
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a98e1ccc-8a81-45cb-8129-7e3f01538518",
+            "Value": {
+                "id": "d336acd0-3ac6-41ef-8617-cdb47af89149",
+                "resourcePath": "sounds\/aLevelIntro\/aLevelIntro.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -864,7 +888,8 @@
         "ea752786-075b-4938-9c9f-fc01b9c45429",
         "4d10f054-6cab-4100-a9ba-83aa677268d0",
         "dcdefc1e-b34a-4703-b5e5-ccc771045204",
-        "57a14b5f-1ef7-4f01-a71d-f663995d48ba"
+        "57a14b5f-1ef7-4f01-a71d-f663995d48ba",
+        "9758089a-87d5-4676-8e11-aca998b3990e"
     ],
     "tutorial": ""
 }

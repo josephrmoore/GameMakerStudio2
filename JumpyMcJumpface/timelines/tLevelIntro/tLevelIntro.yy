@@ -22,21 +22,21 @@
             "moment": 0
         },
         {
-            "id": "1da3a50d-bd84-4da3-b84f-182d7df760d9",
+            "id": "96d77eb1-f73c-4bd1-8370-fd8277d927bf",
             "modelName": "GMMoment",
             "mvc": "1.0",
             "name": "",
             "evnt": {
-                "id": "0dea1b48-fa7d-4624-ade8-38788a61be70",
+                "id": "eab5d39d-d218-46e6-8bb8-ce94d3f17992",
                 "modelName": "GMEvent",
                 "mvc": "1.0",
                 "IsDnD": false,
                 "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-                "enumb": 1,
+                "enumb": 300,
                 "eventtype": 0,
                 "m_owner": "b2c5da45-c899-4594-9342-8477342d2df3"
             },
-            "moment": 1
+            "moment": 300
         }
     ]
 }

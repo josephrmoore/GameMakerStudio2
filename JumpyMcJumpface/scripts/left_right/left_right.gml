@@ -1,6 +1,6 @@
-if(oGame.move_left){
+if(oGame.move_left && controllable){
     hsp = approach(hsp,-mSpeed,aSpeed);
-}else if(oGame.move_right){
+}else if(oGame.move_right && controllable){
     hsp = approach(hsp,mSpeed,aSpeed);
 }else{
     hsp = approach(hsp,0,dSpeed);
