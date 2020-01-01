@@ -391,10 +391,26 @@
             }
         },
         {
+            "Key": "5ad49f41-50ec-4fb4-a625-165fe54d73be",
+            "Value": {
+                "id": "5a6ee53e-28a1-46ea-ada1-c4d056d6afcd",
+                "resourcePath": "timelines\/tDeath\/tDeath.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "5fb49ced-7f6d-4912-98e1-1def20da48e7",
             "Value": {
                 "id": "0589b84d-ec21-42c6-a326-af8738b9faae",
                 "resourcePath": "sounds\/aDead\/aDead.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "68bd82e6-3722-4684-a1cd-4aaa1b3d8560",
+            "Value": {
+                "id": "8d34859c-589f-49ed-a2bd-407da9b8c5d0",
+                "resourcePath": "sounds\/aDeath\/aDeath.yy",
                 "resourceType": "GMSound"
             }
         },

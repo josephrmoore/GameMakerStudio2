@@ -135,6 +135,20 @@
             "value": "mainMenu",
             "varName": "current_room",
             "varType": 2
+        },
+        {
+            "id": "c0821c5b-412b-4f71-8fe5-fd813db2d843",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "died_yet",
+            "varType": 3
         }
     ],
     "solid": false,

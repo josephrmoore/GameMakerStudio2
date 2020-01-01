@@ -12,3 +12,8 @@ if(oPlayer.y>stop_pt-30){
 } else {
 	oPlayer.y = stop_pt-30;
 }
+
+if(oGame.died_yet){
+	y = stop_pt;
+	oPlayer.y = stop_pt-30;
+}
