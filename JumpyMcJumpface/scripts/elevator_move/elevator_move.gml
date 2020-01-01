@@ -7,11 +7,7 @@ if(y>stop_pt){
 	y = stop_pt;
 }
 
-if(oPlayer.y>stop_pt-30){
-	oPlayer.y -= spd;
-} else {
-	oPlayer.y = stop_pt-30;
-}
+oPlayer.y = y-30;
 
 if(oGame.died_yet){
 	y = stop_pt;

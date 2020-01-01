@@ -1,5 +1,7 @@
 // Jumping
-
+if(has_high_jump){
+	jSpeed = jSpeedHigh;
+}
 if(controllable){
 	if(oGame.buttons){
 		if(jumps < max_jumps){

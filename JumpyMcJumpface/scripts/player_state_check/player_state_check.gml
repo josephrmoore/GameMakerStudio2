@@ -14,15 +14,20 @@ if(vsp < 0 || !grounded){
 //	player_state = PLAYERSTATE.JUMPING;
 //}
 
-if (place_meeting(x,y,oLadder)) {
+if (place_meeting(x,y,oLadder) && grounded) {
 	if(oGame.move_up || oGame.move_down){
 		player_state = PLAYERSTATE.CLIMBING;
 		grounded = false;
 	}
 }
 
+
+if (place_meeting(x,y,oLadder) && !grounded) {
+	player_state = PLAYERSTATE.CLIMBING;
+}
+
 if (place_meeting(x,y,oPole)) {
-	if(oGame.move_down){
+	if(oGame.move_down || (oPlayer.has_pole_climb && oGame.move_up)){
 		player_state = PLAYERSTATE.SLIDING;
 		grounded = false;
 	}

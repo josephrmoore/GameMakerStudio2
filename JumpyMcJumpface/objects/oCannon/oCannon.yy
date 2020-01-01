@@ -136,7 +136,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "5",
             "varName": "bullet_speed",
             "varType": 0
         },
@@ -150,7 +150,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "20",
+            "value": "4",
             "varName": "firing_rate",
             "varType": 0
         },
@@ -167,6 +167,20 @@
             "value": "0",
             "varName": "firing_angle",
             "varType": 0
+        },
+        {
+            "id": "3cfe11e0-6711-455d-bc84-b7517c4fd66b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "activated",
+            "varType": 3
         }
     ],
     "solid": false,

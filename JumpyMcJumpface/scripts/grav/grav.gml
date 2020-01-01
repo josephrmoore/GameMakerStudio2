@@ -3,7 +3,11 @@
 if(vsp+grv < max_vsp){
 	vsp += grv;
 } else {
-	vsp = max_vsp;
+	if(oPlayer.has_parachute){
+		vsp = floor(max_vsp/2);
+	} else {
+		vsp = max_vsp;
+	}
 }
 
 if(vsp < -jSpeed){

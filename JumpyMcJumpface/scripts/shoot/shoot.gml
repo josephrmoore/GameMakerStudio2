@@ -10,3 +10,4 @@ with(instance_create_layer(x,y,"Bullets",oBullet)){
 	speed = spd;
 	direction = firing_angle + random_range(-1,1);	
 }
+audio_play_sound(aShoot, 1000, false);

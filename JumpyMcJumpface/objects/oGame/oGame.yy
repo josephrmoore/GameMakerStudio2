@@ -149,6 +149,20 @@
             "value": "0",
             "varName": "died_yet",
             "varType": 3
+        },
+        {
+            "id": "c8935052-0957-4eac-993a-8327be860ae5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "game_paused",
+            "varType": 3
         }
     ],
     "solid": false,

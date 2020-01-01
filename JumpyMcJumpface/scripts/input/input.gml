@@ -15,6 +15,15 @@ pressed_buttons = gamepad_button_check_pressed(0,gp_face1) || gamepad_button_che
 buttons = pressed_buttons;
 pressed_buttons_held = gamepad_button_check(0,gp_face1) || gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3) || gamepad_button_check(0,gp_face4) || keyboard_check(vk_space);
 
+pause_game = gamepad_button_check_pressed(0,gp_start) || keyboard_check_pressed(vk_escape);
+
 if(keyboard_check(ord("0"))){
 	game_restart();
+}
+
+if(pause_game){
+	if(oGame.game_state == GAMESTATE.LEVELS){
+		oGame.game_paused = !oGame.game_paused;
+		pause_everything(oGame.game_paused);
+	}
 }

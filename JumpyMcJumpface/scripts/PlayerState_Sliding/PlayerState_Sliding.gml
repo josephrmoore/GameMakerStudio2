@@ -2,7 +2,11 @@ grounded = false;
 left_right();
 jumping();
 if(place_meeting(x,y,oPole)){
-	slide();
+	if(oPlayer.has_pole_climb){
+		climb();
+	} else {
+		slide();
+	}
 } else {
 	grav();
 }
