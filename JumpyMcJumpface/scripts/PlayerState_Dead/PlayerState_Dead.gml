@@ -1,8 +1,5 @@
 grav();
-player_tile_collision();
-player_object_collision(oDoor);
-player_object_collision(oElevator);
-player_object_collision(oThroughBlock);
+collisions();
 
 if(grounded){
 	sprite_index = player_dead;

@@ -15,4 +15,5 @@ switch(upgrade_type){
 		oPlayer.has_pole_climb = true;
 		break;
 }
+audio_play_sound(aUpgrade, 1000, false);
 instance_destroy();

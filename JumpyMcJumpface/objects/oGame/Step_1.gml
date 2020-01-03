@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 input();
-
+if(last_level_finished == 9 && !finished_game){
+	finished_game = true;
+}
 
 switch (game_state) {
 	case GAMESTATE.MAINMENU: 

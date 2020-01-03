@@ -2,14 +2,12 @@ grounded = true;
 grav();
 left_right();
 jumping();
-player_tile_collision();
-player_object_collision(oDoor);
-player_object_collision(oElevator);
-player_object_collision(oThroughBlock);
+collisions();
 
 x+=hsp;
 y+=vsp;
 
+check_for_ending();
 player_state_check();
 
 sprite_index = player_idle;

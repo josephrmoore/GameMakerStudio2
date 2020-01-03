@@ -3,9 +3,8 @@ grav();
 if(oPlayer.has_parachute){
 	left_right();
 }
-player_tile_collision();
-player_object_collision(oThroughBlock);
-player_object_collision(oElevator);
+collisions();
+
 x+=hsp;
 y+=vsp;
 

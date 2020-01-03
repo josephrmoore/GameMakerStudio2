@@ -21,6 +21,7 @@ if(!audio_is_playing(aSliding)){
 	audio_play_sound(aSliding,100,false);
 }
 
+check_for_ending();
 player_state_check();
 
 sprite_index = player_sliding;

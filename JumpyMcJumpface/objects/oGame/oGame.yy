@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "8d2861a1-d65a-4cc5-b186-7ac0b172b83f"
+        },
+        {
+            "id": "f3146bb8-c023-477f-9e2a-f074fd680768",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "8d2861a1-d65a-4cc5-b186-7ac0b172b83f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -62,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "finished_game",
             "varType": 3
         },
@@ -162,6 +172,62 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "game_paused",
+            "varType": 3
+        },
+        {
+            "id": "f597a0d8-d1d5-49f7-a311-b36d4f4f3f33",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "level_select_level",
+            "varType": 0
+        },
+        {
+            "id": "718fa3b3-bcee-407a-89c0-a84bf59c7fbb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "level_title_showing",
+            "varType": 3
+        },
+        {
+            "id": "de3cb3a0-3942-42e4-a1db-0dffa9653aa8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Whatevs",
+            "varName": "level_name",
+            "varType": 2
+        },
+        {
+            "id": "3b1e4ba2-6529-4856-a9b9-9c1536bd394e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "show_gui",
             "varType": 3
         }
     ],
