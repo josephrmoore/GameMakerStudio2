@@ -1,4 +1,3 @@
-grounded = false;
 left_right();
 jumping();
 if(place_meeting(x,y,oLadder)){

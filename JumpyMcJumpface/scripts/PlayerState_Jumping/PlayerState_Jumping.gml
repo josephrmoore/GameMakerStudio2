@@ -1,4 +1,3 @@
-grounded = false;
 grav();
 left_right();
 jumping();

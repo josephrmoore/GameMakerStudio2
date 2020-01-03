@@ -1,4 +1,3 @@
-grounded = false;
 grav();
 if(oPlayer.has_parachute){
 	left_right();
