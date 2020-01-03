@@ -15,21 +15,21 @@ switch(oGame.current_room){
 	case "level4":
 		clip = aLevel4;
 		break;
-	//case "level5":
-	//	clip = aLevel5;
-	//	break;
-	//case "level6":
-	//	clip = aLevel6;
-	//	break;
-	//case "level7":
-	//	clip = aLevel7;
-	//	break;
-	//case "level8":
-	//	clip = aLevel8;
-	//	break;
-	//case "level9":
-	//	clip = aLevel9;
-	//	break;
+	case "level5":
+		clip = aLevel5;
+		break;
+	case "level6":
+		clip = aLevel6;
+		break;
+	case "level7":
+		clip = aLevel7;
+		break;
+	case "level8":
+		clip = aLevel8;
+		break;
+	case "level9":
+		clip = aLevel9;
+		break;
 }
 
 oPlayer.controllable = true;

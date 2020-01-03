@@ -324,7 +324,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "has_double_jump",
             "varType": 3
         },
@@ -338,7 +338,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "has_parachute",
             "varType": 3
         },
@@ -352,7 +352,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "has_high_jump",
             "varType": 3
         },
@@ -366,7 +366,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "has_pole_climb",
             "varType": 3
         },
