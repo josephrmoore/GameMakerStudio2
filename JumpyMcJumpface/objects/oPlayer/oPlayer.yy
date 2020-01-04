@@ -128,8 +128,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "11",
             "varName": "jSpeed",
+            "varType": 0
+        },
+        {
+            "id": "4ef71e8f-42f7-4792-9df7-841216b1a3e6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "14",
+            "varName": "jSpeedHigh",
             "varType": 0
         },
         {
@@ -142,7 +156,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "4",
+            "value": "7",
             "varName": "max_vsp",
             "varType": 0
         },
@@ -156,7 +170,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "7",
+            "value": "3",
             "varName": "mSpeed",
             "varType": 0
         },
@@ -198,7 +212,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
+            "value": "0.7",
             "varName": "grv",
             "varType": 0
         },
@@ -282,7 +296,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "121",
+            "value": "211",
             "varName": "fall_at",
             "varType": 0
         },
@@ -324,7 +338,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_double_jump",
             "varType": 3
         },
@@ -338,7 +352,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_parachute",
             "varType": 3
         },
@@ -352,7 +366,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_high_jump",
             "varType": 3
         },
@@ -366,23 +380,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_pole_climb",
             "varType": 3
-        },
-        {
-            "id": "4ef71e8f-42f7-4792-9df7-841216b1a3e6",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "13",
-            "varName": "jSpeedHigh",
-            "varType": 0
         }
     ],
     "solid": false,

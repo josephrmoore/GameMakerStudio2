@@ -229,6 +229,20 @@
             "value": "0",
             "varName": "show_gui",
             "varType": 3
+        },
+        {
+            "id": "1e24d1ff-7518-42e5-89fc-b07f2e52d35b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1840",
+            "varName": "outro_trigger",
+            "varType": 0
         }
     ],
     "solid": false,
