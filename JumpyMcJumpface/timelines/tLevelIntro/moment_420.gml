@@ -1,4 +1,4 @@
-if(oGame.current_room != "level9"){
+if(oGame.current_room == "level9"){
 	var clip;
 	switch(oGame.current_room){
 		case "mainMenu":
@@ -40,5 +40,4 @@ if(oGame.current_room != "level9"){
 	oCannon.activated = true;
 	oGame.level_title_showing = false;
 	oGame.show_gui = true;
-	timeline_position = 420;
 }
