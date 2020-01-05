@@ -2,9 +2,10 @@
 if(has_high_jump){
 	jSpeed = jSpeedHigh;
 }
-if(controllable){
+if(controllable && oPlayer.player_state != PLAYERSTATE.CLIMBING){
 	if(oGame.buttons){
 		if(jumps < max_jumps){
+			player_state = PLAYERSTATE.JUMPING;
 			vsp = -jSpeed;
 			jumps++;
 			launch_x = x;

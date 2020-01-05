@@ -1,4 +1,5 @@
 grounded = true;
+player_state_check();
 grav();
 left_right();
 jumping();
@@ -15,7 +16,6 @@ if(alarm[0] == -1){
 }
 
 check_for_ending();
-player_state_check();
 
 sprite_index = player_walking;
 if(hsp<0){

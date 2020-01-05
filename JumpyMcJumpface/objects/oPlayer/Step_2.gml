@@ -21,9 +21,9 @@ if(rising || is_paused){
 		case PLAYERSTATE.FALLING: 
 			PlayerState_Falling();
 			break;
-		//case PLAYERSTATE.SWINGING: 
-		//	PlayerState_Swinging();
-		//	break;
+		case PLAYERSTATE.SWINGING: 
+			PlayerState_Swinging();
+			break;
 		//case PLAYERSTATE.AUTO: 
 		//	PlayerState_Auto();
 		//	break;

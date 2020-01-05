@@ -1,3 +1,4 @@
+player_state_check();
 left_right();
 jumping();
 if(place_meeting(x,y,oPole)){
@@ -21,6 +22,5 @@ if(!audio_is_playing(aSliding)){
 }
 
 check_for_ending();
-player_state_check();
 
 sprite_index = player_sliding;

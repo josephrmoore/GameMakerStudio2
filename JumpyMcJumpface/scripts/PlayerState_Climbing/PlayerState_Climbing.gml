@@ -1,10 +1,7 @@
+player_state_check();
 left_right();
 jumping();
-if(place_meeting(x,y,oLadder)){
-	climb();
-} else {
-	grav();
-}
+climb();
 player_tile_collision();
 x+=hsp;
 y+=vsp;
@@ -17,6 +14,5 @@ if(alarm[1] == -1){
 }
 
 check_for_ending();
-player_state_check();
 
 sprite_index = player_climbing;

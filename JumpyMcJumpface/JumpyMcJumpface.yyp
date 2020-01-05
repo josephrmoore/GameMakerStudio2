@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "07e5b91d-8762-455d-88b5-4fafe17a3744",
+            "Value": {
+                "id": "7c37f6d2-94a3-4fac-bab2-945fb1daeff8",
+                "resourcePath": "objects\/oPoleEnd\/oPoleEnd.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "09e11f6f-7448-4fa2-a45c-04651cb82f71",
             "Value": {
                 "id": "d19d80c4-a4be-4cc4-af9f-2af28a0f4e21",
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "42c9715f-9625-47b2-adc0-a22a50d2d804",
+            "Value": {
+                "id": "865abe65-cdf6-4210-930a-c1b96af9d120",
+                "resourcePath": "sprites\/ladder_end\/ladder_end.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "42fdd104-3b41-41dc-86f7-0bf59ee6fb22",
             "Value": {
                 "id": "3be8ca7c-287c-440b-9883-42039b42f94e",
@@ -439,6 +455,14 @@
             }
         },
         {
+            "Key": "56d015f4-ba5d-40f0-b8fd-8b5a508850a8",
+            "Value": {
+                "id": "863a46a9-af98-4352-aee5-0b94cf1c198e",
+                "resourcePath": "sprites\/pole_nub\/pole_nub.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "57a14b5f-1ef7-4f01-a71d-f663995d48ba",
             "Value": {
                 "id": "358ca6af-8312-4514-b341-7affc7232c60",
@@ -524,6 +548,14 @@
                 "id": "8d34859c-589f-49ed-a2bd-407da9b8c5d0",
                 "resourcePath": "sounds\/aDeath\/aDeath.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "6a247b9c-b285-48d1-aca1-e4f74ebfcf9e",
+            "Value": {
+                "id": "0f092861-69d6-4a73-8326-4252bd05d754",
+                "resourcePath": "scripts\/PlayerState_Swinging\/PlayerState_Swinging.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -671,6 +703,14 @@
             }
         },
         {
+            "Key": "854807b4-f51e-48f4-bb78-3acb51120afb",
+            "Value": {
+                "id": "341280e7-e4ad-49b6-865b-d66d6764d325",
+                "resourcePath": "objects\/oLadderEnd\/oLadderEnd.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "874e99b2-8903-4e83-8930-35aa92d020cd",
             "Value": {
                 "id": "076fc99e-22f3-44c7-850a-68c42bac51bc",
@@ -692,6 +732,14 @@
                 "id": "b544059c-3a8e-466d-a96a-7b7bdb938a4b",
                 "resourcePath": "sounds\/aLevel5\/aLevel5.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "8b1816d4-7eda-4cd9-bb75-e575e9ba3aa7",
+            "Value": {
+                "id": "3e74d514-e16c-4394-9ffa-794300732aa0",
+                "resourcePath": "sprites\/ladder_nub\/ladder_nub.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -943,6 +991,14 @@
             }
         },
         {
+            "Key": "c7bea6ae-2796-4cf1-bc71-efaaf4f8b898",
+            "Value": {
+                "id": "592ed0e9-0a2c-4b73-8829-5963496748b8",
+                "resourcePath": "sprites\/vine_still\/vine_still.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c8ba5d95-f7b7-4b4a-8e5f-b8970d886cef",
             "Value": {
                 "id": "4fb50836-5a85-48fb-a000-cc374b551d62",
@@ -1135,6 +1191,14 @@
             }
         },
         {
+            "Key": "e78b013d-26a6-45f2-bd6c-a6aa61ae7138",
+            "Value": {
+                "id": "955c8a27-99a5-48bc-8990-3b198b000253",
+                "resourcePath": "objects\/oTransport\/oTransport.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e8f21e92-2efc-42b7-b104-fd452014f88f",
             "Value": {
                 "id": "7d065eed-7bd6-4ca4-a3e7-f140d601793f",
@@ -1309,6 +1373,7 @@
         "70520dc4-0c79-46ef-90b7-1842da01d047",
         "936e1fbc-7233-4708-9689-de3339e7d680",
         "2e772408-631f-425d-b06f-ff1372793ab2",
+        "6a247b9c-b285-48d1-aca1-e4f74ebfcf9e",
         "4d63835e-9ccf-45d3-be98-27d8ac1b94a3",
         "ce7b5ccd-e61f-4e5a-94d1-a5d06258ae63",
         "ea752786-075b-4938-9c9f-fc01b9c45429",
