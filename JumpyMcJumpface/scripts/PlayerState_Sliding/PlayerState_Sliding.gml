@@ -1,5 +1,6 @@
 player_state_check();
-left_right();
+//left_right();
+hsp = 0;
 jumping();
 if(place_meeting(x,y,oPole)){
 	if(oPlayer.has_pole_climb){

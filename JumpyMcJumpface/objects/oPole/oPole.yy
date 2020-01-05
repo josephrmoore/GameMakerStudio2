@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oPole",
     "eventList": [
-        
+        {
+            "id": "1e291ab7-9349-487a-9d55-9536187d997a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "dbcfd68d-755b-4ef1-8ff3-6701dee8ccc3",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "80be8463-7195-497f-aff6-457e64ae6b94"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -4,3 +4,7 @@ if(x>=oGame.outro_trigger){
 	oGame.timeline_position = 0;
 	oGame.timeline_running = true;
 }
+
+if(y >= room_height-60){
+	die();
+}

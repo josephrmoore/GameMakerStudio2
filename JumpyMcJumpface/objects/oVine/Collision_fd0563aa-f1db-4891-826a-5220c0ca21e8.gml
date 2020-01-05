@@ -6,14 +6,14 @@ if(oPlayer.player_state != PLAYERSTATE.SWINGING){
 	oPlayer.grappleY = y;
 	oPlayer.ropeX = oPlayer.x;
 	oPlayer.ropeY = oPlayer.y;
-	oPlayer.ropeAngle = 270;
+//	oPlayer.ropeAngle = 270;
 	//if(oPlayer.hsp < 0){
 	//	oPlayer.ropeAngle = 300;
 	//} else {
 	//	oPlayer.ropeAngle = 240;
 	//}
 //	ropeAngleVelocity = 0;
-//	oPlayer.ropeAngle = point_direction(oPlayer.grappleX,oPlayer.grappleY,oPlayer.x,oPlayer.y);
+	oPlayer.ropeAngle = point_direction(oPlayer.grappleX,oPlayer.grappleY,oPlayer.x,oPlayer.y);
 //	oPlayer.ropeLength = point_distance(oPlayer.grappleX,oPlayer.grappleY,oPlayer.x,oPlayer.y);
 
 show_debug_message("ONLY ONCE!");

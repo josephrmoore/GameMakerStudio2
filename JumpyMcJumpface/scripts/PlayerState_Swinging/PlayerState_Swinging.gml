@@ -1,6 +1,7 @@
-var _ropeAngleAcceleration = -0.8 * dcos(ropeAngle);
+var _ropeAngleAcceleration = -0.2* dcos(ropeAngle);
 _ropeAngleAcceleration += ((oGame.move_right - oGame.move_left) * 0.08);
 ropeAngleVelocity += _ropeAngleAcceleration;
+ropeAngleVelocity = clamp(ropeAngleVelocity, -3, 3);
 ropeAngle += ropeAngleVelocity;
 //ropeAngleVelocity *= 0.99;
 ropeX = grappleX + lengthdir_x(ropeLength,ropeAngle);
