@@ -243,6 +243,20 @@
             "value": "1840",
             "varName": "outro_trigger",
             "varType": 0
+        },
+        {
+            "id": "2f484c5d-74f7-48a1-833b-3793e1e85f06",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "level_number",
+            "varType": 0
         }
     ],
     "solid": false,

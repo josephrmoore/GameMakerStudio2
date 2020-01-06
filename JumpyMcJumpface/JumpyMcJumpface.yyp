@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "7f7366f2-e1a9-416d-b66c-1fd5b3882769",
+            "Value": {
+                "id": "27bf6ed6-3fa1-49da-98dd-4a223dc1a11d",
+                "resourcePath": "sprites\/sUpgrade\/sUpgrade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "805439c9-133d-4e19-8686-30b33b578c99",
             "Value": {
                 "id": "de8c9bac-9d34-4e3a-9b8b-210c9713005a",
@@ -1380,14 +1388,6 @@
                 "id": "c7b8f7b4-f787-456e-a425-8d27dea33629",
                 "resourcePath": "scripts\/GameState_Credits\/GameState_Credits.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "ffcd3ce5-5571-48bf-b622-20babb69f2bc",
-            "Value": {
-                "id": "05d4bd47-b42b-41eb-b33a-7d170a6d022a",
-                "resourcePath": "sprites\/upgrade\/upgrade.yy",
-                "resourceType": "GMSprite"
             }
         }
     ],

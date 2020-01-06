@@ -19,13 +19,30 @@ draw_set_color(c_white);
 draw_set_font(f3);
 if(show_gui){
 	if(buttons_needed_this_level==buttons_pressed_this_level){
-		draw_text(1380, 1025, "EXIT ->");
+		draw_text(1380, 995, "EXIT ->");
 	} else {
-		draw_text(1000, 1025, "BUTTONS LEFT:");
-		draw_text(1450, 1025, string(buttons_needed_this_level-buttons_pressed_this_level));
+		draw_sprite(button,0,1380, 995);
+		draw_text(1430, 995, string(string(buttons_pressed_this_level) + "/" + string(buttons_needed_this_level)));
+	}
+	draw_text(50, 965, string("Level " + string(level_number)));
+	draw_text(50, 1000, level_name);
+	if(oPlayer.has_parachute){
+		draw_sprite(sUpgrade,0,50,1040);
+	}
+	if(oPlayer.has_high_jump){
+		draw_sprite(sUpgrade,1,80,1040);
+	}
+	if(oPlayer.has_double_jump){
+		draw_sprite(sUpgrade,2,110,1040);
+	}
+	if(oPlayer.has_pole_climb){
+		draw_sprite(sUpgrade,3,140,1040);
 	}
 }
 if(level_title_showing){
-	draw_text(50, 1025, level_name);
+	draw_set_font(f2);
+	draw_set_halign(fa_center);
+	draw_text(900, 1000, level_name);
+	draw_set_halign(fa_left);
 }
 
