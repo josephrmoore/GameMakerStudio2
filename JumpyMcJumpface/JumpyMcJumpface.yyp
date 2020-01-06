@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "47e051f0-9e59-4ab1-9945-4d50460a0083",
+            "Value": {
+                "id": "82c62289-017d-4fd1-8b2a-edb00bffbd33",
+                "resourcePath": "scripts\/SaveGame\/SaveGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "48989088-0a29-4d60-a37f-1ea5a2c5259c",
             "Value": {
                 "id": "74079300-0527-4ba9-94c9-ce03e8854e76",
@@ -412,6 +420,14 @@
                 "id": "56b15738-f0f8-4289-b368-33925c33d895",
                 "resourcePath": "sprites\/pole\/pole.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4e914f08-6fa6-4822-adde-60f68cec7453",
+            "Value": {
+                "id": "5025bc23-1a1f-4501-8eee-21b761621e8c",
+                "resourcePath": "scripts\/player_object_collision1\/player_object_collision1.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -559,10 +575,26 @@
             }
         },
         {
+            "Key": "6e3187fe-6886-4c21-a727-e883e174522b",
+            "Value": {
+                "id": "681f0d81-1d13-4c99-ab89-1bea7dd53a28",
+                "resourcePath": "scripts\/SaveStringToFile\/SaveStringToFile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "70520dc4-0c79-46ef-90b7-1842da01d047",
             "Value": {
                 "id": "3d140f83-80a8-445d-a005-537be5f49d16",
                 "resourcePath": "scripts\/PlayerState_Jumping\/PlayerState_Jumping.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "70b1ce82-af1a-448a-9cf2-82d629cdb01b",
+            "Value": {
+                "id": "62ea1ee4-c62b-42db-b3dc-4446b19150e8",
+                "resourcePath": "scripts\/player_object_collision2\/player_object_collision2.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -927,6 +959,14 @@
             }
         },
         {
+            "Key": "aa1d5baa-e24f-4c7c-b9a8-831831ba6083",
+            "Value": {
+                "id": "46409d08-e749-4065-bbb0-559cfd0f90f4",
+                "resourcePath": "scripts\/LoadLevelStats\/LoadLevelStats.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ae6222db-0c09-49a2-942f-8a577fcd1447",
             "Value": {
                 "id": "3581d484-d510-40ec-816e-1e9d79196fd0",
@@ -987,6 +1027,14 @@
             "Value": {
                 "id": "c5d7faae-f312-4c23-984a-67790dfdc22e",
                 "resourcePath": "scripts\/GameState_Paused_Draw\/GameState_Paused_Draw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c574cc71-3895-4868-8d0e-438b97661343",
+            "Value": {
+                "id": "df7d82c6-5acd-4534-9062-c9e1726d6850",
+                "resourcePath": "scripts\/LoadPlayerStats\/LoadPlayerStats.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1083,6 +1131,14 @@
             "Value": {
                 "id": "7564620e-752d-48fd-95ca-d552e390a1e4",
                 "resourcePath": "scripts\/left_right\/left_right.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d8e1845c-5ab4-4dec-bbe5-ed0b29414851",
+            "Value": {
+                "id": "ab2fe1fc-b636-4817-976f-e4afcdef66f0",
+                "resourcePath": "scripts\/LoadJsonFromFile\/LoadJsonFromFile.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1343,6 +1399,8 @@
         "09e11f6f-7448-4fa2-a45c-04651cb82f71",
         "dda2a5cd-22b6-4400-982d-7a61e50d3d9d",
         "ddfff5a8-c97f-4358-883e-6d8c411880ea",
+        "70b1ce82-af1a-448a-9cf2-82d629cdb01b",
+        "4e914f08-6fa6-4822-adde-60f68cec7453",
         "e232050c-6064-49f1-beff-ecb9033e0acc",
         "f62ca550-f8fe-4909-9994-eaf41eaeea60",
         "1e4fd4cd-e9ba-468a-838e-e9efd3d9f885",
@@ -1380,7 +1438,12 @@
         "4d10f054-6cab-4100-a9ba-83aa677268d0",
         "24240050-1c30-4d37-a12b-50b198c6e808",
         "dd1551be-0484-49a2-9214-acb442fd4369",
-        "f1285996-0a08-4a76-b527-b314b06cb0c7"
+        "f1285996-0a08-4a76-b527-b314b06cb0c7",
+        "d8e1845c-5ab4-4dec-bbe5-ed0b29414851",
+        "6e3187fe-6886-4c21-a727-e883e174522b",
+        "47e051f0-9e59-4ab1-9945-4d50460a0083",
+        "aa1d5baa-e24f-4c7c-b9a8-831831ba6083",
+        "c574cc71-3895-4868-8d0e-438b97661343"
     ],
     "tutorial": ""
 }

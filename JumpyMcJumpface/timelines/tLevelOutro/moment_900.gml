@@ -37,4 +37,5 @@ switch(oGame.current_room){
 }
 
 oGame.last_level_finished = last_finished;
+SaveGame("jumpydata.sav");
 room_goto(next_room);

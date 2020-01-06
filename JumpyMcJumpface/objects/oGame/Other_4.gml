@@ -4,6 +4,7 @@ audio_stop_all();
 switch(current_room){
 	case "mainMenu":
 		audio_play_sound(aMainMenu,100,true);
+		LoadLevelStats("jumpydata.sav");
 		break;
 	// default for level rooms
 	case "level1":

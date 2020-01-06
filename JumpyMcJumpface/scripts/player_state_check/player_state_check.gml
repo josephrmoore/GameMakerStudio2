@@ -15,7 +15,11 @@ if(grounded){
 	} else if(place_meeting(x,y,oLadder)) {
 		player_state = PLAYERSTATE.CLIMBING;
 	} else {
-		player_state = PLAYERSTATE.JUMPING;
+		//if(abs(vsp)<2 && hsp == 0){
+		//	player_state = PLAYERSTATE.IDLE;
+		//} else {
+			player_state = PLAYERSTATE.JUMPING;
+		//}
 	}
 }
 

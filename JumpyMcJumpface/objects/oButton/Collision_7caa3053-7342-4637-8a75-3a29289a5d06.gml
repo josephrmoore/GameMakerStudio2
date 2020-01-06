@@ -5,3 +5,19 @@ if(button_state == BUTTONSTATE.UNCLICKED){
 	button_state = BUTTONSTATE.CLICKED;
 	audio_play_sound(aButtonClick, 100, false);
 }
+
+switch(image_index){
+	case 0:
+		oPlayer.y = y;
+		break;
+	case 1:
+		oPlayer.y = y+3;
+		break;
+	case 2:
+		oPlayer.y = y+6;
+		break;
+	case 3:
+		oPlayer.y = y+9;
+		break;
+}
+oPlayer.player_state = PLAYERSTATE.IDLE;

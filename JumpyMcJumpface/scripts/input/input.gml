@@ -17,6 +17,9 @@ pressed_buttons_held = gamepad_button_check(0,gp_face1) || gamepad_button_check(
 
 pause_game = gamepad_button_check_pressed(0,gp_start) || keyboard_check_pressed(vk_escape);
 
+key_delete = keyboard_check_pressed(vk_delete) || keyboard_check_pressed(vk_backspace);
+
+
 if(keyboard_check(ord("0"))){
 	game_restart();
 }
@@ -27,3 +30,15 @@ if(pause_game){
 		pause_everything(oGame.game_paused);
 	}
 }
+
+if(key_delete){
+	if file_exists("jumpydata.sav"){
+		file_delete("jumpydata.sav");
+		show_debug_message("save deleted");
+	}
+}
+
+	if file_exists("jumpydata.sav"){
+		file_delete("jumpydata.sav");
+		show_debug_message("save deleted");
+	}
