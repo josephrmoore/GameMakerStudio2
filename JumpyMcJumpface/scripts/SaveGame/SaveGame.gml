@@ -3,7 +3,6 @@ file = argument0;
 var save_data = ds_map_create();
 
 ds_map_add(save_data,"last_level_finished",oGame.last_level_finished);
-ds_map_add(save_data,"finished_game",oGame.finished_game);
 ds_map_add(save_data,"has_parachute",oPlayer.has_parachute);
 ds_map_add(save_data,"has_pole_climb",oPlayer.has_pole_climb);
 ds_map_add(save_data,"has_high_jump",oPlayer.has_high_jump);

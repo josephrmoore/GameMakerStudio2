@@ -5,8 +5,7 @@ left_right();
 jumping();
 collisions();
 
-x+=hsp;
-y+=vsp;
+pos();
 
 launch_x = x;
 launch_y = y;

@@ -12,8 +12,8 @@ if(place_meeting(x,y,oPole)){
 	grav();
 }
 player_tile_collision();
-x+=hsp;
-y+=vsp;
+
+pos();
 
 launch_x = x;
 launch_y = y;

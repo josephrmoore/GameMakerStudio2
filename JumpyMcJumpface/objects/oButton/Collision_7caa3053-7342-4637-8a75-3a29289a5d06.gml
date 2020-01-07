@@ -6,6 +6,7 @@ if(button_state == BUTTONSTATE.UNCLICKED){
 	audio_play_sound(aButtonClick, 100, false);
 }
 
+// this is still bad
 switch(image_index){
 	case 0:
 		oPlayer.y = y;
@@ -20,4 +21,9 @@ switch(image_index){
 		oPlayer.y = y+9;
 		break;
 }
-oPlayer.player_state = PLAYERSTATE.IDLE;
+
+
+//prevent button resurrections
+if(oPlayer.player_state != PLAYERSTATE.FALLING && oPlayer.player_state != PLAYERSTATE.DEAD){
+	oPlayer.player_state = PLAYERSTATE.IDLE;
+}

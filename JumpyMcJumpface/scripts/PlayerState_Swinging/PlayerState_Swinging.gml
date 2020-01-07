@@ -1,8 +1,10 @@
 var _ropeAngleAcceleration = -0.2* dcos(ropeAngle);
 _ropeAngleAcceleration += ((oGame.move_right - oGame.move_left) * 0.08);
-ropeAngleVelocity += _ropeAngleAcceleration;
+//ropeAngleVelocity += _ropeAngleAcceleration;
+ropeAngleVelocity += _ropeAngleAcceleration*oGame.DT;
 ropeAngleVelocity = clamp(ropeAngleVelocity, -3, 3);
 ropeAngle += ropeAngleVelocity;
+// DAMPING
 //ropeAngleVelocity *= 0.99;
 ropeX = grappleX + lengthdir_x(ropeLength,ropeAngle);
 ropeY = grappleY + lengthdir_y(ropeLength,ropeAngle);
@@ -17,8 +19,7 @@ if(oGame.buttons){
 jumping();
 collisions();
 
-x+=hsp;
-y+=vsp;
+pos();
 
 launch_x = x;
 launch_y = y;

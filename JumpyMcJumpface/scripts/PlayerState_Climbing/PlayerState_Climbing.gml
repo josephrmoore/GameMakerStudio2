@@ -3,8 +3,8 @@ left_right();
 jumping();
 climb();
 player_tile_collision();
-x+=hsp;
-y+=vsp;
+
+pos();
 
 launch_x = x;
 launch_y = y;

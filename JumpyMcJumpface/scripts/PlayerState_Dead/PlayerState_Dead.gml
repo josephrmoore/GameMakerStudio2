@@ -10,7 +10,6 @@ if(grounded){
 	sprite_index = player_falling;
 }
 
-y+=vsp;
-x+=hsp;
+pos();
 
 

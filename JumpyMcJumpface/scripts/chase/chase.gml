@@ -1,5 +1,6 @@
 chasing = true;
-speed = chase_speed;
+//speed = chase_speed;
+speed = chase_speed*oGame.DT;
 if(firing_angle == 0){
 	if(oPlayer.y < y){
 		direction = 90;

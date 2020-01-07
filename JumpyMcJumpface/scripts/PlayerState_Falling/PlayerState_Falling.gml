@@ -4,8 +4,7 @@ if(oPlayer.has_parachute){
 }
 collisions();
 
-x+=hsp;
-y+=vsp;
+pos();
 
 if(grounded){
 	if(oPlayer.has_parachute){

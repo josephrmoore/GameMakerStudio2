@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "finished_game",
             "varType": 3
         },
@@ -86,7 +86,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "0",
             "varName": "last_level_finished",
             "varType": 0
         },
@@ -256,6 +256,48 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "level_number",
+            "varType": 0
+        },
+        {
+            "id": "6b93fdbe-e8ef-4441-af3d-2faf79d2d707",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "ending_text",
+            "varType": 3
+        },
+        {
+            "id": "d0d3d721-fce7-4d70-ae16-ad8552d96080",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "credits_begin",
+            "varType": 3
+        },
+        {
+            "id": "5def1da4-fbca-454e-9327-846ef0112088",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "60",
+            "varName": "target_frame_rate",
             "varType": 0
         }
     ],

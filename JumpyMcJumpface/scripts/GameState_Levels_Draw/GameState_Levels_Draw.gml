@@ -46,3 +46,8 @@ if(level_title_showing){
 	draw_set_halign(fa_left);
 }
 
+if(ending_text){
+	draw_set_font(f1);
+	draw_text(150, 400, "CONGRATULATIONS");
+	draw_text(750, 500, "YOU WIN!");
+}

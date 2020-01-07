@@ -1,11 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 audio_stop_all();
+oGame.game_state = GAMESTATE.LEVELS;
 switch(current_room){
 	case "mainMenu":
 		audio_play_sound(aMainMenu,100,true);
 		LoadLevelStats("jumpydata.sav");
 		level_number = 0;
+		oGame.game_state = GAMESTATE.MAINMENU;
 		break;
 	// default for level rooms
 	case "level1":

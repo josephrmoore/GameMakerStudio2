@@ -37,8 +37,3 @@ if(key_delete){
 		show_debug_message("save deleted");
 	}
 }
-
-	if file_exists("jumpydata.sav"){
-		file_delete("jumpydata.sav");
-		show_debug_message("save deleted");
-	}

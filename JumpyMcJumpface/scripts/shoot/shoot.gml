@@ -7,7 +7,8 @@ with(instance_create_layer(x,y,"Bullets",oBullet)){
 	} else {
 		firing_angle = 0;
 	}
-	speed = spd;
+//	speed = spd;
+	speed = spd*oGame.DT;
 	direction = firing_angle + random_range(-1,1);	
 }
 audio_play_sound(aShoot, 1000, false);

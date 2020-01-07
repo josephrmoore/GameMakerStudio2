@@ -16,3 +16,5 @@ enum MAINMENUITEMS {
 }
 
 game_state = GAMESTATE.MAINMENU;
+LoadLevelStats("jumpydata.sav");
+LoadEndingState("jumpydefeated.sav");
