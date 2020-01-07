@@ -40,10 +40,10 @@ if(pressed_buttons){
 	// start (default)
 	var lvl = "level1";
 	if(menu_items[main_menu_pos] == MAINMENUITEMS.START){
-		if file_exists("jumpydata.sav"){
-			file_delete("jumpydata.sav");
-			show_debug_message("save deleted");
-		}
+		//oPlayer.has_double_jump = false;
+		//oPlayer.has_high_jump = false;
+		//oPlayer.has_parachute = false;
+		//oPlayer.has_pole_climb = false;
 	}
 	if(menu_items[main_menu_pos] == MAINMENUITEMS.CONTINUE){
 		// continue
@@ -52,10 +52,10 @@ if(pressed_buttons){
 	if(menu_items[main_menu_pos] == MAINMENUITEMS.LEVELSELECT){
 		// level select
 		lvl = string("level" + string(level_select_level));
-		oPlayer.has_double_jump = true;
-		oPlayer.has_high_jump = true;
-		oPlayer.has_parachute = true;
-		oPlayer.has_pole_climb = true;
+		//oPlayer.has_double_jump = true;
+		//oPlayer.has_high_jump = true;
+		//oPlayer.has_parachute = true;
+		//oPlayer.has_pole_climb = true;
 	}
 	game_state = GAMESTATE.LEVELS;
 	current_room = lvl;

@@ -6,3 +6,7 @@ if(!is_paused && activated){
 		alarm[0] = (firing_rate * 60) + round(random_range(-200, 200));
 	}
 }
+
+if(oGame.current_room = "level9"){
+	instance_destroy();
+}
