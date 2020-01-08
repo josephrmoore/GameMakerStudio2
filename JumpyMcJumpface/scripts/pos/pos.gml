@@ -1,5 +1,5 @@
 //x+=hsp;
 //y+=vsp;
 
-x+=hsp*oGame.DT;
-y+=vsp*oGame.DT;
+oPlayer.x+=oPlayer.hsp*oGame.DT;
+oPlayer.y+=oPlayer.vsp*oGame.DT;

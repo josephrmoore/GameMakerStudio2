@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "False",
+            "value": "True",
             "varName": "finished_game",
             "varType": 3
         },
@@ -299,6 +299,34 @@
             "value": "60",
             "varName": "target_frame_rate",
             "varType": 0
+        },
+        {
+            "id": "89b31853-5497-4e54-9977-2c9a63101839",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "controls_screen",
+            "varType": 3
+        },
+        {
+            "id": "1959f93a-56cc-4f4a-9063-47c10d986988",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "gamepad_plugged_in",
+            "varType": 3
         }
     ],
     "solid": false,
