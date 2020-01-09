@@ -327,6 +327,20 @@
             "value": "0",
             "varName": "gamepad_plugged_in",
             "varType": 3
+        },
+        {
+            "id": "559c4e01-fac9-4b23-bac3-4cbd7f8107cd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "lvl2_switch",
+            "varType": 3
         }
     ],
     "solid": false,

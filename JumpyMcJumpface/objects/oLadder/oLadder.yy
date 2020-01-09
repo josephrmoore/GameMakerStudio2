@@ -32,7 +32,20 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        
+        {
+            "id": "1d0fb4b5-c9ce-4ff0-b898-3e7850901f47",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "alab",
+            "varType": 3
+        }
     ],
     "solid": false,
     "spriteId": "0de245f4-9e08-4bf2-80bc-06eb12bdf280",
