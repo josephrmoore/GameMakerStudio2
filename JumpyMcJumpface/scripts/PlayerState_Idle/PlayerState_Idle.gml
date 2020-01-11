@@ -1,7 +1,7 @@
 grounded = true;
-grav();
 left_right();
-jumping();
+//jumping();
+grav();
 collisions();
 
 pos();

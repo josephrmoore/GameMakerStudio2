@@ -138,7 +138,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "11",
+            "value": "10",
             "varName": "jSpeed",
             "varType": 0
         },
@@ -152,7 +152,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "14",
+            "value": "15",
             "varName": "jSpeedHigh",
             "varType": 0
         },
@@ -166,7 +166,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "7",
+            "value": "10",
             "varName": "max_vsp",
             "varType": 0
         },
@@ -491,6 +491,34 @@
             "value": "150",
             "varName": "ropeLength",
             "varType": 0
+        },
+        {
+            "id": "652c8473-77f7-4bb6-9a19-a1f2bb9a4b90",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "no_collisions",
+            "varType": 3
+        },
+        {
+            "id": "ff1bcf3e-f9a3-473b-9ec7-e9426516bfa4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "button_collision",
+            "varType": 3
         }
     ],
     "solid": false,

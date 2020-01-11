@@ -59,21 +59,17 @@ if(button_state == BUTTONSTATE.UNCLICKED){
 	}
 }
 
-// this is still bad
-switch(image_index){
-	case 0:
-		oPlayer.y = y;
-		break;
-	case 1:
-		oPlayer.y = y+3;
-		break;
-	case 2:
-		oPlayer.y = y+6;
-		break;
-	case 3:
-		oPlayer.y = y+9;
-		break;
+oPlayer.button_collision = true;
+
+if(oGame.current_room == "level9"){
+	if(oPlayer.x > x-14){
+		oPlayer.y = y;	
+	}
+} else {
+	oPlayer.y = y-15;
 }
+
+
 
 
 //prevent button resurrections

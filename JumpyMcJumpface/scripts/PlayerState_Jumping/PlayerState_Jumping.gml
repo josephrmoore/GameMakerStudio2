@@ -1,11 +1,11 @@
-player_state_check();
-grav();
 left_right();
-jumping();
+//jumping();
+grav();
 collisions();
 
 pos();
 
+player_state_check();
 check_for_ending();
 
 sprite_index = player_jumping;

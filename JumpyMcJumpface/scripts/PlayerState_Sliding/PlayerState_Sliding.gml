@@ -1,7 +1,6 @@
-player_state_check();
 //left_right();
 hsp = 0;
-jumping();
+//jumping();
 if(place_meeting(x,y,oPole)){
 	if(oPlayer.has_pole_climb){
 		climb();
@@ -22,6 +21,7 @@ if(!audio_is_playing(aSliding)){
 	audio_play_sound(aSliding,100,false);
 }
 
+player_state_check();
 check_for_ending();
 
 sprite_index = player_sliding;

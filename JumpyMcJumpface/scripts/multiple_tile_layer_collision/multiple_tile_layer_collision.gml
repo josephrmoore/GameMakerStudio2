@@ -1,12 +1,7 @@
-no_collisions = true;
-
-if(oGame.current_room == "level4"){
-	for(var i=0; i<array_length_1d(lvl4_tilemaps); i++){
-		multiple_tile_layer_collision(lvl4_tilemaps[i]);
-	}
-}
-
 // Set bbox_side
+
+var tile_layer = argument0;
+
 var bbox_side;
 var hsp_integer;
 var vsp_integer;
@@ -21,7 +16,7 @@ if(vsp > 0){
 	vsp_integer = floor(vsp);
 }
 
-if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp_integer) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp_integer) != 0){
+if(tilemap_get_at_pixel(tile_layer, bbox_left, bbox_side+vsp_integer) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp_integer) != 0){
 	if(vsp > 0){
 		y = y - (y mod 30) + 29 - (bbox_bottom - y);
 		jumps = 0;
@@ -43,7 +38,7 @@ if(hsp > 0) {
 	hsp_integer = floor(hsp);
 }
 
-if(tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_bottom) != 0){
+if(tilemap_get_at_pixel(tile_layer, bbox_side+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_bottom) != 0){
 	if(hsp > 0){
 		x = x - (x mod 30) + 29 - (bbox_right - x);
 	} else {
@@ -51,8 +46,4 @@ if(tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_top) != 0 || tilema
 	}
 	hsp = 0;
 	no_collisions = false;
-}
-
-if(no_collisions == true){
-	grounded = false;
 }

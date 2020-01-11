@@ -943,6 +943,14 @@
             }
         },
         {
+            "Key": "9d6518be-0903-4452-9346-19fc846d160d",
+            "Value": {
+                "id": "ca81dedc-2f8f-4ece-a73d-1b76878fb253",
+                "resourcePath": "scripts\/multiple_tile_layer_collision\/multiple_tile_layer_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9dd5cd46-528a-4aff-aad7-1fc0ffc74a3c",
             "Value": {
                 "id": "e08c073d-43ef-4955-a646-f3b4576db9ff",
@@ -1478,6 +1486,7 @@
         "5384c268-3792-40bc-ad9c-32d00b093e7b",
         "09e11f6f-7448-4fa2-a45c-04651cb82f71",
         "dda2a5cd-22b6-4400-982d-7a61e50d3d9d",
+        "9d6518be-0903-4452-9346-19fc846d160d",
         "ddfff5a8-c97f-4358-883e-6d8c411880ea",
         "70b1ce82-af1a-448a-9cf2-82d629cdb01b",
         "4e914f08-6fa6-4822-adde-60f68cec7453",

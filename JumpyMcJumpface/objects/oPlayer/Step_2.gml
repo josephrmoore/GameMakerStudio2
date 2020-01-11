@@ -2,9 +2,10 @@
 // You can write your code in this editor
 
 
-if(rising || is_paused){
-
-} else {
+if(!rising && !is_paused){
+	if(player_state != PLAYERSTATE.FALLING && player_state != PLAYERSTATE.DEAD){
+		jumping();
+	}
 	switch (player_state) {
 		case PLAYERSTATE.IDLE: 
 			PlayerState_Idle();
@@ -24,9 +25,6 @@ if(rising || is_paused){
 		case PLAYERSTATE.SWINGING: 
 			PlayerState_Swinging();
 			break;
-		//case PLAYERSTATE.AUTO: 
-		//	PlayerState_Auto();
-		//	break;
 		case PLAYERSTATE.SLIDING: 
 			PlayerState_Sliding();
 			break;

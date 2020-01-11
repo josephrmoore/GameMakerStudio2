@@ -16,7 +16,7 @@ if(oGame.buttons){
 	player_state = PLAYERSTATE.JUMPING;
 }
 
-jumping();
+//jumping();
 collisions();
 
 pos();

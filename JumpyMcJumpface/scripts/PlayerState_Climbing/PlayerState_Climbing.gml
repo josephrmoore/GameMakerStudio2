@@ -1,6 +1,5 @@
-player_state_check();
 left_right();
-jumping();
+//jumping();
 climb();
 player_tile_collision();
 
@@ -13,6 +12,7 @@ if(alarm[1] == -1){
 	alarm[1] = 10;
 }
 
+player_state_check();
 check_for_ending();
 
 sprite_index = player_climbing;
