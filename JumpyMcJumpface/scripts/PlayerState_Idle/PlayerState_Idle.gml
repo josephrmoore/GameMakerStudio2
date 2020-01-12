@@ -1,12 +1,11 @@
 grounded = true;
-grav();
 left_right();
-jumping();
-collisions();
-
-x+=hsp;
-y+=vsp;
-
+//jumping();
+if(!oPlayer.button_collision){
+	grav();
+	collisions();
+	pos();
+}
 check_for_ending();
 player_state_check();
 

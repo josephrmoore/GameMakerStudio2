@@ -1,10 +1,15 @@
-// Set bbox_side
+no_collisions = true;
 
+if(oGame.current_room == "level4"){
+	for(var i=0; i<array_length_1d(lvl4_tilemaps); i++){
+		multiple_tile_layer_collision(lvl4_tilemaps[i]);
+	}
+}
+
+// Set bbox_side
 var bbox_side;
 var hsp_integer;
 var vsp_integer;
-
-var no_collision = 0;
 
 // Vertical tile collision
 
@@ -18,15 +23,14 @@ if(vsp > 0){
 
 if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp_integer) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp_integer) != 0){
 	if(vsp > 0){
-		y = y - (y mod 60) + 59 - (bbox_bottom - y);
+		y = y - (y mod 30) + 29 - (bbox_bottom - y);
 		jumps = 0;
 		grounded = true;
 	} else {
-		y = y - (y mod 60) - (bbox_top - y);
+		y = y - (y mod 30) - (bbox_top - y);
 	}
 	vsp = 0;
-} else {
-	no_collision += 1;
+	no_collisions = false;
 }
 
 // Horizontal tile collision
@@ -41,15 +45,14 @@ if(hsp > 0) {
 
 if(tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_bottom) != 0){
 	if(hsp > 0){
-		x = x - (x mod 60) + 59 - (bbox_right - x);
+		x = x - (x mod 30) + 29 - (bbox_right - x);
 	} else {
-		x = x - (x mod 60) - (bbox_left - x);
+		x = x - (x mod 30) - (bbox_left - x);
 	}
 	hsp = 0;
-} else {
-	no_collision += 1;
+	no_collisions = false;
 }
 
-if(no_collision == 2){
+if(no_collisions == true){
 	grounded = false;
 }

@@ -11,7 +11,8 @@ if(axis == 0){
 		multiplier = 1;
 	}
 	hsp = approach(hsp,mSpeed*multiplier,aSpeed);
-	x+=hsp;
+//	x+=hsp;
+	x+=hsp*oGame.DT;
 } else if(axis == 1){
 	if(y>endy){
 		multiplier = -1;
@@ -20,5 +21,6 @@ if(axis == 0){
 		multiplier = 1;
 	}
 	vsp = approach(vsp,mSpeed*multiplier,aSpeed);
-	y+=vsp;
+//	y+=vsp;
+	y+=vsp*oGame.DT;
 }

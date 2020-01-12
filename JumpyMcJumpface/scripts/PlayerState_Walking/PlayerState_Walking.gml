@@ -1,12 +1,13 @@
 grounded = true;
-grav();
 left_right();
-jumping();
+//jumping();
+
+if(!oPlayer.button_collision){
+grav();
 collisions();
 
-x+=hsp;
-y+=vsp;
-
+pos();
+}
 launch_x = x;
 launch_y = y;
 
@@ -14,8 +15,8 @@ if(alarm[0] == -1){
 	alarm[0] = 10;
 }
 
-check_for_ending();
 player_state_check();
+check_for_ending();
 
 sprite_index = player_walking;
 if(hsp<0){

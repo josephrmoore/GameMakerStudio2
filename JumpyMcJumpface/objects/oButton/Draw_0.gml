@@ -6,7 +6,10 @@ switch (button_state) {
 		image_index = 0;
 		break;
 	case BUTTONSTATE.CLICKED: 
-		image_index = 1;
+		image_speed = 1;
+		if(image_index == image_number-1){
+			image_speed = 0;
+		}
 		break;
 	case BUTTONSTATE.VERSIONA: 
 		break;

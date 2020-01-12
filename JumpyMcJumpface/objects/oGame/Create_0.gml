@@ -12,7 +12,10 @@ enum GAMESTATE {
 enum MAINMENUITEMS {
 	START,
 	CONTINUE,
-	LEVELSELECT
+	LEVELSELECT,
+	CONTROLS
 }
 
 game_state = GAMESTATE.MAINMENU;
+LoadLevelStats("jumpydata.sav");
+LoadEndingState("jumpydefeated.sav");

@@ -1,11 +1,10 @@
-grav();
 if(oPlayer.has_parachute){
 	left_right();
 }
+grav();
 collisions();
 
-x+=hsp;
-y+=vsp;
+pos();
 
 if(grounded){
 	if(oPlayer.has_parachute){

@@ -80,7 +80,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1020",
+            "value": "960",
             "varName": "floor_y",
             "varType": 0
         }

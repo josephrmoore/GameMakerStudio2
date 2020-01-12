@@ -1,5 +1,7 @@
 grav();
-collisions();
+if(y <= room_height-60){
+	collisions();
+}
 
 if(grounded){
 	sprite_index = player_dead;
@@ -8,5 +10,6 @@ if(grounded){
 	sprite_index = player_falling;
 }
 
-y+=vsp;
-x+=hsp;
+pos();
+
+

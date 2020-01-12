@@ -1,13 +1,13 @@
-grav();
 left_right();
-jumping();
+//jumping();
+if(!oPlayer.button_collision){
+grav();
 collisions();
 
-x+=hsp;
-y+=vsp;
-
-check_for_ending();
+pos();
+}
 player_state_check();
+check_for_ending();
 
 sprite_index = player_jumping;
 if(hsp<0){

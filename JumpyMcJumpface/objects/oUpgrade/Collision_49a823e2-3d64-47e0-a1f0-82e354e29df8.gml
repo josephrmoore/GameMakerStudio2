@@ -15,5 +15,6 @@ switch(upgrade_type){
 		oPlayer.has_pole_climb = true;
 		break;
 }
+SaveGame("jumpydata.sav");
 audio_play_sound(aUpgrade, 1000, false);
 instance_destroy();

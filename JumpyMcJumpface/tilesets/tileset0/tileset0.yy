@@ -14,7 +14,7 @@
             
         ]
     },
-    "out_columns": 2,
+    "out_columns": 4,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
     "spriteId": "2ad3c69e-5160-4e83-95d8-af0d7e0faec0",
@@ -26,7 +26,19 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
         ],
         "SerialiseFrameCount": 1
     },
@@ -34,11 +46,11 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 4,
-    "tileheight": 60,
+    "tile_count": 16,
+    "tileheight": 30,
     "tilehsep": 0,
     "tilevsep": 0,
-    "tilewidth": 60,
+    "tilewidth": 30,
     "tilexoff": 0,
     "tileyoff": 0
 }

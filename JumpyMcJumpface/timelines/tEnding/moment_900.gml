@@ -1,0 +1,1 @@
+instance_create_layer(500,100,"Player",oFireworks);
