@@ -1,5 +1,7 @@
 //x+=hsp;
 //y+=vsp;
 
-oPlayer.x+=oPlayer.hsp*oGame.DT;
-oPlayer.y+=oPlayer.vsp*oGame.DT;
+vsp = clamp(vsp,-jSpeedHigh,max_vsp);
+
+oPlayer.x+=floor(oPlayer.hsp*oGame.DT);
+oPlayer.y+=floor(oPlayer.vsp*oGame.DT);

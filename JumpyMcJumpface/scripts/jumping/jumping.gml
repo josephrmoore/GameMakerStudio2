@@ -1,12 +1,15 @@
 // Jumping
+var jumpy = jSpeed
+
 if(has_high_jump){
-	jSpeed = jSpeedHigh;
+	jumpy = jSpeedHigh;
 }
+
 if(controllable && oPlayer.player_state != PLAYERSTATE.CLIMBING){
-	if(oGame.buttons){
+	if(oGame.pressed_buttons){
 		if(jumps < max_jumps){
 			player_state = PLAYERSTATE.JUMPING;
-			vsp = -jSpeed;
+			vsp = -jumpy;
 			jumps++;
 			launch_x = x;
 			launch_y = y;
@@ -14,5 +17,5 @@ if(controllable && oPlayer.player_state != PLAYERSTATE.CLIMBING){
 		}
 	}
 
-	if (!oGame.pressed_buttons_held) vsp = max(vsp, -jSpeed/4);
+	if (!oGame.pressed_buttons_held) vsp = max(vsp, -jumpy/4);
 }

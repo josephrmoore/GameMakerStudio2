@@ -138,7 +138,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "7",
             "varName": "jSpeed",
             "varType": 0
         },
@@ -152,7 +152,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "15",
+            "value": "8.3",
             "varName": "jSpeedHigh",
             "varType": 0
         },
@@ -166,7 +166,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "5",
             "varName": "max_vsp",
             "varType": 0
         },
@@ -222,7 +222,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.7",
+            "value": "0.3",
             "varName": "grv",
             "varType": 0
         },

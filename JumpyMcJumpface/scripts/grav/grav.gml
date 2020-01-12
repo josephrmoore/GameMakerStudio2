@@ -1,15 +1,16 @@
 /// @description Gravity calculation
 
-if(vsp+grv < max_vsp){
-	vsp += grv;
-} else {
-	if(oPlayer.has_parachute){
-		vsp = floor(max_vsp/2);
-	} else {
-		vsp = max_vsp;
-	}
+vsp += grv;
+
+var max_now = max_vsp;
+if(oPlayer.has_parachute){
+	max_now = floor(max_vsp/2);
 }
 
-if(vsp < -jSpeed){
-	vsp = -jSpeed;
-}
+//vsp = clamp(vsp, -jSpeed, max_now);
+
+
+
+//if(vsp < -jSpeed){
+//	vsp = -jSpeed;
+//}

@@ -1,10 +1,11 @@
 left_right();
 //jumping();
+if(!oPlayer.button_collision){
 grav();
 collisions();
 
 pos();
-
+}
 player_state_check();
 check_for_ending();
 

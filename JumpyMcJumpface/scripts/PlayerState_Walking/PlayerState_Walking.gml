@@ -1,11 +1,13 @@
 grounded = true;
 left_right();
 //jumping();
+
+if(!oPlayer.button_collision){
 grav();
 collisions();
 
 pos();
-
+}
 launch_x = x;
 launch_y = y;
 
