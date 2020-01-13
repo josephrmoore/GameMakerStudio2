@@ -17,5 +17,5 @@ if(controllable && oPlayer.player_state != PLAYERSTATE.CLIMBING){
 		}
 	}
 
-	//if (!oGame.pressed_buttons_held) vsp = max(vsp, -jumpy/4);
+	if (!oGame.pressed_buttons_held) vsp = max(vsp, -jumpy/4);
 }

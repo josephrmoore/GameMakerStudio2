@@ -1,4 +1,4 @@
-left_right();
+//left_right();
 //jumping();
 if(!oPlayer.button_collision){
 grav();

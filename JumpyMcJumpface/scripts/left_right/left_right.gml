@@ -1,10 +1,14 @@
-if(oGame.move_left && controllable){
-    hsp = approach(hsp,-mSpeed,aSpeed);
-}else if(oGame.move_right && controllable){
-    hsp = approach(hsp,mSpeed,aSpeed);
-}else{
-    hsp = approach(hsp,0,dSpeed);
+if(controllable){
+	hsp = (oGame.move_right - oGame.move_left)*mSpeed;
 }
+
+//if(oGame.move_left && controllable){
+//    hsp = approach(hsp,-mSpeed,aSpeed);
+//}else if(oGame.move_right && controllable){
+//    hsp = approach(hsp,mSpeed,aSpeed);
+//}else{
+//    hsp = approach(hsp,0,dSpeed);
+//}
 
 if(hsp>0){
 	hsp = ceil(hsp);	
