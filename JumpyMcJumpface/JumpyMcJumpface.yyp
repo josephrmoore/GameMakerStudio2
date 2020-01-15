@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "11de5672-249b-40ab-bf7d-f6f06efeb38f",
+            "Value": {
+                "id": "4a076d99-c5d6-46f4-9ebd-a176ed5d603e",
+                "resourcePath": "sprites\/player_idle_horror\/player_idle_horror.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "12786452-a688-4a40-aca7-440b2cad1cfc",
             "Value": {
                 "id": "10720bc2-77d4-4911-931e-20f45fd6efc4",
