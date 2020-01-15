@@ -1,4 +1,3 @@
-grounded = true;
 left_right();
 //jumping();
 if(!oPlayer.button_collision){

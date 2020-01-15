@@ -24,6 +24,7 @@ if(vsp > 0){
 if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp_integer) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp_integer) != 0){
 	if(vsp > 0){
 		y = y - (y mod 30) + 29 - (bbox_bottom - y);
+		//y = y - (bbox_bottom mod 30) + 29;  // Lots of clipping
 		jumps = 0;
 		grounded = true;
 	} else {

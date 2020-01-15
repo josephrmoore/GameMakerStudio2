@@ -35,6 +35,8 @@ if(y>launch_y+fall_at){
 }
 
 
-
+if((player_state == PLAYERSTATE.CLIMBING && oGame.move_down && grounded) || (player_state == PLAYERSTATE.SLIDING && oGame.move_down && grounded)){
+	player_state = PLAYERSTATE.IDLE;
+}
 
 
