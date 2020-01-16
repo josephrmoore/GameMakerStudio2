@@ -1,5 +1,5 @@
 var obj = argument0;
-show_debug_message("object collision");
+
 // Horizontal object collision
 
 if (place_meeting(x+hsp,y,obj)) {

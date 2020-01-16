@@ -1,10 +1,11 @@
 var obj = argument0;
-show_debug_message("button collision");
+//show_debug_message("button collision");
 
 
 // Vertical object collision
 
 if (place_meeting(x,y+vsp,obj)) {
+		//show_debug_message("button floor");
 		grounded = true;
 		jumps = 0;
 		//no_collisions = false;

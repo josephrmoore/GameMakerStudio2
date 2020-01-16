@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0372908f-6335-4955-b130-c5695c31bf69",
+            "Value": {
+                "id": "44ac5fc6-1446-4972-bfad-c3c5c320c102",
+                "resourcePath": "sprites\/vineanchor\/vineanchor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "054d0337-c70a-4361-b8f6-1dcf16aa62f6",
             "Value": {
                 "id": "42acd9d6-3adc-4974-9aab-025cb55a68e6",
@@ -71,6 +79,14 @@
             }
         },
         {
+            "Key": "0760d270-f3a9-4101-94e0-37bdbdde515d",
+            "Value": {
+                "id": "8c8ade47-e57f-4f4a-b002-77adf77f0967",
+                "resourcePath": "sprites\/vinenew\/vinenew.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "07e5b91d-8762-455d-88b5-4fafe17a3744",
             "Value": {
                 "id": "7c37f6d2-94a3-4fac-bab2-945fb1daeff8",
@@ -92,6 +108,14 @@
                 "id": "d17e646f-8c88-48a1-9309-acb1825b06b9",
                 "resourcePath": "sounds\/aWalking\/aWalking.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "0c5b8da3-3b77-4536-bfe9-90584dcca4ab",
+            "Value": {
+                "id": "44109086-543e-4e97-b789-8f6d607c6638",
+                "resourcePath": "objects\/oVineNew\/oVineNew.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1031,6 +1055,14 @@
             }
         },
         {
+            "Key": "a4a21df2-8316-4081-ae9c-d6ead88ac6b5",
+            "Value": {
+                "id": "944a2e1e-9613-4e67-b782-ad693efc5925",
+                "resourcePath": "scripts\/swing_physics\/swing_physics.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a81bc923-1a60-41f7-adf6-1c53f7394648",
             "Value": {
                 "id": "c7448194-d4dd-4442-b6d0-ddfc05e2f12d",
@@ -1351,6 +1383,14 @@
             }
         },
         {
+            "Key": "e60c5e37-df0a-4c45-8f9b-8c8d8e766cbd",
+            "Value": {
+                "id": "c167e0d3-0e91-4362-8c88-611c99c05b29",
+                "resourcePath": "objects\/oVineAnchor\/oVineAnchor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e6764cb9-fb0a-4328-beaa-eb8d567e40ca",
             "Value": {
                 "id": "f288caba-d10a-419c-bcc6-50ba06ee8746",
@@ -1573,7 +1613,8 @@
         "62ed63f8-bcae-4fd3-b944-a03afd0ec046",
         "aa1d5baa-e24f-4c7c-b9a8-831831ba6083",
         "9f1e9959-9f70-45e5-b12f-5e69eb3a91af",
-        "c574cc71-3895-4868-8d0e-438b97661343"
+        "c574cc71-3895-4868-8d0e-438b97661343",
+        "a4a21df2-8316-4081-ae9c-d6ead88ac6b5"
     ],
     "tutorial": ""
 }
