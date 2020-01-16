@@ -519,6 +519,20 @@
             "value": "0",
             "varName": "button_collision",
             "varType": 3
+        },
+        {
+            "id": "70c4a0fc-75d4-4b47-a7a9-416d62360112",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "tile_floor",
+            "varType": 3
         }
     ],
     "solid": false,

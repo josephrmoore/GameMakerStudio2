@@ -10,7 +10,7 @@ if(place_meeting(x,y,oPole)){
 } else {
 	grav();
 }
-player_tile_collision();
+collisions();
 
 pos();
 

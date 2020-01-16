@@ -1,6 +1,13 @@
+no_collisions = true;
 player_tile_collision();
-player_object_collision(oElevator);
-player_object_collision(oThroughBlock);
-player_button_collision(oButton);
+if(oPlayer.player_state != PLAYERSTATE.CLIMBING && oPlayer.player_state != PLAYERSTATE.SLIDING){
+	object_collision_like_tiles(oThroughBlock);
+}
+//object_collision_like_tiles(oButton);
 player_object_collision(oDoor);
-player_object_collision(oElevatorOutro);
+
+if(no_collisions){
+	grounded = false;
+}
+
+player_button_collision(oButton);

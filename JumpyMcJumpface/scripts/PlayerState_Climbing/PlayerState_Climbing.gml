@@ -1,8 +1,7 @@
 left_right();
 //jumping();
 climb();
-player_tile_collision();
-
+collisions();
 pos();
 
 launch_x = x;

@@ -2,10 +2,10 @@ left_right();
 //jumping();
 
 if(!oPlayer.button_collision){
-grav();
-collisions();
+	grav();
+	collisions();
 
-pos();
+	pos();
 }
 launch_x = x;
 launch_y = y;

@@ -1,8 +1,4 @@
-if(oGame.current_room == "level4"){
-	for(var i=0; i<array_length_1d(lvl4_tilemaps); i++){
-		multiple_tile_layer_collision(lvl4_tilemaps[i]);
-	}
-}
+var obj = argument0;
 
 // Set bbox_side
 var bbox_side;
@@ -19,20 +15,28 @@ if(vsp > 0){
 	vsp_integer = floor(vsp);
 }
 
-if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp_integer) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp_integer) != 0){
+
+if (place_meeting(x,y+vsp_integer,obj)) {
 	if(vsp > 0){
 		y = y - (y mod 30) + 29 - (bbox_bottom - y);
 		//y = y - (bbox_bottom mod 30) + 29;  // Lots of clipping
 		jumps = 0;
 		grounded = true;
-		tile_floor = true;
 		no_collisions = false;
 	} else {
 		y = y - (y mod 30) - (bbox_top - y);
 	}
+	var vsp_sign = 1;	
+	if(vsp<0){
+		vsp_sign = -1;
+	}
 	vsp = 0;
-} else {
-	tile_floor = false;
+	if(obj == oButton){
+		var y_instance = instance_place(x, y+vsp_sign, obj);
+		if (y_instance != noone){
+			click_button(y_instance);
+		}
+	}
 }
 
 // Horizontal tile collision
@@ -45,11 +49,21 @@ if(hsp > 0) {
 	hsp_integer = floor(hsp);
 }
 
-if(tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_bottom) != 0){
+if (place_meeting(x+hsp_integer,y,obj)) {
 	if(hsp > 0){
 		x = x - (x mod 30) + 29 - (bbox_right - x);
 	} else {
 		x = x - (x mod 30) - (bbox_left - x);
 	}
+	var hsp_sign = 1;	
+	if(hsp<0){
+		hsp_sign = -1;
+	}
 	hsp = 0;
+	if(obj == oButton){
+		var x_instance = instance_place(x+hsp_sign, y, obj);
+		if (x_instance != noone){
+			click_button(x_instance);
+		}
+	}
 }

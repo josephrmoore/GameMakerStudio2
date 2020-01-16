@@ -21,11 +21,13 @@ if(tilemap_get_at_pixel(tile_layer, bbox_left, bbox_side+vsp_integer) != 0 || ti
 		y = y - (y mod 30) + 29 - (bbox_bottom - y);
 		jumps = 0;
 		grounded = true;
+		no_collisions = false;
+		tile_floor = true;
 	} else {
 		y = y - (y mod 30) - (bbox_top - y);
+		tile_floor = false;
 	}
 	vsp = 0;
-	no_collisions = false;
 }
 
 // Horizontal tile collision
@@ -45,5 +47,4 @@ if(tilemap_get_at_pixel(tile_layer, bbox_side+hsp_integer, bbox_top) != 0 || til
 		x = x - (x mod 30) - (bbox_left - x);
 	}
 	hsp = 0;
-	no_collisions = false;
 }
