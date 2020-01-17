@@ -67,3 +67,5 @@ if (place_meeting(x+hsp_integer,y,obj)) {
 		}
 	}
 }
+
+brute_force_check(obj);

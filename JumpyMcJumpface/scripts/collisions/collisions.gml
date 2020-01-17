@@ -9,6 +9,9 @@ if(oPlayer.player_state != PLAYERSTATE.CLIMBING && oPlayer.player_state != PLAYE
 if(no_collisions){
 	grounded = false;
 }
+if(player_state == PLAYERSTATE.SWINGING){
+	player_vine_collision(oVineNew);
+}
 //show_debug_message("4");
 player_button_collision(oButton);
 player_object_collision(oDoor);
