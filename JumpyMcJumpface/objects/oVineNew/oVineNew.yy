@@ -5,17 +5,17 @@
     "name": "oVineNew",
     "eventList": [
         {
-            "id": "604ab7af-7aa8-4b51-91b1-2eeb56e3aba2",
+            "id": "5b901cab-1dc4-4a90-98a2-5b36587868f5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "0c5b8da3-3b77-4536-bfe9-90584dcca4ab"
         }
     ],
-    "maskSpriteId": "0372908f-6335-4955-b130-c5695c31bf69",
+    "maskSpriteId": "d45399a4-58a3-4bc3-a7a4-e4c4cd58767f",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
@@ -35,6 +35,6 @@
         
     ],
     "solid": false,
-    "spriteId": "d45399a4-58a3-4bc3-a7a4-e4c4cd58767f",
+    "spriteId": "ea248670-287f-4c69-88c5-6eb76f40976d",
     "visible": true
 }

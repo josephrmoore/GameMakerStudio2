@@ -341,6 +341,20 @@
             "value": "True",
             "varName": "lvl2_switch",
             "varType": 3
+        },
+        {
+            "id": "33a50f7b-cdfd-4390-8899-4078317fedc9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "debug_vars",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "14b4d2ac-4d22-4ac3-b01e-8416bef0384e",
+            "Value": {
+                "id": "262fbb90-71e0-440f-b35f-a6fc1eae7c75",
+                "resourcePath": "scripts\/set_vine_frames\/set_vine_frames.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1524727f-b0b7-4bd5-8213-3dd53d30bb17",
             "Value": {
                 "id": "a96cd5da-ce0b-4dde-8057-6eb51dff9a09",
@@ -1719,7 +1727,8 @@
         "aa1d5baa-e24f-4c7c-b9a8-831831ba6083",
         "9f1e9959-9f70-45e5-b12f-5e69eb3a91af",
         "c574cc71-3895-4868-8d0e-438b97661343",
-        "a4a21df2-8316-4081-ae9c-d6ead88ac6b5"
+        "a4a21df2-8316-4081-ae9c-d6ead88ac6b5",
+        "14b4d2ac-4d22-4ac3-b01e-8416bef0384e"
     ],
     "tutorial": ""
 }

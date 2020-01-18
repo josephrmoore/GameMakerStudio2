@@ -19,6 +19,7 @@ pause_game = gamepad_button_check_pressed(0,gp_start) || keyboard_check_pressed(
 
 key_delete = keyboard_check_pressed(vk_delete) || keyboard_check_pressed(vk_backspace);
 
+debug = keyboard_check_pressed(vk_tab);
 
 if(keyboard_check(ord("0"))){
 	game_restart();
@@ -36,4 +37,8 @@ if(key_delete){
 		file_delete("jumpydata.sav");
 		show_debug_message("save deleted");
 	}
+}
+
+if(debug){
+	oGame.debug_vars = !oGame.debug_vars;
 }

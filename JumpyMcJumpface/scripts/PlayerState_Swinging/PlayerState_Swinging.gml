@@ -16,7 +16,7 @@ vsp = swingY - y;
 
 //var vine = argument0;
 
-if(oGame.buttons){
+if(oGame.buttons || oGame.pressed_buttons_held){
 	player_state = PLAYERSTATE.JUMPING;
 }
 
@@ -28,9 +28,10 @@ pos();
 launch_x = x;
 launch_y = y;
 
+player_state_check();
 check_for_ending();
 
-sprite_index = player_jumping;
+sprite_index = player_idle;
 if(hsp<0){
 	image_xscale = -1;
 } else {
