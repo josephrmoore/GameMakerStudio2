@@ -16,3 +16,13 @@ vsp = new_y - y;
 
 x += hsp;
 y += vsp;
+
+
+if(!oGame.buttons){
+
+}
+
+if(distance_to_point(oPlayer.x,oPlayer.y)<10){
+	oPlayer.x = x;
+	oPlayer.y = y;
+}

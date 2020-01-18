@@ -37,19 +37,26 @@ if((player_state == PLAYERSTATE.CLIMBING && oGame.move_down && tile_floor) || (p
 	player_state = PLAYERSTATE.IDLE;
 }
 
-with(oPendulum){
-	if(distance_to_point(x,y) < 15 ){
-		other.player_state = PLAYERSTATE.SWINGING;
-		other.x = x;
-		other.y = y;
-		if(!oGame.pressed_buttons){
 
-		}
+if (place_meeting(x,y,oVineNew)) {
+	if(!oGame.pressed_buttons_held){
+		oPlayer.player_state = PLAYERSTATE.SWINGING;
 	}
 }
 
-if(!oGame.buttons){
-	if (place_meeting(x,y+vsp,oVineNew)) {
-		player_state = PLAYERSTATE.SWINGING;
-	}
-}
+//with(oPendulum){
+//	if(distance_to_point(x,y) < 15 ){
+//		other.player_state = PLAYERSTATE.SWINGING;
+//		other.x = x;
+//		other.y = y;
+//		if(!oGame.pressed_buttons){
+
+//		}
+//	}
+//}
+
+//if(!oGame.buttons){
+//	if (place_meeting(x,y,oVineNew)) {
+//		player_state = PLAYERSTATE.SWINGING;
+//	}
+//}

@@ -1,19 +1,11 @@
 var obj = argument0;
 
 // Horizontal object collision
-if(!oGame.buttons){
-	if (place_meeting(x+hsp,y,obj)) {
-			x = bbox_left + ((obj.bbox_right - obj.bbox_left)/2);
-			y = bbox_top + ((obj.bbox_bottom - obj.bbox_top)/2);
-	}
-
-
-	// Vertical object collision
-
-	if (place_meeting(x,y+vsp,obj)) {
-			x = bbox_left + ((obj.bbox_right - obj.bbox_left)/2);
-			y = bbox_top + ((obj.bbox_bottom - obj.bbox_top)/2);
+if (place_meeting(x+hsp,y,obj) || place_meeting(x,y+vsp,obj)) {
+	if(!oGame.pressed_buttons_held){
+		player_state = PLAYERSTATE.SWINGING;
+		ropeX = obj.x;
+		ropeY = obj.y;
+		ropeAngle = point_direction(ropeX,ropeY,x,y);
 	}
 }
-
-//brute_force_check(obj);

@@ -1359,6 +1359,14 @@
             }
         },
         {
+            "Key": "d45399a4-58a3-4bc3-a7a4-e4c4cd58767f",
+            "Value": {
+                "id": "d69f4946-9ab5-4851-9d80-d07ac5a12d23",
+                "resourcePath": "sprites\/vinebk\/vinebk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d4f55c2f-1988-4ec5-b123-690ec216fe3c",
             "Value": {
                 "id": "4548520a-721d-4ad3-916c-fc89bc6bdbe9",
