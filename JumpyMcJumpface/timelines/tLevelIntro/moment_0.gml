@@ -9,6 +9,8 @@
 	} else {
 		audio_play_sound(aLevelIntro,100,false);
 	}
-	oCannon.activated = false;
+	if(object_exists(oCannon)){
+		oCannon.activated = false;
+	}
 	oGame.level_title_showing = true;
 //}

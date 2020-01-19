@@ -3,7 +3,7 @@ no_collisions = true;
 player_tile_collision();
 //show_debug_message("2");
 if(oPlayer.player_state != PLAYERSTATE.CLIMBING && oPlayer.player_state != PLAYERSTATE.SLIDING){
-	object_collision_like_tiles(oThroughBlock);
+	object_collision_like_tiles(oTileType);
 }
 //show_debug_message("3");
 if(no_collisions){

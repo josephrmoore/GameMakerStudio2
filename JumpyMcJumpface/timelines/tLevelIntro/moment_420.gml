@@ -37,7 +37,9 @@ if(oGame.current_room == "level9"){
 	oPlayer.rising = false;
 	oElevator.moving = false;
 	audio_play_sound(clip, 10, true);
-	oCannon.activated = true;
+	if(object_exists(oCannon)){
+		oCannon.activated = true;
+	}
 	oGame.level_title_showing = false;
 	oGame.show_gui = true;
 }

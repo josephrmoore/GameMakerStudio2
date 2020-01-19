@@ -111,6 +111,20 @@
             "value": "3",
             "varName": "spd",
             "varType": 0
+        },
+        {
+            "id": "3db446be-9da3-4227-adb9-97e658a49b8a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "wave_motion",
+            "varType": 3
         }
     ],
     "solid": false,

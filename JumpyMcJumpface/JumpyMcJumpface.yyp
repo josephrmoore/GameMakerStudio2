@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "1ec92f5d-f07d-4e3c-801b-4f182d3b4f53",
+            "Value": {
+                "id": "41f24966-5950-47ad-8f2e-0ef5e3c8df15",
+                "resourcePath": "objects\/oToggleBlock\/oToggleBlock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "228f666d-0451-48e4-b2eb-b0a65e9cf4ad",
             "Value": {
                 "id": "59c8e064-2c1e-4599-9c36-04b7e8b0f031",
@@ -559,6 +567,14 @@
             }
         },
         {
+            "Key": "5278c622-a152-4426-95e4-3e89cc66b518",
+            "Value": {
+                "id": "097db456-2526-4851-9de5-f6894ec11356",
+                "resourcePath": "objects\/oTileType\/oTileType.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5380714f-c25f-4536-bb1e-e223a4b6e329",
             "Value": {
                 "id": "5cec4aab-09f6-427f-b0a8-5ba5b10c9333",
@@ -711,6 +727,14 @@
             }
         },
         {
+            "Key": "694b38ff-c206-49f1-9cfe-cd89e54102f6",
+            "Value": {
+                "id": "9d84cad3-c462-49c3-be72-ca8a66476d44",
+                "resourcePath": "sprites\/toggleblockFALSE\/toggleblockFALSE.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6a247b9c-b285-48d1-aca1-e4f74ebfcf9e",
             "Value": {
                 "id": "0f092861-69d6-4a73-8326-4252bd05d754",
@@ -723,6 +747,14 @@
             "Value": {
                 "id": "eb80985b-054d-4ebe-b1c5-4afafe6ccc07",
                 "resourcePath": "scripts\/object_collision_like_tiles\/object_collision_like_tiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6d17fe6c-484d-4139-a87d-bdbe78243dda",
+            "Value": {
+                "id": "43f84917-093f-4c07-a9c7-316589ccdea3",
+                "resourcePath": "scripts\/wave\/wave.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -923,6 +955,14 @@
             "Value": {
                 "id": "9b2ba076-ab3e-4305-b3d8-2225b3ba9254",
                 "resourcePath": "scripts\/PlayerState_Walking\/PlayerState_Walking.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8a4312b0-2398-4797-9a7b-ee767b4ce97c",
+            "Value": {
+                "id": "dfd4cd3d-031c-4c34-a325-ec2af89170ee",
+                "resourcePath": "scripts\/delete_cannon\/delete_cannon.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1231,6 +1271,14 @@
             }
         },
         {
+            "Key": "c4747648-d643-48a1-a088-3cceb5358bf6",
+            "Value": {
+                "id": "8575da71-d54b-49a0-9e4f-f3c9ee7ba905",
+                "resourcePath": "scripts\/add_cannon\/add_cannon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c546c900-4757-41bf-9996-fbe07cb1beb3",
             "Value": {
                 "id": "c5d7faae-f312-4c23-984a-67790dfdc22e",
@@ -1423,6 +1471,14 @@
             }
         },
         {
+            "Key": "dd32170e-0ad8-4275-96c1-fe4b4baefe12",
+            "Value": {
+                "id": "371cd3f3-4fe5-4bb9-b066-c275cf217664",
+                "resourcePath": "scripts\/lvl6_blocks\/lvl6_blocks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dda2a5cd-22b6-4400-982d-7a61e50d3d9d",
             "Value": {
                 "id": "bff23607-de9f-4ea4-a438-58c8b789d81a",
@@ -1460,6 +1516,22 @@
                 "id": "8effb556-dcea-43ca-ad87-acb0cc3f590c",
                 "resourcePath": "scripts\/climb\/climb.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e337f204-b02b-4b86-a2fa-ee1936b85a8e",
+            "Value": {
+                "id": "d2c39fb1-e3a1-4a76-8ba3-040b88f74fed",
+                "resourcePath": "scripts\/lvl5_cannons\/lvl5_cannons.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e341c96c-c0e6-43ba-8ccd-b0510b03971a",
+            "Value": {
+                "id": "50a2ff1c-6b84-49fb-886a-9149566f095a",
+                "resourcePath": "sprites\/toggleblockTRUE\/toggleblockTRUE.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1728,7 +1800,12 @@
         "9f1e9959-9f70-45e5-b12f-5e69eb3a91af",
         "c574cc71-3895-4868-8d0e-438b97661343",
         "a4a21df2-8316-4081-ae9c-d6ead88ac6b5",
-        "14b4d2ac-4d22-4ac3-b01e-8416bef0384e"
+        "14b4d2ac-4d22-4ac3-b01e-8416bef0384e",
+        "c4747648-d643-48a1-a088-3cceb5358bf6",
+        "8a4312b0-2398-4797-9a7b-ee767b4ce97c",
+        "e337f204-b02b-4b86-a2fa-ee1936b85a8e",
+        "6d17fe6c-484d-4139-a87d-bdbe78243dda",
+        "dd32170e-0ad8-4275-96c1-fe4b4baefe12"
     ],
     "tutorial": ""
 }
