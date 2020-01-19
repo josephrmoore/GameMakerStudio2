@@ -8,6 +8,13 @@ if (place_meeting(x+hsp,y+vsp,obj)) {
 		ropeX = inst.x;
 		ropeY = inst.y;
 		show_debug_message(string(inst.x) + ", " + string(inst.y));
+//		if(hsp>0){
+////			ropeAngle = 180;
+//			ropeAngle = point_direction(ropeX,ropeY,ropeX-105,ropeY+60);
+//		} else {
+////			ropeAngle = 0;
+//			ropeAngle = point_direction(ropeX,ropeY,ropeX+105,ropeY+60);
+//		}
 		ropeAngle = point_direction(ropeX,ropeY,x,y);
 	}
 }

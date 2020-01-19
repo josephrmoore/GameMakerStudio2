@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "196fb9f2-9b59-4630-9a00-b8c5eb76190b",
+            "Value": {
+                "id": "9dab8904-2d4a-475d-8a31-8debc6e91d03",
+                "resourcePath": "scripts\/lvl2_blocks\/lvl2_blocks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1c901b37-4d6d-46f1-b51b-e31377ee532c",
             "Value": {
                 "id": "f187553d-9c78-4786-83e4-a93b64fe90d7",
@@ -1727,6 +1735,14 @@
             }
         },
         {
+            "Key": "fe36744d-bcc7-422b-b618-f59ceac37890",
+            "Value": {
+                "id": "4685f9c6-4819-4e86-8195-5c3d1d208965",
+                "resourcePath": "scripts\/lvl6_hazards\/lvl6_hazards.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ff9564b4-26a8-43db-804c-66cb6c238cd2",
             "Value": {
                 "id": "c7b8f7b4-f787-456e-a425-8d27dea33629",
@@ -1805,7 +1821,9 @@
         "8a4312b0-2398-4797-9a7b-ee767b4ce97c",
         "e337f204-b02b-4b86-a2fa-ee1936b85a8e",
         "6d17fe6c-484d-4139-a87d-bdbe78243dda",
-        "dd32170e-0ad8-4275-96c1-fe4b4baefe12"
+        "dd32170e-0ad8-4275-96c1-fe4b4baefe12",
+        "fe36744d-bcc7-422b-b618-f59ceac37890",
+        "196fb9f2-9b59-4630-9a00-b8c5eb76190b"
     ],
     "tutorial": ""
 }

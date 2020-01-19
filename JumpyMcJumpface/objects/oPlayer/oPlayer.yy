@@ -138,7 +138,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "7",
+            "value": "6",
             "varName": "jSpeed",
             "varType": 0
         },
@@ -152,7 +152,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "8.3",
+            "value": "8",
             "varName": "jSpeedHigh",
             "varType": 0
         },
@@ -166,7 +166,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "6",
             "varName": "max_vsp",
             "varType": 0
         },
@@ -180,7 +180,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "3",
+            "value": "4",
             "varName": "mSpeed",
             "varType": 0
         },
@@ -348,7 +348,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_double_jump",
             "varType": 3
         },
@@ -362,7 +362,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_parachute",
             "varType": 3
         },
@@ -376,7 +376,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "has_high_jump",
             "varType": 3
         },

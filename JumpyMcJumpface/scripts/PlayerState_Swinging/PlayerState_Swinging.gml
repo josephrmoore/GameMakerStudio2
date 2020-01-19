@@ -1,10 +1,11 @@
 collisions();
 
+var mult = 3;
 var _ropeAngleAcceleration = -0.2* dcos(ropeAngle);
 //_ropeAngleAcceleration += ((oGame.move_right - oGame.move_left) * 0.08);
-ropeAngleVelocity += _ropeAngleAcceleration;
+ropeAngleVelocity += _ropeAngleAcceleration*mult;
 //ropeAngleVelocity += _ropeAngleAcceleration*oGame.DT;
-//ropeAngleVelocity = clamp(ropeAngleVelocity, -3, 3);
+ropeAngleVelocity = clamp(ropeAngleVelocity, -mult, mult);
 ropeAngle += ropeAngleVelocity;
 // DAMPING
 //ropeAngleVelocity *= 0.99;

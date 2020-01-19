@@ -75,6 +75,34 @@
             "value": "0",
             "varName": "hazard_type",
             "varType": 0
+        },
+        {
+            "id": "4172cdf7-7571-4dee-9fff-06b0468d2a37",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "exists",
+            "varType": 3
+        },
+        {
+            "id": "45eb69e1-6626-40c4-b5b3-c7dd21f3a0da",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "hazard_id",
+            "varType": 0
         }
     ],
     "solid": false,
