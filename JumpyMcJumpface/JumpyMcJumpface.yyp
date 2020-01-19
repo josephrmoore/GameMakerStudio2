@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "167f6168-1add-46b7-9062-64483311b13f",
+            "Value": {
+                "id": "3eda87e6-85e3-459c-b014-1f39e31c4076",
+                "resourcePath": "scripts\/lvl4_tiles\/lvl4_tiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "175069b7-5a6d-4bde-b9c6-2d744d8c2588",
             "Value": {
                 "id": "50346ce6-3e6e-4e67-8ced-3f13098f6f1c",
@@ -1559,14 +1567,6 @@
             }
         },
         {
-            "Key": "e5927adc-84e3-45b6-a0df-873924cd6f5b",
-            "Value": {
-                "id": "8b2e81d4-548b-4b67-9f07-3debacef86b8",
-                "resourcePath": "rooms\/room_template\/room_template.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "e6764cb9-fb0a-4328-beaa-eb8d567e40ca",
             "Value": {
                 "id": "f288caba-d10a-419c-bcc6-50ba06ee8746",
@@ -1823,7 +1823,8 @@
         "6d17fe6c-484d-4139-a87d-bdbe78243dda",
         "dd32170e-0ad8-4275-96c1-fe4b4baefe12",
         "fe36744d-bcc7-422b-b618-f59ceac37890",
-        "196fb9f2-9b59-4630-9a00-b8c5eb76190b"
+        "196fb9f2-9b59-4630-9a00-b8c5eb76190b",
+        "167f6168-1add-46b7-9062-64483311b13f"
     ],
     "tutorial": ""
 }

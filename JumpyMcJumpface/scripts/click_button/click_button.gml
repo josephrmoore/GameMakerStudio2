@@ -8,6 +8,9 @@ if(instance.button_state == BUTTONSTATE.UNCLICKED){
 		lvl2_swap();
 		lvl2_blocks(instance.button_id);
 	}
+	if(oGame.current_room == "level4"){
+		lvl4_tiles(instance.button_id);
+	}
 	if(oGame.current_room == "level5"){
 		lvl5_cannons(instance.button_id);
 	}

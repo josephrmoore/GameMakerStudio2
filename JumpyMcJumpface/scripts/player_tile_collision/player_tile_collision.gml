@@ -1,6 +1,8 @@
 if(oGame.current_room == "level4"){
-	for(var i=0; i<array_length_1d(lvl4_tilemaps); i++){
-		multiple_tile_layer_collision(lvl4_tilemaps[i]);
+	for(var i=0; i<array_length_1d(oGame.lvl4_tilemaps_active); i++){
+		if(oGame.lvl4_tilemaps_active[i]){
+			multiple_tile_layer_collision(oGame.lvl4_tilemaps[i]);
+		}
 	}
 }
 
