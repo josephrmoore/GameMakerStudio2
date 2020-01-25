@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "455ba58e-d404-4e91-9a47-b0bb2b13138d",
+            "Value": {
+                "id": "54fdbdf7-a734-4ba8-b307-135c89b6feaa",
+                "resourcePath": "tilesets\/tGB\/tGB.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "47e051f0-9e59-4ab1-9945-4d50460a0083",
             "Value": {
                 "id": "82c62289-017d-4fd1-8b2a-edb00bffbd33",
@@ -676,6 +684,14 @@
                 "id": "9a657e5e-3f61-4c2d-ba8e-f807bebf9fed",
                 "resourcePath": "sounds\/aLevel3\/aLevel3.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "58c640f9-269b-47d0-ade8-d5b07ca44e52",
+            "Value": {
+                "id": "b2eddfd6-83cf-400b-bff1-ad40d03daf0e",
+                "resourcePath": "tilesets\/industrial\/industrial.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -911,6 +927,14 @@
             }
         },
         {
+            "Key": "7d34881d-d277-459d-b758-c651d51f21b3",
+            "Value": {
+                "id": "9e763bf2-8a21-44f6-8f6c-02c7d9a176e0",
+                "resourcePath": "sprites\/gbtiles_pink\/gbtiles_pink.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7dd329b3-bd87-4a41-96e6-f407779927c6",
             "Value": {
                 "id": "d2656766-6369-4a98-b9e8-246fbef060df",
@@ -1143,6 +1167,14 @@
             }
         },
         {
+            "Key": "98d6dfe5-8421-41ee-8a8d-4c410f62ce63",
+            "Value": {
+                "id": "cc00ce40-06a0-4a49-bf0b-946c55d64ed5",
+                "resourcePath": "sprites\/gbtiles\/gbtiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9a979456-e468-4e25-9275-f60adb70cce5",
             "Value": {
                 "id": "b2b6b0b6-080b-4688-9f99-d55c9eddbb1b",
@@ -1220,6 +1252,14 @@
                 "id": "944a2e1e-9613-4e67-b782-ad693efc5925",
                 "resourcePath": "scripts\/swing_physics\/swing_physics.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a699df8c-22e8-4f62-ba46-0c69141b0190",
+            "Value": {
+                "id": "a718ed8d-da3d-406e-8302-303f1cb198d1",
+                "resourcePath": "tilesets\/tGB_pink\/tGB_pink.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1788,6 +1828,14 @@
                 "id": "4685f9c6-4819-4e86-8195-5c3d1d208965",
                 "resourcePath": "scripts\/lvl6_hazards\/lvl6_hazards.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ff468776-55a6-43b7-8fdd-04855871a33a",
+            "Value": {
+                "id": "c22074c8-e65b-4c0a-b5e6-e222e395d730",
+                "resourcePath": "sprites\/industrialtiles\/industrialtiles.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
