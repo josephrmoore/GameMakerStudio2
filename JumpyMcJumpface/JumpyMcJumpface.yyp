@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "1e990a9b-8e9f-4911-9ce8-b095874fb4f5",
+            "Value": {
+                "id": "0483bb9f-b3fc-42f9-abcb-cf724d9f6d68",
+                "resourcePath": "sprites\/pole_nib_ind\/pole_nib_ind.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1ec92f5d-f07d-4e3c-801b-4f182d3b4f53",
             "Value": {
                 "id": "41f24966-5950-47ad-8f2e-0ef5e3c8df15",
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "33fed27e-46c4-4fd3-9a6d-fc16059f2129",
+            "Value": {
+                "id": "b7ccb9ee-be94-4890-b674-609440210b81",
+                "resourcePath": "sprites\/ladder_ind\/ladder_ind.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3584673e-1df2-4d87-af44-1d7db57de27b",
             "Value": {
                 "id": "3206f2e8-06e5-4372-9292-b333e39cbe2a",
@@ -463,6 +479,14 @@
             }
         },
         {
+            "Key": "3d7358ac-65ce-43dc-a739-dd3a36452fab",
+            "Value": {
+                "id": "9e3f4322-7fb0-4b04-9b61-961ce2558b32",
+                "resourcePath": "sprites\/ladder_nib_ind\/ladder_nib_ind.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d866881-7048-4051-bae2-09e511aff92d",
             "Value": {
                 "id": "68748ecd-443b-4847-936e-2521ee712d25",
@@ -492,6 +516,14 @@
                 "id": "41c31820-ee27-4b17-a843-cdc7fa9b2c3b",
                 "resourcePath": "sounds\/aVine\/aVine.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "41cbdf16-3fc8-48c5-ad63-d82d7d8adfc3",
+            "Value": {
+                "id": "babdb155-a752-4797-b5bd-9247561c9f06",
+                "resourcePath": "sprites\/pole_ind\/pole_ind.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1540,6 +1572,14 @@
                 "id": "04f356d3-6a24-467b-944d-3f9aa5929dc2",
                 "resourcePath": "tilesets\/tileset2\/tileset2.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "dab88da7-1d7e-450b-8974-8c88539bacda",
+            "Value": {
+                "id": "cd8440fc-88f4-4053-bede-89f48a8504cc",
+                "resourcePath": "sprites\/ladder_bottom_ind\/ladder_bottom_ind.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
