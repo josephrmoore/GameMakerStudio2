@@ -9,4 +9,7 @@ function Avatar_Ladder(){
 	player_object_collision(oLedge);
 	avatar_position();
 	sprite_index = sAvatar_ladder;
+	if(alarm[0] == -1){
+		alarm[0] = 10;
+	}
 }

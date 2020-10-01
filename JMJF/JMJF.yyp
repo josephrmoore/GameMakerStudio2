@@ -37,6 +37,7 @@
     {"id":{"name":"oVineTop","path":"objects/oVineTop/oVineTop.yy",},"order":10,},
     {"id":{"name":"aLevel5","path":"sounds/aLevel5/aLevel5.yy",},"order":5,},
     {"id":{"name":"Avatar_Falling","path":"scripts/Avatar_Falling/Avatar_Falling.yy",},"order":14,},
+    {"id":{"name":"aLadder","path":"sounds/aLadder/aLadder.yy",},"order":16,},
     {"id":{"name":"sAvatar_idle","path":"sprites/sAvatar_idle/sAvatar_idle.yy",},"order":0,},
     {"id":{"name":"oRiserHole","path":"objects/oRiserHole/oRiserHole.yy",},"order":2,},
     {"id":{"name":"Avatar_Jumping","path":"scripts/Avatar_Jumping/Avatar_Jumping.yy",},"order":13,},

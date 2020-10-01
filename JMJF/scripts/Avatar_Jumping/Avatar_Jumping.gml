@@ -8,4 +8,9 @@ function Avatar_Jumping(){
 	player_object_collision(oLedge);
 	avatar_position();
 	sprite_index = sAvatar_jumping;
+	if(hsp<0){
+		image_xscale = -1;
+	} else {
+		image_xscale = 1;
+	}
 }
