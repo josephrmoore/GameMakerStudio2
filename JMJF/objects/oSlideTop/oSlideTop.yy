@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oSlide",
+    "path": "objects/oSlide/oSlide.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

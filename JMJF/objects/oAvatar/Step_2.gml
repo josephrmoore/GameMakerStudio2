@@ -56,3 +56,31 @@ if(place_meeting(x,y,oLadder)){
 	}
 }
 
+
+if(place_meeting(x,y,oVine)){
+	if(grounded){
+		if(oGame.move_up){
+			avatar_state = AVATARSTATE.VINE;
+			grounded = false;
+		}
+	} else {
+		avatar_state = AVATARSTATE.VINE;
+		with (instance_place(x,y,oVine)) {
+			other.x = approach(other.x, x, 1);
+		}
+	}
+}
+
+if(place_meeting(x,y,oSlide)){
+	if(grounded){
+		if(oGame.move_down){
+			avatar_state = AVATARSTATE.SLIDING;
+			grounded = false;
+		}
+	} else {
+		avatar_state = AVATARSTATE.SLIDING;
+		with (instance_place(x,y,oSlide)) {
+			other.x = approach(other.x, x, 1);
+		}
+	}
+}

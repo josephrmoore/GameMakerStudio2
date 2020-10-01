@@ -17,5 +17,4 @@ function climb_ladder(){
 		image_speed = 1;
 		vsp = climb_speed;
 	}
-	show_debug_message(ladders);
 }
