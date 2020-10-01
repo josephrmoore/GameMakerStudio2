@@ -17,7 +17,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NYLY2pUqsN9euRWXvzl2LnZEkJ0=
+			4gpaiXUMQMcHCqK8rQRMNjCL5Es=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -41,7 +41,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			v4jD0pvAB1SQy8azLPTU3AODfKY=
+			ip9OQzlB4WMvk1lJNQuLiKFvx20=
 			</data>
 			<key>requirement</key>
 			<string>identifier libYoYoGamepad and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: Alexander Duncan (8YU3LW42XP)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			1mWdOdqeIhECLKGyP1qKXhZRZGM=
+			DeOjDhS6OB04jEtUKUETifE5LIo=
 			</data>
 			<key>requirement</key>
 			<string>identifier libYoYoIAP and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: Alexander Duncan (8YU3LW42XP)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -72,11 +72,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NYLY2pUqsN9euRWXvzl2LnZEkJ0=
+			4gpaiXUMQMcHCqK8rQRMNjCL5Es=
 			</data>
 			<key>hash2</key>
 			<data>
-			VjRZgVRFqmt2PqvfkxyfYN/Hvt8ASugbF7tEhvK8fjg=
+			MLQdRNuENoatyZ8hELNO0WmoQ+RzshBHL10WDQqBkcA=
 			</data>
 			<key>optional</key>
 			<true/>
