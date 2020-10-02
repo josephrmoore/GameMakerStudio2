@@ -3,6 +3,7 @@
 function slide(){
 	if(!place_meeting(x,y,oSlide)){
 		avatar_state = AVATARSTATE.JUMPING;
+		launch_y = y;
 	}
 	vsp = slide_speed;
 }

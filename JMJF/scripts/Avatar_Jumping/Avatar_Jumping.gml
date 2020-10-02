@@ -7,6 +7,9 @@ function Avatar_Jumping(){
 	jumping();
 	collisions();
 	avatar_position();
+	if(y>(launch_y+lethal_fall_distance)){
+		avatar_state = AVATARSTATE.FALLING;
+	}
 	sprite_index = sAvatar_jumping;
 	if(hsp<0){
 		image_xscale = -1;

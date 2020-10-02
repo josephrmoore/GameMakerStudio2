@@ -2,6 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function collisions(){
 	player_object_collision(oLedge);
+	if(avatar_state != AVATARSTATE.LADDER){
+		player_object_collision(oLedgeLadder);
+	}
 	player_button_collision(oButton);
 	player_object_collision(oDoor);
 	player_object_collision(oRiser);

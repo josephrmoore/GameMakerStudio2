@@ -31,7 +31,7 @@ switch (avatar_state) {
 		break;
 }
 
-if(avatar_state != AVATARSTATE.WIN){
+if(avatar_state != AVATARSTATE.WIN && avatar_state != AVATARSTATE.FALLING && avatar_state != AVATARSTATE.DEAD){
 
 if(grounded){
 	if (hsp == 0) {
@@ -95,3 +95,5 @@ if(place_meeting(x,y,oSlide)){
 }
 
 }
+
+show_debug_message(grounded);

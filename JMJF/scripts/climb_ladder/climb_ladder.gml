@@ -8,6 +8,7 @@ function climb_ladder(){
 		ladders = true;
 	} else {
 		avatar_state = AVATARSTATE.JUMPING;
+		launch_y = y;
 	}
 	if(oGame.move_up && ladders){
 		image_speed = 1;

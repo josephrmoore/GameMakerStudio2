@@ -5,6 +5,11 @@ function Avatar_Walking(){
 	grav();
 	left_right();
 	jumping();
+	if(!place_meeting(x,y,oLedge) && !place_meeting(x,y,oLedgeLadder)){
+		grounded = false;
+		avatar_state = AVATARSTATE.JUMPING;
+		launch_y = y;
+	}
 	collisions();
 	avatar_position();
 	sprite_index = sAvatar_walking;
