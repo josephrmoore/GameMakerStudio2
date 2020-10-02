@@ -26,7 +26,12 @@ switch (avatar_state) {
 	case AVATARSTATE.DEAD: 
 		Avatar_Dead();
 		break;
+	case AVATARSTATE.WIN: 
+		Avatar_Win();
+		break;
 }
+
+if(avatar_state != AVATARSTATE.WIN){
 
 if(grounded){
 	if (hsp == 0) {
@@ -64,9 +69,11 @@ if(place_meeting(x,y,oVine)){
 			grounded = false;
 		}
 	} else {
-		avatar_state = AVATARSTATE.VINE;
-		with (instance_place(x,y,oVine)) {
-			other.x = approach(other.x, x, 1);
+		if(avatar_state != AVATARSTATE.JUMPING || (avatar_state == AVATARSTATE.JUMPING && oGame.move_up)){
+			avatar_state = AVATARSTATE.VINE;
+			with (instance_place(x,y,oVine)) {
+				other.x = approach(other.x, x, 1);
+			}
 		}
 	}
 }
@@ -78,9 +85,13 @@ if(place_meeting(x,y,oSlide)){
 			grounded = false;
 		}
 	} else {
-		avatar_state = AVATARSTATE.SLIDING;
-		with (instance_place(x,y,oSlide)) {
-			other.x = approach(other.x, x, 1);
+		if(avatar_state != AVATARSTATE.JUMPING || (avatar_state == AVATARSTATE.JUMPING && oGame.move_down)){
+			avatar_state = AVATARSTATE.SLIDING;
+			with (instance_place(x,y,oSlide)) {
+				other.x = approach(other.x, x, 1);
+			}
 		}
 	}
+}
+
 }

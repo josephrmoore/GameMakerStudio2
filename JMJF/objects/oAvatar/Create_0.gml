@@ -9,7 +9,8 @@ enum AVATARSTATE {
 	VINE,
 	SLIDING,
 	FALLING,
-	DEAD
+	DEAD,
+	WIN
 }
 
 avatar_state = AVATARSTATE.IDLE;

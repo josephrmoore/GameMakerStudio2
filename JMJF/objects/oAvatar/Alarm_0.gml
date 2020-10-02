@@ -5,7 +5,7 @@ if(avatar_state == AVATARSTATE.WALKING){
 	audio_sound_pitch(w, random_range(0.8,2));
 }
 
-if(avatar_state == AVATARSTATE.LADDER){
+if(avatar_state == AVATARSTATE.LADDER && vsp != 0){
 	var w = audio_play_sound(aLadder, 10, false);
 	audio_sound_pitch(w, random_range(0.8,2));
 }

@@ -5,7 +5,7 @@ function Avatar_Jumping(){
 	grav();
 	left_right();
 	jumping();
-	player_object_collision(oLedge);
+	collisions();
 	avatar_position();
 	sprite_index = sAvatar_jumping;
 	if(hsp<0){

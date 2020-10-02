@@ -4,6 +4,6 @@ function avatar_position(){
 	x+=hsp;
 	y+=vsp;
 
-	x = round(x);
-	y = round(y);
+	//x = round(x);
+	//y = round(y);
 }
