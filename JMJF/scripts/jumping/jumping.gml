@@ -11,6 +11,7 @@ function jumping() {
 			grounded = false;
 			vsp = -jumpy;
 			jumps++;
+//			launch_y = y;
 			audio_play_sound(aJump, 1000, false);
 		}
 	}

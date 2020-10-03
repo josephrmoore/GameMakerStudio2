@@ -2,7 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Avatar_Sliding(){
 	image_speed = 1;
-	left_right();
+//	left_right();
+	hsp = 0;
 	if(oGame.move_left || oGame.move_right){
 		jumping();
 	}

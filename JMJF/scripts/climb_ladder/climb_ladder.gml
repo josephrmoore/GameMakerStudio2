@@ -3,12 +3,12 @@
 function climb_ladder(){
 	vsp = 0;
 	image_speed = 0;
+	launch_y = y;
 	var ladders = false;
 	if(place_meeting(x,y,oLadder)){
 		ladders = true;
 	} else {
 		avatar_state = AVATARSTATE.JUMPING;
-		launch_y = y;
 	}
 	if(oGame.move_up && ladders){
 		image_speed = 1;

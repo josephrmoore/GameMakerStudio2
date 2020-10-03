@@ -96,4 +96,4 @@ if(place_meeting(x,y,oSlide)){
 
 }
 
-show_debug_message(grounded);
+//show_debug_message(grounded);
