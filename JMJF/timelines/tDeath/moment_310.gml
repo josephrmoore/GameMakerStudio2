@@ -4,9 +4,21 @@ if(object_exists(oCannon)){
 	oCannon.activated = true;
 	oCannon.is_paused = false;
 }
+room_music();
+if(oAvatar.lives_left>0){
+	//	// reset avatar position, restart cannons & music
+	//	resurrect();
+	oAvatar.lives_left--;
+	oAvatar.avatar_state = AVATARSTATE.IDLE;
+} else {
+	//	// restart or quit options
+	//	death_screen();
+	audio_stop_all();
+	room_restart();
+}
 //oPlayer.x = oElevator.x + 60;
 //oPlayer.y = oElevator.y - 15;
-oAvatar.avatar_state = AVATARSTATE.IDLE;
+
 //oPlayer.launch_x = oPlayer.x;
 //oPlayer.launch_y = oPlayer.y;
-room_music();
+

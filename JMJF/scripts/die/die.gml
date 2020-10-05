@@ -5,12 +5,4 @@ function die() {
 	oGame.timeline_position = 0;
 	oGame.timeline_running = true;
 	instance_destroy(oBullet);
-	//if(lives>0){
-	//	// reset avatar position, restart cannons & music
-	//	resurrect();
-	//	lives--;
-	//} else {
-	//	// restart or quit options
-	//	death_screen();
-	//}
 }
