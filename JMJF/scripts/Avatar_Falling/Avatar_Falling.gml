@@ -5,7 +5,8 @@ function Avatar_Falling(){
 	collisions();
 	avatar_position();
 	if(grounded){
-		avatar_state = AVATARSTATE.DEAD;
+		pop_up(-1);
+		die();
 	}
 	sprite_index = sAvatar_falling;
 	if(alarm[0] == -1){
