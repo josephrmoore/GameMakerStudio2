@@ -7,6 +7,7 @@ function collisions(){
 	}
 	player_button_collision(oButton);
 	player_object_collision(oDoor);
-	player_object_collision(oRiser);
+	player_object_collision(oRiserIntro);
+	player_object_collision(oRiserOutro);
 	player_winzone_collision();
 }

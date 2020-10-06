@@ -35,4 +35,7 @@ switch (avatar_state) {
 		break;
 }
 
+show_debug_message("avatar state");
+show_debug_message(avatar_state);
+
 //show_debug_message(grounded);

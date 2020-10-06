@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Avatar_Win(){
-	sprite_index = sAvatar_win;
-	player_rise(oRiserOutro);
+function reinit_room(){
+	// avatar vars
+	// game vars
+	// button states
+	// music
 }

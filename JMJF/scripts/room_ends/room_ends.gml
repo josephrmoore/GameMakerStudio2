@@ -39,5 +39,7 @@ function room_ends(){
 //oGame.last_level_finished = last_finished;
 //SaveGame("jumpydata.sav");
 //room_goto(next_room);
-room_restart();
+//room_restart();
+
+room_goto(level1);
 }

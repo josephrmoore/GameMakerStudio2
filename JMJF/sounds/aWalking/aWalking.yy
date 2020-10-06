@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "aWalking.wav",
-  "duration": 0.014025,
+  "duration": 0.508016,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -3,8 +3,9 @@
 function player_winzone_collision(){
 	if(place_meeting(x,y,oWinZone)){
 		avatar_state = AVATARSTATE.WIN;
-		oGame.timeline_index = tLevelOutro;
-		oGame.timeline_position = 0;
-		oGame.timeline_running = true;
+		game_state = GAMESTATE.LEVELOUTRO;
+		lose_control();
+		oRiserOutro.rising = true;
+		start_timeline(tLevelOutro);
 	}
 }

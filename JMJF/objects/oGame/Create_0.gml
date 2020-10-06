@@ -9,4 +9,4 @@ enum GAMESTATE {
 	ENDING
 }
 
-game_state = GAMESTATE.LEVEL;
+game_state = GAMESTATE.LEVELINTRO;
