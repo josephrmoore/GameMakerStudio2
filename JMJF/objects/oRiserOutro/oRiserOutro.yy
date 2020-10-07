@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oCollides",
+    "path": "objects/oCollides/oCollides.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

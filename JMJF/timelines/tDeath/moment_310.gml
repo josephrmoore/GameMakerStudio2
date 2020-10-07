@@ -8,6 +8,7 @@ room_music();
 if(oAvatar.lives_left>0){
 	//	// reset avatar position, restart cannons & music
 	//	resurrect();
+	avatar_position_reset();
 	oAvatar.lives_left--;
 	oAvatar.avatar_state = AVATARSTATE.IDLE;
 } else {

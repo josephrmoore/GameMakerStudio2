@@ -19,5 +19,5 @@ switch (game_state) {
 		break;
 }
 
-show_debug_message("game state");
-show_debug_message(game_state);
+//show_debug_message("game state");
+//show_debug_message(game_state);

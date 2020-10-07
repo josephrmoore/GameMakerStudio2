@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "sLedge",
-    "path": "sprites/sLedge/sLedge.yy",
+    "name": "sHazard",
+    "path": "sprites/sHazard/sHazard.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "oCollides",
-    "path": "objects/oCollides/oCollides.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,7 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oLedge","path":"objects/oLedge/oLedge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oHazard","path":"objects/oHazard/oHazard.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"activated","tags":[],"resourceType":"GMObjectProperty",},
@@ -36,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oLedge",
+  "name": "oHazard",
   "tags": [],
   "resourceType": "GMObject",
 }
