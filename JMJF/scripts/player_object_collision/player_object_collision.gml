@@ -1,5 +1,17 @@
 function player_object_collision(argument0) {
+	
 	var obj = argument0;
+
+		var inst;
+		var collides = true;
+		inst = instance_place(x+hsp, y+vsp, obj);
+		if inst != noone
+			{    
+				collides = inst.activated;
+			}
+		
+	if(collides){
+		
 	// Horizontal object collision
 	if (place_meeting(x+hsp,y,obj)) {
 			while(!place_meeting(x+sign(hsp),y,obj)){
@@ -10,19 +22,21 @@ function player_object_collision(argument0) {
 
 
 	// Vertical object collision
-
 	if (place_meeting(x,y+vsp,obj)) {
-			if(vsp>0){
-				grounded = true;
-				jumps = 0;
-			}
-			while(!place_meeting(x,y+sign(vsp),obj)){
-				y = y + sign(vsp);
-			}
-			vsp = 0;
+
+		if(vsp>0){
+			grounded = true;
+			jumps = 0;
+		}
+		while(!place_meeting(x,y+sign(vsp),obj)){
+			y = y + sign(vsp);
+		}
+		vsp = 0;
+		
 	} 
-
+	
 	brute_force_check(obj);
-
+	
+	}
 
 }

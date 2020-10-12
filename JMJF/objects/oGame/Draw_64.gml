@@ -15,6 +15,13 @@ switch(current_room){
 		}
 		break;
 	case "level2":
+		set_all_text(c_white, fRoomTitle, 0, 0);
+		draw_text(345, 330, "Basic B");
+		set_all_text(c_white, fLevelNumber, 0, 0);
+		draw_text(116, 334, "Level 2");
+		for(var i=0; i<oAvatar.lives_left; i++){
+			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+		}
 		break;
 	case "level3":
 		break;

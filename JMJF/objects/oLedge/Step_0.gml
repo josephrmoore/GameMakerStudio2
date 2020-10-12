@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(activated){
-	draw_self();
+	sprite_index = sLedge;
+} else {
+	sprite_index = noone;
 }

@@ -10,12 +10,15 @@ switch(current_room){
 	case "level1":
 		// rules for level
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
 		break;
 	case "level2":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = true;
 		break;
 	case "level3":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
 		break;
 	case "level4":
 		start_timeline(tLevelIntro);
