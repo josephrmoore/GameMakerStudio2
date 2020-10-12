@@ -38,3 +38,16 @@ switch(current_room){
 	case "level9":
 		break;
 }
+
+if(oGame.is_paused){
+	set_all_text(c_black, fPause, 0, 0);
+	draw_text(145, 150, "PAUSED");
+	set_all_text(c_white, fPause, 0, 0);
+	draw_text(149, 154, "PAUSED");
+}
+
+if(oGame.restart_screen){
+	set_all_text(c_white, fResetOptions, 0, 0);
+	draw_text(185, 150, "RESTART");
+	draw_text(185, 180, "QUIT");
+}

@@ -41,4 +41,9 @@ function input() {
 		}
 	}
 	
+	menu_up = pressed_up;
+	menu_down = pressed_down;
+	menu_left = pressed_left;
+	menu_right = pressed_right;
+	menu_enter = pressed_buttons;
 }

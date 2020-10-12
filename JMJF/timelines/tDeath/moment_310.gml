@@ -15,7 +15,8 @@ if(oAvatar.lives_left>0){
 	//	// restart or quit options
 	//	death_screen();
 	audio_stop_all();
-	room_restart();
+	oGame.restart_screen = true;
+//	room_restart();
 }
 //oPlayer.x = oElevator.x + 60;
 //oPlayer.y = oElevator.y - 15;
