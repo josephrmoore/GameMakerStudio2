@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(rising){
+if(rising && !is_paused){
 	if((y-rising_rate) > end_y){
 		y -= rising_rate;
 		if(with_avatar){

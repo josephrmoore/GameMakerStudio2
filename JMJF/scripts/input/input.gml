@@ -23,6 +23,8 @@ function input() {
 	key_delete = keyboard_check_pressed(vk_delete) || keyboard_check_pressed(vk_backspace);
 	key_escape = keyboard_check_pressed(vk_escape);
 
+	key_p = keyboard_check_pressed(ord("P"));
+
 	if(keyboard_check(ord("0"))){
 		game_restart();
 	}
@@ -30,4 +32,13 @@ function input() {
 	if(key_escape){
 		game_end();
 	}
+	
+	if(game_state == GAMESTATE.LEVEL || game_state == GAMESTATE.LEVELINTRO || game_state == GAMESTATE.LEVELOUTRO){
+		if(key_p){
+			show_debug_message("P!");
+			oGame.is_paused = !oGame.is_paused;
+			pause_everything(oGame.is_paused);
+		}
+	}
+	
 }

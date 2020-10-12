@@ -13,6 +13,7 @@ function pause_everything(argument0) {
 		}
 		audio_pause_all();
 		timeline_running = false;
+		
 	} else {
 		oAvatar.is_paused = false;
 		oRiserIntro.is_paused = false;

@@ -35,6 +35,10 @@ switch (avatar_state) {
 		break;
 }
 
+if(is_paused){
+	oAvatar.image_speed = 0;
+}
+
 //show_debug_message("avatar state");
 //show_debug_message(avatar_state);
 
