@@ -7,7 +7,7 @@ function player_object_collision(argument0) {
 		inst = instance_place(x+hsp, y+vsp, obj);
 		if inst != noone
 			{    
-				collides = inst.activated;
+				collides = inst.is_activated;
 			}
 		
 	if(collides){

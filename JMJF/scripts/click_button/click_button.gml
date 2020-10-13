@@ -15,13 +15,13 @@ function click_button(argument0) {
 		// toggle ledges with matching button ids
 		with (oLedge){
 			if(button_id != 0 && instance.button_id == button_id){
-				activated = !activated;
+				is_activated = !is_activated;
 			}
 		}
 		// toggle hazards with matching button ids
 		with (oHazard){
 			if(button_id != 0 && instance.button_id == button_id){
-				activated = !activated;
+				is_activated = !is_activated;
 			}
 		}
 	}

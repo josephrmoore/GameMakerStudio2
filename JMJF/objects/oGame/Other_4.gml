@@ -11,31 +11,47 @@ switch(current_room){
 		// rules for level
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
+		set_palette(shPie1, shPie2, shPie3, shPie4, shPie5);
 		break;
 	case "level2":
 		start_timeline(tLevelIntro);
-		oGame.slides_vines_togglable = true;
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
 		break;
 	case "level3":
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
 		break;
 	case "level4":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
 		break;
 	case "level5":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
 		break;
 	case "level6":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
 		break;
 	case "level7":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
 		break;
 	case "level8":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
 		break;
 	case "level9":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
 		break;
 }
