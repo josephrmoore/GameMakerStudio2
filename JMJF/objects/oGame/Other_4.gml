@@ -5,7 +5,7 @@ var current_room = room_get_name(room);
 
 switch(current_room){
 	case "mainMenu":
-		
+		audio_play_sound(aMainMenu, 100, true);
 		break;
 	case "level1":
 		// rules for level

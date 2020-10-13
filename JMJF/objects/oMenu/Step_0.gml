@@ -59,12 +59,17 @@ if(is_active){
 				switch(selected_option){
 					case 0:
 						// BACK
+						oGame.is_paused = !oGame.is_paused;
+						pause_everything(oGame.is_paused);
+						instance_destroy(oMenu);
 						break;
 					case 1:
 						// RESTART
+						room_restart();
 						break;
 					case 2:
 						// QUIT
+						//room_goto(mainMenu);
 						break;
 				}
 				break;

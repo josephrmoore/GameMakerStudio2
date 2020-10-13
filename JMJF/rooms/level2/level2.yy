@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oAvatar","path":"objects/oAvatar/oAvatar.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":384.0,"resourceVersion":"1.0","name":"inst_7DE317EC","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oGame","path":"objects/oGame/oGame.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-24.0,"y":256.0,"resourceVersion":"1.0","name":"inst_E73FAD3","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
@@ -285,7 +284,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_7DE317EC","path":"rooms/level2/level2.yy",},
-    {"name":"inst_E73FAD3","path":"rooms/level2/level2.yy",},
     {"name":"inst_DAF4208","path":"rooms/level2/level2.yy",},
     {"name":"inst_7F52360","path":"rooms/level2/level2.yy",},
     {"name":"inst_22989C1F","path":"rooms/level2/level2.yy",},

@@ -11,7 +11,7 @@ enum MENUS {
 	CONFIRM
 }
 
-var main_menu = ["START", "LEVEL SELECT", "OPTIONS", "EXIT"];
+var main_menu = ["START", "LEVELS", "OPTIONS", "QUIT"];
 var level_select_menu = ["Level 1","Level 2","Level 3","Level 4","Level 5","Level 6","Level 7","Level 8","Level 9",];
 var options_menu = ["CONTROLS", "DISPLAY", "ABOUT"];
 var controls_menu = ["REMAP CONTROLS", "BACK"];

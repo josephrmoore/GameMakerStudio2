@@ -9,4 +9,4 @@ enum GAMESTATE {
 	ENDING
 }
 
-game_state = GAMESTATE.LEVELINTRO;
+game_state = GAMESTATE.MAINMENU;

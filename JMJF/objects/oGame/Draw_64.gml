@@ -3,6 +3,9 @@
 var current_room = room_get_name(room);
 switch(current_room){
 	case "mainMenu":
+		set_all_text(c_white, fTitle, 0, 0);
+		draw_text(16, 16, "Jumpy");
+		draw_text(16, 64, "McJumpface");
 		break;
 	case "level1":
 		// display on bottom of screen

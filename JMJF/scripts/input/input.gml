@@ -35,9 +35,11 @@ function input() {
 	
 	if(game_state == GAMESTATE.LEVEL || game_state == GAMESTATE.LEVELINTRO || game_state == GAMESTATE.LEVELOUTRO){
 		if(key_p){
-			show_debug_message("P!");
 			oGame.is_paused = !oGame.is_paused;
 			pause_everything(oGame.is_paused);
+			with(instance_create_layer(300,200,"Menus",oMenu)){
+				menu_id = MENUS.PAUSE;
+			}
 		}
 	}
 	
