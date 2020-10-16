@@ -5,5 +5,5 @@
 function player_rise(argument0){
 	var riser = argument0;
 	oAvatar.y = riser.y-16;
-	oAvatar.x = approach(oAvatar.x, riser.x, 1);
+	oAvatar.x = approach(oAvatar.x, riser.x, 0.4);
 }

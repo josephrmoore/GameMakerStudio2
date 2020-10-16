@@ -24,6 +24,13 @@ function input() {
 	key_escape = keyboard_check_pressed(vk_escape);
 
 	key_p = keyboard_check_pressed(ord("P"));
+	
+	key_debug = keyboard_check_pressed(ord("`"));
+	
+	if(key_debug){
+		show_debug_message("ORD!");
+		oGame.debug_on = !oGame.debug_on;
+	}
 
 	if(keyboard_check(ord("0"))){
 		game_restart();

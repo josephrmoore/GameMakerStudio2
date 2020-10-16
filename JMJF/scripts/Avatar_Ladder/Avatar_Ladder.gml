@@ -3,7 +3,7 @@
 function Avatar_Ladder(){
 	if(!is_paused){
 		image_speed = 1;
-	//	left_right();
+		left_right();
 		hsp = 0;
 		if(oGame.move_left || oGame.move_right){
 			jumping();

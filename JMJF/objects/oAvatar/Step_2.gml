@@ -3,7 +3,7 @@
 
 // check for correct state
 avatar_state_check();
-
+//show_debug_message(avatar_state);
 // change the state to the current state
 switch (avatar_state) {
 	case AVATARSTATE.IDLE: 

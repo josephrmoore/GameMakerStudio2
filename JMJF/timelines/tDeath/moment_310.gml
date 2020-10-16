@@ -1,5 +1,6 @@
 //room_restart();
 // need custom restart to skip rising part
+//show_debug_message("310");
 if(object_exists(oCannon)){
 	oCannon.activated = true;
 	oCannon.is_paused = false;
@@ -15,8 +16,8 @@ if(oAvatar.lives_left>0){
 	//	// restart or quit options
 	//	death_screen();
 	audio_stop_all();
-	oGame.restart_screen = true;
-//	room_restart();
+	//oGame.restart_screen = true;
+	room_restart();
 }
 //oPlayer.x = oElevator.x + 60;
 //oPlayer.y = oElevator.y - 15;

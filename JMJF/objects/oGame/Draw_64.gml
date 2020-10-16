@@ -1,6 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 var current_room = room_get_name(room);
+
+if(debug_on){
+	set_all_text(c_white, fDebug, 0, 0);
+	if(instance_exists(oAvatar)){
+		draw_text(8, 8, "grounded: ");
+		draw_text(112, 8, oAvatar.grounded);
+		draw_text(8, 24, "avatar_state: ");
+		draw_text(112, 24, oAvatar.avatar_state);
+	}
+}
+
 switch(current_room){
 	case "mainMenu":
 		set_all_text(c_white, fTitle, 0, 0);

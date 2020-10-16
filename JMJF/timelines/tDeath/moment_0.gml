@@ -5,3 +5,4 @@ if(object_exists(oCannon)){
 	oCannon.activated = false;
 	oCannon.is_paused = true;
 }
+//show_debug_message("0");

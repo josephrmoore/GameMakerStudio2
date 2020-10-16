@@ -27,13 +27,17 @@ function player_object_collision(argument0) {
 		if(vsp>0){
 			grounded = true;
 			jumps = 0;
+		} else {
+			grounded = false;
 		}
 		while(!place_meeting(x,y+sign(vsp),obj)){
 			y = y + sign(vsp);
 		}
 		vsp = 0;
 		
-	} 
+	} else {
+		grounded = false;
+	}
 	
 	brute_force_check(obj);
 	
