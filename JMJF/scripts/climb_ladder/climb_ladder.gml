@@ -5,7 +5,7 @@ function climb_ladder(){
 	image_speed = 0;
 	launch_y = y;
 	var ladders = false;
-	if(place_meeting(x,y,oLadder)){
+	if(place_meeting(x,y,oLadder) || place_meeting(x,y,oLadderTop)){
 		ladders = true;
 	} else {
 		avatar_state = AVATARSTATE.JUMPING;

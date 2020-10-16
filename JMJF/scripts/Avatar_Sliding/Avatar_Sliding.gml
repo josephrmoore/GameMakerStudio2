@@ -5,9 +5,9 @@ function Avatar_Sliding(){
 		image_speed = 1;
 //	left_right();
 		hsp = 0;
-		if(oGame.move_left || oGame.move_right){
-			jumping();
-		}
+		//if(oGame.move_left || oGame.move_right){
+		//	jumping();
+		//}
 		slide();
 		one_way_collision(oLedge, "y", 1);
 //	if(place_meeting(x,y,oSlideTop) && vsp > 0 && !grounded){

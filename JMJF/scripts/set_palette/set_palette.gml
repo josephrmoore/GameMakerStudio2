@@ -24,4 +24,5 @@ function set_palette(argument0, argument1, argument2, argument3, argument4){
 	oRiserOutro.current_shader = argument3;
 	
 	oLadder.current_shader = argument4;
+	oLadderTop.current_shader = argument4;
 }

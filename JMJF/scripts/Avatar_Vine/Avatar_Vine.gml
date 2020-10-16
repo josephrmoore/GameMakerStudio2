@@ -5,9 +5,9 @@ function Avatar_Vine(){
 		image_speed = 1;
 	//	left_right();
 		hsp = 0;
-		if(oGame.move_left || oGame.move_right){
-			jumping();
-		}
+		//if(oGame.move_left || oGame.move_right){
+		//	jumping();
+		//}
 		climb_vine();
 
 		if(vsp < 0 && !grounded){
