@@ -11,18 +11,32 @@ function set_palette(argument0, argument1, argument2, argument3, argument4){
 
 	oBackground.current_shader = argument0;
 	
-	oSlide.current_shader = argument1;
-	oSlideEnd.current_shader = argument1;
-	oDoor.current_shader = argument1;
+	if(instance_exists(oSlide)){
+		oSlide.current_shader = argument1;
+		oSlideEnd.current_shader = argument1;
+	}
+	if(instance_exists(oDoor)){
+		oDoor.current_shader = argument1;
+	}
 	
 	oFrame.current_shader = argument2;
 	oLedge.current_shader = argument2;
-	oLedgeLadder.current_shader = argument2;
+	if(instance_exists(oLedgeLadder)){
+		oLedgeLadder.current_shader = argument2;
+	}
+
+	if(instance_exists(oVine)){
+		oVine.current_shader = argument3;
+	}
+	if(instance_exists(oRiserIntro)){
+		oRiserIntro.current_shader = argument3;
+	}
+	if(instance_exists(oRiserOutro)){
+		oRiserOutro.current_shader = argument3;
+	}
 	
-	oVine.current_shader = argument3;
-	oRiserIntro.current_shader = argument3;
-	oRiserOutro.current_shader = argument3;
-	
-	oLadder.current_shader = argument4;
-	oLadderTop.current_shader = argument4;
+	if(instance_exists(oLadder)){
+		oLadder.current_shader = argument4;
+		oLadderTop.current_shader = argument4;
+	}
 }
