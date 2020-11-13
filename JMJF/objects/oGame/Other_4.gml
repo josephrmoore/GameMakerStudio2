@@ -11,7 +11,9 @@ if(oGame.double_jump){
 
 switch(current_room){
 	case "mainMenu":
-		audio_play_sound(aMainMenu, 100, true);
+		if(!audio_is_playing(aMainMenu)){
+			audio_play_sound(aMainMenu, 100, true);
+		}	
 		break;
 	case "level1":
 		// rules for level
