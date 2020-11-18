@@ -50,10 +50,14 @@ if(is_active){
 				switch(selected_option){
 					case 0:
 						// DO OVER
+						oGame.is_paused = false;
+						pause_everything(oGame.is_paused);
 						room_restart();
 						break;
 					case 1:
 						// GO HOME
+						oGame.is_paused = false;
+						pause_everything(oGame.is_paused);
 						room_goto(mainMenu);
 						break;
 				}
@@ -62,16 +66,20 @@ if(is_active){
 				switch(selected_option){
 					case 0:
 						// KEEP PLAYING
-						oGame.is_paused = !oGame.is_paused;
+						oGame.is_paused = false;
 						pause_everything(oGame.is_paused);
 						instance_destroy(oMenu);
 						break;
 					case 1:
 						// DO OVER
+						oGame.is_paused = false;
+						pause_everything(oGame.is_paused);
 						room_restart();
 						break;
 					case 2:
 						// GO HOME
+						oGame.is_paused = false;
+						pause_everything(oGame.is_paused);
 						room_goto(mainMenu);
 						break;
 				}

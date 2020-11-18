@@ -25,7 +25,7 @@ function input() {
 
 	key_p = keyboard_check_pressed(ord("P"));
 	
-	key_debug = keyboard_check_pressed(ord("`"));
+	key_debug = keyboard_check_pressed(vk_tab);
 	
 	if(key_debug){
 		show_debug_message("ORD!");
@@ -40,9 +40,9 @@ function input() {
 		game_end();
 	}
 	
-	if(game_state == GAMESTATE.LEVEL || game_state == GAMESTATE.LEVELINTRO || game_state == GAMESTATE.LEVELOUTRO){
+	if(game_state == GAMESTATE.LEVEL){
 		if(key_p){
-			oGame.is_paused = !oGame.is_paused;
+			oGame.is_paused = true;
 			pause_everything(oGame.is_paused);
 			with(instance_create_layer(300,200,"Menus",oMenu)){
 				menu_id = MENUS.PAUSE;

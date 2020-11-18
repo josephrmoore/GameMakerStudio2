@@ -12,6 +12,7 @@ if(oGame.double_jump){
 switch(current_room){
 	case "mainMenu":
 		if(!audio_is_playing(aMainMenu)){
+			audio_stop_all();
 			audio_play_sound(aMainMenu, 100, true);
 		}	
 		break;

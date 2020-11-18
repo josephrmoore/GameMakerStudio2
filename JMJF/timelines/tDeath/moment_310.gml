@@ -15,9 +15,14 @@ if(oAvatar.lives_left>0){
 } else {
 	//	// restart or quit options
 	//	death_screen();
-	audio_stop_all();
+	//audio_stop_all();
 	//oGame.restart_screen = true;
-	room_restart();
+	//room_restart();
+	oGame.is_paused = true;
+	pause_everything(oGame.is_paused);
+	with(instance_create_layer(300,200,"Menus",oMenu)){
+		menu_id = MENUS.RESTART;
+	}
 }
 //oPlayer.x = oElevator.x + 60;
 //oPlayer.y = oElevator.y - 15;
