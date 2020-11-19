@@ -6,9 +6,11 @@ function Avatar_Ladder(){
 		image_speed = 1;
 		//left_right();
 		hsp = 0;
-		//if(oGame.move_left || oGame.move_right){
-		//	jumping();
-		//}
+		jumps = 0;
+		if(oGame.move_left || oGame.move_right){
+			avatar_state = AVATARSTATE.JUMPING;
+			jumping();			
+		}
 		climb_ladder();
 		collisions();
 		avatar_position();

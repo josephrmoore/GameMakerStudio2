@@ -9,6 +9,8 @@ if(debug_on){
 		draw_text(112, 8, oAvatar.grounded);
 		draw_text(8, 24, "avatar_state: ");
 		draw_text(112, 24, oAvatar.avatar_state);
+		draw_text(8, 40, "avatar_jumps: ");
+		draw_text(112, 40, oAvatar.jumps);
 	}
 }
 

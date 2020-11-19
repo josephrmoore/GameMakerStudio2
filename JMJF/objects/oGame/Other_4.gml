@@ -7,6 +7,33 @@ if(oGame.double_jump){
 	if(instance_exists(oAvatar)){
 		oAvatar.max_jumps = 2;
 	}
+	if(instance_exists(oDoubleJump)){
+		with(oDoubleJump){
+			instance_destroy();
+		}
+	}
+}
+
+if(oGame.high_jump){
+	if(instance_exists(oAvatar)){
+		oAvatar.jSpeed = oAvatar.jSpeedHigh;
+	}
+	if(instance_exists(oHighJump)){
+		with(oHighJump){
+			instance_destroy();
+		}
+	}
+}
+
+if(oGame.armor_jump){
+	if(instance_exists(oAvatar)){
+		oAvatar.armored = true;
+	}
+	if(instance_exists(oArmorJump)){
+		with(oArmorJump){
+			instance_destroy();
+		}
+	}
 }
 
 switch(current_room){

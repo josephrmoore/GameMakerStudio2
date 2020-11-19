@@ -13,3 +13,18 @@ for(i=0; i<num_choices; i++){
 	set_all_text(this_color,menu_font,0,0);
 	draw_text(x, (y+(i*32)), all_menus[menu_id][i]);
 }
+
+switch (menu_id){
+	case MENUS.PAUSE:
+		set_all_text(c_black, fPause, 0, 0);
+		draw_text(145, 150, "PAUSED");
+		set_all_text(c_white, fPause, 0, 0);
+		draw_text(149, 154, "PAUSED");
+		break;
+	case MENUS.RESTART:
+		set_all_text(c_black, fPause, 0, 0);
+		draw_text(145, 150, "YOU LOSE");
+		set_all_text(c_white, fPause, 0, 0);
+		draw_text(149, 154, "YOU LOSE");
+		break;
+}

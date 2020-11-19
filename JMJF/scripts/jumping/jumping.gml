@@ -17,7 +17,7 @@ function jumping() {
 			vsp = -jumpy;
 			jumps++;
 //			launch_y = y;
-			alarm[1] = 0;
+//			alarm[1] = 0;
 			audio_play_sound(aJump, 1000, false);
 		}
 	}

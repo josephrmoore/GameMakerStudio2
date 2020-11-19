@@ -1,9 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var avatar_collision = false;
 with(oAvatar){
-	pop_up(-1);
-	avatar_state = AVATARSTATE.FALLING;
+	if(avatar_state == AVATARSTATE.JUMPING && armored){
+		// do not kill
+		avatar_collision = false;
+	} else {
+		pop_up(-1);
+		avatar_state = AVATARSTATE.FALLING;
+		avatar_collision = true;
+	}
 }
 
-instance_destroy();
+if(avatar_collision){
+	instance_destroy();
+}
+

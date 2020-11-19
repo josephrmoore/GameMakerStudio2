@@ -11,10 +11,18 @@ function Avatar_Jumping(){
 		//if(y>(launch_y+lethal_fall_distance)){
 		//	avatar_state = AVATARSTATE.FALLING;
 		//}
-		if(alarm[1] <= 0){
-			alarm[1] = jump_timer;
+		//var double_timer = jump_timer;
+		//if(oAvatar.max_jumps == 2){
+		//	double_timer = jump_timer*1.5;
+		//}
+		//if(alarm[1] <= 0){
+		//	alarm[1] = double_timer;
+		//}
+		if(armored){
+			sprite_index = sAvatar_jumpingArmored;
+		} else {
+			sprite_index = sAvatar_jumping;
 		}
-		sprite_index = sAvatar_jumping;
 		if(hsp<0){
 			image_xscale = -1;
 		} else {
