@@ -8,6 +8,7 @@ function Avatar_Idle(){
 		collisions();
 		avatar_position();
 	}
+	alarm[1] = -1;
 	image_speed = 1;
 	sprite_index = sAvatar_idle;
 }
