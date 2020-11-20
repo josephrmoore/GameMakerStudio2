@@ -3,6 +3,7 @@
 function collisions(){
 //	player_object_collision(oCollides);
 	var grounded_check = false;
+	player_object_collision(oDoor);
 	player_object_collision(oLedge);
 	if(grounded){
 		grounded_check = true;
@@ -15,6 +16,7 @@ function collisions(){
 	}
 	grounded = grounded_check;
 	player_button_collision(oButton);
+	player_special_button_collision(oButtonSpecial);
 	player_winzone_collision();
 	player_hazard_collision();
 }

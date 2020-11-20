@@ -7,3 +7,11 @@ if(opened && y>220){
 }
 
 // write close door logic
+if(!opened && y<280){
+	oDoor.vsp = -3;
+	y -= vsp;
+}
+
+if(y>280){
+	y=280;
+}

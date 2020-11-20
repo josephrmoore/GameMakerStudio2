@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function lose_control(){
 	oAvatar.controllable = false;
-	oCannon.is_paused = true;
-	oCannon.activated = false;
+	if(instance_exists(oCannon)){
+		oCannon.is_paused = true;
+		oCannon.activated = false;
+	}
 }

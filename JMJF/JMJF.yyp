@@ -78,6 +78,7 @@
     {"id":{"name":"lose_control","path":"scripts/lose_control/lose_control.yy",},"order":49,},
     {"id":{"name":"log","path":"scripts/log/log.yy",},"order":2,},
     {"id":{"name":"sButtonSpecialDown","path":"sprites/sButtonSpecialDown/sButtonSpecialDown.yy",},"order":20,},
+    {"id":{"name":"player_special_button_collision65","path":"scripts/player_special_button_collision65/player_special_button_collision65.yy",},"order":65,},
     {"id":{"name":"cannon_move","path":"scripts/cannon_move/cannon_move.yy",},"order":33,},
     {"id":{"name":"oBackground","path":"objects/oBackground/oBackground.yy",},"order":26,},
     {"id":{"name":"add_cannon","path":"scripts/add_cannon/add_cannon.yy",},"order":63,},

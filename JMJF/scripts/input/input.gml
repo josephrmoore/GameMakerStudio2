@@ -25,6 +25,16 @@ function input() {
 
 	key_p = keyboard_check_pressed(ord("P"));
 	
+	key_1 = keyboard_check_pressed(ord("1"));
+	key_2 = keyboard_check_pressed(ord("2"));
+	key_3 = keyboard_check_pressed(ord("3"));
+	key_4 = keyboard_check_pressed(ord("4"));
+	key_5 = keyboard_check_pressed(ord("5"));
+	key_6 = keyboard_check_pressed(ord("6"));
+	key_7 = keyboard_check_pressed(ord("7"));
+	key_8 = keyboard_check_pressed(ord("8"));
+	key_9 = keyboard_check_pressed(ord("9"));
+	
 	key_debug = keyboard_check_pressed(vk_tab);
 	
 	if(key_debug){
@@ -38,6 +48,42 @@ function input() {
 	if(key_escape){
 		game_end();
 	}
+	
+	if(key_1){
+		room_goto(level1);
+	}
+	
+	if(key_2){
+		room_goto(level2);
+	}
+	
+	if(key_3){
+		room_goto(level3);
+	}
+	
+	if(key_4){
+		room_goto(level4);
+	}
+	
+	if(key_5){
+		room_goto(level5);
+	}
+	
+	if(key_6){
+		room_goto(level6);
+	}
+	
+	if(key_7){
+		room_goto(level7);
+	}
+	
+	//if(key_8){
+	//	room_goto(level8);
+	//}
+	
+	//if(key_9){
+	//	room_goto(level9);
+	//}
 	
 	if(game_state == GAMESTATE.LEVEL){
 		if(key_p){			
