@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-input();
 switch (game_state) {
 	case GAMESTATE.MAINMENU: 
 		Game_MainMenu();
@@ -18,6 +17,7 @@ switch (game_state) {
 		Game_Ending();
 		break;
 }
+input();
 
 //show_debug_message("game state");
 //show_debug_message(game_state);

@@ -6,3 +6,4 @@ if(opened && y>220){
 	y -= vsp;
 }
 
+// write close door logic

@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oAvatar","path":"objects/oAvatar/oAvatar.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":272.0,"y":296.0,"resourceVersion":"1.0","name":"inst_7DE317EC","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oGame","path":"objects/oGame/oGame.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-24.0,"y":256.0,"resourceVersion":"1.0","name":"inst_E73FAD3","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":208.0,"resourceVersion":"1.0","name":"inst_DAF4208","tags":[],"resourceType":"GMRInstance",},
@@ -417,7 +416,6 @@
     {"name":"inst_7DADC116","path":"rooms/level1/level1.yy",},
     {"name":"inst_3B9E02FF","path":"rooms/level1/level1.yy",},
     {"name":"inst_AD4DCD5","path":"rooms/level1/level1.yy",},
-    {"name":"inst_E73FAD3","path":"rooms/level1/level1.yy",},
     {"name":"inst_723B8566","path":"rooms/level1/level1.yy",},
     {"name":"inst_434C5630","path":"rooms/level1/level1.yy",},
     {"name":"inst_186C0F5F","path":"rooms/level1/level1.yy",},

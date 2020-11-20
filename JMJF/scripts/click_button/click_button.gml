@@ -66,5 +66,9 @@ function click_button(argument0) {
 				is_activated = !is_activated;
 			}
 		}
+		if(instance_exists(oCannonController)){
+			cannon_mod(instance.button_id);
+		}
+		
 	}
 }

@@ -28,7 +28,6 @@ function input() {
 	key_debug = keyboard_check_pressed(vk_tab);
 	
 	if(key_debug){
-		show_debug_message("ORD!");
 		oGame.debug_on = !oGame.debug_on;
 	}
 
@@ -41,12 +40,13 @@ function input() {
 	}
 	
 	if(game_state == GAMESTATE.LEVEL){
-		if(key_p){
+		if(key_p){			
 			oGame.is_paused = true;
 			pause_everything(oGame.is_paused);
 			with(instance_create_layer(300,200,"Menus",oMenu)){
 				menu_id = MENUS.PAUSE;
 			}
+			show_debug_message("pauser");
 		}
 	}
 	
