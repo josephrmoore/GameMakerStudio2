@@ -17,6 +17,7 @@ function collisions(){
 	grounded = grounded_check;
 	player_button_collision(oButton);
 	player_special_button_collision(oButtonSpecial);
+	player_big_button_collision(oButtonBig);
 	player_winzone_collision();
 	player_hazard_collision();
 }

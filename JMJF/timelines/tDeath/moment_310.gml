@@ -1,7 +1,7 @@
 //room_restart();
 // need custom restart to skip rising part
 //show_debug_message("310");
-if(object_exists(oCannon)){
+if(instance_exists(oCannon)){
 	oCannon.activated = true;
 	oCannon.is_paused = false;
 }

@@ -77,13 +77,13 @@ function input() {
 		room_goto(level7);
 	}
 	
-	//if(key_8){
-	//	room_goto(level8);
-	//}
+	if(key_8){
+		room_goto(level8);
+	}
 	
-	//if(key_9){
-	//	room_goto(level9);
-	//}
+	if(key_9){
+		room_goto(level9);
+	}
 	
 	if(game_state == GAMESTATE.LEVEL){
 		if(key_p){			

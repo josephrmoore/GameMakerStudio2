@@ -8,10 +8,6 @@ function Avatar_Walking(){
 		left_right();
 		jumping();
 		collisions();
-		if(!grounded){
-			avatar_state = AVATARSTATE.JUMPING;
-			launch_y = y;
-		}
 		avatar_position();
 		sprite_index = sAvatar_walking;
 		if(hsp<0){
@@ -21,6 +17,10 @@ function Avatar_Walking(){
 		}
 		if(alarm[0] == -1){
 			alarm[0] = 10;
+		}
+		launch_y = y;
+		if(!grounded){
+			avatar_state = AVATARSTATE.JUMPING;
 		}
 	}
 }

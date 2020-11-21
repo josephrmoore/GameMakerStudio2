@@ -8,9 +8,9 @@ function Avatar_Jumping(){
 		jumping();
 		collisions();
 		avatar_position();
-		//if(y>(launch_y+lethal_fall_distance)){
-		//	avatar_state = AVATARSTATE.FALLING;
-		//}
+		if(y>(launch_y+lethal_fall_distance)){
+			avatar_state = AVATARSTATE.FALLING;
+		}
 		//var double_timer = jump_timer;
 		//if(oAvatar.max_jumps == 2){
 		//	double_timer = jump_timer*1.5;
