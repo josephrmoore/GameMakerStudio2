@@ -41,6 +41,7 @@
     {"id":{"name":"fPause","path":"fonts/fPause/fPause.yy",},"order":2,},
     {"id":{"name":"shPie2","path":"shaders/shPie2/shPie2.yy",},"order":9,},
     {"id":{"name":"level8","path":"rooms/level8/level8.yy",},"order":11,},
+    {"id":{"name":"aTeleport","path":"sounds/aTeleport/aTeleport.yy",},"order":28,},
     {"id":{"name":"sAvatar_ladder","path":"sprites/sAvatar_ladder/sAvatar_ladder.yy",},"order":6,},
     {"id":{"name":"shGreen","path":"shaders/shGreen/shGreen.yy",},"order":5,},
     {"id":{"name":"toggle_hazard","path":"scripts/toggle_hazard/toggle_hazard.yy",},"order":55,},

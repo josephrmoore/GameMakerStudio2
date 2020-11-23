@@ -7,6 +7,9 @@ function teleport(argument0){
 			oAvatar.x = x;
 			oAvatar.y = y;
 			oAvatar.launch_y = y;
+			alarm[0] = 45;
+			is_visible = true;
+			audio_play_sound(aTeleport,100,false);
 		}
 	}
 }
