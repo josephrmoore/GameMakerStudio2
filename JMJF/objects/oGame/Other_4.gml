@@ -88,6 +88,7 @@ switch(current_room){
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
 		oGame.teleportation = true;
+		set_palette(shP61, shP62, shP63, shP64, shP65);
 		oGame.current_level = level6;
 		oGame.next_level = level7;
 		break;
@@ -95,18 +96,23 @@ switch(current_room){
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
 		oGame.teleportation = true;
+		set_palette(shP71, shP72, shP73, shP74, shP75);
 		oGame.current_level = level7;
+		oGame.next_level = level8;
 		break;
 	case "level8":
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
 		oGame.teleportation = false;
-		oGame.shaders_on = false;
+		set_palette(shP84, shP85, shP83, shP81, shP82);
+		oGame.current_level = level8;
+		oGame.next_level = level9;
 		break;
 	case "level9":
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
 		oGame.teleportation = false;
 		oGame.shaders_on = false;
+		oGame.current_level = level9;
 		break;
 }
