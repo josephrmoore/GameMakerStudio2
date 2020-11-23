@@ -93,6 +93,7 @@
     {"id":{"name":"oBackground","path":"objects/oBackground/oBackground.yy",},"order":26,},
     {"id":{"name":"oButtonBig","path":"objects/oButtonBig/oButtonBig.yy",},"order":33,},
     {"id":{"name":"add_cannon","path":"scripts/add_cannon/add_cannon.yy",},"order":63,},
+    {"id":{"name":"tEnding","path":"timelines/tEnding/tEnding.yy",},"order":4,},
     {"id":{"name":"sAvatar_vine","path":"sprites/sAvatar_vine/sAvatar_vine.yy",},"order":7,},
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},"order":6,},
     {"id":{"name":"old_player_state_check","path":"scripts/old_player_state_check/old_player_state_check.yy",},"order":59,},

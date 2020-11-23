@@ -8,6 +8,10 @@ function Avatar_Jumping(){
 		jumping();
 		collisions();
 		avatar_position();
+		if(instance_exists(oButtonBig)){
+			oButtonBig.on_button = false;
+			oButtonBig.already_landed = false;
+		}
 		if(y>(launch_y+lethal_fall_distance)){
 			avatar_state = AVATARSTATE.FALLING;
 		}

@@ -9,7 +9,7 @@ void main()
 {
     vec4 Color = texture2D( gm_BaseTexture, v_vTexcoord );
     vec3 lum = vec3(0.299, 0.587, 0.114);
-    vec3 overlay = vec3(0.227, 0.612, 1.0);                                // change this vector for each different color
+    vec3 overlay = vec3(0.278, 0.227, 1.0);                                // change this vector for each different color
     float bw = dot( Color.rgb, lum);//black and white result
     gl_FragColor = vec4( bw * overlay, Color.a);
 }

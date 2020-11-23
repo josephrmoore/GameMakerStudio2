@@ -7,6 +7,10 @@ function Avatar_Idle(){
 		jumping();
 		collisions();
 		avatar_position();
+	} else if(oGame.game_state == GAMESTATE.LEVEL && !controllable && !is_paused) {
+		grav();
+		collisions();
+		avatar_position();
 	}
 	alarm[1] = -1;
 	image_speed = 1;

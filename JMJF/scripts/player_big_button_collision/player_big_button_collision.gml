@@ -1,15 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_big_button_collision(argument0){
-		var obj = argument0;
-	//show_debug_message("button collision");
-
-
-	// Vertical object collision
-
+	var obj = argument0;
 	if (place_meeting(x,y+vsp,obj)) {
 			grounded = true;
 			jumps = 0;
+			if(instance_exists(oButtonBig)){
+				oButtonBig.on_button = true;
+			}
 			while(!place_meeting(x,y+sign(vsp),obj)){
 				y = y + sign(vsp);
 			}
