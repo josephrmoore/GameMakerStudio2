@@ -10,4 +10,6 @@ line_2_printed = "";
 line_3_printed = "";
 
 current_line = 1;
-current_char = 0;
+current_char = 1;
+
+alarm[0] = 60;
