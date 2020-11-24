@@ -10,7 +10,7 @@ function click_big_button(argument0){
 			audio_play_sound(aButtonClick,100,false);
 		}
 		// check for enough clicks to press
-		if(oButtonBig.clicks>25){
+		if(oButtonBig.clicks>12){
 			oButtonBig.pressed = true;
 			oAvatar.launch_y = 10000;
 			audio_play_sound(aEndButton, 100, false);

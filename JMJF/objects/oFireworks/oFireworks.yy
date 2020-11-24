@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sFireworks_1",
-    "path": "sprites/sFireworks_1/sFireworks_1.yy",
+    "name": "sFireworksWhite",
+    "path": "sprites/sFireworksWhite/sFireworksWhite.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,8 +22,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"oFireworks","path":"objects/oFireworks/oFireworks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oFireworks","path":"objects/oFireworks/oFireworks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oFireworks","path":"objects/oFireworks/oFireworks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [],
+  "properties": [
+    {"varType":0,"value":"shBlue","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"shader","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
