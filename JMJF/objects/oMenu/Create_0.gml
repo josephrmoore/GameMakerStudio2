@@ -10,7 +10,7 @@ enum MENUS {
 
 var main_menu = ["START", "LEVELS", "OPTIONS", "QUIT"];
 var levels_menu = ["PLAY", "BACK"];
-var options_menu = ["CONTROLS", "DISPLAY", "ABOUT", "BACK"];
+var options_menu = ["ABOUT", "BACK"];
 var about_menu = ["BACK"];
 var pause_menu = ["KEEP PLAYING", "DO OVER", "GO HOME"];
 var restart_menu = ["DO OVER", "GO HOME"];

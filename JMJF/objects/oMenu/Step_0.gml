@@ -87,16 +87,10 @@ if(is_active){
 			case MENUS.OPTIONS:
 				switch(selected_option){
 					case 0:
-						// CONTROLS
-						break;
-					case 1:
-						// DISPLAY
-						break;
-					case 2:
 						// ABOUT
 						room_goto(aboutMenu);
 						break;
-					case 3:
+					case 1:
 						// BACK
 						room_goto(mainMenu);
 						break;
@@ -106,6 +100,9 @@ if(is_active){
 				switch(selected_option){
 					case 0:
 						// PLAY
+						// check highest level attained
+						// see if current_level is <= to it
+						// go to level room for current_level
 						break;
 					case 1:
 						// BACK
