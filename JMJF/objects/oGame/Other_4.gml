@@ -38,6 +38,7 @@ if(oGame.armor_jump){
 
 switch(current_room){
 	case "mainMenu":
+		oGame.shaders_on = true;
 		if(!audio_is_playing(aMainMenu)){
 			audio_stop_all();
 			audio_play_sound(aMainMenu, 100, true);
@@ -144,7 +145,7 @@ switch(current_room){
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
 		oGame.teleportation = false;
-		oGame.shaders_on = false;
+		oGame.shaders_on = true;
 		oGame.current_level = level9;
 		oAvatar.last_teleport_x = -1;
 		oAvatar.last_teleport_y = -1;

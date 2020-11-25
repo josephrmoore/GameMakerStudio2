@@ -14,6 +14,7 @@ if(debug_on){
 	}
 }
 
+if(oGame.game_state != GAMESTATE.ENDING){
 switch(current_room){
 	case "mainMenu":
 		set_all_text(c_white, fTitle, 0, 0);
@@ -102,6 +103,7 @@ switch(current_room){
 			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
 		}
 		break;
+}
 }
 
 //if(oGame.is_paused){
