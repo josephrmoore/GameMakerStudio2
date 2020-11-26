@@ -101,8 +101,39 @@ if(is_active){
 					case 0:
 						// PLAY
 						// check highest level attained
-						// see if current_level is <= to it
-						// go to level room for current_level
+						var mural = oLevelMural.current_level+1;
+						if(mural <= oGame.highest_level){
+							switch(mural){
+								case 1:
+									room_goto(level1);
+									break;
+								case 2:
+									room_goto(level2);
+									break;
+								case 3:
+									room_goto(level3);
+									break;
+								case 4:
+									room_goto(level4);
+									break;
+								case 5:
+									room_goto(level5);
+									break;
+								case 6:
+									room_goto(level6);
+									break;
+								case 7:
+									room_goto(level7);
+									break;
+								case 8:
+									room_goto(level8);
+									break;
+								case 9:
+									room_goto(level9);
+									break;
+								
+							}	
+						}
 						break;
 					case 1:
 						// BACK

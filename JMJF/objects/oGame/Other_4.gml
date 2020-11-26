@@ -56,6 +56,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
+		set_highest_level(1);
 		break;
 	case "level2":
 		start_timeline(tLevelIntro);
@@ -68,6 +69,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
+		set_highest_level(2);
 		break;
 	case "level3":
 		start_timeline(tLevelIntro);
@@ -80,6 +82,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
+		set_highest_level(3);
 		break;
 	case "level4":
 		start_timeline(tLevelIntro);
@@ -92,6 +95,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
+		set_highest_level(4);
 		break;
 	case "level5":
 		start_timeline(tLevelIntro);
@@ -104,6 +108,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
+		set_highest_level(5);
 		break;
 	case "level6":
 		start_timeline(tLevelIntro);
@@ -116,6 +121,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
+		set_highest_level(6);
 		break;
 	case "level7":
 		start_timeline(tLevelIntro);
@@ -128,6 +134,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = true;
+		set_highest_level(7);
 		break;
 	case "level8":
 		start_timeline(tLevelIntro);
@@ -140,6 +147,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
+		set_highest_level(8);
 		break;
 	case "level9":
 		start_timeline(tLevelIntro);
@@ -150,5 +158,6 @@ switch(current_room){
 		oAvatar.last_teleport_x = -1;
 		oAvatar.last_teleport_y = -1;
 		oGame.teleportation_at_death = false;
+		set_highest_level(9);
 		break;
 }
