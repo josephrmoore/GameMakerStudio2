@@ -17,90 +17,103 @@ if(debug_on){
 if(oGame.game_state != GAMESTATE.ENDING){
 switch(current_room){
 	case "mainMenu":
-		set_all_text(c_white, fTitle, 0, 0);
+		rainbow_text(5);
+		set_all_text(c_black, fTitle, 0, 0);
+		draw_text(13, 19, "Jumpy");
+		draw_text(13, 67, "McJumpface");
+		set_all_text(oGame.rainbow_color, fTitle, 0, 0);
 		draw_text(16, 16, "Jumpy");
 		draw_text(16, 64, "McJumpface");
 		break;
 	case "level1":
 		// display on bottom of screen
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(245, 330, "Pie");
+		draw_text(112, 330, "Pie");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(16, 334, "Level 1");
+		draw_text(16, 334, "LEVEL 1");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level2":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(345, 330, "Basic B");
+		draw_text(235, 330, "Basic B");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "Level 2");
+		draw_text(116, 334, "LEVEL 2");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level3":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(345, 330, "Watch Your Step!");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "Level 3");
+		draw_text(90, 330, "Watch Your Step");
+		set_all_text(c_white, fLevelNumber, 0, 0);
+		draw_text(8, 334, "LEVEL 3");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level4":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(345, 330, "Boomers");
+		draw_text(205, 330, "Boomers");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "Level 4");
+		draw_text(116, 334, "LEVEL 4");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level5":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(345, 330, "Switcheroo");
+		draw_text(310, 330, "Switcheroo");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "Level 5");
+		draw_text(8, 334, "LEVEL 5");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level6":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(345, 330, "Carried Away");
+		draw_text(100, 330, "Carried Away");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "Level 6");
+		draw_text(8, 334, "LEVEL 6");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level7":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(345, 330, "Slideways");
+		draw_text(100, 330, "Slideways");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "Level 7");
+		draw_text(8, 334, "LEVEL 7");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level8":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(345, 330, "All Hands");
+		draw_text(205, 330, "All Hands");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "Level 8");
+		draw_text(100, 334, "LEVEL 8");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+		}
+		break;
+	case "level8B":
+		set_all_text(c_white, fRoomTitle, 0, 0);
+		draw_text(110, 330, "All Hands");
+		set_all_text(c_white, fLevelNumber, 0, 0);
+		draw_text(8, 334, "LEVEL 8");
+		for(var i=0; i<oAvatar.lives_left; i++){
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level9":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(345, 330, "The End");
+		draw_text(205, 330, "The End");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "Level 9");
+		draw_text(100, 334, "LEVEL 9");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(500 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 }

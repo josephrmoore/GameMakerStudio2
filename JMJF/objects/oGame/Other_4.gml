@@ -11,6 +11,7 @@ switch(current_room){
 			audio_stop_all();
 			audio_play_sound(aMainMenu, 100, true);
 		}
+		alarm[0] = 5;
 		break;
 	case "level1":
 		// rules for level
@@ -134,6 +135,24 @@ switch(current_room){
 		break;
 	case "level8":
 		start_timeline(tLevelIntro);
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = false;
+		set_palette(shP83, shP82, shP84, shP85, shP81);
+		oGame.current_level = level8;
+		oGame.next_level = level9;
+		oAvatar.last_teleport_x = -1;
+		oAvatar.last_teleport_y = -1;
+		oGame.shaders_on = true;
+		oGame.teleportation_at_death = false;
+		set_highest_level(8);
+		SaveGame("jmjf.ini");
+		oGame.double_jump = true;
+		oGame.high_jump = true;
+		oGame.armor_jump = true;
+		break;
+	case "level8B":
+		oGame.buttons_pressed_this_level = 0;
+		gain_control();
 		oGame.slides_vines_togglable = false;
 		oGame.teleportation = false;
 		set_palette(shP83, shP82, shP84, shP85, shP81);

@@ -12,8 +12,8 @@ var main_menu = ["START", "LEVELS", "OPTIONS", "QUIT"];
 var levels_menu = ["PLAY", "BACK"];
 var options_menu = ["ABOUT", "BACK"];
 var about_menu = ["BACK"];
-var pause_menu = ["KEEP PLAYING", "DO OVER", "GO HOME"];
-var restart_menu = ["DO OVER", "GO HOME"];
+var pause_menu = ["KEEP PLAYING", "START OVER", "QUIT"];
+var restart_menu = ["START OVER", "QUIT"];
 var confirm_menu = ["GO BACK", "QUIT!!!"];
 
 all_menus = [];

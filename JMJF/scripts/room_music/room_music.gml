@@ -31,6 +31,9 @@ function room_music(){
 		case "level8":
 			clip = aLevel8;
 			break;
+		case "level8B":
+			clip = aLevel8;
+			break;
 		case "level9":
 			clip = aLevel9;
 			break;

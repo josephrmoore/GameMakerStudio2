@@ -13,7 +13,12 @@ function avatar_position_reset(){
 			}
 		}
 	} else {
-		oAvatar.x = oRiserIntro.x;
-		oAvatar.y = oRiserIntro.y-16;
+		if(instance_exists(oRiserIntro)){
+			oAvatar.x = oRiserIntro.x;
+			oAvatar.y = oRiserIntro.y-16;
+		} else {
+			oAvatar.x = 8;
+			oAvatar.y = 296;
+		}
 	}
 }

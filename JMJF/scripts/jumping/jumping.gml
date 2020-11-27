@@ -21,7 +21,9 @@ function jumping() {
 			}
 //			launch_y = y;
 //			alarm[1] = 0;
-			audio_play_sound(aJump, 1000, false);
+			if(!audio_is_playing(aJump)){
+				audio_play_sound(aJump, 1000, false);
+			}
 		}
 	}
 //	show_debug_message(oAvatar.avatar_state);

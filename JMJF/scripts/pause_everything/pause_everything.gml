@@ -5,7 +5,9 @@ function pause_everything(argument0) {
 
 	if(b){
 		oAvatar.is_paused = true;
-		oRiserIntro.is_paused = true;
+		if(instance_exists(oRiserIntro)){
+			oRiserIntro.is_paused = true;
+		}
 		if(instance_exists(oRiserOutro)){
 			oRiserOutro.is_paused = true;
 		}
@@ -20,7 +22,9 @@ function pause_everything(argument0) {
 		
 	} else {
 		oAvatar.is_paused = false;
-		oRiserIntro.is_paused = false;
+		if(instance_exists(oRiserIntro)){
+			oRiserIntro.is_paused = false;
+		}
 		if(instance_exists(oRiserOutro)){
 			oRiserOutro.is_paused = false;
 		}

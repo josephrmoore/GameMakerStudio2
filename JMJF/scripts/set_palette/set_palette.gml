@@ -19,7 +19,12 @@ function set_palette(argument0, argument1, argument2, argument3, argument4){
 		oDoor.current_shader = argument1;
 	}
 	
-	oFrame.current_shader = argument2;
+	if(instance_exists(oFrame)){
+		oFrame.current_shader = argument2;
+	}
+	if(instance_exists(oFrame8B)){
+		oFrame8B.current_shader = argument2;
+	}
 	oLedge.current_shader = argument2;
 	if(instance_exists(oLedgeLadder)){
 		oLedgeLadder.current_shader = argument2;
