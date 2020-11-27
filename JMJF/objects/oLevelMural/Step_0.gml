@@ -11,6 +11,7 @@ if(oGame.menu_right){
 
 var calx = approach(x, -(current_level*640), 15);
 x = calx;
+
 oLevel2.x = calx+(1*640);
 oLevel3.x = calx+(2*640);
 oLevel4.x = calx+(3*640);

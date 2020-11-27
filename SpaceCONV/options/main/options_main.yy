@@ -1,0 +1,16 @@
+{
+  "option_gameguid": "9229e2b5-eadd-4411-a20e-1a8d27fa0178",
+  "option_game_speed": 60,
+  "option_mips_for_3d_textures": false,
+  "option_draw_colour": 4294967295,
+  "option_window_colour": 255,
+  "option_steam_app_id": "0",
+  "option_sci_usesci": false,
+  "option_author": "Incompetently Perfectionist Games",
+  "option_lastchanged": "21 July 2019 22:24:48",
+  "option_spine_licence": false,
+  "resourceVersion": "1.2",
+  "name": "Main",
+  "tags": [],
+  "resourceType": "GMMainOptions",
+}

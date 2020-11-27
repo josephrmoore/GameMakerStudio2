@@ -1,7 +1,8 @@
 /// @description All input capture code
 /// attach to oGame object
 function input() {
-	// key capture
+
+	// KEYS
 
 	move_right = gamepad_button_check(0,gp_padr) || gamepad_axis_value(0,gp_axislh) > 0.2 || keyboard_check(vk_right) || keyboard_check(ord("D"));
 	move_left = gamepad_button_check(0,gp_padl)|| gamepad_axis_value(0,gp_axislh) < -0.2 || keyboard_check(vk_left) || keyboard_check(ord("A"));
@@ -37,6 +38,10 @@ function input() {
 	
 	key_debug = keyboard_check_pressed(vk_tab);
 	
+
+	
+	// DEBUGGING CONTROLS
+
 	if(key_debug){
 		oGame.debug_on = !oGame.debug_on;
 	}
@@ -47,6 +52,10 @@ function input() {
 	
 	if(key_escape){
 		game_end();
+	}
+	
+	if(key_delete){
+		clear_save_data();
 	}
 	
 	if(key_1){

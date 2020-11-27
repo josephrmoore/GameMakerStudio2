@@ -10,6 +10,8 @@ for(i=0; i<num_choices; i++){
 	if(i == selected_option){
 		this_color = selected_color;
 	}
+	set_all_text(c_black,menu_font,0,0);
+	draw_text(x-3, (y+(i*32))+3, all_menus[menu_id][i]);
 	set_all_text(this_color,menu_font,0,0);
 	draw_text(x, (y+(i*32)), all_menus[menu_id][i]);
 }

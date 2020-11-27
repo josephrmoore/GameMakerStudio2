@@ -1,0 +1,5 @@
+function NPCState_Still() {
+
+
+
+}
