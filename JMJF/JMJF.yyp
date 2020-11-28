@@ -279,6 +279,7 @@
     {"id":{"name":"sBulletBig","path":"sprites/sBulletBig/sBulletBig.yy",},"order":28,},
     {"id":{"name":"brute_force_check","path":"scripts/brute_force_check/brute_force_check.yy",},"order":20,},
     {"id":{"name":"shP42","path":"shaders/shP42/shP42.yy",},"order":27,},
+    {"id":{"name":"aFirework","path":"sounds/aFirework/aFirework.yy",},"order":29,},
     {"id":{"name":"aMainMenu","path":"sounds/aMainMenu/aMainMenu.yy",},"order":14,},
     {"id":{"name":"input","path":"scripts/input/input.yy",},"order":7,},
     {"id":{"name":"avatar_position","path":"scripts/avatar_position/avatar_position.yy",},"order":9,},
