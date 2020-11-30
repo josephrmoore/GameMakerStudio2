@@ -20,7 +20,7 @@ if(oAvatar.lives_left>0){
 	//room_restart();
 	oGame.is_paused = true;
 	pause_everything(oGame.is_paused);
-	with(instance_create_layer(200,220,"Menus",oMenu)){
+	with(instance_create_layer(160,220,"Menus",oMenu)){
 		menu_id = MENUS.RESTART;
 	}
 }

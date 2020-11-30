@@ -9,7 +9,7 @@ if(oGame.menu_right){
 	MoveLevelMural(-1);
 }
 
-var calx = approach(x, -(current_level*640), 15);
+var calx = approach(x, -(current_level*640), 45);
 x = calx;
 
 oLevel2.x = calx+(1*640);

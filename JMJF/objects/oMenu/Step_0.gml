@@ -90,12 +90,12 @@ if(is_active){
 			case MENUS.OPTIONS:
 				switch(selected_option){
 					case 0:
-						// ABOUT
-						room_goto(aboutMenu);
-						break;
-					case 1:
 						// BACK
 						room_goto(mainMenu);
+						break;
+					case 1:
+						// ABOUT
+						room_goto(aboutMenu);
 						break;
 				}
 				break;

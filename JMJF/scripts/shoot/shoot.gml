@@ -4,6 +4,7 @@ function shoot() {
 		spd = other.bullet_speed;
 		axis = other.axis;
 		wave_motion = other.wave_bullets;
+		growing = other.growing;
 		if(other.axis == 0){
 			firing_angle = 270;
 		} else {
