@@ -24,6 +24,8 @@ if(oAvatar.lives_left>0){
 		menu_id = MENUS.RESTART;
 	}
 }
+
+oGame.current_lives = oAvatar.lives_left;
 //oPlayer.x = oElevator.x + 60;
 //oPlayer.y = oElevator.y - 15;
 

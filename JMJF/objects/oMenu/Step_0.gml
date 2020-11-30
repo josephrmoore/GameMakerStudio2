@@ -29,6 +29,7 @@ if(is_active){
 					switch (selected_option){
 						case 0:
 							// START
+							oGame.current_lives = 3;
 							room_goto(level1);
 							break;
 						case 1:
@@ -51,6 +52,7 @@ if(is_active){
 					case 0:
 						// DO OVER
 						oGame.is_paused = false;
+						oGame.current_lives = 3;
 						pause_everything(oGame.is_paused);
 						room_restart();
 						break;
@@ -73,6 +75,7 @@ if(is_active){
 					case 1:
 						// DO OVER
 						oGame.is_paused = false;
+						oGame.current_lives = 3;
 						pause_everything(oGame.is_paused);
 						room_restart();
 						break;
@@ -101,6 +104,7 @@ if(is_active){
 					case 0:
 						// PLAY
 						// check highest level attained
+						oGame.current_lives = 3;
 						var mural = oLevelMural.current_level+1;
 						if(mural <= oGame.highest_level){
 							switch(mural){
