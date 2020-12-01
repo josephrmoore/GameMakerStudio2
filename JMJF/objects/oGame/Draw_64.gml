@@ -55,16 +55,16 @@ switch(current_room){
 		break;
 	case "level4":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(220, 330, "Boomers");
+		draw_text(116, 330, "Carried Away");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "LEVEL 4");
+		draw_text(8, 334, "LEVEL 4");
 		for(var i=0; i<oAvatar.lives_left; i++){
 			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}
 		break;
 	case "level5":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(120, 330, "Switcheroo");
+		draw_text(116, 330, "Slideways");
 		set_all_text(c_white, fLevelNumber, 0, 0);
 		draw_text(8, 334, "LEVEL 5");
 		for(var i=0; i<oAvatar.lives_left; i++){
@@ -73,7 +73,7 @@ switch(current_room){
 		break;
 	case "level6":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(116, 330, "Carried Away");
+		draw_text(120, 330, "Switcheroo");
 		set_all_text(c_white, fLevelNumber, 0, 0);
 		draw_text(8, 334, "LEVEL 6");
 		for(var i=0; i<oAvatar.lives_left; i++){
@@ -82,9 +82,9 @@ switch(current_room){
 		break;
 	case "level7":
 		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(116, 330, "Slideways");
+		draw_text(220, 330, "Boomers");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(8, 334, "LEVEL 7");
+		draw_text(116, 334, "LEVEL 7");
 		for(var i=0; i<oAvatar.lives_left; i++){
 			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
 		}

@@ -6,8 +6,16 @@ function shoot() {
 		wave_motion = other.wave_bullets;
 		growing = other.growing;
 		if(other.axis == 0){
+			// down
 			firing_angle = 270;
+		} else if(other.axis == 2){
+			// right
+			firing_angle = 180;
+		} else if(other.axis == 3){
+			// up
+			firing_angle = 90;
 		} else {
+			// left
 			firing_angle = 0;
 		}
 		speed = spd;

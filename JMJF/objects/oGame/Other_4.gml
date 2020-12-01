@@ -68,8 +68,8 @@ switch(current_room){
 	case "level4":
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
-		oGame.teleportation = false;
-		set_palette(shP31, shP32, shP33, shP34, shP35);
+		oGame.teleportation = true;
+		set_palette(shP61, shP62, shP63, shP64, shP65);
 		oGame.current_level = level4;
 		oGame.next_level = level5;
 		oAvatar.last_teleport_x = -1;
@@ -84,15 +84,15 @@ switch(current_room){
 		break;
 	case "level5":
 		start_timeline(tLevelIntro);
-		oGame.slides_vines_togglable = true;
-		oGame.teleportation = false;
-		set_palette(shP41, shP42, shP43, shP44, shP45);
+		oGame.slides_vines_togglable = false;
+		oGame.teleportation = true;
+		set_palette(shP71, shP72, shP73, shP74, shP75);
 		oGame.current_level = level5;
 		oGame.next_level = level6;
 		oAvatar.last_teleport_x = -1;
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
-		oGame.teleportation_at_death = false;
+		oGame.teleportation_at_death = true;
 		set_highest_level(5);
 		SaveGame("jmjf.ini");
 		oGame.double_jump = true;
@@ -101,9 +101,9 @@ switch(current_room){
 		break;
 	case "level6":
 		start_timeline(tLevelIntro);
-		oGame.slides_vines_togglable = false;
-		oGame.teleportation = true;
-		set_palette(shP61, shP62, shP63, shP64, shP65);
+		oGame.slides_vines_togglable = true;
+		oGame.teleportation = false;
+		set_palette(shP41, shP42, shP43, shP44, shP45);
 		oGame.current_level = level6;
 		oGame.next_level = level7;
 		oAvatar.last_teleport_x = -1;
@@ -119,14 +119,14 @@ switch(current_room){
 	case "level7":
 		start_timeline(tLevelIntro);
 		oGame.slides_vines_togglable = false;
-		oGame.teleportation = true;
-		set_palette(shP71, shP72, shP73, shP74, shP75);
+		oGame.teleportation = false;
+		set_palette(shP31, shP32, shP33, shP34, shP35);
 		oGame.current_level = level7;
 		oGame.next_level = level8;
 		oAvatar.last_teleport_x = -1;
 		oAvatar.last_teleport_y = -1;
 		oGame.shaders_on = true;
-		oGame.teleportation_at_death = true;
+		oGame.teleportation_at_death = false;
 		set_highest_level(7);
 		SaveGame("jmjf.ini");
 		oGame.double_jump = true;
