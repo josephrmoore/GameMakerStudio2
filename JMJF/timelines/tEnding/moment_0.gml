@@ -1,1 +1,0 @@
-lose_control();

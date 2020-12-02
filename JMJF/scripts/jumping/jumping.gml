@@ -21,7 +21,11 @@ function jumping() {
 			}
 //			launch_y = y;
 //			alarm[1] = 0;
-			if(!audio_is_playing(aJump)){
+			if(oGame.game_state == GAMESTATE.ENDING){
+				if(!audio_is_playing(aJump)){
+					audio_play_sound(aJump, 1000, false);
+				}
+			} else {
 				audio_play_sound(aJump, 1000, false);
 			}
 		}

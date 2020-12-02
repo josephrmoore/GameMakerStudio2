@@ -10,10 +10,15 @@ function click_big_button(argument0){
 			audio_play_sound(aButtonClick,100,false);
 		}
 		// check for enough clicks to press
-		if(oButtonBig.clicks>12){
+		if(oButtonBig.clicks>12 && !oButtonBig.pressed){
 			oButtonBig.pressed = true;
 			oAvatar.launch_y = 10000;
-			audio_play_sound(aEndButton, 100, false);
+			oAvatar.avatar_state = AVATARSTATE.IDLE;
+			lose_control();
+			if(!audio_is_playing(aEndButton)){
+				audio_stop_all();
+				audio_play_sound(aEndButton, 100, false);
+			}
 			// launch ending
 			start_timeline(tEnding);
 		}
