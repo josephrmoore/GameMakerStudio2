@@ -98,6 +98,7 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
+		oCannon.wave_bullets = true;
 		break;
 	case "level6":
 		start_timeline(tLevelIntro);

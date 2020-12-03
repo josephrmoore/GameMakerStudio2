@@ -34,7 +34,9 @@ if(is_active){
 							break;
 						case 1:
 							// LEVEL SELECT
-							room_goto(levelsMenu);
+							//room_goto(levelsMenu);
+							//move_screen_down();
+							oSlider.dir = 1;
 							break;
 						case 2:
 							// OPTIONS
