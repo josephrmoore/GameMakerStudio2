@@ -17,13 +17,15 @@ if(debug_on){
 if(oGame.game_state != GAMESTATE.ENDING){
 switch(current_room){
 	case "mainMenu":
-		rainbow_text(5);
-		set_all_text(c_black, fTitle, 0, 0);
-		draw_text(13, 19, "Jumpy");
-		draw_text(13, 67, "McJumpface");
-		set_all_text(oGame.rainbow_color, fTitle, 0, 0);
-		draw_text(16, 16, "Jumpy");
-		draw_text(16, 64, "McJumpface");
+		if(instance_exists(oSlider) && oSlider.dir != 1){
+			rainbow_text(5);
+			set_all_text(c_black, fTitle, 0, 0);
+			draw_text(13, 19, "Jumpy");
+			draw_text(13, 67, "McJumpface");
+			set_all_text(oGame.rainbow_color, fTitle, 0, 0);
+			draw_text(16, 16, "Jumpy");
+			draw_text(16, 64, "McJumpface");
+		}
 		break;
 	case "level1":
 		// display on bottom of screen

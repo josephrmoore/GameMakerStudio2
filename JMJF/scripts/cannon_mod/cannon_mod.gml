@@ -13,7 +13,7 @@ function cannon_mod(argument0){
 			break;
 		case 2:
 			with(oCannon){
-				firing_rate = 3;
+				bullet_speed = 4;
 			}
 			break;
 		case 3:
@@ -26,7 +26,7 @@ function cannon_mod(argument0){
 			break;
 		case 4:
 			with(oCannon){
-				firing_rate = 2;
+				firing_rate = 1;
 			}
 			with(oCannon){
 				wave_bullets = true;
@@ -38,7 +38,7 @@ function cannon_mod(argument0){
 			break;
 		case 6:
 			with(oCannon){
-				firing_rate = 1;
+				firing_rate = 0.5;
 			}
 			break;
 		case 7:

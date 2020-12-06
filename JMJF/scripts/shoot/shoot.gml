@@ -20,7 +20,7 @@ function shoot() {
 		}
 		speed = spd;
 	//	speed = spd*oGame.DT;
-		direction = firing_angle + random_range(-1,1);	
+		direction = firing_angle;	
 	}
 	audio_play_sound(aShoot, 1000, false);
 

@@ -30,6 +30,7 @@ switch(current_room){
 		oGame.double_jump = false;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
+		oCannon.firing_rate = 4;
 		break;
 	case "level2":
 		start_timeline(tLevelIntro);
@@ -47,6 +48,7 @@ switch(current_room){
 		oGame.double_jump = false;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
+		oCannon.firing_rate = 4;
 		break;
 	case "level3":
 		start_timeline(tLevelIntro);
@@ -64,6 +66,7 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
+		oCannon.firing_rate = 2.5;
 		break;
 	case "level4":
 		start_timeline(tLevelIntro);
@@ -81,6 +84,7 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
+		oCannon.firing_rate = 2.5;
 		break;
 	case "level5":
 		start_timeline(tLevelIntro);
@@ -98,7 +102,10 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
-		oCannon.wave_bullets = true;
+		oCannon.growing = true;
+		oCannon.firing_rate = 1.5;
+		oAvatar.last_teleport_x = 432;
+		oAvatar.last_teleport_y = 296;
 		break;
 	case "level6":
 		start_timeline(tLevelIntro);
@@ -116,6 +123,8 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = false;
+		oCannon.firing_rate = 1.5;
+		oCannon.wave_bullets = true;
 		break;
 	case "level7":
 		start_timeline(tLevelIntro);
@@ -133,6 +142,7 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = false;
+		oCannon.firing_rate = 2;
 		break;
 	case "level8":
 		start_timeline(tLevelIntro);
@@ -150,6 +160,7 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = true;
+		oCannon.firing_rate = 1.5;
 		break;
 	case "level8B":
 		oGame.buttons_pressed_this_level = 0;
@@ -168,6 +179,9 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = true;
+		oCannon.firing_rate = 2;
+		oCannon.growing = true;
+		oCannon.wave_bullets = true;
 		break;
 	case "level9":
 		start_timeline(tLevelIntro);
