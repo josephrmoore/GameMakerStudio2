@@ -38,6 +38,7 @@
     {"id":{"name":"level3","path":"rooms/level3/level3.yy",},"order":5,},
     {"id":{"name":"oLevelMural","path":"objects/oLevelMural/oLevelMural.yy",},"order":43,},
     {"id":{"name":"sRiser","path":"sprites/sRiser/sRiser.yy",},"order":22,},
+    {"id":{"name":"oLife","path":"objects/oLife/oLife.yy",},"order":63,},
     {"id":{"name":"Game_Ending","path":"scripts/Game_Ending/Game_Ending.yy",},"order":41,},
     {"id":{"name":"oCongrats","path":"objects/oCongrats/oCongrats.yy",},"order":35,},
     {"id":{"name":"die","path":"scripts/die/die.yy",},"order":35,},
