@@ -34,11 +34,12 @@ function input() {
 	key_6 = keyboard_check_pressed(ord("6"));
 	key_7 = keyboard_check_pressed(ord("7"));
 	key_8 = keyboard_check_pressed(ord("8"));
+	key_dash = keyboard_check_pressed(ord("O"));
 	key_9 = keyboard_check_pressed(ord("9"));
 	
 	key_debug = keyboard_check_pressed(vk_tab);
 	
-	key_life = keyboard_check_pressed(ord("+"));
+	key_life = keyboard_check_pressed(ord("P"));
 	
 	if(key_life){
 		oAvatar.lives_left++;
@@ -92,6 +93,10 @@ function input() {
 	
 	if(key_8){
 		room_goto(level8);
+	}
+	
+	if(key_dash){
+		room_goto(level8B);
 	}
 	
 	if(key_9){
