@@ -38,7 +38,11 @@ function input() {
 	
 	key_debug = keyboard_check_pressed(vk_tab);
 	
-
+	key_life = keyboard_check_pressed(ord("+"));
+	
+	if(key_life){
+		oAvatar.lives_left++;
+	}
 	
 	// DEBUGGING CONTROLS
 

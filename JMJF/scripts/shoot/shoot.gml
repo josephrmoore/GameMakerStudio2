@@ -1,4 +1,4 @@
-function shoot() {
+function shoot(argument0) {
 	with(instance_create_layer(x,y,"Bullets",oBullet)){
 		firing_angle = other.firing_angle;
 		spd = other.bullet_speed;
@@ -22,7 +22,9 @@ function shoot() {
 	//	speed = spd*oGame.DT;
 		direction = firing_angle;	
 	}
-	audio_play_sound(aShoot, 1000, false);
+	if(argument0){
+		audio_play_sound(aShoot, 1000, false);
+	}
 
 
 }

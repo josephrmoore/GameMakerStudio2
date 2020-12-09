@@ -3,7 +3,7 @@
 var dtrig = dummy_id;
 with(oCannonDummy){
 	if(!other.been_shot && dummy_id == dtrig){
-		shoot();
+		shoot(true);
 		other.been_shot = true;
 		show_debug_message("should shoot");
 	}

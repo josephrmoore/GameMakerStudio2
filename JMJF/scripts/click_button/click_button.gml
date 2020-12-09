@@ -66,8 +66,21 @@ function click_button(argument0) {
 				is_activated = !is_activated;
 			}
 		}
+		with (oCannonDummy){
+			if(instance.button_id == 2 || instance.button_id == 1 || instance.button_id == 3){
+				shoot(bang);
+				// need to fix all the sounds blasting at the same time here
+			}
+			
+		}
 		if(instance_exists(oCannonController)){
-			cannon_mod(instance.button_id);
+			if(room_get_name(room) == "level8"){
+				if(instance.button_id == 2 || instance.button_id == 1 || instance.button_id == 3){
+					cannon_mod(instance.button_id);
+				}
+			} else {
+				cannon_mod(instance.button_id);
+			}
 		}
 		
 	}

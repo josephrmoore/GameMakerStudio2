@@ -103,7 +103,7 @@ switch(current_room){
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
 		oCannon.growing = true;
-		oCannon.firing_rate = 1.5;
+		oCannon.firing_rate = 2.5;
 		oAvatar.last_teleport_x = 432;
 		oAvatar.last_teleport_y = 296;
 		break;
@@ -123,7 +123,7 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = false;
-		oCannon.firing_rate = 1.5;
+		oCannon.firing_rate = 2.5;
 		oCannon.wave_bullets = true;
 		break;
 	case "level7":
@@ -146,8 +146,8 @@ switch(current_room){
 		break;
 	case "level8":
 		start_timeline(tLevelIntro);
-		oGame.slides_vines_togglable = false;
-		oGame.teleportation = false;
+		oGame.slides_vines_togglable = true;
+		oGame.teleportation = true;
 		set_palette(shP83, shP82, shP84, shP85, shP81);
 		oGame.current_level = level8;
 		oGame.next_level = level9;
@@ -160,13 +160,13 @@ switch(current_room){
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = true;
-		oCannon.firing_rate = 1.5;
+		oCannon.firing_rate = 2;
 		break;
 	case "level8B":
 		oGame.buttons_pressed_this_level = 0;
 		gain_control();
 		oGame.slides_vines_togglable = false;
-		oGame.teleportation = false;
+		oGame.teleportation = true;
 		set_palette(shP83, shP82, shP84, shP85, shP81);
 		oGame.current_level = level8;
 		oGame.next_level = level9;

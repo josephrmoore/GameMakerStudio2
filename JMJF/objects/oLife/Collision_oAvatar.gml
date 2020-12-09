@@ -1,6 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if(!is_paused && activated){
-	shoot(true);
-}
+oAvatar.lives_left++;
+instance_destroy();
