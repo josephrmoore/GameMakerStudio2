@@ -39,7 +39,7 @@ function input() {
 	
 	key_debug = keyboard_check_pressed(vk_tab);
 	
-	key_life = keyboard_check_pressed(ord("P"));
+	key_life = keyboard_check_pressed(ord("L"));
 	
 	if(key_life){
 		oAvatar.lives_left++;
@@ -104,13 +104,15 @@ function input() {
 	}
 	
 	if(game_state == GAMESTATE.LEVEL){
-		if(key_p){			
-			oGame.is_paused = true;
-			pause_everything(oGame.is_paused);
-			with(instance_create_layer(100,210,"Menus",oMenu)){
-				menu_id = MENUS.PAUSE;
+		if(oAvatar.controllable){
+			if(key_p){			
+				oGame.is_paused = true;
+				pause_everything(oGame.is_paused);
+				with(instance_create_layer(100,210,"Menus",oMenu)){
+					menu_id = MENUS.PAUSE;
+				}
+				show_debug_message("pauser");
 			}
-			show_debug_message("pauser");
 		}
 	}
 	

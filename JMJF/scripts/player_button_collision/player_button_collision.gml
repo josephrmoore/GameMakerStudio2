@@ -6,8 +6,12 @@ function player_button_collision(argument0) {
 	// Vertical object collision
 
 	if (place_meeting(x,y+vsp,obj)) {
-			grounded = true;
-			jumps = 0;
+			if(vsp>0){
+				grounded = true;
+				jumps = 0;
+			} else {
+				grounded = false;
+			}
 			while(!place_meeting(x,y+sign(vsp),obj)){
 				y = y + sign(vsp);
 			}
@@ -20,6 +24,8 @@ function player_button_collision(argument0) {
 			if(y_instance != noone){
 				click_button(y_instance);
 			}
+	} else {
+		grounded = false;
 	}
 
 

@@ -163,6 +163,12 @@ switch(current_room){
 		oCannon.firing_rate = 2;
 		break;
 	case "level8B":
+		if(!audio_is_playing(aLevel8)){
+			audio_stop_all();
+			room_music();
+			alarm[0] = -1;
+			oGame.game_state = GAMESTATE.LEVEL;
+		}
 		oGame.buttons_pressed_this_level = 0;
 		gain_control();
 		oGame.slides_vines_togglable = false;

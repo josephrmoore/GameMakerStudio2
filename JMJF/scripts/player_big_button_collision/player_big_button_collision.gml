@@ -3,10 +3,12 @@
 function player_big_button_collision(argument0){
 	var obj = argument0;
 	if (place_meeting(x,y+vsp,obj)) {
-			grounded = true;
-			jumps = 0;
-			if(instance_exists(oButtonBig)){
-				oButtonBig.on_button = true;
+//			show_debug_message("m");
+			if(vsp>0){
+				grounded = true;
+				jumps = 0;
+			} else {
+				grounded = false;
 			}
 			while(!place_meeting(x,y+sign(vsp),obj)){
 				y = y + sign(vsp);
@@ -16,10 +18,32 @@ function player_big_button_collision(argument0){
 				vsp_sign = -1;
 			}
 			vsp = 0;
-			var y_instance = instance_place(x, y+vsp_sign, obj);
-			if(y_instance != noone){
-				click_big_button(y_instance);
+			if(instance_exists(oButtonBig)){
+				
+				if(!oButtonBig.button_lock && !oButtonBig.on_button){
+					var y_instance = instance_place(x, y+vsp_sign, obj);
+					if(y_instance != noone){
+						click_big_button(y_instance);
+					}
+				}
+				
+				with(oButtonBig){
+					button_lock = true;
+					on_button = true;
+					if(alarm[0] <= 0){
+						alarm[0] = 30;
+					}
+				}
 			}
+
+
+			
+	} else {
+//		show_debug_message("-m");
+		grounded = false;
+		if(instance_exists(oButtonBig)){
+			oButtonBig.on_button = false;
+		}
 	}
 
 

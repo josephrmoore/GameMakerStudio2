@@ -28,94 +28,233 @@ switch(current_room){
 		}
 		break;
 	case "level1":
-		// display on bottom of screen
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(128, 330, "Pie");
+		var offset_x = 0;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Pie");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Pie");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 1");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(16, 334, "LEVEL 1");
+		draw_text(20+offset_x, 322, "LEVEL 1");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level2":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(235, 330, "Basic B");
+		var offset_x = 90;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Basic B");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Basic B");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 2");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "LEVEL 2");
+		draw_text(20+offset_x, 322, "LEVEL 2");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level3":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(120, 330, "Watch Your Step");
+		var offset_x = 0;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Watch Your Step");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Watch Your Step");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 3");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(8, 334, "LEVEL 3");
+		draw_text(20+offset_x, 322, "LEVEL 3");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level4":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(116, 330, "Carried Away");
+		var offset_x = 0;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Carried Away");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Carried Away");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 4");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(8, 334, "LEVEL 4");
+		draw_text(20+offset_x, 322, "LEVEL 4");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level5":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(116, 330, "Slideways");
+		var offset_x = 0;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Slideways");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Slideways");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 5");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(8, 334, "LEVEL 5");
+		draw_text(20+offset_x, 322, "LEVEL 5");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level6":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(120, 330, "Switcheroo");
+		var offset_x = 0;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Switcheroo");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Switcheroo");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 6");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(8, 334, "LEVEL 6");
+		draw_text(20+offset_x, 322, "LEVEL 6");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level7":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(220, 330, "Boomers");
+		var offset_x = 90;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Boomers");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Boomers");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 7");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(116, 334, "LEVEL 7");
+		draw_text(20+offset_x, 322, "LEVEL 7");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level8":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(210, 330, "All Hands");
+		var offset_x = 90;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Final Exam");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Final Exam");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 8");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(100, 334, "LEVEL 8");
+		draw_text(20+offset_x, 322, "LEVEL 8");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level8B":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(110, 330, "All Hands");
+		var offset_x = 0;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "Final Exam");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "Final Exam");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 8");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(8, 334, "LEVEL 8");
+		draw_text(20+offset_x, 322, "LEVEL 8");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 	case "level9":
-		set_all_text(c_white, fRoomTitle, 0, 0);
-		draw_text(300, 330, "The End");
+		var offset_x = 90;
+		set_all_text(c_black, fPS24, 0, 0);
+		draw_text(113+offset_x, 329, "The End");
+		set_all_text(c_white, fPS24, 0, 0);
+		draw_text(116+offset_x, 326, "The End");
+		set_all_text(c_black, fLevelNumber, 0, 0);
+		draw_text(18+offset_x, 323, "LEVEL 9");
 		set_all_text(c_white, fLevelNumber, 0, 0);
-		draw_text(195, 334, "LEVEL 9");
+		draw_text(20+offset_x, 322, "LEVEL 9");
 		for(var i=0; i<oAvatar.lives_left; i++){
-			draw_sprite(sLifeIcon,0,(565 + (i*20)), 330);
+			draw_sprite(sLifeIcon,0,(offset_x+20 + (i*20)), 340);
+		}
+		if(oGame.double_jump){
+			draw_sprite_ext(sDoubleJump,0,offset_x+8,328,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.high_jump){
+			draw_sprite_ext(sHighJump,0,offset_x+8,340,0.5,0.5,0,c_white,1);
+		}
+		if(oGame.armor_jump){
+			draw_sprite_ext(sArmorJump,0,offset_x+8,352,0.5,0.5,0,c_white,1);
 		}
 		break;
 }
