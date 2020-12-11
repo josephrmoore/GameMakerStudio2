@@ -75,10 +75,10 @@ switch(current_room){
 		break;
 	case "level3":
 		var offset_x = 0;
-		set_all_text(c_black, fPS24, 0, 0);
-		draw_text(113+offset_x, 329, "Watch Your Step");
-		set_all_text(c_white, fPS24, 0, 0);
-		draw_text(116+offset_x, 326, "Watch Your Step");
+		set_all_text(c_black, fPS20, 0, 0);
+		draw_text(123+offset_x, 329, "Watch Your Step");
+		set_all_text(c_white, fPS20, 0, 0);
+		draw_text(126+offset_x, 326, "Watch Your Step");
 		set_all_text(c_black, fLevelNumber, 0, 0);
 		draw_text(18+offset_x, 323, "LEVEL 3");
 		set_all_text(c_white, fLevelNumber, 0, 0);
@@ -98,9 +98,9 @@ switch(current_room){
 		break;
 	case "level4":
 		var offset_x = 0;
-		set_all_text(c_black, fPS24, 0, 0);
+		set_all_text(c_black, fPS18, 0, 0);
 		draw_text(113+offset_x, 329, "Carried Away");
-		set_all_text(c_white, fPS24, 0, 0);
+		set_all_text(c_white, fPS18, 0, 0);
 		draw_text(116+offset_x, 326, "Carried Away");
 		set_all_text(c_black, fLevelNumber, 0, 0);
 		draw_text(18+offset_x, 323, "LEVEL 4");
@@ -121,9 +121,9 @@ switch(current_room){
 		break;
 	case "level5":
 		var offset_x = 0;
-		set_all_text(c_black, fPS24, 0, 0);
+		set_all_text(c_black, fPS22, 0, 0);
 		draw_text(113+offset_x, 329, "Slideways");
-		set_all_text(c_white, fPS24, 0, 0);
+		set_all_text(c_white, fPS22, 0, 0);
 		draw_text(116+offset_x, 326, "Slideways");
 		set_all_text(c_black, fLevelNumber, 0, 0);
 		draw_text(18+offset_x, 323, "LEVEL 5");
@@ -144,9 +144,9 @@ switch(current_room){
 		break;
 	case "level6":
 		var offset_x = 0;
-		set_all_text(c_black, fPS24, 0, 0);
+		set_all_text(c_black, fPS22, 0, 0);
 		draw_text(113+offset_x, 329, "Switcheroo");
-		set_all_text(c_white, fPS24, 0, 0);
+		set_all_text(c_white, fPS22, 0, 0);
 		draw_text(116+offset_x, 326, "Switcheroo");
 		set_all_text(c_black, fLevelNumber, 0, 0);
 		draw_text(18+offset_x, 323, "LEVEL 6");
