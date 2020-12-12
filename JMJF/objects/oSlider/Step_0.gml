@@ -11,7 +11,7 @@ if(dir == 1){
 	
 	var layer_id = layer_get_id("Sequence");
 	var layy = layer_get_y(layer_id);
-	show_debug_message(layy);
+//	show_debug_message(layy);
 	layer_y(layer_id, approach(layy, -360, 48));
 	
 	// move sequence if possible?

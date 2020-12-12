@@ -12,5 +12,5 @@ function SaveGame(argument0) {
 
 	ds_map_destroy(save_data);
 
-	show_debug_message("game saved");
+//	show_debug_message("game saved");
 }

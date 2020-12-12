@@ -279,7 +279,7 @@
     {"id":{"name":"Avatar_Sliding","path":"scripts/Avatar_Sliding/Avatar_Sliding.yy",},"order":16,},
     {"id":{"name":"oRiserIntro","path":"objects/oRiserIntro/oRiserIntro.yy",},"order":1,},
     {"id":{"name":"sLevel5","path":"sprites/sLevel5/sLevel5.yy",},"order":56,},
-    {"id":{"name":"sLifetext","path":"sprites/sLifetext/sLifetext.yy",},"order":69,},
+    {"id":{"name":"sLifeText","path":"sprites/sLifeText/sLifeText.yy",},"order":69,},
     {"id":{"name":"level5","path":"rooms/level5/level5.yy",},"order":7,},
     {"id":{"name":"player_object_collision","path":"scripts/player_object_collision/player_object_collision.yy",},"order":6,},
     {"id":{"name":"teleport","path":"scripts/teleport/teleport.yy",},"order":57,},

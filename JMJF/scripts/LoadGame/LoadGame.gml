@@ -6,6 +6,6 @@ function LoadGame(argument0) {
 	if(file_exists(file)){
 		var save_data = LoadJsonFromFile(file);
 		oGame.highest_level = ds_map_find_value(save_data, "highest_level");
-		show_debug_message("Game loaded");
+//		show_debug_message("Game loaded");
 	}
 }

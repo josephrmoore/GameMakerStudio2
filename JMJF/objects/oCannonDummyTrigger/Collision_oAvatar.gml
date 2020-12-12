@@ -5,10 +5,10 @@ with(oCannonDummy){
 	if(!other.been_shot && dummy_id == dtrig){
 		shoot(true);
 		other.been_shot = true;
-		show_debug_message("should shoot");
+//		show_debug_message("should shoot");
 	}
-	show_debug_message("TRIGGERED");
-	show_debug_message(dtrig);
-	show_debug_message(dummy_id);
+//	show_debug_message("TRIGGERED");
+//	show_debug_message(dtrig);
+//	show_debug_message(dummy_id);
 }
 

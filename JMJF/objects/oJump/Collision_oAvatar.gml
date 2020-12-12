@@ -3,4 +3,4 @@
 
 oGame.pressed_buttons = true;
 oGame.pressed_buttons_held = true;
-show_debug_message("JUMP!");
+//show_debug_message("JUMP!");

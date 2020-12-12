@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function click_big_button(argument0){
 
-		show_debug_message("BIG CLICK!");
+//		show_debug_message("BIG CLICK!");
 		// click
 		with(oButtonBig){
 			clicks++;
