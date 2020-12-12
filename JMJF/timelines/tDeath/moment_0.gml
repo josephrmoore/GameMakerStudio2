@@ -1,4 +1,5 @@
 audio_stop_all();
+lose_control();
 var inst = instance_place(oAvatar.x,oAvatar.y,oHazard);
 if (inst != noone){
 	audio_play_sound(aHazard, 90, false);

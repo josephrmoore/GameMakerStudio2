@@ -32,3 +32,4 @@ oGame.current_lives = oAvatar.lives_left;
 //oPlayer.launch_x = oPlayer.x;
 //oPlayer.launch_y = oPlayer.y;
 
+gain_control();

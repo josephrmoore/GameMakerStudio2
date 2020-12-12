@@ -104,7 +104,7 @@ function input() {
 	//}
 	
 	if(game_state == GAMESTATE.LEVEL){
-		if(oAvatar.controllable){
+		if(instance_exists(oAvatar) && oAvatar.controllable){
 			if(key_p){			
 				oGame.is_paused = true;
 				pause_everything(oGame.is_paused);
