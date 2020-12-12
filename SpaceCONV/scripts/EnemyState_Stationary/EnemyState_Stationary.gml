@@ -1,0 +1,5 @@
+function EnemyState_Stationary() {
+
+
+
+}

@@ -3,9 +3,10 @@
 
 //if(!is_paused && activated && oGame.current_room != "level9"){
 if(activated && !is_paused){
+	var firing_frames = (firing_rate * 60);
 	cannon_move();
-	if(alarm[0] == -1){
-		alarm[0] = (firing_rate * 60) + round(random_range(-200, 200));
+	if(alarm[0] <= 0){
+		alarm[0] =  firing_frames + round(random_range(0, firing_frames));
 	}
 }
 //}

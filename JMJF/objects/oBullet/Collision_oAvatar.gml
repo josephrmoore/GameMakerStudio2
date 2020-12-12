@@ -14,6 +14,7 @@ with(oAvatar){
 }
 
 if(avatar_collision){
+	audio_play_sound(aBulletDeath, 50, false);
 	instance_destroy();
 }
 

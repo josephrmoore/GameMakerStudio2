@@ -1,7 +1,7 @@
 //room_restart();
 // need custom restart to skip rising part
 //show_debug_message("310");
-if(object_exists(oCannon)){
+if(instance_exists(oCannon)){
 	oCannon.activated = true;
 	oCannon.is_paused = false;
 }
@@ -20,13 +20,16 @@ if(oAvatar.lives_left>0){
 	//room_restart();
 	oGame.is_paused = true;
 	pause_everything(oGame.is_paused);
-	with(instance_create_layer(300,200,"Menus",oMenu)){
+	with(instance_create_layer(160,220,"Menus",oMenu)){
 		menu_id = MENUS.RESTART;
 	}
 }
+
+oGame.current_lives = oAvatar.lives_left;
 //oPlayer.x = oElevator.x + 60;
 //oPlayer.y = oElevator.y - 15;
 
 //oPlayer.launch_x = oPlayer.x;
 //oPlayer.launch_y = oPlayer.y;
 
+gain_control();

@@ -8,6 +8,10 @@ audio_play_sound(aPowerup, 100, false);
 oAvatar.jSpeed = oAvatar.jSpeedHigh;
 oGame.high_jump = true;
 
+with(instance_create_layer(x, y,"Powerups",oPowerupText)){
+	text_sprite = sHighText;
+}
+
 // destroy self
 
 instance_destroy();

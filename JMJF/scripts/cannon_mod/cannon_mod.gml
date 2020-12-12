@@ -13,17 +13,22 @@ function cannon_mod(argument0){
 			break;
 		case 2:
 			with(oCannon){
-				firing_rate = 1;
+				mSpeed = 3;
+			}
+			with(oCannon){
+				growing = true;
 			}
 			break;
 		case 3:
-			with(oCannon){
-				mSpeed = 2;
-			}
+			add_cannon(3, 0);
+			add_cannon(3, 1);
 			break;
 		case 4:
 			with(oCannon){
-				bullet_speed = 6;
+				firing_rate = 1;
+			}
+			with(oCannon){
+				wave_bullets = true;
 			}
 			break;
 		case 5:
@@ -31,20 +36,22 @@ function cannon_mod(argument0){
 			add_cannon(4, 1);
 			break;
 		case 6:
-			delete_cannon(4);
+			with(oCannon){
+				firing_rate = 4;
+			}
 			break;
 		case 7:
 			with(oCannon){
-				firing_rate = 0.5;
+				bullet_speed = 2;
 			}
 			break;
 		case 8:
 			with(oCannon){
-				mSpeed = 3;
+				mSpeed = 1;
 			}
 			break;
 		case 9:
-			delete_cannon(10);
+			delete_cannon(20);
 			break;
 	}
 }

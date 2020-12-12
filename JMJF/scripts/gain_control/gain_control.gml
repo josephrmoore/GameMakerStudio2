@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function gain_control(){
 	oAvatar.controllable = true;
-	oCannon.is_paused = false;
-	oCannon.activated = true;
+	if(instance_exists(oCannon)){
+		oCannon.is_paused = false;
+		oCannon.activated = true;
+	}
 }

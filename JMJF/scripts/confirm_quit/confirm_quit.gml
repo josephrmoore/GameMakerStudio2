@@ -5,6 +5,6 @@ function confirm_quit(){
 	//set_all_text(c_white, fPause, 0,0);
 	//draw_text(100, 100, "ARE YOU SURE?");
 	oGame.confirm_active = true;
-	var menu = instance_create_layer(200,200,"Menus",oMenu);
+	var menu = instance_create_layer(230,260,"Menus",oMenu);
 	menu.menu_id = MENUS.CONFIRM;
 }

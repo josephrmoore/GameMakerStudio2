@@ -43,11 +43,11 @@ function click_button(argument0) {
 			}
 		}
 		// toggle vine top with matching button ids
-		with (oVineTop){
-			if(button_id != 0 && instance.button_id == button_id){
-				is_activated = !is_activated;
-			}
-		}
+		//with (oVineTop){
+		//	if(button_id != 0 && instance.button_id == button_id){
+		//		is_activated = !is_activated;
+		//	}
+		//}
 		// toggle slide with matching button ids
 		with (oSlide){
 			if(button_id != 0 && instance.button_id == button_id){
@@ -55,19 +55,32 @@ function click_button(argument0) {
 			}
 		}
 		// toggle slide top with matching button ids
-		with (oSlideTop){
-			if(button_id != 0 && instance.button_id == button_id){
-				is_activated = !is_activated;
-			}
-		}
+		//with (oSlideTop){
+		//	if(button_id != 0 && instance.button_id == button_id){
+		//		is_activated = !is_activated;
+		//	}
+		//}
 		// toggle slide end with matching button ids
 		with (oSlideEnd){
 			if(button_id != 0 && instance.button_id == button_id){
 				is_activated = !is_activated;
 			}
 		}
+		with (oCannonDummy){
+			if(instance.button_id == 2 || instance.button_id == 1 || instance.button_id == 3){
+				shoot(bang);
+				// need to fix all the sounds blasting at the same time here
+			}
+			
+		}
 		if(instance_exists(oCannonController)){
-			cannon_mod(instance.button_id);
+			if(room_get_name(room) == "level8"){
+				if(instance.button_id == 2 || instance.button_id == 1 || instance.button_id == 3){
+					cannon_mod(instance.button_id);
+				}
+			} else {
+				cannon_mod(instance.button_id);
+			}
 		}
 		
 	}

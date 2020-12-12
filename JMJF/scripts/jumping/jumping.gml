@@ -16,9 +16,18 @@ function jumping() {
 			grounded = false;
 			vsp = -jumpy;
 			jumps++;
+			if(y>launch_y){
+				launch_y = y;
+			}
 //			launch_y = y;
 //			alarm[1] = 0;
-			audio_play_sound(aJump, 1000, false);
+			if(oGame.game_state == GAMESTATE.ENDING){
+				if(!audio_is_playing(aJump)){
+					audio_play_sound(aJump, 1000, false);
+				}
+			} else {
+				audio_play_sound(aJump, 1000, false);
+			}
 		}
 	}
 //	show_debug_message(oAvatar.avatar_state);

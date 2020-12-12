@@ -29,11 +29,14 @@ if(is_active){
 					switch (selected_option){
 						case 0:
 							// START
+							oGame.current_lives = 3;
 							room_goto(level1);
 							break;
 						case 1:
 							// LEVEL SELECT
-							room_goto(levelsMenu);
+							//room_goto(levelsMenu);
+							//move_screen_down();
+							oSlider.dir = 1;
 							break;
 						case 2:
 							// OPTIONS
@@ -51,6 +54,7 @@ if(is_active){
 					case 0:
 						// DO OVER
 						oGame.is_paused = false;
+						oGame.current_lives = 3;
 						pause_everything(oGame.is_paused);
 						room_restart();
 						break;
@@ -73,6 +77,7 @@ if(is_active){
 					case 1:
 						// DO OVER
 						oGame.is_paused = false;
+						oGame.current_lives = 3;
 						pause_everything(oGame.is_paused);
 						room_restart();
 						break;
@@ -87,18 +92,12 @@ if(is_active){
 			case MENUS.OPTIONS:
 				switch(selected_option){
 					case 0:
-						// CONTROLS
-						break;
-					case 1:
-						// DISPLAY
-						break;
-					case 2:
-						// ABOUT
-						room_goto(aboutMenu);
-						break;
-					case 3:
 						// BACK
 						room_goto(mainMenu);
+						break;
+					case 1:
+						// ABOUT
+						room_goto(aboutMenu);
 						break;
 				}
 				break;
@@ -106,6 +105,41 @@ if(is_active){
 				switch(selected_option){
 					case 0:
 						// PLAY
+						// check highest level attained
+						oGame.current_lives = 3;
+						var mural = oLevelMural.current_level+1;
+						if(mural <= oGame.highest_level){
+							switch(mural){
+								case 1:
+									room_goto(level1);
+									break;
+								case 2:
+									room_goto(level2);
+									break;
+								case 3:
+									room_goto(level3);
+									break;
+								case 4:
+									room_goto(level4);
+									break;
+								case 5:
+									room_goto(level5);
+									break;
+								case 6:
+									room_goto(level6);
+									break;
+								case 7:
+									room_goto(level7);
+									break;
+								case 8:
+									room_goto(level8);
+									break;
+								case 9:
+									room_goto(level9);
+									break;
+								
+							}	
+						}
 						break;
 					case 1:
 						// BACK

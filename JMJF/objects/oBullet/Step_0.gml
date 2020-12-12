@@ -21,6 +21,8 @@ if(is_paused){
 	}
 }
 
-if(x>room_width+100 || y>room_height+100){
-	instance_destroy();
+if(room_get_name(room) != "level9"){ 
+	if(x>room_width+100 || y>room_height+100){
+		instance_destroy();
+	}
 }

@@ -14,3 +14,4 @@ enum AVATARSTATE {
 }
 
 avatar_state = AVATARSTATE.IDLE;
+lives_left = oGame.current_lives;

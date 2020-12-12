@@ -6,7 +6,12 @@ function teleport(argument0){
 		if(button.button_id == button_id){
 			oAvatar.x = x;
 			oAvatar.y = y;
+			oAvatar.last_teleport_x = x;
+			oAvatar.last_teleport_y = y;
 			oAvatar.launch_y = y;
+			alarm[0] = 45;
+			is_visible = true;
+			audio_play_sound(aTeleport,100,false);
 		}
 	}
 }
