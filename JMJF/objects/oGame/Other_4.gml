@@ -6,7 +6,7 @@ var current_room = room_get_name(room);
 switch(current_room){
 	case "mainMenu":
 		oGame.shaders_on = true;
-		LoadGame("jmjf.ini");
+		LoadGame("jmjf.dat");
 		if(!audio_is_playing(aMainMenu)){
 			audio_stop_all();
 			audio_play_sound(aMainMenu, 100, true);
@@ -26,7 +26,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
 		set_highest_level(1);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = false;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
@@ -44,7 +44,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
 		set_highest_level(2);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = false;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
@@ -62,7 +62,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
 		set_highest_level(3);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = true;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
@@ -80,7 +80,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
 		set_highest_level(4);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = true;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
@@ -98,7 +98,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = true;
 		set_highest_level(5);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = true;
 		oGame.high_jump = false;
 		oGame.armor_jump = false;
@@ -119,7 +119,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
 		set_highest_level(6);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = false;
@@ -138,7 +138,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
 		set_highest_level(7);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = false;
@@ -156,7 +156,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
 		set_highest_level(8);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = true;
@@ -181,7 +181,7 @@ switch(current_room){
 		oGame.shaders_on = true;
 		oGame.teleportation_at_death = false;
 		set_highest_level(8);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = true;
@@ -199,7 +199,7 @@ switch(current_room){
 		oAvatar.last_teleport_y = -1;
 		oGame.teleportation_at_death = false;
 		set_highest_level(9);
-		SaveGame("jmjf.ini");
+		SaveGame("jmjf.dat");
 		oGame.double_jump = true;
 		oGame.high_jump = true;
 		oGame.armor_jump = true;

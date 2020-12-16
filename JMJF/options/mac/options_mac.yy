@@ -7,7 +7,7 @@
   "option_mac_signing_identity": "Apple Development: controlpatrol@gmail.com (FH9FGPG7GR)",
   "option_mac_copyright": "© Copyright 2020 Incompetently Perfect Games",
   "option_mac_splash_png": "${options_dir}/mac/splash/splash.png",
-  "option_mac_icon_png": "${options_dir}/mac/icons/1024.png",
+  "option_mac_icon_png": "${project_dir}/options/mac/icons\\1024.png",
   "option_mac_menu_dock": false,
   "option_mac_display_cursor": true,
   "option_mac_start_fullscreen": false,
