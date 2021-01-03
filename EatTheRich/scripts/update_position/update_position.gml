@@ -3,4 +3,7 @@
 function update_position(){
 	x += hsp;
 	y += vsp;
+	
+	//x = round(x);
+	//y = round(y);
 }
