@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-left_right();
-up_down();
-player_tile_collision();
-player_object_collision(oTree);
-update_position();
 
-show_debug_message(net_worth);
+switch(consumer_state){
+	case CONSUMERSTATE.IDLE:
+		ConsumerState_Idle();
+		break;
+	case CONSUMERSTATE.ATTACKING:
+		ConsumerState_Attacking();
+		break;
+	case CONSUMERSTATE.DEAD:
+		ConsumerState_Dead();
+		break;
+}

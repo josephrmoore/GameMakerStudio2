@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "player_object_collision",
+  "name": "ConsumerState_Attacking",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "player_tile_collision",
+  "name": "ConsumerClass_Rich",
   "tags": [],
   "resourceType": "GMScript",
 }

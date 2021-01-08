@@ -15,7 +15,7 @@ function player_tile_collision() {
 		vsp_integer = floor(hsp);
 	}
 
-	if(tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp_integer) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp_integer) != 0){
+	if(tilemap_get_at_pixel(oGame.tilemap, bbox_left, bbox_side+vsp_integer) != 0 || tilemap_get_at_pixel(oGame.tilemap, bbox_right, bbox_side+vsp_integer) != 0){
 		if(vsp > 0){
 			y = y - (y mod 8) + 7 - (bbox_bottom - y);
 		} else {
@@ -34,7 +34,7 @@ function player_tile_collision() {
 		hsp_integer = floor(hsp);
 	}
 
-	if(tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(tilemap, bbox_side+hsp_integer, bbox_bottom) != 0){
+	if(tilemap_get_at_pixel(oGame.tilemap, bbox_side+hsp_integer, bbox_top) != 0 || tilemap_get_at_pixel(oGame.tilemap, bbox_side+hsp_integer, bbox_bottom) != 0){
 		if(hsp > 0){
 			x = x - (x mod 8) + 7 - (bbox_right - x);
 		} else {
