@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-outline_init();
+//outline_init();
 
 state = PLAYERSTATE.FREE;
 location = PLAYERLOCATION.AIRBORNE;

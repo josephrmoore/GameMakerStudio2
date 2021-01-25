@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 switch(current_room){
 	case "title":
 		if(!intro_animation_on){
@@ -273,3 +273,5 @@ switch(current_room){
 		}
 		break;
 }
+
+*/

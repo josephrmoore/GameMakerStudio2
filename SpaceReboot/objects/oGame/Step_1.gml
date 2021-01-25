@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+/*
+
 input();
 		
 if (os_is_paused()){
@@ -249,3 +251,5 @@ for (var i = 0; i < gp_num; i++;){
 		gamepad_plugged_in = true;
 	}
 }
+
+*/

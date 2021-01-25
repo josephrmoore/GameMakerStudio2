@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+/*
 current_room = room_get_name(room);
 
 current_room = multiple_rooms(current_room);
@@ -73,3 +74,5 @@ switch(current_room){
 		srs_loop(missile_upgrade_srs, oPickupMissileUpgrade);
 		break;
 }
+
+*/

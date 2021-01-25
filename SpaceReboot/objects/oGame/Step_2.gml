@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 switch(current_room){
 	case "init":
 		if (audio_group_is_loaded(Music)){
@@ -40,3 +40,5 @@ switch(current_room){
 	default:
 	break;
 }
+
+*/

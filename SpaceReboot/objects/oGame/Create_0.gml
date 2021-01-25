@@ -13,7 +13,7 @@ missile_upgrade_srs = ds_list_create();
 //boss_srs = ds_list_create();
 //breakable_srs = ds_list_create();
 
-story_progress = STORY.FIRSTPLAY;
+//story_progress = STORY.FIRSTPLAY;
 
 //global.map_visited = [];
 global.map_visited_grid = ds_grid_create(69,136);
@@ -25,11 +25,11 @@ for(var i=0; i<136; i++){
 	}
 }
 
-audio_group_load(Music);
-audio_group_load(SFX);
+//audio_group_load(Music);
+//audio_group_load(SFX);
 
-music_gain = round(audio_sound_get_gain(Music)*100);
-sfx_gain = round(audio_sound_get_gain(SFX)*100);
+//music_gain = round(audio_sound_get_gain(Music)*100);
+//sfx_gain = round(audio_sound_get_gain(SFX)*100);
 
 enum STORY {
 	FIRSTPLAY,

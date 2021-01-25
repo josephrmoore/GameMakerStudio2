@@ -1,16 +1,16 @@
 function jumping() {
 	// Jumping
 
-	if(oController.key_jump){
+	if(key_jump){
 		if(jumps < max_jumps){
 			vsp = -jSpeed;
 			show_debug_message(vsp);
 			show_debug_message(max_vsp);
 			jumps++;
 			if(jumps <= 1){
-				audio_play_sound(sndJump, 7, false);
+//				audio_play_sound(sndJump, 7, false);
 			} else {
-				audio_play_sound(sndJumpLong, 7, false);
+//				audio_play_sound(sndJumpLong, 7, false);
 			}
 		}
 
@@ -30,7 +30,7 @@ function jumping() {
 		//}
 	}
 
-	if (location == PLAYERLOCATION.AIRBORNE && !oController.key_jump_held) vsp = max(vsp, -jSpeed/4);
+	if (location == PLAYERLOCATION.AIRBORNE && !key_jump_held) vsp = max(vsp, -jSpeed/4);
 
 
 

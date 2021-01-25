@@ -2,7 +2,7 @@
 function input() {
 	// key capture
 
-	if(oController.player_has_control){
+//	if(oController.player_has_control){
 	key_right = gamepad_button_check(0,gp_padr) || gamepad_axis_value(0,gp_axislh) > 0.2 || keyboard_check(vk_right) || keyboard_check(ord("D"));
 	key_left = gamepad_button_check(0,gp_padl)|| gamepad_axis_value(0,gp_axislh) < -0.2 || keyboard_check(vk_left) || keyboard_check(ord("A"));
 
@@ -70,7 +70,7 @@ function input() {
 
 	if(key_three){
 		var k = "save" + string(oController.save_data_file) + ".sav";
-		SaveGame(k);
+//		SaveGame(k);
 	}
 
 	if (key_four){
@@ -119,4 +119,4 @@ function input() {
 	}
 
 
-}
+//}
