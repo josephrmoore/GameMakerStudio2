@@ -8,7 +8,7 @@ function jumping() {
 			}
 		}
 	}
-		if (!oGame.pressed_buttons_held) {
-			vsp = max(vsp, -(jsp/60)/4);
-		}
+	if (!oGame.pressed_buttons_held) {
+		vsp = max(vsp, -(jsp/60)/4);
+	}
 }
