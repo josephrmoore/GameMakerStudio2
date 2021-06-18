@@ -26,4 +26,11 @@ function constructors(){
 		}
 	}
 	
+	force_to_msp = function(f, m){
+		if(!f || !m){
+			return 0;
+		}
+		return ((f/m)/60);
+	}
+	
 }

@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"calculate_forces","path":"scripts/calculate_forces/calculate_forces.yy",},"order":6,},
     {"id":{"name":"constructors","path":"scripts/constructors/constructors.yy",},"order":0,},
     {"id":{"name":"player_object_collision","path":"scripts/player_object_collision/player_object_collision.yy",},"order":2,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
